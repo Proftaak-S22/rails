@@ -10,15 +10,21 @@ namespace CTRails
 {
     class Task
     {
+        //Fields
         private int taskNumber;
         private DateTime Time;
 
+        //Constructor
         public Task(int taskNumber, User user, Tram tram, DateTime time, Section startSection, Section endSection)
         {
             this.taskNumber = taskNumber;
             this.Time = time;
         }
 
-        public void RemoveTask(Task task) { }
+        //Methods
+        public void RemoveTask(Task task)
+        {
+            
+        }
     }
 }

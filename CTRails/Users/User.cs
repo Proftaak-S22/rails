@@ -8,6 +8,7 @@ namespace CTRails.Users
 {
     public class User
     {
+        //Fields
         private string name;
         private Geslacht gender;
         private DateTime birthdate;
@@ -16,6 +17,8 @@ namespace CTRails.Users
         private string username;
         private string password;
 
+
+        //Constructor
         public User(string name, Geslacht gender, DateTime birthdate, string email, string nationality, string username, string password)
         {
             this.name = name;
@@ -26,13 +29,24 @@ namespace CTRails.Users
             this.username = username;
             this.password = password;
             //lskadjflkasdjflkasjdflkasjdf
+            // ^ Best comment EUW ^
         }
 
-        public void EditUser(User user) { }
+        //Methods
+        public void EditUser(User user)
+        {
+            
+        }
 
-        public void RemoveUser(User user) { }
+        public void RemoveUser(User user)
+        {
+            
+        }
 
-        public void ChangeUser(string userpassword, string password) { }
+        public void ChangeUser(string userpassword, string password)
+        {
+            
+        }
 
     }
 }

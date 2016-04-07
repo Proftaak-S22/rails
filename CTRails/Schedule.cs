@@ -8,8 +8,14 @@ namespace CTRails
 {
     class Schedule
     {
-        public Schedule(Task task, Reservation reservation) { }
+        public Schedule(Task task, Reservation reservation)
+        {
+            
+        }
 
-        public void CloseSchedule(Schedule schedule) { }
+        public void CloseSchedule(Schedule schedule)
+        {
+            
+        }
     }
 }
