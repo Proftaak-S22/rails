@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CTRails
 {
-    class Section
+    public class Section
     {
         private int sectionNumber;
         public Section(int sectionNumber)

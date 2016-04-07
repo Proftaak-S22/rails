@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CTRails
 {
-    class Track
+    public class Track
     {
         private int trackNumber;
         public Track(int trackNumber, Section section)
