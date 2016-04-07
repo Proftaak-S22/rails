@@ -29,8 +29,11 @@ namespace CTRails.Users
         }
 
         public void EditUser(User user) { }
+
         public void RemoveUser(User user) { }
+
         public void ChangeUser(string userpassword, string password) { }
+
     }
 }
 public enum Geslacht { }
