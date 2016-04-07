@@ -3,7 +3,7 @@
 
 namespace CTRails.Users
 {
-    class Beheerder : User
+    public class Beheerder : User
     {
         //Fields
 

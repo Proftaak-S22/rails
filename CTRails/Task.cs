@@ -8,7 +8,7 @@ using CTRails.Users;
 
 namespace CTRails
 {
-    class Task
+    public class Task
     {
         //Fields
         private int taskNumber;

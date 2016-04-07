@@ -1,17 +1,42 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.OracleClient;
 using CTRails.Users;
-
 
 namespace CTRails
 {
-    class Database
+    public class Database
     {
-        public void GetUser(User user) { }
-        public void GetTram(Tram tram) { }
-        public void GetTrack(Track track) { }
+
+        public Database Instance => instance ?? (instance = new Database());
+
+
+        private Database instance;
+        private OracleConnection connection;
+
+
+
+        private Database()
+        {
+            
+        }
+
+
+        public void GetUser(User user)
+        {
+            
+        }
+
+
+
+        public void GetTram(Tram tram)
+        {
+            
+        }
+
+
+
+        public void GetTrack(Track track)
+        {
+            
+        }
     }
 }

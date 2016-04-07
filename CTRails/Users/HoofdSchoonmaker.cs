@@ -3,7 +3,7 @@
 
 namespace CTRails.Users
 {
-    class HoofdSchoonmaker: Schoonmaker
+    public class HoofdSchoonmaker: Schoonmaker
     {
         //Fields
 

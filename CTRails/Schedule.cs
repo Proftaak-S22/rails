@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CTRails
 {
-    class Schedule
+    public class Schedule
     {
         public Schedule(Task task, Reservation reservation)
         {

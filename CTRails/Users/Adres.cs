@@ -1,6 +1,6 @@
 ﻿namespace CTRails.Users
 {
-    class Adres
+    public class Adres
     {
         //Fields
         private string street;

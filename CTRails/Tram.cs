@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CTRails
 {
-    class Tram
+    public class Tram
     {
         //Fields
         private int tramNumber;
