@@ -8,12 +8,27 @@ namespace CTRails
 {
     public class Tram
     {
+        //Fields
         private int tramNumber;
         private Status status;
-        public Tram (int tramNumber, Status status) { }
-        
-        public void RemoveTram(Tram tram) { }
-        public void EditTram(Tram tram) { }
+
+        //Constructor
+        public Tram(int tramNumber, Status status)
+        {
+            this.tramNumber = tramNumber;
+            this.status = status;
+        }
+
+        //Methods
+        public void RemoveTram(Tram tram)
+        {
+            
+        }
+
+        public void EditTram(Tram tram)
+        {
+            
+        }
     }
 }
 public enum Status { }

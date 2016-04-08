@@ -8,12 +8,19 @@ namespace CTRails
 {
     public class Section
     {
+        //Fields
         private int sectionNumber;
+
+        //Constructor
         public Section(int sectionNumber)
         {
             this.sectionNumber = sectionNumber;
         }
 
-        public void RemoveSection(Section section) { }
+        //Methods
+        public void RemoveSection(Section section)
+        {
+            
+        }
     }
 }

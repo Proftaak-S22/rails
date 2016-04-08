@@ -8,12 +8,19 @@ namespace CTRails
 {
     public class Track
     {
+        //Fields
         private int trackNumber;
+
+        //Constructor
         public Track(int trackNumber, Section section)
         {
             this.trackNumber = trackNumber;
         }
 
-        public void RemoveTrack(Track track) { }
+        //Methods
+        public void RemoveTrack(Track track)
+        {
+            
+        }
     }
 }
