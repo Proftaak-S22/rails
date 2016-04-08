@@ -61,8 +61,8 @@
     <Compile Include="Repositories\IRepository.cs" />
     <Compile Include="Data\IUnitOfWork.cs" />
     <Compile Include="Reservation.cs" />
-    <Compile Include="Users\Adres.cs" />
-    <Compile Include="Users\Beheerder.cs" />
+    <Compile Include="Employees\Adres.cs" />
+    <Compile Include="Employees\Beheerder.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -70,20 +70,20 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Users\HoofdSchoonmaker.cs" />
-    <Compile Include="Users\HoofdTechnicus.cs" />
-    <Compile Include="Users\Machinist.cs" />
+    <Compile Include="Employees\HoofdSchoonmaker.cs" />
+    <Compile Include="Employees\HoofdTechnicus.cs" />
+    <Compile Include="Employees\Machinist.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Schedule.cs" />
-    <Compile Include="Users\Schoonmaker.cs" />
+    <Compile Include="Employees\Schoonmaker.cs" />
     <Compile Include="Section.cs" />
     <Compile Include="Task.cs" />
-    <Compile Include="Users\Technicus.cs" />
+    <Compile Include="Employees\Technicus.cs" />
     <Compile Include="Track.cs" />
     <Compile Include="Tram.cs" />
-    <Compile Include="Users\Employee.cs" />
-    <Compile Include="Users\WagenParkBeheerder.cs" />
+    <Compile Include="Employees\Employee.cs" />
+    <Compile Include="Employees\WagenParkBeheerder.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
