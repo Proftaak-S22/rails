@@ -18,11 +18,4 @@ namespace CTRails.Interfaces
 
 
     }
-    public interface IDataContext<T> where T : class
-    {
-
-
-        T Find(int id);
-
-    }
 }
