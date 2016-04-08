@@ -33,15 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Oracle.ManagedDataAccessDTC">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Oracle Developer Tools for VS2015\odp.net\managed\x64\Oracle.ManagedDataAccessDTC.dll</HintPath>
-    </Reference>
-    <Reference Include="Oracle.ManagedDataAccessIOP">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Oracle Developer Tools for VS2015\odp.net\managed\x64\Oracle.ManagedDataAccessIOP.dll</HintPath>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>packages\Oracle.ManagedDataAccess.12.1.2400\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.OracleClient" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,6 +50,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\OracleDataContext.cs" />
+    <Compile Include="Repositories\EmployeeRepository.cs" />
+    <Compile Include="Repositories\Repository.cs" />
+    <Compile Include="Data\TestDataContext.cs" />
+    <Compile Include="Data\UnitOfWork.cs" />
+    <Compile Include="Data\IDataContext.cs" />
+    <Compile Include="Repositories\IEmployeeRepository.cs" />
+    <Compile Include="Data\IRailsDataContext.cs" />
+    <Compile Include="Repositories\IRepository.cs" />
+    <Compile Include="Data\IUnitOfWork.cs" />
     <Compile Include="Reservation.cs" />
     <Compile Include="Users\Adres.cs" />
     <Compile Include="Users\Beheerder.cs" />
@@ -75,7 +82,7 @@
     <Compile Include="Users\Technicus.cs" />
     <Compile Include="Track.cs" />
     <Compile Include="Tram.cs" />
-    <Compile Include="Users\User.cs" />
+    <Compile Include="Users\Employee.cs" />
     <Compile Include="Users\WagenParkBeheerder.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -89,6 +96,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -101,6 +109,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataContexts\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

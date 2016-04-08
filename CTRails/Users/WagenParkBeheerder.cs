@@ -3,7 +3,7 @@
 
 namespace CTRails.Users
 {
-    public class WagenParkBeheerder : User
+    public class WagenParkBeheerder : Employee
     {
         public WagenParkBeheerder(string name, Geslacht gender, DateTime birthdate, string email, string nationality, string username, string password) : base(name, gender, birthdate, email, nationality, username, password) { }
         public void GetTramLocatie(Tram tram) { }

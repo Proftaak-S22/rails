@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace CTRails.Users
 {
-    public class User
+    public class Employee
     {
+        public int ID { get; private set; }
         private string name;
         private Geslacht gender;
         private DateTime birthdate;
@@ -16,7 +17,7 @@ namespace CTRails.Users
         private string username;
         private string password;
 
-        public User(string name, Geslacht gender, DateTime birthdate, string email, string nationality, string username, string password)
+        public Employee(string name, Geslacht gender, DateTime birthdate, string email, string nationality, string username, string password)
         {
             this.name = name;
             this.gender = gender;
@@ -28,12 +29,21 @@ namespace CTRails.Users
             //lskadjflkasdjflkasjdflkasjdf
         }
 
-        public void EditUser(User user) { }
+        public void EditUser(Employee user) { }
 
-        public void RemoveUser(User user) { }
+        public void RemoveUser(Employee user) { }
 
         public void ChangeUser(string userpassword, string password) { }
 
     }
 }
-public enum Geslacht { }
+
+
+
+public enum Geslacht
+{
+
+    M = 0,
+    F
+
+}
