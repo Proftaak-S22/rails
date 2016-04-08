@@ -20,7 +20,7 @@ namespace CTRails.Users
         :base(name, gender, birthdate, email, nationality, username, password) { }
 
         //Methods
-        public void ChangeSchedule(User user, DateTime datetime, Tram tram)
+        public void ChangeSchedule(Employee user, DateTime datetime, Tram tram)
         {
             
         }

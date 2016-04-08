@@ -15,7 +15,7 @@ namespace CTRails
         private DateTime Time;
 
         //Constructor
-        public Task(int taskNumber, User user, Tram tram, DateTime time, Section startSection, Section endSection)
+        public Task(int taskNumber, Employee user, Tram tram, DateTime time, Section startSection, Section endSection)
         {
             this.taskNumber = taskNumber;
             this.Time = time;

@@ -3,7 +3,7 @@
 
 namespace CTRails.Users
 {
-    public class Beheerder : User
+    public class Beheerder : Employee
     {
         //Fields
 
@@ -36,7 +36,7 @@ namespace CTRails.Users
             
         }
 
-        public void VerwijderAccount(User user)
+        public void VerwijderAccount(Employee user)
         {
             
         }
