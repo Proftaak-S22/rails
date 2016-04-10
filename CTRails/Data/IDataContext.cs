@@ -1,19 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
-using CTRails.Users;
+﻿using System.Collections.Generic;
 
 
-namespace CTRails.Interfaces
+namespace CTRails.Data
 {
 
     public interface IDataContext
     {
 
-
+        ICollection<T> Set <T>();
         void SaveChanges();
 
 

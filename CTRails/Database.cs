@@ -1,5 +1,6 @@
 ﻿using System;
-using CTRails.Users;
+using CTRails.Entities;
+using CTRails.Entities.Employees;
 using Oracle.ManagedDataAccess.Client;
 
 namespace CTRails

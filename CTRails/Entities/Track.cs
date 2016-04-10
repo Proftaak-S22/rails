@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CTRails
+﻿namespace CTRails.Entities
 {
     public class Track
     {
@@ -12,7 +6,7 @@ namespace CTRails
         private int trackNumber;
 
         //Constructor
-        public Track(int trackNumber, Section section)
+        public Track(int trackNumber, Sector sector)
         {
             this.trackNumber = trackNumber;
         }

@@ -2,16 +2,17 @@
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace CTRails.Interfaces
+
+namespace CTRails.Repositories
 {
     public interface IRepository<T> where T : class
     {
         T Get(int id);
         IEnumerable<T> GetAll();
-        IEnumerable<T> Find(Expression<Func<T, bool>> predicate);
+        IEnumerable<T> Find(Func<T, bool> predicate);
 
         // This method was not in the videos, but I thought it would be useful to add.
-        T SingleOrDefault(Expression<Func<T, bool>> predicate);
+        T SingleOrDefault(Func<T, bool> predicate);
 
         void Add(T entity);
         void AddRange(IEnumerable<T> entities);

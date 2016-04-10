@@ -1,68 +1,138 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-using CTRails.Interfaces;
-using CTRails.Users;
+using CTRails.Entities;
+using CTRails.Entities.Employees;
 using Oracle.ManagedDataAccess.Client;
 
 
 namespace CTRails.Data
 {
-    public class OracleDataContext : IRailsDataContext
+    
+    public class OracleDataContext : DataContext, IRailsDataContext
     {
 
         private string connectionString = "User Id=dbi346087;Password=Tram123;DATA SOURCE=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=fhictora01.fhict.local)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=fhictora)));";
         private OracleConnection connection;
-        private string username;
-        private string password;
-        private string host;
-        private string port;
-        private string serviceName;
 
 
-        public OracleDataContext(string username, string password, string host, string port, string serviceName)
-        {
-            this.username = username;
-            this.password = password;
-            this.host = host;
-            this.port = port;
-            this.serviceName = serviceName;
+        private ICollection<Employee> employees;
+        private ICollection<Status> statuses;
 
-            connectionString = "User Id=" + username + ";Password=" + password + ";DATA SOURCE=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=" + host + ")(PORT=" + port + "))(CONNECT_DATA=(SERVICE_NAME=" + serviceName + ")));";
-        }
+        public OracleDataContext() { } 
 
-        public OracleDataContext() { }
 
-        public void SaveChanges()
+
+        public override void SaveChanges()
         {
             throw new NotImplementedException();
         }
 
 
 
+        private OracleDataReader ConnectAndQuery(string query)
+        {
+            connection = new OracleConnection
+            {
+                ConnectionString = connectionString
+            };
+
+            connection.Open();
+
+            OracleCommand command = new OracleCommand(query, connection);
+            return command.ExecuteReader();
+        }
+
+
+
+        private void Close()
+        {
+            connection.Close();
+        }
+
+
+
+        
         public IEnumerable<Employee> Employees
         {
             get
             {
-                connection = new OracleConnection
-                {
-                    ConnectionString = connectionString
-                };
-                connection.Open();
-                string query = "SELECT * FROM TRM_EMPLOYEE";
-                OracleCommand command = new OracleCommand(query, connection);
-                OracleDataReader reader = command.ExecuteReader();
-                List<Employee> employees = new List<Employee>();
+                if (employees != null)
+                    return employees;
+
+                OracleDataReader reader = ConnectAndQuery("SELECT * FROM TRM_EMPLOYEE");
+
+                employees = new List<Employee>();
+
                 while (reader.Read())
                 {
-                    Employee x = new Schoonmaker(string.Empty, Geslacht.M, DateTime.MaxValue, string.Empty, string.Empty, string.Empty, string.Empty);
-                    employees.Add(x);
+                    Address address = new Address(
+                        string.Empty,
+                        Convert.ToInt32(reader["HOUSENUMBER"]),
+                        Convert.ToString(reader["CITY"]),
+                        string.Empty,
+                        Convert.ToString(reader["POSTALCODE"]),
+                        Convert.ToString(reader["ADDITION"]));
+
+                    Gender gender = Convert.ToChar(reader["SEX"]) == 'M' ? Gender.M : Gender.F;
+
+                    Employee next = new Janitor(
+                        Convert.ToInt32(reader["ID"]),
+                        null,
+                        reader["USERNAME"].ToString(),
+                        reader["PASSWORDHASH"].ToString(),
+                        reader["FIRSTNAME"].ToString(),
+                        reader["LASTNAME"].ToString(),
+                        reader["PREFIX"].ToString(),
+                        reader["EMAIL"].ToString(),
+                        Convert.ToDateTime(reader["BIRTHDATE"]),
+                        reader["NATIONALITY"].ToString(),
+                        address,
+                        gender);
+
+                    employees.Add(next);
                 }
-                connection.Close();
+                
+                Close();
+
                 return employees;
             }
+        }
+
+
+        
+        public IEnumerable<Status> Statuses
+        {
+            get
+            {
+                if (statuses != null)
+                    return statuses;
+
+                OracleDataReader reader = ConnectAndQuery("SELECT * FROM TRM_STATUS");
+
+                statuses = new List<Status>();
+
+                while (reader.Read())
+                {
+                    Status status = new Status(Convert.ToInt32(reader["ID"]),
+                        Convert.ToString(reader["NAME"]));
+
+                    statuses.Add(status);
+                }
+
+                Close();
+
+                return statuses;
+            }
+        }
+
+
+        public IEnumerable<AccountType> AccountTypes
+        {
+            get { throw new NotImplementedException(); }
         }
 
     }

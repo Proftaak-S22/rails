@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CTRails.Interfaces;
+using CTRails.Repositories;
 
 
-namespace CTRails.DataContexts
+namespace CTRails.Data
 {
     public class UnitOfWork : IUnitOfWork
     {
@@ -20,6 +16,7 @@ namespace CTRails.DataContexts
             this.context = context;
 
             Employees = new EmployeeRepository(context);
+            Statuses = new StatusRepository(context);
 
             
         }
@@ -35,6 +32,12 @@ namespace CTRails.DataContexts
 
 
         public IEmployeeRepository Employees { get; private set; }
+
+
+        public IStatusRepository Statuses { get; private set; }
+
+
+        public IAccountTypeRepository AccountTypes { get; private set; }
 
 
 

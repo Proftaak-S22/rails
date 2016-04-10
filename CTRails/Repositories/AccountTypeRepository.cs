@@ -1,15 +1,16 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using CTRails.Data;
+using CTRails.Entities;
 using CTRails.Entities.Employees;
 
 
 namespace CTRails.Repositories
 {
-    public class EmployeeRepository : Repository<Employee>, IEmployeeRepository
+    public class AccountTypeRepository : Repository<AccountType>, IAccountTypeRepository
     {
 
-        public EmployeeRepository(IRailsDataContext context)
+        public AccountTypeRepository(IRailsDataContext context)
             : base(context)
         {
             

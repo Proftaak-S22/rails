@@ -1,27 +1,37 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CTRails.Interfaces;
-using CTRails.Users;
+using CTRails.Entities;
+using CTRails.Entities.Employees;
 
 
-namespace CTRails.DataContexts
+namespace CTRails.Data
 {
     public class TestDataContext : IRailsDataContext
     {
 
         public IEnumerable<Employee> Employees
         {
-            get
-            {
-                Employee e = new Schoonmaker("harrie", Geslacht.M, DateTime.MaxValue, "ssdf", "a", string.Empty, string.Empty);
-                List<Employee> l = new List<Employee>();
-                l.Add(e);
-                return l;
-            }
+            get { throw new NotImplementedException(); }
         }
+
+
+        public IEnumerable<Status> Statuses
+        {
+            get { throw new NotImplementedException(); }
+        }
+
+
+        public IEnumerable<AccountType> AccountTypes
+        {
+            get { throw new NotImplementedException(); }
+        }
+
+
+        public IEnumerable<T> Set <T>()
+        {
+            throw new NotImplementedException();
+        }
+
 
 
         public void SaveChanges()
@@ -29,5 +39,9 @@ namespace CTRails.DataContexts
             throw new NotImplementedException();
         }
 
+        ICollection<T> IDataContext.Set<T>()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

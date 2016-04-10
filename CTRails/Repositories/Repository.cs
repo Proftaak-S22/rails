@@ -2,77 +2,80 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
-using CTRails.Interfaces;
+using CTRails.Data;
+using CTRails.Entities;
 
 
-namespace CTRails.DataContexts
+namespace CTRails.Repositories
 {
     public abstract class Repository<T> : IRepository<T> where T : class
     {
 
-        protected IRailsDataContext context;
+        protected IDataContext context;
 
 
 
-        public Repository(IRailsDataContext context)
+        public Repository(IDataContext context)
         {
             this.context = context;
         } 
 
         public virtual T Get(int id)
         {
-            throw new NotImplementedException();
+            return context.Set<T>().First(x => 
+            x.GetType().GetProperty("ID", typeof(int)) != null && 
+            (int) x.GetType().GetProperty("ID", typeof(int)).GetValue(x) == id);
         }
 
 
 
         public IEnumerable<T> GetAll()
         {
-            throw new NotImplementedException();
+            return context.Set<T>().ToList();
         }
 
 
 
-        public virtual IEnumerable<T> Find(Expression<Func<T, bool>> predicate)
+        public IEnumerable<T> Find(Func<T, bool> predicate)
         {
-            throw new NotImplementedException();
+            return context.Set<T>().Where(predicate);
         }
 
 
 
-        public virtual T SingleOrDefault(Expression<Func<T, bool>> predicate)
+        public T SingleOrDefault(Func<T, bool> predicate)
         {
-            throw new NotImplementedException();
+            return context.Set<T>().SingleOrDefault(predicate);
         }
 
 
 
         public virtual void Add(T entity)
         {
-            throw new NotImplementedException();
+            context.Set<T>().Add(entity);
         }
 
 
 
         public virtual void AddRange(IEnumerable<T> entities)
         {
-            throw new NotImplementedException();
+            foreach (T entity in entities)
+                context.Set<T>().Add(entity);
         }
 
 
 
         public virtual void Remove(T entity)
         {
-            throw new NotImplementedException();
+            context.Set<T>().Remove(entity);
         }
 
 
 
         public virtual void RemoveRange(IEnumerable<T> entities)
         {
-            throw new NotImplementedException();
+            foreach (T entity in entities)
+                context.Set<T>().Remove(entity);
         }
 
     }

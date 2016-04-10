@@ -1,9 +1,8 @@
 ﻿using System;
+using System.Linq;
 using System.Windows.Forms;
 using CTRails.Data;
-using CTRails.DataContexts;
-using CTRails.Interfaces;
-using CTRails.Users;
+using CTRails.Entities.Employees;
 
 
 namespace CTRails
@@ -17,9 +16,8 @@ namespace CTRails
         {
             InitializeComponent();
 
-            uow = new UnitOfWork(new TestDataContext());
-
-            Employee employee = uow.Employees.Get(0);
+            uow = new UnitOfWork(new OracleDataContext());
+            Console.WriteLine(uow.Employees.GetAll());
 
             Console.WriteLine();
         }

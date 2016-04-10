@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CTRails.Users;
+using CTRails.Entities.Employees;
 
 
-namespace CTRails
+namespace CTRails.Entities
 {
     public class Task
     {
@@ -15,7 +11,7 @@ namespace CTRails
         private DateTime Time;
 
         //Constructor
-        public Task(int taskNumber, Employee user, Tram tram, DateTime time, Section startSection, Section endSection)
+        public Task(int taskNumber, Employee user, Tram tram, DateTime time, Sector startSector, Sector endSector)
         {
             this.taskNumber = taskNumber;
             this.Time = time;
