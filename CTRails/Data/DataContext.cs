@@ -13,14 +13,9 @@ namespace CTRails.Data
 
         public virtual ICollection<T> Set<T>()
         {
-            PropertyInfo[] properties = GetType().GetProperties();
-            foreach (PropertyInfo property in properties)
-            {
-                if (property.GetMethod.ReturnType == typeof(IEnumerable<T>))
-                    return property.GetValue(this, null) as ICollection<T>;
-            }
+            PropertyInfo p = GetType().GetProperties().First(x => x.GetMethod.ReturnType == typeof(IEnumerable<T>));
 
-            return null;
+            return p.GetValue(this, null) as ICollection<T>;
         }
 
 

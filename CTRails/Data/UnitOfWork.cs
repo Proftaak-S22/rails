@@ -17,7 +17,7 @@ namespace CTRails.Data
 
             Employees = new EmployeeRepository(context);
             Statuses = new StatusRepository(context);
-
+            AccountTypes = new AccountTypeRepository(context);
             
         }
 
@@ -26,7 +26,10 @@ namespace CTRails.Data
         /// </summary>
         public void Dispose()
         {
-            throw new NotImplementedException();
+            Employees = null;
+            Statuses = null;
+            AccountTypes = null;
+            context = null;
         }
 
 

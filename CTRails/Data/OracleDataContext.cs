@@ -21,6 +21,7 @@ namespace CTRails.Data
 
         private ICollection<Employee> employees;
         private ICollection<Status> statuses;
+        private ICollection<AccountType> accountTypes; 
 
         public OracleDataContext() { } 
 
@@ -132,7 +133,28 @@ namespace CTRails.Data
 
         public IEnumerable<AccountType> AccountTypes
         {
-            get { throw new NotImplementedException(); }
+            get
+            {
+                if (accountTypes != null)
+                    return accountTypes;
+
+                OracleDataReader reader = ConnectAndQuery("SELECT * FROM TRM_ACCOUNTTYPE");
+
+                accountTypes = new List<AccountType>();
+
+                while (reader.Read())
+                {
+                    AccountType accountType = new AccountType(
+                        Convert.ToInt32(reader["ID"]),
+                        Convert.ToString(reader["NAME"]));
+
+                    accountTypes.Add(accountType);
+                }
+
+                Close();
+
+                return accountTypes;
+            }
         }
 
     }
