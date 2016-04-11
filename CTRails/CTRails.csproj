@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\DataContext.cs" />
+    <Compile Include="Exceptions\EntityNotPresentException.cs" />
     <Compile Include="Data\OracleDataContext.cs" />
     <Compile Include="Entities\AccountType.cs" />
     <Compile Include="Entities\Entity.cs" />
