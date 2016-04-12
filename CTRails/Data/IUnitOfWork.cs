@@ -7,9 +7,10 @@ namespace CTRails.Data
 {
     public interface IUnitOfWork : IDisposable
     {
-        Repository<Employee> Employees { get; }
+        IEmployeeRepository Employees { get; }
         IStatusRepository Statuses { get; }
         IAccountTypeRepository AccountTypes { get; }
+        ITrackRepository Tracks { get; }
         int Complete();
     }
 }

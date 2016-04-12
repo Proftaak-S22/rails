@@ -10,10 +10,12 @@ namespace CTRails.Repositories
     public class AccountTypeRepository : Repository<AccountType>, IAccountTypeRepository
     {
 
+        public IRailsDataContext Context { get; set; }
+
         public AccountTypeRepository(IRailsDataContext context)
             : base(context)
         {
-            
+            Context = context;
         }
 
     }

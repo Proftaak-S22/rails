@@ -19,8 +19,15 @@ namespace CTRails.Data
             Employees = new EmployeeRepository(context);
             Statuses = new StatusRepository(context);
             AccountTypes = new AccountTypeRepository(context);
+            Tracks = new TrackRepository(context);
             
         }
+
+
+
+        
+
+
 
         /// <summary>
         /// Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
@@ -35,13 +42,15 @@ namespace CTRails.Data
 
 
 
-        public Repository<Employee> Employees { get; private set; }
+        public IEmployeeRepository Employees { get; private set; }
 
 
         public IStatusRepository Statuses { get; private set; }
 
 
         public IAccountTypeRepository AccountTypes { get; private set; }
+
+        public ITrackRepository Tracks { get; private set; }
 
 
 
