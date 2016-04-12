@@ -13,8 +13,6 @@ namespace CTRails.Repositories
 
         protected IDataContext context;
 
-
-
         public Repository(IDataContext context)
         {
             this.context = context;

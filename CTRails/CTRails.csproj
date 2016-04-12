@@ -56,6 +56,7 @@
     <Compile Include="Entities\AccountType.cs" />
     <Compile Include="Entities\Entity.cs" />
     <Compile Include="Entities\Status.cs" />
+    <Compile Include="Repositories\TrackRepository.cs" />
     <Compile Include="Repositories\IAccountTypeRepository.cs" />
     <Compile Include="Repositories\AccountTypeRepository.cs" />
     <Compile Include="Repositories\StatusRepository.cs" />

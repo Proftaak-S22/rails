@@ -1,20 +1,16 @@
 ﻿namespace CTRails.Entities
 {
-    public class Track
+    public class Track : Entity
     {
         //Fields
-        private int trackNumber;
+        public int Number { get; private set; }
+
 
         //Constructor
-        public Track(int trackNumber, Sector sector)
+        public Track(int id, int number)
+            : base (id)
         {
-            this.trackNumber = trackNumber;
-        }
-
-        //Methods
-        public void RemoveTrack(Track track)
-        {
-            
+            Number = number;
         }
     }
 }

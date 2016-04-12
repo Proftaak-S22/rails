@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using CTRails.Entities;
 using CTRails.Entities.Employees;
 using Oracle.ManagedDataAccess.Client;
@@ -41,7 +42,14 @@ namespace CTRails.Data
                 ConnectionString = connectionString
             };
 
-            connection.Open();
+            try
+            {
+                connection.Open();
+            }
+            catch (Oracle.ManagedDataAccess.Client.OracleException)
+            {
+                
+            }
 
             OracleCommand command = new OracleCommand(query, connection);
             return command.ExecuteReader();

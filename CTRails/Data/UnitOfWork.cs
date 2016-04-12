@@ -1,4 +1,5 @@
 ﻿using System;
+using CTRails.Entities.Employees;
 using CTRails.Repositories;
 
 
@@ -34,7 +35,7 @@ namespace CTRails.Data
 
 
 
-        public IEmployeeRepository Employees { get; private set; }
+        public Repository<Employee> Employees { get; private set; }
 
 
         public IStatusRepository Statuses { get; private set; }
