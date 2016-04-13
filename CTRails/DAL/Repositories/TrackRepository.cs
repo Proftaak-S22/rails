@@ -1,11 +1,12 @@
-﻿using CTRails.Entities;
+﻿using CTRails.DAL.Contexts;
+using CTRails.Entities;
 
 
 namespace CTRails.DAL.Repositories
 {
-    public class TrackRepository : RailsRepository<Track>, ITrackRepository
+    public class TrackRepository : Repository<Track>
     {
-        public TrackRepository(IRailsDataContext context)
+        public TrackRepository(IDataContext<Track> context)
             : base(context)
         {
             

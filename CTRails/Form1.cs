@@ -18,18 +18,16 @@ namespace CTRails
         {
             InitializeComponent();
 
-            unit = new UnitOfWork(new OracleDataContext());
+            unit = new UnitOfWork();
 
-            Entity i = unit.Employees.Get(1);
+            foreach (Employee e in unit.Employees.Where(x => x.Gender == Gender.M))
+                Console.WriteLine(e.FirstName);
 
-            foreach (Employee e in unit.Employees.GetAll())
-                Console.WriteLine(e.FirstName + " " + e.LastName);
-
-            foreach (Status s in unit.Statuses.GetAll())
+            foreach (Status s in unit.Statuses.Get())
                 Console.WriteLine(s.Name);
 
-            foreach (AccountType at in unit.AccountTypes.GetAll())
-                Console.WriteLine(at.Name);
+            foreach (AccountType a in unit.AccountTypes.Get())
+                Console.WriteLine(a.Name);
 
             unit.Complete();
         }
