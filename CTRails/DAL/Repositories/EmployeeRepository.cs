@@ -1,11 +1,14 @@
-﻿using CTRails.Entities.Employees;
+﻿using System;
+using System.Collections.Generic;
+using CTRails.DAL.Contexts;
+using CTRails.Entities.Employees;
 
 
 namespace CTRails.DAL.Repositories
 {
-    public class EmployeeRepository : RailsRepository<Employee>, IEmployeeRepository
+    public class EmployeeRepository : Repository<Employee>
     {
-        public EmployeeRepository(IRailsDataContext context)
+        public EmployeeRepository(IDataContext<Employee> context)
             : base(context)
         {
             

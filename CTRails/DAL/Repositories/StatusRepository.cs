@@ -1,11 +1,12 @@
-﻿using CTRails.Entities;
+﻿using CTRails.DAL.Contexts;
+using CTRails.Entities;
 
 
 namespace CTRails.DAL.Repositories
 {
-    public class StatusRepository : RailsRepository<Status>, IStatusRepository
+    public class StatusRepository : Repository<Status>
     {
-        public StatusRepository(IRailsDataContext context)
+        public StatusRepository(IDataContext<Status> context)
             : base(context)
         {
 
