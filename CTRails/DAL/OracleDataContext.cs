@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using CTRails.DAL.Contexts;
 using CTRails.Entities;
 using CTRails.Entities.Employees;
 using Oracle.ManagedDataAccess.Client;
@@ -8,7 +9,7 @@ using Oracle.ManagedDataAccess.Client;
 namespace CTRails.DAL
 {
     
-    public class OracleDataContext : DataContext, IRailsDataContext
+    public abstract class OracleDataContext<T> : IDataContext<T>
     {
 
         private string connectionString = "User Id=dbi346087;Password=Tram123;DATA SOURCE=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=fhictora01.fhict.local)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=fhictora)));";
@@ -17,16 +18,34 @@ namespace CTRails.DAL
 
         private ICollection<Employee> employees;
         private ICollection<Status> statuses;
-        private ICollection<AccountType> accountTypes; 
-
-        public OracleDataContext() { } 
+        private ICollection<AccountType> accountTypes;
 
 
 
-        public override void SaveChanges()
+        public OracleDataContext(string connection)
+        {
+            this.connection = new OracleConnection(connection);
+        }
+
+        public void Add(T entity)
         {
             throw new NotImplementedException();
         }
+
+        public void Delete(T entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Update(T entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public virtual IEnumerable<T> Get()
+        {
+            throw new NotImplementedException();
+        } 
 
 
 

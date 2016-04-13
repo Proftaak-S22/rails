@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using CTRails.DAL.Contexts;
 
 
 namespace CTRails.DAL.Repositories
@@ -8,69 +9,41 @@ namespace CTRails.DAL.Repositories
     public abstract class Repository<T> : IRepository<T> where T : class
     {
 
-        protected IDataContext context;
+        protected IDataContext<T> context;
 
-        public Repository(IDataContext context)
+        public Repository(IDataContext<T> context)
         {
             this.context = context;
-        } 
-
-        public virtual T Get(int id)
-        {
-            return context.Set<T>().First(x => 
-            x.GetType().GetProperty("ID", typeof(int)) != null && 
-            (int) x.GetType().GetProperty("ID", typeof(int)).GetValue(x) == id);
         }
-
-
-
-        public IEnumerable<T> GetAll()
-        {
-            return context.Set<T>().ToList();
-        }
-
-
-
-        public IEnumerable<T> Find(Func<T, bool> predicate)
-        {
-            return context.Set<T>().Where(predicate);
-        }
-
-
-
-        public T SingleOrDefault(Func<T, bool> predicate)
-        {
-            return context.Set<T>().SingleOrDefault(predicate);
-        }
-
-
 
         public virtual void Add(T entity)
         {
-            context.Set<T>().Add(entity);
+            context.Add(entity);
         }
 
 
 
-        public virtual void AddRange(IEnumerable<T> entities)
+        public virtual void Delete(T entity)
         {
-            foreach (T entity in entities)
-                context.Set<T>().Add(entity);
+            context.Add(entity);
         }
 
 
 
-        public virtual void Remove(T entity)
+        public virtual void Update(T entity)
         {
-            context.Set<T>().Remove(entity);
+            context.Add(entity);
         }
 
 
-
-        public virtual void RemoveRange(IEnumerable<T> entities)
+        public IEnumerable<T> Get()
         {
-            foreach (T entity in entities)
-                context.Set<T>().Remove(entity);
+            return context.Get();
+        }
+
+        public virtual IEnumerable<T> Where(Func<T, bool> predicate)
+        {
+            return context.Get().Where(predicate);
         }
 
     }
