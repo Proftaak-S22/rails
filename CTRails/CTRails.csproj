@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Oracle.ManagedDataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
-      <HintPath>packages\Oracle.ManagedDataAccess.12.1.2400\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+      <HintPath>packages\Oracle.ManagedDataAccess.12.1.022\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -56,6 +56,12 @@
     <Compile Include="Entities\AccountType.cs" />
     <Compile Include="Entities\Entity.cs" />
     <Compile Include="Entities\Status.cs" />
+    <Compile Include="Repositories\IRouteRepository.cs" />
+    <Compile Include="Repositories\ISectorRepository.cs" />
+    <Compile Include="Repositories\ITramRepository.cs" />
+    <Compile Include="Repositories\ITramStatusRepository.cs" />
+    <Compile Include="Repositories\RouteRepository.cs" />
+    <Compile Include="Repositories\SectorRepository.cs" />
     <Compile Include="Repositories\TrackRepository.cs" />
     <Compile Include="Repositories\IAccountTypeRepository.cs" />
     <Compile Include="Repositories\AccountTypeRepository.cs" />
@@ -70,6 +76,8 @@
     <Compile Include="Data\IRailsDataContext.cs" />
     <Compile Include="Repositories\IRepository.cs" />
     <Compile Include="Data\IUnitOfWork.cs" />
+    <Compile Include="Repositories\TramRepository.cs" />
+    <Compile Include="Repositories\TramStatusRepository.cs" />
     <Compile Include="Reservation.cs" />
     <Compile Include="Address.cs" />
     <Compile Include="Entities\Employees\Administrator.cs" />
