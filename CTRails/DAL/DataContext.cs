@@ -33,6 +33,9 @@ namespace CTRails.DAL
 
 
 
+        /// <summary>
+        /// Must be overridden.
+        /// </summary>
         public virtual void SaveChanges()
         {
             throw new NotImplementedException();
