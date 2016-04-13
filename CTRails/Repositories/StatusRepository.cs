@@ -7,18 +7,12 @@ using CTRails.Entities.Employees;
 
 namespace CTRails.Repositories
 {
-    public class StatusRepository : Repository<Status>, IStatusRepository
+    public class StatusRepository : RailsRepository<Status>, IStatusRepository
     {
-
-        public IRailsDataContext Context { get; set; }
-
-
-
         public StatusRepository(IRailsDataContext context)
             : base(context)
         {
-            Context = context;
-        }
 
+        }
     }
 }

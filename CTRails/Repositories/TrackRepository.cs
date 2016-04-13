@@ -7,18 +7,12 @@ using CTRails.Entities.Employees;
 
 namespace CTRails.Repositories
 {
-    public class TrackRepository : Repository<Track>, ITrackRepository
+    public class TrackRepository : RailsRepository<Track>, ITrackRepository
     {
-
-        public IRailsDataContext Context { get; set; }
-
-
-
         public TrackRepository(IRailsDataContext context)
             : base(context)
         {
-            Context = context;
+            
         }
-
     }
 }
