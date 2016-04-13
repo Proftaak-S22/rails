@@ -4,11 +4,13 @@
     {
         //Fields
         private int sectionNumber;
+        private Track track;
 
         //Constructor
-        public Sector(int sectionNumber)
+        public Sector(int sectionNumber, Track track)
         {
             this.sectionNumber = sectionNumber;
+            this.track = track;
         }
 
         //Methods
