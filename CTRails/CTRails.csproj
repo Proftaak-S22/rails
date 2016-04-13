@@ -51,6 +51,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\DataContext.cs" />
+    <Compile Include="Entities\Route.cs" />
+    <Compile Include="Entities\TramStatus.cs" />
     <Compile Include="Exceptions\EntityNotPresentException.cs" />
     <Compile Include="DAL\OracleDataContext.cs" />
     <Compile Include="Entities\AccountType.cs" />
