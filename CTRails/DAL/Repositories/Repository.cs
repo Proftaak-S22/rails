@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
-using CTRails.Data;
-using CTRails.Entities;
 
 
-namespace CTRails.Repositories
+namespace CTRails.DAL.Repositories
 {
     public abstract class Repository<T> : IRepository<T> where T : class
     {

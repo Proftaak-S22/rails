@@ -1,16 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using CTRails.Entities;
 using CTRails.Entities.Employees;
 using Oracle.ManagedDataAccess.Client;
 
 
-namespace CTRails.Data
+namespace CTRails.DAL
 {
     
     public class OracleDataContext : DataContext, IRailsDataContext

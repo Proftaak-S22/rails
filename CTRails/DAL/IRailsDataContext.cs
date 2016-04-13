@@ -3,7 +3,7 @@ using CTRails.Entities;
 using CTRails.Entities.Employees;
 
 
-namespace CTRails.Data
+namespace CTRails.DAL
 {
     public interface IRailsDataContext : IDataContext
     {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 
 
-namespace CTRails.Data
+namespace CTRails.DAL
 {
 
     public interface IDataContext

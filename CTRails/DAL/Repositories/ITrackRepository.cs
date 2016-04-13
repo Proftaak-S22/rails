@@ -1,8 +1,7 @@
 ﻿using CTRails.Entities;
-using CTRails.Entities.Employees;
 
 
-namespace CTRails.Repositories
+namespace CTRails.DAL.Repositories
 {
     public interface ITrackRepository : IRepository<Track>
     {

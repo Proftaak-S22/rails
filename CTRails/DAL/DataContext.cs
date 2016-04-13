@@ -2,13 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using CTRails.Entities.Employees;
 using CTRails.Exceptions;
 
 
-namespace CTRails.Data
+namespace CTRails.DAL
 {
 
     public abstract class DataContext : IDataContext

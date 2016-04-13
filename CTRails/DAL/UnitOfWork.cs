@@ -1,9 +1,7 @@
-﻿using System;
-using CTRails.Entities.Employees;
-using CTRails.Repositories;
+﻿using CTRails.DAL.Repositories;
 
 
-namespace CTRails.Data
+namespace CTRails.DAL
 {
     public class UnitOfWork : IUnitOfWork
     {

@@ -4,7 +4,7 @@ using CTRails.Entities;
 using CTRails.Entities.Employees;
 
 
-namespace CTRails.Data
+namespace CTRails.DAL
 {
     public class TestDataContext : IRailsDataContext
     {

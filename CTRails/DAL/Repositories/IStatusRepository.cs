@@ -1,7 +1,7 @@
 ﻿using CTRails.Entities;
 
 
-namespace CTRails.Repositories
+namespace CTRails.DAL.Repositories
 {
     public interface IStatusRepository : IRepository<Status>
     {
