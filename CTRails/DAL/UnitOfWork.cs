@@ -10,10 +10,16 @@ namespace CTRails.DAL
         public UnitOfWork()
         {
 
-            Employees = new EmployeeRepository(new EmployeeOracleContext());
-            Statuses = new StatusRepository(new StatusOracleContext());
             AccountTypes = new AccountTypeRepository(new AccountTypeOracleContext());
+            AttachedTracks = new AttachedTrackRepository(new AttachedTrackOracleContext());
+            Employees = new EmployeeRepository(new EmployeeOracleContext());
+            Routes = new RouteRepository(new RouteOracleContext());
+            //Sectors = new SectorRepository(new SectorOracleContext());
+            Statuses = new StatusRepository(new StatusOracleContext());
             Tracks = new TrackRepository(new TrackOracleContext());
+            //TrackRoutes = new TrackRouteRepository(new TrackRouteOracleContext());
+            Trams = new TramRepository(new TramOracleContext());
+            //TramRoutes = new TramRouteRepository(new TramRouteOracleContext());
         }
 
 
@@ -32,17 +38,23 @@ namespace CTRails.DAL
             AccountTypes = null;
         }
 
-
-
-        public EmployeeRepository Employees { get; private set; }
-
-
-        public StatusRepository Statuses { get; private set; }
-
-
         public AccountTypeRepository AccountTypes { get; private set; }
-
+        public AttachedTrackRepository AttachedTracks { get; private set; }
+        public EmployeeRepository Employees { get; private set; }
+        public RouteRepository Routes { get; private set; }
+        public SectorRepository Sectors { get; private set; }
+        public StatusRepository Statuses { get; private set; }
         public TrackRepository Tracks { get; private set; }
+        public TrackRouteRepository TrackRoutes { get; private set; }
+        public TramRepository Trams { get; private set; }
+        public TramRouteRepository TramRoutes { get; private set; }
+
+
+
+
+
+
+
 
 
 
