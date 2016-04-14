@@ -33,11 +33,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Oracle.ManagedDataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
-      <HintPath>packages\Oracle.ManagedDataAccess.12.1.022\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+      <HintPath>packages\Oracle.ManagedDataAccess.12.1.2400\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -50,34 +59,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\DataContext.cs" />
+    <Compile Include="DAL\Contexts\StatusOracleContext.cs" />
+    <Compile Include="DAL\Contexts\AccountTypeOracleContext.cs" />
+    <Compile Include="DAL\Contexts\EmployeeOracleContext.cs" />
+    <Compile Include="Entities\Route.cs" />
+    <Compile Include="Entities\TramStatus.cs" />
     <Compile Include="Exceptions\EntityNotPresentException.cs" />
-    <Compile Include="Data\OracleDataContext.cs" />
+    <Compile Include="DAL\OracleDataContext.cs" />
     <Compile Include="Entities\AccountType.cs" />
     <Compile Include="Entities\Entity.cs" />
     <Compile Include="Entities\Status.cs" />
-    <Compile Include="Repositories\IRouteRepository.cs" />
-    <Compile Include="Repositories\ISectorRepository.cs" />
-    <Compile Include="Repositories\ITramRepository.cs" />
-    <Compile Include="Repositories\ITramStatusRepository.cs" />
-    <Compile Include="Repositories\RouteRepository.cs" />
-    <Compile Include="Repositories\SectorRepository.cs" />
-    <Compile Include="Repositories\TrackRepository.cs" />
-    <Compile Include="Repositories\IAccountTypeRepository.cs" />
-    <Compile Include="Repositories\AccountTypeRepository.cs" />
-    <Compile Include="Repositories\StatusRepository.cs" />
-    <Compile Include="Repositories\EmployeeRepository.cs" />
-    <Compile Include="Repositories\IStatusRepository.cs" />
-    <Compile Include="Repositories\Repository.cs" />
-    <Compile Include="Data\TestDataContext.cs" />
-    <Compile Include="Data\UnitOfWork.cs" />
-    <Compile Include="Data\IDataContext.cs" />
-    <Compile Include="Repositories\IEmployeeRepository.cs" />
-    <Compile Include="Data\IRailsDataContext.cs" />
-    <Compile Include="Repositories\IRepository.cs" />
-    <Compile Include="Data\IUnitOfWork.cs" />
-    <Compile Include="Repositories\TramRepository.cs" />
-    <Compile Include="Repositories\TramStatusRepository.cs" />
+    <Compile Include="DAL\Repositories\TrackRepository.cs" />
+    <Compile Include="DAL\Repositories\AccountTypeRepository.cs" />
+    <Compile Include="DAL\Repositories\StatusRepository.cs" />
+    <Compile Include="DAL\Repositories\EmployeeRepository.cs" />
+    <Compile Include="DAL\Repositories\Repository.cs" />
+    <Compile Include="DAL\TestDataContext.cs" />
+    <Compile Include="DAL\UnitOfWork.cs" />
+    <Compile Include="DAL\Contexts\IDataContext.cs" />
+    <Compile Include="DAL\IRailsDataContext.cs" />
+    <Compile Include="DAL\Repositories\IRepository.cs" />
+    <Compile Include="DAL\IUnitOfWork.cs" />
+    <Compile Include="DAL\Contexts\OracleDatabaseContext.cs" />
     <Compile Include="Reservation.cs" />
     <Compile Include="Address.cs" />
     <Compile Include="Entities\Employees\Administrator.cs" />
@@ -128,7 +131,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

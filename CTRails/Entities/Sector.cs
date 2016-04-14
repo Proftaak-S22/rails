@@ -10,11 +10,5 @@
         {
             this.sectionNumber = sectionNumber;
         }
-
-        //Methods
-        public void RemoveSection(Sector sector)
-        {
-            
-        }
     }
 }

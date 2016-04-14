@@ -4,7 +4,7 @@ using CTRails.Entities;
 using CTRails.Entities.Employees;
 
 
-namespace CTRails.Data
+namespace CTRails.DAL
 {
     public class TestDataContext : IRailsDataContext
     {
@@ -35,11 +35,6 @@ namespace CTRails.Data
 
 
         public void SaveChanges()
-        {
-            throw new NotImplementedException();
-        }
-
-        ICollection<T> IDataContext.Set<T>()
         {
             throw new NotImplementedException();
         }
