@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GenericRepository
+namespace CTRails.Repositories
 {
-    public interface IDatabaseContext<T>
+    class TramStatusRepository
     {
     }
 }

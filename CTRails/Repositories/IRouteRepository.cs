@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using CTRails.Entities;
 using System.Threading.Tasks;
 
-namespace GenericRepository
+namespace CTRails.Repositories
 {
-    public interface IDatabaseContext<T>
+    public interface IRouteRepository : IRepository<Route>
     {
+
     }
 }
