@@ -69,6 +69,8 @@
     <Compile Include="DAL\Contexts\EmployeeOracleContext.cs" />
     <Compile Include="DAL\Repositories\AttachedTrackRepository.cs" />
     <Compile Include="DAL\Repositories\SectorRepository.cs" />
+    <Compile Include="DAL\Repositories\RouteRepository.cs" />
+    <Compile Include="DAL\Repositories\TrackRouteRepository.cs" />
     <Compile Include="DAL\Repositories\TramRouteRepository.cs" />
     <Compile Include="DAL\Repositories\TramRepository.cs" />
     <Compile Include="Entities\AttachedTrack.cs" />
