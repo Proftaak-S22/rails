@@ -65,7 +65,7 @@
   <ItemGroup>
     <Compile Include="DAL\Contexts\RouteOracleContext.cs" />
     <Compile Include="DAL\Contexts\AttachedTrackOracleContext.cs" />
-    <Compile Include="DAL\Contexts\TramOracleContext - Copy.cs" />
+    <Compile Include="DAL\Contexts\TramRouteOracleContext.cs" />
     <Compile Include="DAL\Contexts\TramOracleContext.cs" />
     <Compile Include="DAL\Contexts\TrackOracleContext.cs" />
     <Compile Include="DAL\Contexts\StatusOracleContext.cs" />
