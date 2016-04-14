@@ -1,24 +1,18 @@
-﻿using CTRails.DAL.Repositories;
+﻿using CTRails.DAL.Contexts;
+using CTRails.DAL.Repositories;
 
 
 namespace CTRails.DAL
 {
-    public class UnitOfWork : IUnitOfWork
+    public class UnitOfWork
     {
-
-        private IRailsDataContext context;
-
-
-
-        public UnitOfWork(IRailsDataContext context)
+        
+        public UnitOfWork()
         {
-            this.context = context;
 
-            Employees = new EmployeeRepository(context);
-            Statuses = new StatusRepository(context);
-            AccountTypes = new AccountTypeRepository(context);
-            Tracks = new TrackRepository(context);
-            
+            Employees = new EmployeeRepository(new EmployeeOracleContext());
+            Statuses = new StatusRepository(new StatusOracleContext());
+            AccountTypes = new AccountTypeRepository(new AccountTypeOracleContext());
         }
 
 
@@ -35,26 +29,25 @@ namespace CTRails.DAL
             Employees = null;
             Statuses = null;
             AccountTypes = null;
-            context = null;
         }
 
 
 
-        public IEmployeeRepository Employees { get; private set; }
+        public EmployeeRepository Employees { get; private set; }
 
 
-        public IStatusRepository Statuses { get; private set; }
+        public StatusRepository Statuses { get; private set; }
 
 
-        public IAccountTypeRepository AccountTypes { get; private set; }
+        public AccountTypeRepository AccountTypes { get; private set; }
 
-        public ITrackRepository Tracks { get; private set; }
+        public TrackRepository Tracks { get; private set; }
 
 
 
         public int Complete()
         {
-            context.SaveChanges();
+            
             return 1;
         }
 

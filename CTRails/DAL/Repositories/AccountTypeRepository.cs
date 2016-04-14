@@ -1,11 +1,12 @@
-﻿using CTRails.Entities;
+﻿using CTRails.DAL.Contexts;
+using CTRails.Entities;
 
 
 namespace CTRails.DAL.Repositories
 {
-    public class AccountTypeRepository : RailsRepository<AccountType>, IAccountTypeRepository
+    public class AccountTypeRepository : Repository<AccountType>
     {
-        public AccountTypeRepository(IRailsDataContext context)
+        public AccountTypeRepository(IDataContext<AccountType> context)
             : base(context)
         {
             

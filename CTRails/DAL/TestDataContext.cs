@@ -38,10 +38,5 @@ namespace CTRails.DAL
         {
             throw new NotImplementedException();
         }
-
-        ICollection<T> IDataContext.Set<T>()
-        {
-            throw new NotImplementedException();
-        }
     }
 }
