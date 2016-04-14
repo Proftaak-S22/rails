@@ -11,8 +11,7 @@ namespace CTRails.Entities
         private ICollection<Route> routes;
 
         //Constructor
-        public Track(int id)
-            : base (id)
+        public Track(int id) : base (id)
         {
 
         }

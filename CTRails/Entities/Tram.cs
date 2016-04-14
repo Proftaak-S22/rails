@@ -17,8 +17,7 @@ namespace CTRails
 
 
         //Constructor
-        public Tram(int id, int code, Status status)
-            : base(id)
+        public Tram(int id, int code, Status status) : base(id)
         {
             Code = code;
             Status = status;

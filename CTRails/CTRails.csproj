@@ -64,19 +64,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\Contexts\RouteOracleContext.cs" />
+    <Compile Include="DAL\Contexts\AttachedTrackOracleContext.cs" />
+    <Compile Include="DAL\Contexts\TramOracleContext.cs" />
     <Compile Include="DAL\Contexts\TrackOracleContext.cs" />
     <Compile Include="DAL\Contexts\StatusOracleContext.cs" />
     <Compile Include="DAL\Contexts\AccountTypeOracleContext.cs" />
     <Compile Include="DAL\Contexts\EmployeeOracleContext.cs" />
-    <Compile Include="DAL\Repositories\AttachedTrackRepository.cs" />
-    <Compile Include="DAL\Repositories\SectorRepository.cs" />
-    <Compile Include="DAL\Repositories\RouteRepository.cs" />
-    <Compile Include="DAL\Repositories\TrackRouteRepository.cs" />
-    <Compile Include="DAL\Repositories\TramRouteRepository.cs" />
-    <Compile Include="DAL\Repositories\TramRepository.cs" />
     <Compile Include="Entities\AttachedTrack.cs" />
-    <Compile Include="Entities\Employees\TrackRoute.cs" />
-    <Compile Include="Entities\Employees\TramRoute.cs" />
+    <Compile Include="Entities\TrackRoute.cs" />
+    <Compile Include="Entities\TramRoute.cs" />
     <Compile Include="Entities\Route.cs" />
     <Compile Include="Entities\TramStatus.cs" />
     <Compile Include="Exceptions\EntityNotPresentException.cs" />

@@ -8,7 +8,8 @@ namespace CTRails.Entities.Employees
         //Fields
 
         //Constructor
-        public FleetAdministrator(int id,
+        public FleetAdministrator(
+            int id,
             AccountType accountType,
             string username,
             string password,

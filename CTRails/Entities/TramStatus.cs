@@ -9,16 +9,16 @@ namespace CTRails.Entities
     class TramStatus : Entity
     {
         //Fields
-        public Tram tram { get; set; }
+        public Tram Tram { get; set; }
 
-        public Status status { get; set; }
+        public Status Status { get; set; }
 
 
         //Constructor
         public TramStatus(int id, Tram tram, Status status) : base(id)
         {
-            this.tram = tram;
-            this.status = status;
+            Tram = tram;
+            Status = status;
         }
     }
 }
