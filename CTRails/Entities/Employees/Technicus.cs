@@ -8,7 +8,8 @@ namespace CTRails.Entities.Employees
         //Fields
 
         //Constructor
-        public Technicus(int id,
+        public Technicus(
+            int id,
             AccountType accountType,
             string username,
             string password,
