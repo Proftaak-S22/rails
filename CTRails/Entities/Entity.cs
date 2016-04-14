@@ -2,7 +2,6 @@
 {
     public abstract class Entity
     {
-        //Fields
         public int Id { get; protected set; }
 
         public bool IsDirty { get; set; }
@@ -14,5 +13,10 @@
         {
             Id = id;
         }
+
+
+
+        public Entity() {}
+
     }
 }

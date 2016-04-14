@@ -88,9 +88,7 @@
     <Compile Include="Address.cs" />
     <Compile Include="Entities\Employees\Administrator.cs" />
     <Compile Include="Database.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Form1.cs" />
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
