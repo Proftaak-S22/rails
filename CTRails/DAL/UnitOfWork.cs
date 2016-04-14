@@ -15,6 +15,7 @@ namespace CTRails.DAL
             AccountTypes = new AccountTypeRepository(new AccountTypeOracleContext());
             Tracks = new TrackRepository(new TrackOracleContext());
             Routes = new RouteRepository(new RouteOracleContext());
+            AttachedTracks = new AttachedTrackRepository(new AttachedTrackOracleContext());
         }
 
 
