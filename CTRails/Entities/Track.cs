@@ -11,10 +11,10 @@ namespace CTRails.Entities
         private ICollection<Route> routes;
 
         //Constructor
-        public Track(int id, int number)
+        public Track(int id)
             : base (id)
         {
-            Number = number;
+
         }
     }
 }

@@ -13,6 +13,7 @@ namespace CTRails.DAL
             Employees = new EmployeeRepository(new EmployeeOracleContext());
             Statuses = new StatusRepository(new StatusOracleContext());
             AccountTypes = new AccountTypeRepository(new AccountTypeOracleContext());
+            Tracks = new TrackRepository(new TrackOracleContext());
         }
 
 

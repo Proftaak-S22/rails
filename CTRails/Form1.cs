@@ -20,14 +20,9 @@ namespace CTRails
 
             unit = new UnitOfWork();
 
-            foreach (Employee e in unit.Employees.Where(x => x.Gender == Gender.M))
-                Console.WriteLine(e.FirstName);
-
-            foreach (Status s in unit.Statuses.Get())
-                Console.WriteLine(s.Name);
-
-            foreach (AccountType a in unit.AccountTypes.Get())
-                Console.WriteLine(a.Name);
+            Employee e = unit.Employees.Where(x => x.ID == 1).First();
+            e.Email = "nhavandeursen@gmail.com";
+            unit.Employees.Update(e);
 
             unit.Complete();
         }

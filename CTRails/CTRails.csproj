@@ -59,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\Contexts\TrackOracleContext.cs" />
     <Compile Include="DAL\Contexts\StatusOracleContext.cs" />
     <Compile Include="DAL\Contexts\AccountTypeOracleContext.cs" />
     <Compile Include="DAL\Contexts\EmployeeOracleContext.cs" />

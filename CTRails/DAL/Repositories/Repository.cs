@@ -25,14 +25,14 @@ namespace CTRails.DAL.Repositories
 
         public virtual void Delete(T entity)
         {
-            context.Add(entity);
+            context.Delete(entity);
         }
 
 
 
         public virtual void Update(T entity)
         {
-            context.Add(entity);
+            context.Update(entity);
         }
 
 
