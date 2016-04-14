@@ -8,7 +8,8 @@ namespace CTRails.Entities.Employees
         //Fields
 
         //Constructor
-        public LeadJanitor(int id,
+        public LeadJanitor(
+            int id,
             AccountType accountType,
             string username,
             string password,

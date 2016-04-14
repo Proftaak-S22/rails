@@ -8,13 +8,13 @@ namespace CTRails.Entities
     {
         //Fields
         private int taskNumber;
-        private DateTime Time;
+        private DateTime time;
 
         //Constructor
         public Task(int taskNumber, Employee user, Tram tram, DateTime time, Sector startSector, Sector endSector)
         {
             this.taskNumber = taskNumber;
-            this.Time = time;
+            this.time = time;
         }
 
         //Methods

@@ -8,8 +8,10 @@ namespace CTRails.Entities.Employees
     {
         //Fields
         private UnitOfWork unit;
+
         //Constructor
-        public Administrator(int id,
+        public Administrator(
+            int id,
             AccountType accountType,
             string username,
             string password,
