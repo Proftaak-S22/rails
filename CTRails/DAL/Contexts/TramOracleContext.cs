@@ -6,36 +6,36 @@ using Oracle.ManagedDataAccess.Client;
 
 namespace CTRails.DAL.Contexts
 {
-    public class RouteOracleContext : OracleDatabaseContext, IDataContext<Route>
+    public class TramOracleContext : OracleDatabaseContext, IDataContext<Tram>
     {
 
-     /*   public TrackOracleContext()
+        public TramOracleContext()
             : base()
         {
             
-        } */
+        }
 
-        public void Add(Route entity)
+        public void Add(Tram entity)
         {
             throw new NotImplementedException();
         }
 
 
 
-        public void Delete(Route entity)
+        public void Delete(Tram entity)
         {
             throw new NotImplementedException();
         }
 
 
 
-        public void Update(Route entity)
+        public void Update(Tram entity)
         {
             throw new NotImplementedException();
         }
 
 
-        public IEnumerable<Route> Get()
+        public IEnumerable<Tram> Get()
         {
             Connection.Open();
 
@@ -43,17 +43,16 @@ namespace CTRails.DAL.Contexts
 
             OracleDataReader reader = command.ExecuteReader();
 
-            List<Route> routes = new List<Route>();
+            List<Tram> trams = new List<Tram>();
 
             while (reader.Read())
             {
-                Route next = new Route(Convert.ToInt32(reader["ID"]),
-                    Convert.ToString(reader["NAME"]));
+                Tram next = new Tram(Convert.ToInt32(reader["ID"]), Convert.ToInt32(reader["TRAMCODE"]), null);
 
-                routes.Add(next);
+                trams.Add(next);
             }
 
-            return routes;
+            return trams;
         }
 
     }

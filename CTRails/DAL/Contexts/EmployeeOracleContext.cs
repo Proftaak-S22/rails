@@ -48,7 +48,7 @@ namespace CTRails.DAL.Contexts
 
             OracleParameter uID = new OracleParameter();
             uID.DbType = DbType.Int32;
-            uID.Value = entity.ID;
+            uID.Value = entity.Id;
             uID.ParameterName = "u_id";
 
             cmdUpdate.Parameters.Add(uID);
@@ -66,7 +66,7 @@ namespace CTRails.DAL.Contexts
 
             //command.ExecuteNonQuery();
 
-            //    + "({0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13})",entity.ID.to, entity.), Connection);
+            //    + "({0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13})",entity.Id.to, entity.), Connection);
         }
 
 

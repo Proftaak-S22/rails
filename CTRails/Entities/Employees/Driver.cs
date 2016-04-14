@@ -8,7 +8,8 @@ namespace CTRails.Entities.Employees
         //Fields
 
         //Constructor
-        public Driver(int id,
+        public Driver(
+            int id,
             AccountType accountType,
             string username,
             string password,
