@@ -50,8 +50,8 @@ namespace CTRails.DAL.Contexts
 
             while (reader.Read())
             {
-                Track a = uow.Tracks.Where(x => x.Id == Convert.ToInt32(reader["TRACK_ID"])).First();
-                Track b = uow.Tracks.Where(x => x.Id == Convert.ToInt32(reader["NEXTTRACK_ID"])).First();
+                Track a = uow.Tracks.Where(x => x.ID == Convert.ToInt32(reader["TRACK_ID"])).First();
+                Track b = uow.Tracks.Where(x => x.ID == Convert.ToInt32(reader["NEXTTRACK_ID"])).First();
 
                 AttachedTrack next = new AttachedTrack(0, a, b);
 

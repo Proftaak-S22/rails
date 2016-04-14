@@ -57,7 +57,7 @@ namespace CTRails.DAL.Contexts
             if (Connection.State == ConnectionState.Closed)
                 Connection.Open();
 
-            OracleCommand cmd = new OracleCommand("UPDATE TRM_EMPLOYEE SET EMAIL = " + " '" + entity.Email + "' " + " WHERE ID = " + entity.Id, Connection);
+            OracleCommand cmd = new OracleCommand("UPDATE TRM_EMPLOYEE SET EMAIL = " + " '" + entity.Email + "' " + " WHERE ID = " + entity.ID, Connection);
             cmd.ExecuteNonQuery();
 
             //string values = string.Format("({0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12})", entity.Username, entity.Gender, entity.Password, entity.FirstName, entity.LastName, (entity.Prefix == string.Empty) ? "NULL" : entity.Prefix, entity.Email, entity.DateOfBirth, entity.Nationality, entity.Address.Zipcode, entity.Address.City, entity.Address.Number, (entity.Address.Addition == string.Empty) ? "NULL" : entity.Address.Addition);
