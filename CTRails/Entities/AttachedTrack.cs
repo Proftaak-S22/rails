@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CTRails.Entities
 {
-    class AttachedTrack : Entity
+    public class AttachedTrack : Entity
     {
         //Fields
         public Track Track { get; private set; }

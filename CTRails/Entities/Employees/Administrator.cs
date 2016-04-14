@@ -35,13 +35,13 @@ namespace CTRails.Entities.Employees
         public void DeleteTram(Tram tram)
         {
             unit = new UnitOfWork();
-            unit.Trams.Delete(tram);
+            //unit.Trams.Delete(tram);
         }
 
         public void AddTram(int tramNumber, Status status)
         {
             unit = new UnitOfWork();
-            unit.Trams.Add(tramNumber, status);
+            //unit.Trams.Add(tramNumber, status);
         }
 
         public void AddAccount(int id,AccountType accountType, string username, string password, string firstName, 
