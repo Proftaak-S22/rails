@@ -2,21 +2,15 @@
 {
     public abstract class Entity
     {
-        public int Id { get; protected set; }
+        public int ID { get; protected set; }
 
         public bool IsDirty { get; set; }
         public bool IsNew { get; set; }
         public bool IsDeleted { get; set; }
 
-        //Constructor
-        protected Entity( int id)
+        public Entity(int id)
         {
-            Id = id;
+            ID = id;
         }
-
-
-
-        public Entity() {}
-
     }
 }
