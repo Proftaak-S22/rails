@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CTRails.Entities
 {
-    class Route : Entity
+    public class Route : Entity
     {
         //Fields
         public string Name { get; set; }

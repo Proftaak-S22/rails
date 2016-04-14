@@ -62,6 +62,9 @@
     <Compile Include="DAL\Contexts\StatusOracleContext.cs" />
     <Compile Include="DAL\Contexts\AccountTypeOracleContext.cs" />
     <Compile Include="DAL\Contexts\EmployeeOracleContext.cs" />
+    <Compile Include="Entities\AttachedTrack.cs" />
+    <Compile Include="Entities\Employees\TrackRoute.cs" />
+    <Compile Include="Entities\Employees\TramRoute.cs" />
     <Compile Include="Entities\Route.cs" />
     <Compile Include="Entities\TramStatus.cs" />
     <Compile Include="Exceptions\EntityNotPresentException.cs" />
