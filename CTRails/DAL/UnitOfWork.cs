@@ -13,6 +13,8 @@ namespace CTRails.DAL
             Employees = new EmployeeRepository(new EmployeeOracleContext());
             Statuses = new StatusRepository(new StatusOracleContext());
             AccountTypes = new AccountTypeRepository(new AccountTypeOracleContext());
+            Tracks = new TrackRepository(new TrackOracleContext());
+            Routes = new RouteRepository(new RouteOracleContext());
         }
 
 
@@ -42,6 +44,19 @@ namespace CTRails.DAL
         public AccountTypeRepository AccountTypes { get; private set; }
 
         public TrackRepository Tracks { get; private set; }
+
+        public TrackRouteRepository TrackRoutes { get; private set; }
+
+        public TramRouteRepository TramRoutes { get; private set; }
+
+        public SectorRepository Sectors { get; private set; }
+
+        public AttachedTrackRepository AttachedTracks { get; private set; }
+
+        public RouteRepository Routes { get; private set; }
+
+        public TramRepository Trams { get; private set; }
+
 
 
 

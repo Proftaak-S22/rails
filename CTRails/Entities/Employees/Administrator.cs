@@ -1,4 +1,5 @@
 ﻿using System;
+using CTRails.DAL;
 
 
 namespace CTRails.Entities.Employees
@@ -6,7 +7,7 @@ namespace CTRails.Entities.Employees
     public class Administrator : Employee
     {
         //Fields
-
+        private UnitOfWork unit;
         //Constructor
         public Administrator(int id,
             AccountType accountType,
@@ -31,23 +32,27 @@ namespace CTRails.Entities.Employees
         //Methods
         public void DeleteTram(Tram tram)
         {
-            
+            unit = new UnitOfWork();
+            //unit.Trams.Delete(tram);
         }
 
         public void AddTram(int tramNumber, Status status)
         {
-            
+            unit = new UnitOfWork();
+            //unit.Trams.Add(tramNumber, status);
         }
 
-        public void AddAccount(string name, Gender gender, DateTime birthDate, Address address, string email,
-            string nationality, string userName, string password)
+        public void AddAccount(int id,AccountType accountType, string username, string password, string firstName, 
+            string lastName, string prefix, string email, DateTime dateOfBirth, string nationality, Address address, Gender gender)
         {
-            
+            unit = new UnitOfWork();
+            unit.Employees.Add(new Employee(id, accountType, username, password, firstName, lastName, prefix, email, dateOfBirth, nationality, address, gender));
         }
 
-        public void VerwijderAccount(Employee user)
+        public void DeleteAccount(Employee user)
         {
-            
+            unit = new UnitOfWork();
+            unit.Employees.Delete(user);
         }
     }
 }

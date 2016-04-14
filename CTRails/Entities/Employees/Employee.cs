@@ -10,19 +10,19 @@ namespace CTRails.Entities.Employees
 {
     public class Employee : Entity
     {
-        public AccountType AccountType { get; protected set; }
+        public AccountType AccountType { get;  set; }
 
 
-        public string Username { get; protected set; }
-        public string Password { get; protected set; }
-        public string FirstName { get; protected set; }
-        public string LastName { get; protected set; }
-        public string Prefix { get; protected set; }
-        public string Email { get; protected set; }
-        public DateTime DateOfBirth { get; protected set; }
-        public string Nationality { get; protected set; }
-        public Address Address { get; protected set; }
-        public Gender Gender { get; protected set; }
+        public string Username { get;  set; }
+        public string Password { get;  set; }
+        public string FirstName { get;  set; }
+        public string LastName { get;  set; }
+        public string Prefix { get;  set; }
+        public string Email { get;  set; }
+        public DateTime DateOfBirth { get;  set; }
+        public string Nationality { get;  set; }
+        public Address Address { get;  set; }
+        public Gender Gender { get;  set; }
 
 
         public Employee(int id, 

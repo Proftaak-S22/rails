@@ -25,5 +25,10 @@ namespace CTRails.Entities.Employees
         {
             throw new NotImplementedException();
         }
+
+        private void ChangeSchedule()
+        {
+            
+        }
     }
 }

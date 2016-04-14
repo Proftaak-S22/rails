@@ -41,6 +41,10 @@
       <HintPath>packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MaterialSkin.0.2.0\lib\MaterialSkin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Oracle.ManagedDataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
       <HintPath>packages\Oracle.ManagedDataAccess.12.1.022\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
       <Private>True</Private>
@@ -59,9 +63,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\Contexts\RouteOracleContext.cs" />
+    <Compile Include="DAL\Contexts\TrackOracleContext.cs" />
     <Compile Include="DAL\Contexts\StatusOracleContext.cs" />
     <Compile Include="DAL\Contexts\AccountTypeOracleContext.cs" />
     <Compile Include="DAL\Contexts\EmployeeOracleContext.cs" />
+    <Compile Include="DAL\Repositories\AttachedTrackRepository.cs" />
+    <Compile Include="DAL\Repositories\SectorRepository.cs" />
+    <Compile Include="DAL\Repositories\RouteRepository.cs" />
+    <Compile Include="DAL\Repositories\TrackRouteRepository.cs" />
+    <Compile Include="DAL\Repositories\TramRouteRepository.cs" />
+    <Compile Include="DAL\Repositories\TramRepository.cs" />
+    <Compile Include="Entities\AttachedTrack.cs" />
+    <Compile Include="Entities\Employees\TrackRoute.cs" />
+    <Compile Include="Entities\Employees\TramRoute.cs" />
     <Compile Include="Entities\Route.cs" />
     <Compile Include="Entities\TramStatus.cs" />
     <Compile Include="Exceptions\EntityNotPresentException.cs" />
@@ -118,6 +133,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
