@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CTRails.Address" Collapsed="true">
+    <Position X="33.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACIAEAAAAAAAAIAAgAAAAAAAQAAAAA=</HashCode>
+      <FileName>Address.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.Database" Collapsed="true">
+    <Position X="35" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAABAAAAIABAAAAAUAAAAAAAAAA=</HashCode>
+      <FileName>Database.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.Tram" Collapsed="true">
+    <Position X="8.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Tram.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.Form1" Collapsed="true">
+    <Position X="38.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAQAAgAACAgAAAAAACAAAAiAAAAAAAAAAAgAAAACAA=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.Program" Collapsed="true">
+    <Position X="35" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.Reservation" Collapsed="true">
+    <Position X="36.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reservation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.Schedule" Collapsed="true">
+    <Position X="33.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Schedule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.DAL.Contexts.AccountTypeOracleContext" Collapsed="true">
+    <Position X="9.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAABAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAL\Contexts\AccountTypeOracleContext.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CTRails.DAL.Contexts.EmployeeOracleContext" Collapsed="true">
+    <Position X="0.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAABAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAL\Contexts\EmployeeOracleContext.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CTRails.DAL.Contexts.OracleDatabaseContext" Collapsed="true">
+    <Position X="5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>DAL\Contexts\OracleDatabaseContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.DAL.Contexts.RouteOracleContext" Collapsed="true">
+    <Position X="2.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAABAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAL\Contexts\RouteOracleContext.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CTRails.DAL.Contexts.StatusOracleContext" Collapsed="true">
+    <Position X="5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAABAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAL\Contexts\StatusOracleContext.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CTRails.DAL.Contexts.TrackOracleContext" Collapsed="true">
+    <Position X="7.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAABAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAL\Contexts\TrackOracleContext.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CTRails.DAL.OracleDataContext&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="33.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAYAAIAAAAQAAAhEAAAJAAAACAEEAAAAAAAAAACAAAA=</HashCode>
+      <FileName>DAL\OracleDataContext.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CTRails.DAL.TestDataContext" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="33.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAIAAAAAABAAEAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAL\TestDataContext.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CTRails.DAL.UnitOfWork" Collapsed="true">
+    <Position X="35" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAIAAAWAAAAoEAEAAEAAACAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>DAL\UnitOfWork.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.DAL.Repositories.AccountTypeRepository" Collapsed="true">
+    <Position X="8" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAL\Repositories\AccountTypeRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.DAL.Repositories.AttachedTrackRepository" Collapsed="true">
+    <Position X="12.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAL\Repositories\AttachedTrackRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.DAL.Repositories.EmployeeRepository" Collapsed="true">
+    <Position X="17" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAL\Repositories\EmployeeRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.DAL.Repositories.Repository&lt;T&gt;" Collapsed="true">
+    <Position X="11.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYCAAAAAAAAAABAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAL\Repositories\Repository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CTRails.DAL.Repositories.RouteRepository" Collapsed="true">
+    <Position X="1.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAL\Repositories\RouteRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.DAL.Repositories.SectorRepository" Collapsed="true">
+    <Position X="3.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAL\Repositories\SectorRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.DAL.Repositories.StatusRepository" Collapsed="true">
+    <Position X="5.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAL\Repositories\StatusRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.DAL.Repositories.TrackRepository" Collapsed="true">
+    <Position X="10.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAL\Repositories\TrackRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.DAL.Repositories.TrackRouteRepository" Collapsed="true">
+    <Position X="14.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAL\Repositories\TrackRouteRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.DAL.Repositories.TramRepository" Collapsed="true">
+    <Position X="19.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAL\Repositories\TramRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.DAL.Repositories.TramRouteRepository" Collapsed="true">
+    <Position X="21.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAL\Repositories\TramRouteRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.Entities.AccountType" Collapsed="true">
+    <Position X="28.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\AccountType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.Entities.AttachedTrack" Collapsed="true">
+    <Position X="1.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\AttachedTrack.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.Entities.Entity" Collapsed="true">
+    <Position X="16.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAEABAQAAAAA=</HashCode>
+      <FileName>Entities\Entity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.Entities.Route" Collapsed="true">
+    <Position X="10.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Route.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.Entities.Sector" Collapsed="true">
+    <Position X="35" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Sector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.Entities.Status" Collapsed="true">
+    <Position X="24" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Status.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.Entities.Task" Collapsed="true">
+    <Position X="38.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Entities\Task.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.Entities.Track" Collapsed="true">
+    <Position X="26.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAEAAAABABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Track.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.Entities.TramStatus" Collapsed="true">
+    <Position X="30.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\TramStatus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.Entities.Employees.Administrator" Collapsed="true">
+    <Position X="12.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAACAAAAAAQAAAAAAACAQAAAAA=</HashCode>
+      <FileName>Entities\Employees\Administrator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.Entities.Employees.Driver" Collapsed="true">
+    <Position X="15" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Employees\Driver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.Entities.Employees.Employee" Collapsed="true">
+    <Position X="17.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAMAAACAAAACAAQAAAAACAAAQAAACAAAAAAAACAg=</HashCode>
+      <FileName>Entities\Employees\Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.Entities.Employees.FleetAdministrator" Collapsed="true">
+    <Position X="17.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Employees\FleetAdministrator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.Entities.Employees.Janitor" Collapsed="true">
+    <Position X="19.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Employees\Janitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.Entities.Employees.LeadJanitor" Collapsed="true">
+    <Position X="19.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Employees\LeadJanitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.Entities.Employees.LeadTechnician" Collapsed="true">
+    <Position X="21.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Employees\LeadTechnician.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.Entities.Employees.Technicus" Collapsed="true">
+    <Position X="21.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Employees\Technicus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.Entities.Employees.TrackRoute" Collapsed="true">
+    <Position X="3.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Employees\TrackRoute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.Entities.Employees.TramRoute" Collapsed="true">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Employees\TramRoute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.Exceptions.EntityNotPresentException" Collapsed="true">
+    <Position X="36.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\EntityNotPresentException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.Properties.Resources" Collapsed="true">
+    <Position X="38.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTRails.Properties.Settings" Collapsed="true">
+    <Position X="36.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="CTRails.DAL.Contexts.IDataContext&lt;T&gt;" Collapsed="true">
+    <Position X="33.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAABAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAL\Contexts\IDataContext.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CTRails.DAL.IRailsDataContext" Collapsed="true">
+    <Position X="35" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAEAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAL\IRailsDataContext.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CTRails.DAL.IUnitOfWork" Collapsed="true">
+    <Position X="38.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAL\IUnitOfWork.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CTRails.DAL.Repositories.IRepository&lt;T&gt;" Collapsed="true">
+    <Position X="36.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAABAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAL\Repositories\IRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Gender" Collapsed="true">
+    <Position X="33.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAIAAAA=</HashCode>
+      <FileName>Entities\Employees\Employee.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
