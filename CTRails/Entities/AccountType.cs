@@ -8,11 +8,15 @@ namespace CTRails.Entities
 {
     public class AccountType : Entity
     {
+        //Fields
         public string Name { get; private set; }
 
-
-
-        public AccountType(int id, string name) : base(id)
+        //Contructor
+        public AccountType(
+            int id, 
+            string name
+            ) 
+            : base(id)
         {
             Name = name;
         }

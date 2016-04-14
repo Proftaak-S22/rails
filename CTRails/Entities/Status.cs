@@ -8,8 +8,10 @@ namespace CTRails.Entities
 {
     public class Status : Entity
     {
+        //Fields
         public string Name { get; private set; }
 
+        //Constructor
         public Status(int id, string name) : base(id)
         {
             Name = name;

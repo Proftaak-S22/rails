@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace CTRails.Entities
 {
-    class AttachedTrack : Entity
+    public class AttachedTrack : Entity
     {
         //Fields
         public Track Track { get; private set; }
         public Track Attached { get; private set; }
+
         //Constructor
-        public AttachedTrack(int id, Track track, Track attached) : base(id)
+        public AttachedTrack( int id, Track track, Track attached) : base(id)
         {
             Track = track;
             Attached = attached;

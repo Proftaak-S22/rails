@@ -8,9 +8,10 @@
         public bool IsNew { get; set; }
         public bool IsDeleted { get; set; }
 
-        public Entity(int id)
+        //Constructor
+        protected Entity( int id)
         {
-            ID = id;
+            Id = id;
         }
     }
 }

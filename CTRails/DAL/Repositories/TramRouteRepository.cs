@@ -1,14 +1,13 @@
 ﻿using CTRails.DAL.Contexts;
 using CTRails.Entities;
+using CTRails.Entities.Employees;
 
 
 namespace CTRails.DAL.Repositories
 {
-    public class TrackRepository : Repository<Track>
+    public class TramRouteRepository : Repository<TramRoute>
     {
-        public Track AttachedTo { get; set; }
-
-        public TrackRepository(IDataContext<Track> context)
+        public TramRouteRepository(IDataContext<TramRoute> context)
             : base(context)
         {
             

@@ -4,11 +4,9 @@ using CTRails.Entities;
 
 namespace CTRails.DAL.Repositories
 {
-    public class TrackRepository : Repository<Track>
+    public class TramRepository : Repository<Tram>
     {
-        public Track AttachedTo { get; set; }
-
-        public TrackRepository(IDataContext<Track> context)
+        public TramRepository(IDataContext<Tram> context)
             : base(context)
         {
             

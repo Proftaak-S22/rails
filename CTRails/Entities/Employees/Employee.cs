@@ -25,7 +25,8 @@ namespace CTRails.Entities.Employees
         public Gender Gender { get;  set; }
 
 
-        public Employee(int id, 
+        public Employee(
+            int id, 
             AccountType accountType, 
             string username,
             string password,
@@ -60,8 +61,6 @@ namespace CTRails.Entities.Employees
 
 public enum Gender
 {
-
     M = 0,
     F
-
 }
