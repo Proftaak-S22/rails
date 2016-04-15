@@ -27,14 +27,11 @@ namespace CTRails
 
             unit = new UnitOfWork();
 
-            Employee u = new Employee(0, null, "Frits", "de Pits", "Harrie", "Gezicht", String.Empty, "ff@ff.f", DateTime.Now, "NL", new Address("De kurver", 333, "Rosmalen", "Netherland", "7777BF", "B"), Gender.F );
-            u.ID = 1;
-            unit.Employees.Update(u);
-
-
-            Employee e = unit.Employees.Where(x => x.ID == 1).First();
-            e.Email = "nhavandeursen@gmail.com";
-            unit.Employees.Update(e);
+            List<AttachedTrack> at = unit.AttachedTracks.Get().ToList();
+            foreach (AttachedTrack t in at)
+            {
+                Console.WriteLine(t.Track + " attached to: " + t.Attached);
+            }
 
             unit.Complete();
         }

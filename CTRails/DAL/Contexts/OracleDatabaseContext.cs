@@ -1,4 +1,6 @@
-﻿using Oracle.ManagedDataAccess.Client;
+﻿using System;
+using System.Data;
+using Oracle.ManagedDataAccess.Client;
 
 
 namespace CTRails.DAL.Contexts
@@ -19,6 +21,29 @@ namespace CTRails.DAL.Contexts
         public OracleDatabaseContext()
         {
             Connection = new OracleConnection(ConnectionString);
+        }
+
+
+
+        protected void OpenConnection()
+        {
+            try
+            {
+                if (Connection.State == ConnectionState.Closed)
+                    Connection.Open();
+            }
+            catch (Oracle.ManagedDataAccess.Client.OracleException)
+            {
+                Console.WriteLine("A connection could not be opened.");
+            }
+        }
+
+
+
+        protected void CloseConnection()
+        {
+            if (Connection.State == ConnectionState.Open)
+                Connection.Close();
         }
 
     }

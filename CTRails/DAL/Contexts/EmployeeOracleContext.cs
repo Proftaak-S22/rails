@@ -19,8 +19,7 @@ namespace CTRails.DAL.Contexts
 
         public void Add(Employee entity)
         {
-            if (Connection.State == ConnectionState.Closed)
-                Connection.Open();
+            OpenConnection();
 
             string values = "(1, '" + entity.Username + "', ";
             values += "'" + entity.Gender + "', ";
@@ -40,29 +39,27 @@ namespace CTRails.DAL.Contexts
 
             cmd.ExecuteNonQuery();
 
-            Connection.Close();
+            CloseConnection();
         }
 
 
 
         public void Delete(Employee entity)
         {
-            if (Connection.State == ConnectionState.Closed)
-                Connection.Open();
+            OpenConnection();
 
             OracleCommand cmd = new OracleCommand("DELETE FROM TRM_EMPLOYEE WHERE ID = " + entity.ID, Connection);
 
             cmd.ExecuteNonQuery();
 
-            Connection.Close();
+            CloseConnection();
         }
 
 
 
         public void Update(Employee entity)
         {
-            if (Connection.State == ConnectionState.Closed)
-                Connection.Open();
+            OpenConnection();
 
             string values = "USERNAME = '" + entity.Username + "', ";
             values += "SEX = '" + entity.Gender + "', ";
@@ -82,14 +79,14 @@ namespace CTRails.DAL.Contexts
 
             cmd.ExecuteNonQuery();
 
-            Connection.Close();
+            CloseConnection();
         }
 
 
 
         public IEnumerable<Employee> Get()
         {
-            Connection.Open();
+            OpenConnection();
 
             OracleCommand command = new OracleCommand("SELECT * FROM TRM_EMPLOYEE", Connection);
 
@@ -126,7 +123,7 @@ namespace CTRails.DAL.Contexts
                 employees.Add(next);
             }
 
-            Connection.Close();
+            CloseConnection();
 
             return employees;
         }
