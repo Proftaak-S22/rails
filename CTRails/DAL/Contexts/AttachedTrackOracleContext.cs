@@ -38,25 +38,34 @@ namespace CTRails.DAL.Contexts
 
         public IEnumerable<AttachedTrack> Get()
         {
-            Connection.Open();
+            OpenConnection();
 
-            OracleCommand command = new OracleCommand("SELECT * FROM TRM_TRACK", Connection);
-
-            OracleDataReader reader = command.ExecuteReader();
-
+            OracleCommand command = new OracleCommand("SELECT * FROM TRM_ATTACHEDTRACK", Connection);
             List<AttachedTrack> attachedTracks = new List<AttachedTrack>();
 
-            UnitOfWork uow = new UnitOfWork();
-
-            while (reader.Read())
+            try
             {
-                Track a = uow.Tracks.Where(x => x.ID == Convert.ToInt32(reader["TRACK_ID"])).First();
-                Track b = uow.Tracks.Where(x => x.ID == Convert.ToInt32(reader["NEXTTRACK_ID"])).First();
+                OracleDataReader reader = command.ExecuteReader();
 
-                AttachedTrack next = new AttachedTrack(0, a, b);
+                UnitOfWork uow = new UnitOfWork();
 
-                attachedTracks.Add(next);
+                while (reader.Read())
+                {
+                    Track a = uow.Tracks.Where(x => x.ID == Convert.ToInt32(reader["TRACK_ID"])).First();
+                    Track b = uow.Tracks.Where(x => x.ID == Convert.ToInt32(reader["NEXTTRACK_ID"])).First();
+
+                    AttachedTrack next = new AttachedTrack(0, a, b);
+
+                    attachedTracks.Add(next);
+                }
             }
+            catch (System.InvalidOperationException e)
+            {
+                Console.WriteLine("A connection could not be made.");
+            }
+            
+
+            CloseConnection();
 
             return attachedTracks;
         }

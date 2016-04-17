@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
 using CTRails.Entities.Employees;
 using Oracle.ManagedDataAccess.Client;
 
@@ -18,62 +19,74 @@ namespace CTRails.DAL.Contexts
 
         public void Add(Employee entity)
         {
-            throw new NotImplementedException();
+            OpenConnection();
+
+            string values = "(1, '" + entity.Username + "', ";
+            values += "'" + entity.Gender + "', ";
+            values += "'" + entity.Password + "', ";
+            values += "'" + entity.FirstName + "', ";
+            values += "'" + entity.LastName + "', ";
+            values += (entity.Prefix == string.Empty) ? "NULL, " :  "'" + entity.Prefix + "', ";
+            values += "'" + entity.Email + "', ";
+            values += ToOracleDate(entity.DateOfBirth) + ", ";
+            values += "'" + entity.Nationality + "', ";
+            values += "'" + entity.Address.Zipcode + "', ";
+            values += "'" + entity.Address.City + "', ";
+            values += entity.Address.Number + ", ";
+            values += "'" + entity.Address.Addition + "')";
+
+            OracleCommand cmd = new OracleCommand("INSERT INTO TRM_EMPLOYEE (ACCOUNTTYPE_ID, USERNAME, SEX, PASSWORDHASH, FIRSTNAME, LASTNAME, PREFIX, EMAIL, BIRTHDATE, NATIONALITY, POSTALCODE, CITY, HOUSENUMBER, ADDITION) VALUES" + values, Connection);
+
+            cmd.ExecuteNonQuery();
+
+            CloseConnection();
         }
 
 
 
         public void Delete(Employee entity)
         {
-            throw new NotImplementedException();
+            OpenConnection();
+
+            OracleCommand cmd = new OracleCommand("DELETE FROM TRM_EMPLOYEE WHERE ID = " + entity.ID, Connection);
+
+            cmd.ExecuteNonQuery();
+
+            CloseConnection();
         }
 
 
 
         public void Update(Employee entity)
         {
-            Connection.Open();
+            OpenConnection();
 
-            /*string sqlUpdate = "update TRM_EMPLOYEE ";
-            sqlUpdate += "set EMAIL = :u_email ";
-            sqlUpdate += "WHERE ID = :u_id";
+            string values = "USERNAME = '" + entity.Username + "', ";
+            values += "SEX = '" + entity.Gender + "', ";
+            values += "PASSWORDHASH = '" + entity.Password + "', ";
+            values += "FIRSTNAME = '" + entity.FirstName + "', ";
+            values += "LASTNAME = '" + entity.LastName + "', ";
+            values += "PREFIX = " + ((entity.Prefix == string.Empty) ? "NULL, " : "'" + entity.Prefix + "', ");
+            values += "EMAIL = '" + entity.Email + "', ";
+            values += "BIRTHDATE = TO_DATE('" + ToOracleDate(entity.DateOfBirth) + "', 'DD-MON-YY'), ";
+            values += "NATIONALITY = '" + entity.Nationality + "', ";
+            values += "POSTALCODE = '" + entity.Address.Zipcode + "', ";
+            values += "CITY = '" + entity.Address.City + "', ";
+            values += "HOUSENUMBER = " + entity.Address.Number + ", ";
+            values += "ADDITION = '" + entity.Address.Addition + "'";
 
-            OracleCommand cmdUpdate = new OracleCommand();
-            cmdUpdate.CommandText = sqlUpdate;
-            cmdUpdate.Connection = Connection;
+            OracleCommand cmd = new OracleCommand("UPDATE TRM_EMPLOYEE SET ACCOUNTTYPE_ID = 1, " + values + " WHERE ID = " + entity.ID, Connection);
 
-            OracleParameter uEmail = new OracleParameter();
-            uEmail.Value = entity.Email;
-            uEmail.ParameterName = "u_email";
-
-            OracleParameter uID = new OracleParameter();
-            uID.DbType = DbType.Int32;
-            uID.Value = entity.Id;
-            uID.ParameterName = "u_id";
-
-            cmdUpdate.Parameters.Add(uID);
-            cmdUpdate.Parameters.Add(uEmail);*/
-
-            if (Connection.State == ConnectionState.Closed)
-                Connection.Open();
-
-            OracleCommand cmd = new OracleCommand("UPDATE TRM_EMPLOYEE SET EMAIL = " + " '" + entity.Email + "' " + " WHERE ID = " + entity.ID, Connection);
             cmd.ExecuteNonQuery();
 
-            //string values = string.Format("({0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12})", entity.Username, entity.Gender, entity.Password, entity.FirstName, entity.LastName, (entity.Prefix == string.Empty) ? "NULL" : entity.Prefix, entity.Email, entity.DateOfBirth, entity.Nationality, entity.Address.Zipcode, entity.Address.City, entity.Address.Number, (entity.Address.Addition == string.Empty) ? "NULL" : entity.Address.Addition);
-
-            //OracleCommand command = new OracleCommand("UPDATE TRM_EMPLOYEE SET (ACCOUNTTYPE_ID, USERNAME, SEX, PASSWORDHASH, FIRSTNAME, LASTNAME, PREFIX, EMAIL, BIRTHDATE, NATIONALITY, POSTALCODE, CITY, HOUSENUMBER, ADDITION) = " + values, Connection);
-
-            //command.ExecuteNonQuery();
-
-            //    + "({0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13})",entity.Id.to, entity.), Connection);
+            CloseConnection();
         }
 
 
 
         public IEnumerable<Employee> Get()
         {
-            Connection.Open();
+            OpenConnection();
 
             OracleCommand command = new OracleCommand("SELECT * FROM TRM_EMPLOYEE", Connection);
 
@@ -110,9 +123,16 @@ namespace CTRails.DAL.Contexts
                 employees.Add(next);
             }
 
-            Connection.Close();
+            CloseConnection();
 
             return employees;
+        }
+
+
+
+        public string ToOracleDate(DateTime date)
+        {
+            return "TO_DATE('" + string.Format("{0:dd-MMM-yy}", date) + "', 'DD-MON-YY')";
         }
 
     }

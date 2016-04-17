@@ -29,9 +29,11 @@ namespace CTRails
                 
             unit = new UnitOfWork();
 
-            Employee e = unit.Employees.Where(x => x.ID == 1).First();
-            e.Email = "nhavandeursen@gmail.com";
-            unit.Employees.Update(e);
+            List<AttachedTrack> at = unit.AttachedTracks.Get().ToList();
+            foreach (AttachedTrack t in at)
+            {
+                Console.WriteLine(t.Track + " attached to: " + t.Attached);
+            }
 
             unit.Complete();
         }

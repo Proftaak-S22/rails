@@ -9,11 +9,11 @@ namespace CTRails.DAL.Contexts
     public class RouteOracleContext : OracleDatabaseContext, IDataContext<Route>
     {
 
-     /*   public TrackOracleContext()
+        public RouteOracleContext()
             : base()
         {
             
-        } */
+        } 
 
         public void Add(Route entity)
         {

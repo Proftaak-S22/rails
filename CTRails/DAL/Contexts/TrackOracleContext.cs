@@ -37,7 +37,7 @@ namespace CTRails.DAL.Contexts
 
         public IEnumerable<Track> Get()
         {
-            Connection.Open();
+            OpenConnection();
 
             OracleCommand command = new OracleCommand("SELECT * FROM TRM_TRACK", Connection);
 
@@ -51,6 +51,8 @@ namespace CTRails.DAL.Contexts
 
                 tracks.Add(next);
             }
+
+            CloseConnection();
 
             return tracks;
         }
