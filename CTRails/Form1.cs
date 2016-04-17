@@ -36,6 +36,18 @@ namespace CTRails
             }
 
             unit.Complete();
+
+            tabTabs.SelectedIndex = 6;
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            
+
+            //Na login, ga naar hoofdscherm
+            tabTabs.SelectedIndex = 0;
+            tsTabs.BaseTabControl = tabTabs;
+            tabTabs.TabPages.Remove(tpLogin);
         }
     }
 }
