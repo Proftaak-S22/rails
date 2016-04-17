@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using CTRails.Entities;
 using Oracle.ManagedDataAccess.Client;
 
@@ -45,10 +46,11 @@ namespace CTRails.DAL.Contexts
 
             List<Track> tracks = new List<Track>();
 
+            UnitOfWork work = new UnitOfWork();
+
             while (reader.Read())
             {
                 Track next = new Track(Convert.ToInt32(reader["ID"]));
-
                 tracks.Add(next);
             }
 

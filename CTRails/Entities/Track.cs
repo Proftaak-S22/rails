@@ -7,9 +7,15 @@ namespace CTRails.Entities
         //Fields
         public int Number { get; private set; }
 
-        private ICollection<Sector> sectors;
-        private ICollection<Track> attached;
-        private ICollection<Route> routes;
+
+        public IEnumerable<Sector> Sectors { get; set; }
+
+
+        public IEnumerable<Track> AttachedTracks { get; set; }
+
+
+        public IEnumerable<Route> Routes { get; set; }
+
 
         //Constructor
         public Track(int id) : base (id)
