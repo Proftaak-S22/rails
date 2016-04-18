@@ -49,5 +49,22 @@ namespace CTRails
             tsTabs.BaseTabControl = tabTabs;
             tabTabs.TabPages.Remove(tpLogin);
         }
+
+        private void tpRemise_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbPlattegrond_Click(object sender, EventArgs e)
+        {
+            if (pbPlattegrond.Dock == DockStyle.None)
+            {
+                pbPlattegrond.Dock = DockStyle.Fill;
+            }
+            else
+            {
+                pbPlattegrond.Dock = DockStyle.None;
+            }
+        }
     }
 }
