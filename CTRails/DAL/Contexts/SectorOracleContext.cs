@@ -19,7 +19,7 @@ namespace CTRails.DAL.Contexts
         {
             OpenConnection();
 
-            string values = "(1, " + sector.SectionNumber + ", ";
+            string values = "(" + sector.SectionNumber + ", ";
             values += sector.TrackNumber + ")";
 
             OracleCommand cmd = new OracleCommand("INSERT INTO TRM_SECTION (ID, TRACK_ID) VALUES" + values, Connection);
@@ -66,7 +66,16 @@ namespace CTRails.DAL.Contexts
 
         public void Update(Sector sector)
         {
-            
+            OpenConnection();
+
+            string values = "ID = " + sector.SectionNumber + ", ";
+            values += "TRACK_ID = " + sector.TrackNumber ;
+
+            OracleCommand cmd = new OracleCommand("UPDATE TRM_SECTION SET ID = " + values + " WHERE ID = " + sector.SectionNumber, Connection);
+
+            cmd.ExecuteNonQuery();
+
+            CloseConnection();
         }
     }
 }

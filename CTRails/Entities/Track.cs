@@ -46,7 +46,10 @@ namespace CTRails.Entities
         public void Update()
         {
             List<Sector> sectors = Sectors.ToList();
-            
+            foreach (Sector s in sectors)
+            {
+                
+            }
         }
     }
 }

@@ -14,7 +14,7 @@ namespace CTRails.DAL
             AttachedTracks = new AttachedTrackRepository(new AttachedTrackOracleContext());
             Employees = new EmployeeRepository(new EmployeeOracleContext());
             Routes = new RouteRepository(new RouteOracleContext());
-            //Sectors = new SectorRepository(new SectorOracleContext());
+            Sectors = new SectorRepository(new SectorOracleContext());
             Statuses = new StatusRepository(new StatusOracleContext());
             Tracks = new TrackRepository(new TrackOracleContext());
             //TrackRoutes = new TrackRouteRepository(new TrackRouteOracleContext());
