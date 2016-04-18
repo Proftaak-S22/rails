@@ -42,12 +42,30 @@ namespace CTRails
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            
-
-            //Na login, ga naar hoofdscherm
-            tabTabs.SelectedIndex = 0;
-            tsTabs.BaseTabControl = tabTabs;
-            tabTabs.TabPages.Remove(tpLogin);
+            //Controleer of gebruikersnaam en wachtwoord correct zijn
+            bool login = false;
+            List<Employee> employees = unit.Employees.Get().ToList();
+            foreach (Employee em in employees)
+            {
+                if(em.Username == txtUsername.Text)
+                {
+                    if (em.Password == txtPassword.Text)
+                    {
+                        login = true;
+                        //Na login, ga naar hoofdscherm
+                        this.Text = "Welkom " + em.FirstName;
+                        tabTabs.SelectedIndex = 0;
+                        tsTabs.BaseTabControl = tabTabs;
+                        tabTabs.TabPages.Remove(tpLogin);
+                    }
+                }
+            }
+            unit.Complete();
+            if (login == false)
+            {
+                txtPassword.Text = string.Empty;
+                MessageBox.Show("Gebruikersnaam of wachtwoord is verkeerd");
+            }
         }
 
         private void tpRemise_Click(object sender, EventArgs e)

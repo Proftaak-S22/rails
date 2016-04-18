@@ -30,6 +30,7 @@
         {
             this.tabTabs = new MaterialSkin.Controls.MaterialTabControl();
             this.tpRemise = new System.Windows.Forms.TabPage();
+            this.pbPlattegrond = new System.Windows.Forms.PictureBox();
             this.pnlSection41_3 = new System.Windows.Forms.Panel();
             this.pnlSection64_3 = new System.Windows.Forms.Panel();
             this.pnlSection63_3 = new System.Windows.Forms.Panel();
@@ -129,6 +130,16 @@
             this.pnlSection38_1 = new System.Windows.Forms.Panel();
             this.pnlSection42_1 = new System.Windows.Forms.Panel();
             this.pnlSection37_1 = new System.Windows.Forms.Panel();
+            this.pnlSection15_1 = new System.Windows.Forms.Panel();
+            this.pnlSection14_1 = new System.Windows.Forms.Panel();
+            this.pnlSection13_1 = new System.Windows.Forms.Panel();
+            this.pnlSection21_1 = new System.Windows.Forms.Panel();
+            this.pnlSection20_1 = new System.Windows.Forms.Panel();
+            this.pnlSection19_1 = new System.Windows.Forms.Panel();
+            this.pnlSection18_1 = new System.Windows.Forms.Panel();
+            this.pnlSection17_1 = new System.Windows.Forms.Panel();
+            this.pnlSection16_1 = new System.Windows.Forms.Panel();
+            this.pnlSection12_1 = new System.Windows.Forms.Panel();
             this.pnlSection44_1 = new System.Windows.Forms.Panel();
             this.pnlSection43_1 = new System.Windows.Forms.Panel();
             this.pnlSection36_1 = new System.Windows.Forms.Panel();
@@ -162,6 +173,16 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.materialRaisedButton27 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton26 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton24 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton33 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton32 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton31 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton30 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton29 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton28 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton25 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton12 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton11 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton9 = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -192,37 +213,16 @@
             this.tpSporen = new System.Windows.Forms.TabPage();
             this.tpLijnen = new System.Windows.Forms.TabPage();
             this.tpLogin = new System.Windows.Forms.TabPage();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblUsername = new MaterialSkin.Controls.MaterialLabel();
             this.btnLogin = new MaterialSkin.Controls.MaterialRaisedButton();
             this.tsTabs = new MaterialSkin.Controls.MaterialTabSelector();
-            this.materialRaisedButton25 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.pnlSection12_1 = new System.Windows.Forms.Panel();
-            this.materialRaisedButton24 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.pnlSection13_1 = new System.Windows.Forms.Panel();
-            this.materialRaisedButton26 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.pnlSection14_1 = new System.Windows.Forms.Panel();
-            this.materialRaisedButton27 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.pnlSection15_1 = new System.Windows.Forms.Panel();
-            this.materialRaisedButton28 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.pnlSection16_1 = new System.Windows.Forms.Panel();
-            this.materialRaisedButton29 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.pnlSection17_1 = new System.Windows.Forms.Panel();
-            this.materialRaisedButton30 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.pnlSection18_1 = new System.Windows.Forms.Panel();
-            this.materialRaisedButton31 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.pnlSection19_1 = new System.Windows.Forms.Panel();
-            this.materialRaisedButton32 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.pnlSection20_1 = new System.Windows.Forms.Panel();
-            this.materialRaisedButton33 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.pnlSection21_1 = new System.Windows.Forms.Panel();
-            this.pbPlattegrond = new System.Windows.Forms.PictureBox();
             this.tabTabs.SuspendLayout();
             this.tpRemise.SuspendLayout();
-            this.tpLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlattegrond)).BeginInit();
+            this.tpLogin.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabTabs
@@ -429,6 +429,17 @@
             this.tpRemise.Text = "Remise";
             this.tpRemise.UseVisualStyleBackColor = true;
             this.tpRemise.Click += new System.EventHandler(this.tpRemise_Click);
+            // 
+            // pbPlattegrond
+            // 
+            this.pbPlattegrond.Image = global::CTRails.Properties.Resources.Plattegrond_clear;
+            this.pbPlattegrond.Location = new System.Drawing.Point(961, 359);
+            this.pbPlattegrond.Name = "pbPlattegrond";
+            this.pbPlattegrond.Size = new System.Drawing.Size(204, 119);
+            this.pbPlattegrond.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbPlattegrond.TabIndex = 2;
+            this.pbPlattegrond.TabStop = false;
+            this.pbPlattegrond.Click += new System.EventHandler(this.pbPlattegrond_Click);
             // 
             // pnlSection41_3
             // 
@@ -1222,6 +1233,86 @@
             this.pnlSection37_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection37_1.TabIndex = 1;
             // 
+            // pnlSection15_1
+            // 
+            this.pnlSection15_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlSection15_1.Location = new System.Drawing.Point(456, 281);
+            this.pnlSection15_1.Name = "pnlSection15_1";
+            this.pnlSection15_1.Size = new System.Drawing.Size(50, 30);
+            this.pnlSection15_1.TabIndex = 1;
+            // 
+            // pnlSection14_1
+            // 
+            this.pnlSection14_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlSection14_1.Location = new System.Drawing.Point(400, 281);
+            this.pnlSection14_1.Name = "pnlSection14_1";
+            this.pnlSection14_1.Size = new System.Drawing.Size(50, 30);
+            this.pnlSection14_1.TabIndex = 1;
+            // 
+            // pnlSection13_1
+            // 
+            this.pnlSection13_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlSection13_1.Location = new System.Drawing.Point(344, 281);
+            this.pnlSection13_1.Name = "pnlSection13_1";
+            this.pnlSection13_1.Size = new System.Drawing.Size(50, 30);
+            this.pnlSection13_1.TabIndex = 1;
+            // 
+            // pnlSection21_1
+            // 
+            this.pnlSection21_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlSection21_1.Location = new System.Drawing.Point(568, 389);
+            this.pnlSection21_1.Name = "pnlSection21_1";
+            this.pnlSection21_1.Size = new System.Drawing.Size(50, 30);
+            this.pnlSection21_1.TabIndex = 1;
+            // 
+            // pnlSection20_1
+            // 
+            this.pnlSection20_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlSection20_1.Location = new System.Drawing.Point(512, 389);
+            this.pnlSection20_1.Name = "pnlSection20_1";
+            this.pnlSection20_1.Size = new System.Drawing.Size(50, 30);
+            this.pnlSection20_1.TabIndex = 1;
+            // 
+            // pnlSection19_1
+            // 
+            this.pnlSection19_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlSection19_1.Location = new System.Drawing.Point(456, 389);
+            this.pnlSection19_1.Name = "pnlSection19_1";
+            this.pnlSection19_1.Size = new System.Drawing.Size(50, 30);
+            this.pnlSection19_1.TabIndex = 1;
+            // 
+            // pnlSection18_1
+            // 
+            this.pnlSection18_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlSection18_1.Location = new System.Drawing.Point(400, 389);
+            this.pnlSection18_1.Name = "pnlSection18_1";
+            this.pnlSection18_1.Size = new System.Drawing.Size(50, 30);
+            this.pnlSection18_1.TabIndex = 1;
+            // 
+            // pnlSection17_1
+            // 
+            this.pnlSection17_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlSection17_1.Location = new System.Drawing.Point(344, 389);
+            this.pnlSection17_1.Name = "pnlSection17_1";
+            this.pnlSection17_1.Size = new System.Drawing.Size(50, 30);
+            this.pnlSection17_1.TabIndex = 1;
+            // 
+            // pnlSection16_1
+            // 
+            this.pnlSection16_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlSection16_1.Location = new System.Drawing.Point(288, 389);
+            this.pnlSection16_1.Name = "pnlSection16_1";
+            this.pnlSection16_1.Size = new System.Drawing.Size(50, 30);
+            this.pnlSection16_1.TabIndex = 1;
+            // 
+            // pnlSection12_1
+            // 
+            this.pnlSection12_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlSection12_1.Location = new System.Drawing.Point(288, 281);
+            this.pnlSection12_1.Name = "pnlSection12_1";
+            this.pnlSection12_1.Size = new System.Drawing.Size(50, 30);
+            this.pnlSection12_1.TabIndex = 1;
+            // 
             // pnlSection44_1
             // 
             this.pnlSection44_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -1509,6 +1600,146 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(50, 30);
             this.panel1.TabIndex = 1;
+            // 
+            // materialRaisedButton27
+            // 
+            this.materialRaisedButton27.BackColor = System.Drawing.Color.Transparent;
+            this.materialRaisedButton27.Depth = 0;
+            this.materialRaisedButton27.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.materialRaisedButton27.Location = new System.Drawing.Point(456, 245);
+            this.materialRaisedButton27.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton27.Name = "materialRaisedButton27";
+            this.materialRaisedButton27.Primary = true;
+            this.materialRaisedButton27.Size = new System.Drawing.Size(50, 30);
+            this.materialRaisedButton27.TabIndex = 0;
+            this.materialRaisedButton27.Text = "15";
+            this.materialRaisedButton27.UseVisualStyleBackColor = false;
+            // 
+            // materialRaisedButton26
+            // 
+            this.materialRaisedButton26.BackColor = System.Drawing.Color.Transparent;
+            this.materialRaisedButton26.Depth = 0;
+            this.materialRaisedButton26.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.materialRaisedButton26.Location = new System.Drawing.Point(400, 245);
+            this.materialRaisedButton26.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton26.Name = "materialRaisedButton26";
+            this.materialRaisedButton26.Primary = true;
+            this.materialRaisedButton26.Size = new System.Drawing.Size(50, 30);
+            this.materialRaisedButton26.TabIndex = 0;
+            this.materialRaisedButton26.Text = "14";
+            this.materialRaisedButton26.UseVisualStyleBackColor = false;
+            // 
+            // materialRaisedButton24
+            // 
+            this.materialRaisedButton24.BackColor = System.Drawing.Color.Transparent;
+            this.materialRaisedButton24.Depth = 0;
+            this.materialRaisedButton24.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.materialRaisedButton24.Location = new System.Drawing.Point(344, 245);
+            this.materialRaisedButton24.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton24.Name = "materialRaisedButton24";
+            this.materialRaisedButton24.Primary = true;
+            this.materialRaisedButton24.Size = new System.Drawing.Size(50, 30);
+            this.materialRaisedButton24.TabIndex = 0;
+            this.materialRaisedButton24.Text = "13";
+            this.materialRaisedButton24.UseVisualStyleBackColor = false;
+            // 
+            // materialRaisedButton33
+            // 
+            this.materialRaisedButton33.BackColor = System.Drawing.Color.Transparent;
+            this.materialRaisedButton33.Depth = 0;
+            this.materialRaisedButton33.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.materialRaisedButton33.Location = new System.Drawing.Point(568, 353);
+            this.materialRaisedButton33.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton33.Name = "materialRaisedButton33";
+            this.materialRaisedButton33.Primary = true;
+            this.materialRaisedButton33.Size = new System.Drawing.Size(50, 30);
+            this.materialRaisedButton33.TabIndex = 0;
+            this.materialRaisedButton33.Text = "21";
+            this.materialRaisedButton33.UseVisualStyleBackColor = false;
+            // 
+            // materialRaisedButton32
+            // 
+            this.materialRaisedButton32.BackColor = System.Drawing.Color.Transparent;
+            this.materialRaisedButton32.Depth = 0;
+            this.materialRaisedButton32.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.materialRaisedButton32.Location = new System.Drawing.Point(512, 353);
+            this.materialRaisedButton32.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton32.Name = "materialRaisedButton32";
+            this.materialRaisedButton32.Primary = true;
+            this.materialRaisedButton32.Size = new System.Drawing.Size(50, 30);
+            this.materialRaisedButton32.TabIndex = 0;
+            this.materialRaisedButton32.Text = "20";
+            this.materialRaisedButton32.UseVisualStyleBackColor = false;
+            // 
+            // materialRaisedButton31
+            // 
+            this.materialRaisedButton31.BackColor = System.Drawing.Color.Transparent;
+            this.materialRaisedButton31.Depth = 0;
+            this.materialRaisedButton31.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.materialRaisedButton31.Location = new System.Drawing.Point(456, 353);
+            this.materialRaisedButton31.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton31.Name = "materialRaisedButton31";
+            this.materialRaisedButton31.Primary = true;
+            this.materialRaisedButton31.Size = new System.Drawing.Size(50, 30);
+            this.materialRaisedButton31.TabIndex = 0;
+            this.materialRaisedButton31.Text = "19";
+            this.materialRaisedButton31.UseVisualStyleBackColor = false;
+            // 
+            // materialRaisedButton30
+            // 
+            this.materialRaisedButton30.BackColor = System.Drawing.Color.Transparent;
+            this.materialRaisedButton30.Depth = 0;
+            this.materialRaisedButton30.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.materialRaisedButton30.Location = new System.Drawing.Point(400, 353);
+            this.materialRaisedButton30.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton30.Name = "materialRaisedButton30";
+            this.materialRaisedButton30.Primary = true;
+            this.materialRaisedButton30.Size = new System.Drawing.Size(50, 30);
+            this.materialRaisedButton30.TabIndex = 0;
+            this.materialRaisedButton30.Text = "18";
+            this.materialRaisedButton30.UseVisualStyleBackColor = false;
+            // 
+            // materialRaisedButton29
+            // 
+            this.materialRaisedButton29.BackColor = System.Drawing.Color.Transparent;
+            this.materialRaisedButton29.Depth = 0;
+            this.materialRaisedButton29.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.materialRaisedButton29.Location = new System.Drawing.Point(344, 353);
+            this.materialRaisedButton29.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton29.Name = "materialRaisedButton29";
+            this.materialRaisedButton29.Primary = true;
+            this.materialRaisedButton29.Size = new System.Drawing.Size(50, 30);
+            this.materialRaisedButton29.TabIndex = 0;
+            this.materialRaisedButton29.Text = "17";
+            this.materialRaisedButton29.UseVisualStyleBackColor = false;
+            // 
+            // materialRaisedButton28
+            // 
+            this.materialRaisedButton28.BackColor = System.Drawing.Color.Transparent;
+            this.materialRaisedButton28.Depth = 0;
+            this.materialRaisedButton28.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.materialRaisedButton28.Location = new System.Drawing.Point(288, 353);
+            this.materialRaisedButton28.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton28.Name = "materialRaisedButton28";
+            this.materialRaisedButton28.Primary = true;
+            this.materialRaisedButton28.Size = new System.Drawing.Size(50, 30);
+            this.materialRaisedButton28.TabIndex = 0;
+            this.materialRaisedButton28.Text = "16";
+            this.materialRaisedButton28.UseVisualStyleBackColor = false;
+            // 
+            // materialRaisedButton25
+            // 
+            this.materialRaisedButton25.BackColor = System.Drawing.Color.Transparent;
+            this.materialRaisedButton25.Depth = 0;
+            this.materialRaisedButton25.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.materialRaisedButton25.Location = new System.Drawing.Point(288, 245);
+            this.materialRaisedButton25.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton25.Name = "materialRaisedButton25";
+            this.materialRaisedButton25.Primary = true;
+            this.materialRaisedButton25.Size = new System.Drawing.Size(50, 30);
+            this.materialRaisedButton25.TabIndex = 0;
+            this.materialRaisedButton25.Text = "12";
+            this.materialRaisedButton25.UseVisualStyleBackColor = false;
             // 
             // materialRaisedButton12
             // 
@@ -1898,10 +2129,10 @@
             // 
             // tpLogin
             // 
-            this.tpLogin.Controls.Add(this.textBox2);
-            this.tpLogin.Controls.Add(this.textBox1);
+            this.tpLogin.Controls.Add(this.txtPassword);
+            this.tpLogin.Controls.Add(this.txtUsername);
             this.tpLogin.Controls.Add(this.materialLabel2);
-            this.tpLogin.Controls.Add(this.materialLabel1);
+            this.tpLogin.Controls.Add(this.lblUsername);
             this.tpLogin.Controls.Add(this.btnLogin);
             this.tpLogin.Location = new System.Drawing.Point(4, 22);
             this.tpLogin.Name = "tpLogin";
@@ -1911,20 +2142,20 @@
             this.tpLogin.Text = "Login";
             this.tpLogin.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // txtPassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(511, 262);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '•';
-            this.textBox2.Size = new System.Drawing.Size(182, 20);
-            this.textBox2.TabIndex = 3;
+            this.txtPassword.Location = new System.Drawing.Point(511, 262);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '•';
+            this.txtPassword.Size = new System.Drawing.Size(182, 20);
+            this.txtPassword.TabIndex = 3;
             // 
-            // textBox1
+            // txtUsername
             // 
-            this.textBox1.Location = new System.Drawing.Point(511, 186);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(182, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtUsername.Location = new System.Drawing.Point(511, 186);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(182, 20);
+            this.txtUsername.TabIndex = 3;
             // 
             // materialLabel2
             // 
@@ -1939,18 +2170,18 @@
             this.materialLabel2.TabIndex = 2;
             this.materialLabel2.Text = "Wachtwoord";
             // 
-            // materialLabel1
+            // lblUsername
             // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(579, 164);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(47, 19);
-            this.materialLabel1.TabIndex = 1;
-            this.materialLabel1.Text = "Email";
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Depth = 0;
+            this.lblUsername.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lblUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblUsername.Location = new System.Drawing.Point(542, 164);
+            this.lblUsername.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(118, 19);
+            this.lblUsername.TabIndex = 1;
+            this.lblUsername.Text = "Gebruikersnaam";
             // 
             // btnLogin
             // 
@@ -1977,237 +2208,6 @@
             this.tsTabs.TabIndex = 1;
             this.tsTabs.Text = "Test";
             // 
-            // materialRaisedButton25
-            // 
-            this.materialRaisedButton25.BackColor = System.Drawing.Color.Transparent;
-            this.materialRaisedButton25.Depth = 0;
-            this.materialRaisedButton25.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.materialRaisedButton25.Location = new System.Drawing.Point(288, 245);
-            this.materialRaisedButton25.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton25.Name = "materialRaisedButton25";
-            this.materialRaisedButton25.Primary = true;
-            this.materialRaisedButton25.Size = new System.Drawing.Size(50, 30);
-            this.materialRaisedButton25.TabIndex = 0;
-            this.materialRaisedButton25.Text = "12";
-            this.materialRaisedButton25.UseVisualStyleBackColor = false;
-            // 
-            // pnlSection12_1
-            // 
-            this.pnlSection12_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlSection12_1.Location = new System.Drawing.Point(288, 281);
-            this.pnlSection12_1.Name = "pnlSection12_1";
-            this.pnlSection12_1.Size = new System.Drawing.Size(50, 30);
-            this.pnlSection12_1.TabIndex = 1;
-            // 
-            // materialRaisedButton24
-            // 
-            this.materialRaisedButton24.BackColor = System.Drawing.Color.Transparent;
-            this.materialRaisedButton24.Depth = 0;
-            this.materialRaisedButton24.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.materialRaisedButton24.Location = new System.Drawing.Point(344, 245);
-            this.materialRaisedButton24.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton24.Name = "materialRaisedButton24";
-            this.materialRaisedButton24.Primary = true;
-            this.materialRaisedButton24.Size = new System.Drawing.Size(50, 30);
-            this.materialRaisedButton24.TabIndex = 0;
-            this.materialRaisedButton24.Text = "13";
-            this.materialRaisedButton24.UseVisualStyleBackColor = false;
-            // 
-            // pnlSection13_1
-            // 
-            this.pnlSection13_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlSection13_1.Location = new System.Drawing.Point(344, 281);
-            this.pnlSection13_1.Name = "pnlSection13_1";
-            this.pnlSection13_1.Size = new System.Drawing.Size(50, 30);
-            this.pnlSection13_1.TabIndex = 1;
-            // 
-            // materialRaisedButton26
-            // 
-            this.materialRaisedButton26.BackColor = System.Drawing.Color.Transparent;
-            this.materialRaisedButton26.Depth = 0;
-            this.materialRaisedButton26.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.materialRaisedButton26.Location = new System.Drawing.Point(400, 245);
-            this.materialRaisedButton26.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton26.Name = "materialRaisedButton26";
-            this.materialRaisedButton26.Primary = true;
-            this.materialRaisedButton26.Size = new System.Drawing.Size(50, 30);
-            this.materialRaisedButton26.TabIndex = 0;
-            this.materialRaisedButton26.Text = "14";
-            this.materialRaisedButton26.UseVisualStyleBackColor = false;
-            // 
-            // pnlSection14_1
-            // 
-            this.pnlSection14_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlSection14_1.Location = new System.Drawing.Point(400, 281);
-            this.pnlSection14_1.Name = "pnlSection14_1";
-            this.pnlSection14_1.Size = new System.Drawing.Size(50, 30);
-            this.pnlSection14_1.TabIndex = 1;
-            // 
-            // materialRaisedButton27
-            // 
-            this.materialRaisedButton27.BackColor = System.Drawing.Color.Transparent;
-            this.materialRaisedButton27.Depth = 0;
-            this.materialRaisedButton27.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.materialRaisedButton27.Location = new System.Drawing.Point(456, 245);
-            this.materialRaisedButton27.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton27.Name = "materialRaisedButton27";
-            this.materialRaisedButton27.Primary = true;
-            this.materialRaisedButton27.Size = new System.Drawing.Size(50, 30);
-            this.materialRaisedButton27.TabIndex = 0;
-            this.materialRaisedButton27.Text = "15";
-            this.materialRaisedButton27.UseVisualStyleBackColor = false;
-            // 
-            // pnlSection15_1
-            // 
-            this.pnlSection15_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlSection15_1.Location = new System.Drawing.Point(456, 281);
-            this.pnlSection15_1.Name = "pnlSection15_1";
-            this.pnlSection15_1.Size = new System.Drawing.Size(50, 30);
-            this.pnlSection15_1.TabIndex = 1;
-            // 
-            // materialRaisedButton28
-            // 
-            this.materialRaisedButton28.BackColor = System.Drawing.Color.Transparent;
-            this.materialRaisedButton28.Depth = 0;
-            this.materialRaisedButton28.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.materialRaisedButton28.Location = new System.Drawing.Point(288, 353);
-            this.materialRaisedButton28.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton28.Name = "materialRaisedButton28";
-            this.materialRaisedButton28.Primary = true;
-            this.materialRaisedButton28.Size = new System.Drawing.Size(50, 30);
-            this.materialRaisedButton28.TabIndex = 0;
-            this.materialRaisedButton28.Text = "16";
-            this.materialRaisedButton28.UseVisualStyleBackColor = false;
-            // 
-            // pnlSection16_1
-            // 
-            this.pnlSection16_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlSection16_1.Location = new System.Drawing.Point(288, 389);
-            this.pnlSection16_1.Name = "pnlSection16_1";
-            this.pnlSection16_1.Size = new System.Drawing.Size(50, 30);
-            this.pnlSection16_1.TabIndex = 1;
-            // 
-            // materialRaisedButton29
-            // 
-            this.materialRaisedButton29.BackColor = System.Drawing.Color.Transparent;
-            this.materialRaisedButton29.Depth = 0;
-            this.materialRaisedButton29.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.materialRaisedButton29.Location = new System.Drawing.Point(344, 353);
-            this.materialRaisedButton29.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton29.Name = "materialRaisedButton29";
-            this.materialRaisedButton29.Primary = true;
-            this.materialRaisedButton29.Size = new System.Drawing.Size(50, 30);
-            this.materialRaisedButton29.TabIndex = 0;
-            this.materialRaisedButton29.Text = "17";
-            this.materialRaisedButton29.UseVisualStyleBackColor = false;
-            // 
-            // pnlSection17_1
-            // 
-            this.pnlSection17_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlSection17_1.Location = new System.Drawing.Point(344, 389);
-            this.pnlSection17_1.Name = "pnlSection17_1";
-            this.pnlSection17_1.Size = new System.Drawing.Size(50, 30);
-            this.pnlSection17_1.TabIndex = 1;
-            // 
-            // materialRaisedButton30
-            // 
-            this.materialRaisedButton30.BackColor = System.Drawing.Color.Transparent;
-            this.materialRaisedButton30.Depth = 0;
-            this.materialRaisedButton30.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.materialRaisedButton30.Location = new System.Drawing.Point(400, 353);
-            this.materialRaisedButton30.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton30.Name = "materialRaisedButton30";
-            this.materialRaisedButton30.Primary = true;
-            this.materialRaisedButton30.Size = new System.Drawing.Size(50, 30);
-            this.materialRaisedButton30.TabIndex = 0;
-            this.materialRaisedButton30.Text = "18";
-            this.materialRaisedButton30.UseVisualStyleBackColor = false;
-            // 
-            // pnlSection18_1
-            // 
-            this.pnlSection18_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlSection18_1.Location = new System.Drawing.Point(400, 389);
-            this.pnlSection18_1.Name = "pnlSection18_1";
-            this.pnlSection18_1.Size = new System.Drawing.Size(50, 30);
-            this.pnlSection18_1.TabIndex = 1;
-            // 
-            // materialRaisedButton31
-            // 
-            this.materialRaisedButton31.BackColor = System.Drawing.Color.Transparent;
-            this.materialRaisedButton31.Depth = 0;
-            this.materialRaisedButton31.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.materialRaisedButton31.Location = new System.Drawing.Point(456, 353);
-            this.materialRaisedButton31.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton31.Name = "materialRaisedButton31";
-            this.materialRaisedButton31.Primary = true;
-            this.materialRaisedButton31.Size = new System.Drawing.Size(50, 30);
-            this.materialRaisedButton31.TabIndex = 0;
-            this.materialRaisedButton31.Text = "19";
-            this.materialRaisedButton31.UseVisualStyleBackColor = false;
-            // 
-            // pnlSection19_1
-            // 
-            this.pnlSection19_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlSection19_1.Location = new System.Drawing.Point(456, 389);
-            this.pnlSection19_1.Name = "pnlSection19_1";
-            this.pnlSection19_1.Size = new System.Drawing.Size(50, 30);
-            this.pnlSection19_1.TabIndex = 1;
-            // 
-            // materialRaisedButton32
-            // 
-            this.materialRaisedButton32.BackColor = System.Drawing.Color.Transparent;
-            this.materialRaisedButton32.Depth = 0;
-            this.materialRaisedButton32.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.materialRaisedButton32.Location = new System.Drawing.Point(512, 353);
-            this.materialRaisedButton32.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton32.Name = "materialRaisedButton32";
-            this.materialRaisedButton32.Primary = true;
-            this.materialRaisedButton32.Size = new System.Drawing.Size(50, 30);
-            this.materialRaisedButton32.TabIndex = 0;
-            this.materialRaisedButton32.Text = "20";
-            this.materialRaisedButton32.UseVisualStyleBackColor = false;
-            // 
-            // pnlSection20_1
-            // 
-            this.pnlSection20_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlSection20_1.Location = new System.Drawing.Point(512, 389);
-            this.pnlSection20_1.Name = "pnlSection20_1";
-            this.pnlSection20_1.Size = new System.Drawing.Size(50, 30);
-            this.pnlSection20_1.TabIndex = 1;
-            // 
-            // materialRaisedButton33
-            // 
-            this.materialRaisedButton33.BackColor = System.Drawing.Color.Transparent;
-            this.materialRaisedButton33.Depth = 0;
-            this.materialRaisedButton33.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.materialRaisedButton33.Location = new System.Drawing.Point(568, 353);
-            this.materialRaisedButton33.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton33.Name = "materialRaisedButton33";
-            this.materialRaisedButton33.Primary = true;
-            this.materialRaisedButton33.Size = new System.Drawing.Size(50, 30);
-            this.materialRaisedButton33.TabIndex = 0;
-            this.materialRaisedButton33.Text = "21";
-            this.materialRaisedButton33.UseVisualStyleBackColor = false;
-            // 
-            // pnlSection21_1
-            // 
-            this.pnlSection21_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlSection21_1.Location = new System.Drawing.Point(568, 389);
-            this.pnlSection21_1.Name = "pnlSection21_1";
-            this.pnlSection21_1.Size = new System.Drawing.Size(50, 30);
-            this.pnlSection21_1.TabIndex = 1;
-            // 
-            // pbPlattegrond
-            // 
-            this.pbPlattegrond.Image = global::CTRails.Properties.Resources.Plattegrond_clear;
-            this.pbPlattegrond.Location = new System.Drawing.Point(961, 359);
-            this.pbPlattegrond.Name = "pbPlattegrond";
-            this.pbPlattegrond.Size = new System.Drawing.Size(204, 119);
-            this.pbPlattegrond.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbPlattegrond.TabIndex = 2;
-            this.pbPlattegrond.TabStop = false;
-            this.pbPlattegrond.Click += new System.EventHandler(this.pbPlattegrond_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2219,9 +2219,9 @@
             this.Text = "Welkom <user>";
             this.tabTabs.ResumeLayout(false);
             this.tpRemise.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbPlattegrond)).EndInit();
             this.tpLogin.ResumeLayout(false);
             this.tpLogin.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPlattegrond)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2237,10 +2237,10 @@
         private System.Windows.Forms.TabPage tpSporen;
         private System.Windows.Forms.TabPage tpLijnen;
         private System.Windows.Forms.TabPage tpLogin;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtUsername;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
-        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private MaterialSkin.Controls.MaterialLabel lblUsername;
         private MaterialSkin.Controls.MaterialRaisedButton btnLogin;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel pnlSection38_3;
