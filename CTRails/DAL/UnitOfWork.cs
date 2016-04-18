@@ -36,6 +36,7 @@ namespace CTRails.DAL
             Employees = null;
             Statuses = null;
             AccountTypes = null;
+            Sectors = null;
         }
 
         public AccountTypeRepository AccountTypes { get; private set; }

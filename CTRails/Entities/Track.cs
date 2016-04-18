@@ -1,33 +1,7 @@
-﻿using System.Collections.Generic;
-
-namespace CTRails.Entities
-{
-    public class Track : Entity
-    {
-        //Fields
-        public int Number { get; private set; }
-
-
-        public IEnumerable<Sector> Sectors { get; set; }
-
-
-        public IEnumerable<Track> AttachedTracks { get; set; }
-
-
-        public IEnumerable<Route> Routes { get; set; }
-
-
-        //Constructor
-        public Track(int id) : base (id)
-        {
-
-        }
-    }
-}
-/*
-using CTRails.DAL;
+﻿using CTRails.DAL;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace CTRails.Entities
 {
@@ -36,9 +10,7 @@ namespace CTRails.Entities
         //Fields
         private UnitOfWork unit;
         public int Number { get; private set; }
-        private ICollection<Sector> sectors;
-        private ICollection<Track> attached;
-        private ICollection<Route> routes;
+
         public IEnumerable<Sector> Sectors
         {
             get
@@ -65,16 +37,17 @@ namespace CTRails.Entities
         }
 
         //Constructor
-        public Track(int id, int number) : base(id)
+        public Track(int id) : base(id)
         {
-            Number = number;
+            Number = id;
         }
 
-        //Methodes
+        //Methoden
         public void Update()
         {
-
+            List<Sector> sectors = Sectors.ToList();
+            
         }
     }
 }
-*/
+

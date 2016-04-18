@@ -3,12 +3,14 @@
     public class Sector
     {
         //Fields
-        private int sectionNumber;
+        public int SectionNumber { get; set; }
+        public int TrackNumber { get; set; }
 
         //Constructor
-        public Sector(int sectionNumber)
+        public Sector(int sectionNumber, int trackNumber)
         {
-            this.sectionNumber = sectionNumber;
+            this.SectionNumber = sectionNumber;
+            this.TrackNumber = trackNumber;
         }
     }
 }

@@ -19,7 +19,7 @@ namespace CTRails.DAL
         private ICollection<Employee> employees;
         private ICollection<Status> statuses;
         private ICollection<AccountType> accountTypes;
-
+        private ICollection<Sector> sectors;
 
 
         public OracleDataContext(string connection)
@@ -176,6 +176,32 @@ namespace CTRails.DAL
                 Close();
 
                 return accountTypes;
+            }
+        }
+
+        public IEnumerable<Sector> Sectors
+        {
+            get
+            {
+                if (sectors != null)
+                    return sectors;
+
+                OracleDataReader reader = ConnectAndQuery("SELECT * FROM TRM_SECTION");
+
+                sectors = new List<Sector>();
+
+                while (reader.Read())
+                {
+                    Sector sector = new Sector(
+                        Convert.ToInt32(reader["ID"]),
+                        Convert.ToInt32(reader["TRACK_ID"]));
+
+                    sectors.Add(sector);
+                }
+
+                Close();
+
+                return sectors;
             }
         }
 
