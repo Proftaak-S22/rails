@@ -128,8 +128,6 @@ namespace CTRails.DAL.Contexts
             return employees;
         }
 
-
-
         public string ToOracleDate(DateTime date)
         {
             return "TO_DATE('" + string.Format("{0:dd-MMM-yy}", date) + "', 'DD-MON-YY')";

@@ -20,13 +20,6 @@ namespace CTRails
         {
             InitializeComponent();
 
-            var materialSkinManager = MaterialSkinManager.Instance;
-            materialSkinManager.AddFormToManage(this);
-            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-
-            materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
-            
-                
             unit = new UnitOfWork();
 
             List<AttachedTrack> at = unit.AttachedTracks.Get().ToList();
@@ -36,6 +29,19 @@ namespace CTRails
             }
 
             unit.Complete();
+
+
+            FormLoading();
+        }
+
+        private void FormLoading()
+        {
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500,
+                Accent.LightBlue200, TextShade.WHITE);
 
             tabTabs.SelectedIndex = 6;
         }
@@ -57,6 +63,7 @@ namespace CTRails
                         tabTabs.SelectedIndex = 0;
                         tsTabs.BaseTabControl = tabTabs;
                         tabTabs.TabPages.Remove(tpLogin);
+                        btnLogOut.Visible = true;
                     }
                 }
             }
@@ -78,10 +85,12 @@ namespace CTRails
             if (pbPlattegrond.Dock == DockStyle.None)
             {
                 pbPlattegrond.Dock = DockStyle.Fill;
+                lblVergroot.Visible = false;
             }
             else
             {
                 pbPlattegrond.Dock = DockStyle.None;
+                lblVergroot.Visible = true;
             }
         }
     }
