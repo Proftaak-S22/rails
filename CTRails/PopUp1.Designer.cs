@@ -49,6 +49,7 @@
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(59, 114);
+            this.textBox1.MaxLength = 4;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(155, 53);
             this.textBox1.TabIndex = 1;

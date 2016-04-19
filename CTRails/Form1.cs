@@ -15,6 +15,7 @@ namespace CTRails
     {
 
         private UnitOfWork unit;
+        private PopUp1 popAddTram = new PopUp1();
 
         public Form1()
         {
