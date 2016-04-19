@@ -30,15 +30,24 @@
         {
             this.tabTabs = new MaterialSkin.Controls.MaterialTabControl();
             this.tpRemise = new System.Windows.Forms.TabPage();
+            this.lblVergroot = new MaterialSkin.Controls.MaterialLabel();
             this.pbPlattegrond = new System.Windows.Forms.PictureBox();
             this.pnlSection41_3 = new System.Windows.Forms.Panel();
+            this.lblSection41_3 = new System.Windows.Forms.Label();
             this.pnlSection64_3 = new System.Windows.Forms.Panel();
+            this.lblSection64_3 = new System.Windows.Forms.Label();
             this.pnlSection63_3 = new System.Windows.Forms.Panel();
+            this.lblSection63_3 = new System.Windows.Forms.Label();
             this.pnlSection57_3 = new System.Windows.Forms.Panel();
+            this.lblSection57_3 = new System.Windows.Forms.Label();
             this.pnlSection56_3 = new System.Windows.Forms.Panel();
+            this.lblSection56_3 = new System.Windows.Forms.Label();
             this.pnlSection55_3 = new System.Windows.Forms.Panel();
+            this.lblSection55_3 = new System.Windows.Forms.Label();
             this.pnlSection54_3 = new System.Windows.Forms.Panel();
+            this.lblSection54_3 = new System.Windows.Forms.Label();
             this.pnlSection53_3 = new System.Windows.Forms.Panel();
+            this.lblSection53_3 = new System.Windows.Forms.Label();
             this.pnlSection52_3 = new System.Windows.Forms.Panel();
             this.lblSection52_3 = new System.Windows.Forms.Label();
             this.pnlSection51_3 = new System.Windows.Forms.Panel();
@@ -46,41 +55,65 @@
             this.pnlSection38_3 = new System.Windows.Forms.Panel();
             this.lblSection38_3 = new System.Windows.Forms.Label();
             this.pnlSection42_3 = new System.Windows.Forms.Panel();
+            this.lblSection42_3 = new System.Windows.Forms.Label();
             this.pnlSection37_3 = new System.Windows.Forms.Panel();
             this.lblSection37_3 = new System.Windows.Forms.Label();
             this.pnlSection44_3 = new System.Windows.Forms.Panel();
+            this.lblSection44_3 = new System.Windows.Forms.Label();
             this.pnlSection43_3 = new System.Windows.Forms.Panel();
+            this.lblSection43_3 = new System.Windows.Forms.Label();
             this.pnlSection36_3 = new System.Windows.Forms.Panel();
             this.lblSection36_3 = new System.Windows.Forms.Label();
             this.pnlSection35_3 = new System.Windows.Forms.Panel();
             this.lblSection35_3 = new System.Windows.Forms.Label();
             this.pnlSection41_4 = new System.Windows.Forms.Panel();
+            this.lblSection41_4 = new System.Windows.Forms.Label();
             this.pnlSection64_4 = new System.Windows.Forms.Panel();
+            this.lblSection64_4 = new System.Windows.Forms.Label();
             this.pnlSection63_4 = new System.Windows.Forms.Panel();
+            this.lblSection63_4 = new System.Windows.Forms.Label();
             this.pnlSection57_4 = new System.Windows.Forms.Panel();
+            this.lblSection57_4 = new System.Windows.Forms.Label();
             this.pnlSection56_4 = new System.Windows.Forms.Panel();
+            this.lblSection56_4 = new System.Windows.Forms.Label();
             this.pnlSection55_4 = new System.Windows.Forms.Panel();
+            this.lblSection55_4 = new System.Windows.Forms.Label();
             this.pnlSection54_4 = new System.Windows.Forms.Panel();
+            this.lblSection54_4 = new System.Windows.Forms.Label();
             this.pnlSection53_4 = new System.Windows.Forms.Panel();
+            this.lblSection53_4 = new System.Windows.Forms.Label();
             this.pnlSection57_8 = new System.Windows.Forms.Panel();
             this.lblSection57_8 = new System.Windows.Forms.Label();
             this.pnlSection57_7 = new System.Windows.Forms.Panel();
+            this.lblSection57_7 = new System.Windows.Forms.Label();
             this.pnlSection56_7 = new System.Windows.Forms.Panel();
+            this.lblSection56_7 = new System.Windows.Forms.Label();
             this.pnlSection55_7 = new System.Windows.Forms.Panel();
+            this.lblSection55_7 = new System.Windows.Forms.Label();
             this.pnlSection54_7 = new System.Windows.Forms.Panel();
             this.lblSection54_7 = new System.Windows.Forms.Label();
             this.pnlSection57_6 = new System.Windows.Forms.Panel();
+            this.lblSection57_6 = new System.Windows.Forms.Label();
             this.pnlSection56_6 = new System.Windows.Forms.Panel();
+            this.lblSection56_6 = new System.Windows.Forms.Label();
             this.pnlSection55_6 = new System.Windows.Forms.Panel();
+            this.lblSection55_6 = new System.Windows.Forms.Label();
             this.pnlSection54_6 = new System.Windows.Forms.Panel();
+            this.lblSection54_6 = new System.Windows.Forms.Label();
             this.pnlSection53_6 = new System.Windows.Forms.Panel();
+            this.lblSection53_6 = new System.Windows.Forms.Label();
             this.pnlSection52_6 = new System.Windows.Forms.Panel();
             this.lblSection52_6 = new System.Windows.Forms.Label();
             this.pnlSection57_5 = new System.Windows.Forms.Panel();
+            this.lblSection57_5 = new System.Windows.Forms.Label();
             this.pnlSection56_5 = new System.Windows.Forms.Panel();
+            this.lblSection56_5 = new System.Windows.Forms.Label();
             this.pnlSection55_5 = new System.Windows.Forms.Panel();
+            this.lblSection55_5 = new System.Windows.Forms.Label();
             this.pnlSection54_5 = new System.Windows.Forms.Panel();
+            this.lblSection54_5 = new System.Windows.Forms.Label();
             this.pnlSection53_5 = new System.Windows.Forms.Panel();
+            this.lblSection53_5 = new System.Windows.Forms.Label();
             this.pnlSection52_5 = new System.Windows.Forms.Panel();
             this.lblSection52_5 = new System.Windows.Forms.Label();
             this.pnlSection52_4 = new System.Windows.Forms.Panel();
@@ -92,10 +125,13 @@
             this.pnlSection38_4 = new System.Windows.Forms.Panel();
             this.lblSection38_4 = new System.Windows.Forms.Label();
             this.pnlSection42_4 = new System.Windows.Forms.Panel();
+            this.lblSection42_4 = new System.Windows.Forms.Label();
             this.pnlSection37_4 = new System.Windows.Forms.Panel();
             this.lblSection37_4 = new System.Windows.Forms.Label();
             this.pnlSection44_4 = new System.Windows.Forms.Panel();
+            this.lblSection44_4 = new System.Windows.Forms.Label();
             this.pnlSection43_4 = new System.Windows.Forms.Panel();
+            this.lblSection43_4 = new System.Windows.Forms.Label();
             this.pnlSection36_4 = new System.Windows.Forms.Panel();
             this.lblSection36_4 = new System.Windows.Forms.Label();
             this.pnlSection35_4 = new System.Windows.Forms.Panel();
@@ -117,15 +153,25 @@
             this.pnlSection30_3 = new System.Windows.Forms.Panel();
             this.lblSection30_3 = new System.Windows.Forms.Label();
             this.pnlSection41_2 = new System.Windows.Forms.Panel();
+            this.lblSection41_2 = new System.Windows.Forms.Label();
             this.pnlSection64_2 = new System.Windows.Forms.Panel();
+            this.lblSection64_2 = new System.Windows.Forms.Label();
             this.pnlSection63_2 = new System.Windows.Forms.Panel();
+            this.lblSection63_2 = new System.Windows.Forms.Label();
             this.pnlSection62_2 = new System.Windows.Forms.Panel();
+            this.lblSection62_2 = new System.Windows.Forms.Label();
             this.pnlSection61_2 = new System.Windows.Forms.Panel();
+            this.lblSection61_2 = new System.Windows.Forms.Label();
             this.pnlSection57_2 = new System.Windows.Forms.Panel();
+            this.lblSection57_2 = new System.Windows.Forms.Label();
             this.pnlSection56_2 = new System.Windows.Forms.Panel();
+            this.lblSection56_2 = new System.Windows.Forms.Label();
             this.pnlSection55_2 = new System.Windows.Forms.Panel();
+            this.lblSection55_2 = new System.Windows.Forms.Label();
             this.pnlSection54_2 = new System.Windows.Forms.Panel();
+            this.lblSection54_2 = new System.Windows.Forms.Label();
             this.pnlSection53_2 = new System.Windows.Forms.Panel();
+            this.lblSection53_2 = new System.Windows.Forms.Label();
             this.pnlSection52_2 = new System.Windows.Forms.Panel();
             this.lblSection52_2 = new System.Windows.Forms.Label();
             this.pnlSection51_2 = new System.Windows.Forms.Panel();
@@ -133,10 +179,13 @@
             this.pnlSection38_2 = new System.Windows.Forms.Panel();
             this.lblSection38_2 = new System.Windows.Forms.Label();
             this.pnlSection42_2 = new System.Windows.Forms.Panel();
+            this.lblSection42_2 = new System.Windows.Forms.Label();
             this.pnlSection37_2 = new System.Windows.Forms.Panel();
             this.lblSection37_2 = new System.Windows.Forms.Label();
             this.pnlSection44_2 = new System.Windows.Forms.Panel();
+            this.lblSection44_2 = new System.Windows.Forms.Label();
             this.pnlSection43_2 = new System.Windows.Forms.Panel();
+            this.lblSection43_2 = new System.Windows.Forms.Label();
             this.pnlSection36_2 = new System.Windows.Forms.Panel();
             this.lblSection36_2 = new System.Windows.Forms.Label();
             this.pnlSection35_2 = new System.Windows.Forms.Panel();
@@ -152,14 +201,23 @@
             this.pnlSection30_2 = new System.Windows.Forms.Panel();
             this.lblSection30_2 = new System.Windows.Forms.Label();
             this.pnlSection41_1 = new System.Windows.Forms.Panel();
+            this.lblSection41_1 = new System.Windows.Forms.Label();
             this.pnlSection64_1 = new System.Windows.Forms.Panel();
+            this.lblSection64_1 = new System.Windows.Forms.Label();
             this.pnlSection63_1 = new System.Windows.Forms.Panel();
+            this.lblSection63_1 = new System.Windows.Forms.Label();
             this.pnlSection62_1 = new System.Windows.Forms.Panel();
+            this.lblSection62_1 = new System.Windows.Forms.Label();
             this.pnlSection61_1 = new System.Windows.Forms.Panel();
+            this.lblSection61_1 = new System.Windows.Forms.Label();
             this.pnlSection57_1 = new System.Windows.Forms.Panel();
+            this.lblSection57_1 = new System.Windows.Forms.Label();
             this.pnlSection56_1 = new System.Windows.Forms.Panel();
+            this.lblSection56_1 = new System.Windows.Forms.Label();
             this.pnlSection55_1 = new System.Windows.Forms.Panel();
+            this.lblSection55_1 = new System.Windows.Forms.Label();
             this.pnlSection54_1 = new System.Windows.Forms.Panel();
+            this.lblSection54_1 = new System.Windows.Forms.Label();
             this.pnlSection53_1 = new System.Windows.Forms.Panel();
             this.lblSection53_1 = new System.Windows.Forms.Label();
             this.pnlSection52_1 = new System.Windows.Forms.Panel();
@@ -169,20 +227,33 @@
             this.pnlSection38_1 = new System.Windows.Forms.Panel();
             this.lblSection38_1 = new System.Windows.Forms.Label();
             this.pnlSection42_1 = new System.Windows.Forms.Panel();
+            this.lblSection42_1 = new System.Windows.Forms.Label();
             this.pnlSection37_1 = new System.Windows.Forms.Panel();
             this.lblSection37_1 = new System.Windows.Forms.Label();
             this.pnlSection15_1 = new System.Windows.Forms.Panel();
+            this.lblSection15_1 = new System.Windows.Forms.Label();
             this.pnlSection14_1 = new System.Windows.Forms.Panel();
+            this.lblSection14_1 = new System.Windows.Forms.Label();
             this.pnlSection13_1 = new System.Windows.Forms.Panel();
+            this.lblSection13_1 = new System.Windows.Forms.Label();
             this.pnlSection21_1 = new System.Windows.Forms.Panel();
+            this.lblSection21_1 = new System.Windows.Forms.Label();
             this.pnlSection20_1 = new System.Windows.Forms.Panel();
+            this.lblSection20_1 = new System.Windows.Forms.Label();
             this.pnlSection19_1 = new System.Windows.Forms.Panel();
+            this.lblSection19_1 = new System.Windows.Forms.Label();
             this.pnlSection18_1 = new System.Windows.Forms.Panel();
+            this.lblSection18_1 = new System.Windows.Forms.Label();
             this.pnlSection17_1 = new System.Windows.Forms.Panel();
+            this.lblSection17_1 = new System.Windows.Forms.Label();
             this.pnlSection16_1 = new System.Windows.Forms.Panel();
+            this.lblSection16_1 = new System.Windows.Forms.Label();
             this.pnlSection12_1 = new System.Windows.Forms.Panel();
+            this.lblSection12_1 = new System.Windows.Forms.Label();
             this.pnlSection44_1 = new System.Windows.Forms.Panel();
+            this.lblSection44_1 = new System.Windows.Forms.Label();
             this.pnlSection43_1 = new System.Windows.Forms.Panel();
+            this.lblSection43_1 = new System.Windows.Forms.Label();
             this.pnlSection36_1 = new System.Windows.Forms.Panel();
             this.lblSection36_1 = new System.Windows.Forms.Label();
             this.pnlSection35_1 = new System.Windows.Forms.Panel();
@@ -268,77 +339,6 @@
             this.btnLogin = new MaterialSkin.Controls.MaterialRaisedButton();
             this.tsTabs = new MaterialSkin.Controls.MaterialTabSelector();
             this.btnLogOut = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.lblSection53_2 = new System.Windows.Forms.Label();
-            this.lblSection53_3 = new System.Windows.Forms.Label();
-            this.lblSection53_4 = new System.Windows.Forms.Label();
-            this.lblSection53_5 = new System.Windows.Forms.Label();
-            this.lblSection53_6 = new System.Windows.Forms.Label();
-            this.lblSection54_1 = new System.Windows.Forms.Label();
-            this.lblSection54_2 = new System.Windows.Forms.Label();
-            this.lblSection54_3 = new System.Windows.Forms.Label();
-            this.lblSection54_4 = new System.Windows.Forms.Label();
-            this.lblSection54_5 = new System.Windows.Forms.Label();
-            this.lblSection54_6 = new System.Windows.Forms.Label();
-            this.lblSection55_1 = new System.Windows.Forms.Label();
-            this.lblSection55_2 = new System.Windows.Forms.Label();
-            this.lblSection55_3 = new System.Windows.Forms.Label();
-            this.lblSection55_4 = new System.Windows.Forms.Label();
-            this.lblSection55_5 = new System.Windows.Forms.Label();
-            this.lblSection55_6 = new System.Windows.Forms.Label();
-            this.lblSection55_7 = new System.Windows.Forms.Label();
-            this.lblSection56_1 = new System.Windows.Forms.Label();
-            this.lblSection56_2 = new System.Windows.Forms.Label();
-            this.lblSection56_3 = new System.Windows.Forms.Label();
-            this.lblSection56_4 = new System.Windows.Forms.Label();
-            this.lblSection56_5 = new System.Windows.Forms.Label();
-            this.lblSection56_6 = new System.Windows.Forms.Label();
-            this.lblSection56_7 = new System.Windows.Forms.Label();
-            this.lblSection57_1 = new System.Windows.Forms.Label();
-            this.lblSection57_2 = new System.Windows.Forms.Label();
-            this.lblSection57_3 = new System.Windows.Forms.Label();
-            this.lblSection57_4 = new System.Windows.Forms.Label();
-            this.lblSection57_5 = new System.Windows.Forms.Label();
-            this.lblSection57_6 = new System.Windows.Forms.Label();
-            this.lblSection57_7 = new System.Windows.Forms.Label();
-            this.lblSection61_1 = new System.Windows.Forms.Label();
-            this.lblSection61_2 = new System.Windows.Forms.Label();
-            this.lblSection62_1 = new System.Windows.Forms.Label();
-            this.lblSection62_2 = new System.Windows.Forms.Label();
-            this.lblSection63_1 = new System.Windows.Forms.Label();
-            this.lblSection63_2 = new System.Windows.Forms.Label();
-            this.lblSection63_3 = new System.Windows.Forms.Label();
-            this.lblSection63_4 = new System.Windows.Forms.Label();
-            this.lblSection64_1 = new System.Windows.Forms.Label();
-            this.lblSection64_2 = new System.Windows.Forms.Label();
-            this.lblSection64_3 = new System.Windows.Forms.Label();
-            this.lblSection64_4 = new System.Windows.Forms.Label();
-            this.lblSection41_1 = new System.Windows.Forms.Label();
-            this.lblSection41_2 = new System.Windows.Forms.Label();
-            this.lblSection41_3 = new System.Windows.Forms.Label();
-            this.lblSection41_4 = new System.Windows.Forms.Label();
-            this.lblSection42_1 = new System.Windows.Forms.Label();
-            this.lblSection42_2 = new System.Windows.Forms.Label();
-            this.lblSection42_3 = new System.Windows.Forms.Label();
-            this.lblSection42_4 = new System.Windows.Forms.Label();
-            this.lblSection43_4 = new System.Windows.Forms.Label();
-            this.lblSection44_4 = new System.Windows.Forms.Label();
-            this.lblSection43_1 = new System.Windows.Forms.Label();
-            this.lblSection43_2 = new System.Windows.Forms.Label();
-            this.lblSection43_3 = new System.Windows.Forms.Label();
-            this.lblSection44_1 = new System.Windows.Forms.Label();
-            this.lblSection44_2 = new System.Windows.Forms.Label();
-            this.lblSection44_3 = new System.Windows.Forms.Label();
-            this.lblSection12_1 = new System.Windows.Forms.Label();
-            this.lblSection13_1 = new System.Windows.Forms.Label();
-            this.lblSection14_1 = new System.Windows.Forms.Label();
-            this.lblSection15_1 = new System.Windows.Forms.Label();
-            this.lblSection16_1 = new System.Windows.Forms.Label();
-            this.lblSection17_1 = new System.Windows.Forms.Label();
-            this.lblSection18_1 = new System.Windows.Forms.Label();
-            this.lblSection19_1 = new System.Windows.Forms.Label();
-            this.lblSection20_1 = new System.Windows.Forms.Label();
-            this.lblSection21_1 = new System.Windows.Forms.Label();
-            this.lblVergroot = new MaterialSkin.Controls.MaterialLabel();
             this.tabTabs.SuspendLayout();
             this.tpRemise.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlattegrond)).BeginInit();
@@ -667,7 +667,19 @@
             this.tpRemise.TabIndex = 0;
             this.tpRemise.Text = "Remise";
             this.tpRemise.UseVisualStyleBackColor = true;
-            this.tpRemise.Click += new System.EventHandler(this.tpRemise_Click);
+            // 
+            // lblVergroot
+            // 
+            this.lblVergroot.AutoSize = true;
+            this.lblVergroot.Depth = 0;
+            this.lblVergroot.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lblVergroot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblVergroot.Location = new System.Drawing.Point(1021, 338);
+            this.lblVergroot.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblVergroot.Name = "lblVergroot";
+            this.lblVergroot.Size = new System.Drawing.Size(144, 19);
+            this.lblVergroot.TabIndex = 3;
+            this.lblVergroot.Text = "Klik om te vergroten";
             // 
             // pbPlattegrond
             // 
@@ -689,6 +701,16 @@
             this.pnlSection41_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection41_3.TabIndex = 1;
             // 
+            // lblSection41_3
+            // 
+            this.lblSection41_3.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection41_3.Name = "lblSection41_3";
+            this.lblSection41_3.Size = new System.Drawing.Size(50, 30);
+            this.lblSection41_3.TabIndex = 0;
+            this.lblSection41_3.Text = "...";
+            this.lblSection41_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection41_3.Click += new System.EventHandler(this.SectorClick);
+            // 
             // pnlSection64_3
             // 
             this.pnlSection64_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -697,6 +719,16 @@
             this.pnlSection64_3.Name = "pnlSection64_3";
             this.pnlSection64_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection64_3.TabIndex = 1;
+            this.pnlSection64_3.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection64_3
+            // 
+            this.lblSection64_3.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection64_3.Name = "lblSection64_3";
+            this.lblSection64_3.Size = new System.Drawing.Size(50, 30);
+            this.lblSection64_3.TabIndex = 0;
+            this.lblSection64_3.Text = "...";
+            this.lblSection64_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection63_3
             // 
@@ -706,6 +738,16 @@
             this.pnlSection63_3.Name = "pnlSection63_3";
             this.pnlSection63_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection63_3.TabIndex = 1;
+            this.pnlSection63_3.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection63_3
+            // 
+            this.lblSection63_3.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection63_3.Name = "lblSection63_3";
+            this.lblSection63_3.Size = new System.Drawing.Size(50, 30);
+            this.lblSection63_3.TabIndex = 0;
+            this.lblSection63_3.Text = "...";
+            this.lblSection63_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection57_3
             // 
@@ -715,6 +757,16 @@
             this.pnlSection57_3.Name = "pnlSection57_3";
             this.pnlSection57_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection57_3.TabIndex = 1;
+            this.pnlSection57_3.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection57_3
+            // 
+            this.lblSection57_3.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection57_3.Name = "lblSection57_3";
+            this.lblSection57_3.Size = new System.Drawing.Size(50, 30);
+            this.lblSection57_3.TabIndex = 0;
+            this.lblSection57_3.Text = "...";
+            this.lblSection57_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection56_3
             // 
@@ -724,6 +776,16 @@
             this.pnlSection56_3.Name = "pnlSection56_3";
             this.pnlSection56_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection56_3.TabIndex = 1;
+            this.pnlSection56_3.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection56_3
+            // 
+            this.lblSection56_3.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection56_3.Name = "lblSection56_3";
+            this.lblSection56_3.Size = new System.Drawing.Size(50, 30);
+            this.lblSection56_3.TabIndex = 0;
+            this.lblSection56_3.Text = "...";
+            this.lblSection56_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection55_3
             // 
@@ -733,6 +795,16 @@
             this.pnlSection55_3.Name = "pnlSection55_3";
             this.pnlSection55_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection55_3.TabIndex = 1;
+            this.pnlSection55_3.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection55_3
+            // 
+            this.lblSection55_3.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection55_3.Name = "lblSection55_3";
+            this.lblSection55_3.Size = new System.Drawing.Size(50, 30);
+            this.lblSection55_3.TabIndex = 0;
+            this.lblSection55_3.Text = "...";
+            this.lblSection55_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection54_3
             // 
@@ -742,6 +814,16 @@
             this.pnlSection54_3.Name = "pnlSection54_3";
             this.pnlSection54_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection54_3.TabIndex = 1;
+            this.pnlSection54_3.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection54_3
+            // 
+            this.lblSection54_3.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection54_3.Name = "lblSection54_3";
+            this.lblSection54_3.Size = new System.Drawing.Size(50, 30);
+            this.lblSection54_3.TabIndex = 0;
+            this.lblSection54_3.Text = "...";
+            this.lblSection54_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection53_3
             // 
@@ -751,6 +833,16 @@
             this.pnlSection53_3.Name = "pnlSection53_3";
             this.pnlSection53_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection53_3.TabIndex = 1;
+            this.pnlSection53_3.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection53_3
+            // 
+            this.lblSection53_3.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection53_3.Name = "lblSection53_3";
+            this.lblSection53_3.Size = new System.Drawing.Size(50, 30);
+            this.lblSection53_3.TabIndex = 0;
+            this.lblSection53_3.Text = "...";
+            this.lblSection53_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection52_3
             // 
@@ -760,6 +852,7 @@
             this.pnlSection52_3.Name = "pnlSection52_3";
             this.pnlSection52_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection52_3.TabIndex = 1;
+            this.pnlSection52_3.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection52_3
             // 
@@ -778,6 +871,7 @@
             this.pnlSection51_3.Name = "pnlSection51_3";
             this.pnlSection51_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection51_3.TabIndex = 1;
+            this.pnlSection51_3.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection51_3
             // 
@@ -796,6 +890,7 @@
             this.pnlSection38_3.Name = "pnlSection38_3";
             this.pnlSection38_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection38_3.TabIndex = 1;
+            this.pnlSection38_3.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection38_3
             // 
@@ -815,6 +910,16 @@
             this.pnlSection42_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection42_3.TabIndex = 1;
             // 
+            // lblSection42_3
+            // 
+            this.lblSection42_3.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection42_3.Name = "lblSection42_3";
+            this.lblSection42_3.Size = new System.Drawing.Size(50, 30);
+            this.lblSection42_3.TabIndex = 0;
+            this.lblSection42_3.Text = "...";
+            this.lblSection42_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection42_3.Click += new System.EventHandler(this.SectorClick);
+            // 
             // pnlSection37_3
             // 
             this.pnlSection37_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -823,6 +928,7 @@
             this.pnlSection37_3.Name = "pnlSection37_3";
             this.pnlSection37_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection37_3.TabIndex = 1;
+            this.pnlSection37_3.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection37_3
             // 
@@ -842,6 +948,16 @@
             this.pnlSection44_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection44_3.TabIndex = 1;
             // 
+            // lblSection44_3
+            // 
+            this.lblSection44_3.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection44_3.Name = "lblSection44_3";
+            this.lblSection44_3.Size = new System.Drawing.Size(50, 30);
+            this.lblSection44_3.TabIndex = 0;
+            this.lblSection44_3.Text = "...";
+            this.lblSection44_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection44_3.Click += new System.EventHandler(this.SectorClick);
+            // 
             // pnlSection43_3
             // 
             this.pnlSection43_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -851,6 +967,16 @@
             this.pnlSection43_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection43_3.TabIndex = 1;
             // 
+            // lblSection43_3
+            // 
+            this.lblSection43_3.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection43_3.Name = "lblSection43_3";
+            this.lblSection43_3.Size = new System.Drawing.Size(50, 30);
+            this.lblSection43_3.TabIndex = 0;
+            this.lblSection43_3.Text = "...";
+            this.lblSection43_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection43_3.Click += new System.EventHandler(this.SectorClick);
+            // 
             // pnlSection36_3
             // 
             this.pnlSection36_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -859,6 +985,7 @@
             this.pnlSection36_3.Name = "pnlSection36_3";
             this.pnlSection36_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection36_3.TabIndex = 1;
+            this.pnlSection36_3.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection36_3
             // 
@@ -877,6 +1004,7 @@
             this.pnlSection35_3.Name = "pnlSection35_3";
             this.pnlSection35_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection35_3.TabIndex = 1;
+            this.pnlSection35_3.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection35_3
             // 
@@ -896,6 +1024,16 @@
             this.pnlSection41_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection41_4.TabIndex = 1;
             // 
+            // lblSection41_4
+            // 
+            this.lblSection41_4.Location = new System.Drawing.Point(-1, 0);
+            this.lblSection41_4.Name = "lblSection41_4";
+            this.lblSection41_4.Size = new System.Drawing.Size(50, 30);
+            this.lblSection41_4.TabIndex = 0;
+            this.lblSection41_4.Text = "...";
+            this.lblSection41_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection41_4.Click += new System.EventHandler(this.SectorClick);
+            // 
             // pnlSection64_4
             // 
             this.pnlSection64_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -904,6 +1042,16 @@
             this.pnlSection64_4.Name = "pnlSection64_4";
             this.pnlSection64_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection64_4.TabIndex = 1;
+            this.pnlSection64_4.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection64_4
+            // 
+            this.lblSection64_4.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection64_4.Name = "lblSection64_4";
+            this.lblSection64_4.Size = new System.Drawing.Size(50, 30);
+            this.lblSection64_4.TabIndex = 0;
+            this.lblSection64_4.Text = "...";
+            this.lblSection64_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection63_4
             // 
@@ -913,6 +1061,16 @@
             this.pnlSection63_4.Name = "pnlSection63_4";
             this.pnlSection63_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection63_4.TabIndex = 1;
+            this.pnlSection63_4.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection63_4
+            // 
+            this.lblSection63_4.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection63_4.Name = "lblSection63_4";
+            this.lblSection63_4.Size = new System.Drawing.Size(50, 30);
+            this.lblSection63_4.TabIndex = 0;
+            this.lblSection63_4.Text = "...";
+            this.lblSection63_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection57_4
             // 
@@ -922,6 +1080,16 @@
             this.pnlSection57_4.Name = "pnlSection57_4";
             this.pnlSection57_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection57_4.TabIndex = 1;
+            this.pnlSection57_4.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection57_4
+            // 
+            this.lblSection57_4.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection57_4.Name = "lblSection57_4";
+            this.lblSection57_4.Size = new System.Drawing.Size(50, 30);
+            this.lblSection57_4.TabIndex = 0;
+            this.lblSection57_4.Text = "...";
+            this.lblSection57_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection56_4
             // 
@@ -931,6 +1099,16 @@
             this.pnlSection56_4.Name = "pnlSection56_4";
             this.pnlSection56_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection56_4.TabIndex = 1;
+            this.pnlSection56_4.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection56_4
+            // 
+            this.lblSection56_4.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection56_4.Name = "lblSection56_4";
+            this.lblSection56_4.Size = new System.Drawing.Size(50, 30);
+            this.lblSection56_4.TabIndex = 0;
+            this.lblSection56_4.Text = "...";
+            this.lblSection56_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection55_4
             // 
@@ -940,6 +1118,16 @@
             this.pnlSection55_4.Name = "pnlSection55_4";
             this.pnlSection55_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection55_4.TabIndex = 1;
+            this.pnlSection55_4.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection55_4
+            // 
+            this.lblSection55_4.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection55_4.Name = "lblSection55_4";
+            this.lblSection55_4.Size = new System.Drawing.Size(50, 30);
+            this.lblSection55_4.TabIndex = 0;
+            this.lblSection55_4.Text = "...";
+            this.lblSection55_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection54_4
             // 
@@ -949,6 +1137,16 @@
             this.pnlSection54_4.Name = "pnlSection54_4";
             this.pnlSection54_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection54_4.TabIndex = 1;
+            this.pnlSection54_4.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection54_4
+            // 
+            this.lblSection54_4.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection54_4.Name = "lblSection54_4";
+            this.lblSection54_4.Size = new System.Drawing.Size(50, 30);
+            this.lblSection54_4.TabIndex = 0;
+            this.lblSection54_4.Text = "...";
+            this.lblSection54_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection53_4
             // 
@@ -958,6 +1156,16 @@
             this.pnlSection53_4.Name = "pnlSection53_4";
             this.pnlSection53_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection53_4.TabIndex = 1;
+            this.pnlSection53_4.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection53_4
+            // 
+            this.lblSection53_4.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection53_4.Name = "lblSection53_4";
+            this.lblSection53_4.Size = new System.Drawing.Size(50, 30);
+            this.lblSection53_4.TabIndex = 0;
+            this.lblSection53_4.Text = "...";
+            this.lblSection53_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection57_8
             // 
@@ -976,6 +1184,7 @@
             this.lblSection57_8.TabIndex = 0;
             this.lblSection57_8.Text = "...";
             this.lblSection57_8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection57_8.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection57_7
             // 
@@ -985,6 +1194,16 @@
             this.pnlSection57_7.Name = "pnlSection57_7";
             this.pnlSection57_7.Size = new System.Drawing.Size(50, 30);
             this.pnlSection57_7.TabIndex = 1;
+            this.pnlSection57_7.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection57_7
+            // 
+            this.lblSection57_7.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection57_7.Name = "lblSection57_7";
+            this.lblSection57_7.Size = new System.Drawing.Size(50, 30);
+            this.lblSection57_7.TabIndex = 0;
+            this.lblSection57_7.Text = "...";
+            this.lblSection57_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection56_7
             // 
@@ -994,6 +1213,16 @@
             this.pnlSection56_7.Name = "pnlSection56_7";
             this.pnlSection56_7.Size = new System.Drawing.Size(50, 30);
             this.pnlSection56_7.TabIndex = 1;
+            this.pnlSection56_7.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection56_7
+            // 
+            this.lblSection56_7.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection56_7.Name = "lblSection56_7";
+            this.lblSection56_7.Size = new System.Drawing.Size(50, 30);
+            this.lblSection56_7.TabIndex = 0;
+            this.lblSection56_7.Text = "...";
+            this.lblSection56_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection55_7
             // 
@@ -1003,6 +1232,16 @@
             this.pnlSection55_7.Name = "pnlSection55_7";
             this.pnlSection55_7.Size = new System.Drawing.Size(50, 30);
             this.pnlSection55_7.TabIndex = 1;
+            this.pnlSection55_7.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection55_7
+            // 
+            this.lblSection55_7.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection55_7.Name = "lblSection55_7";
+            this.lblSection55_7.Size = new System.Drawing.Size(50, 30);
+            this.lblSection55_7.TabIndex = 0;
+            this.lblSection55_7.Text = "...";
+            this.lblSection55_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection54_7
             // 
@@ -1012,6 +1251,7 @@
             this.pnlSection54_7.Name = "pnlSection54_7";
             this.pnlSection54_7.Size = new System.Drawing.Size(50, 30);
             this.pnlSection54_7.TabIndex = 1;
+            this.pnlSection54_7.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection54_7
             // 
@@ -1030,6 +1270,16 @@
             this.pnlSection57_6.Name = "pnlSection57_6";
             this.pnlSection57_6.Size = new System.Drawing.Size(50, 30);
             this.pnlSection57_6.TabIndex = 1;
+            this.pnlSection57_6.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection57_6
+            // 
+            this.lblSection57_6.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection57_6.Name = "lblSection57_6";
+            this.lblSection57_6.Size = new System.Drawing.Size(50, 30);
+            this.lblSection57_6.TabIndex = 0;
+            this.lblSection57_6.Text = "...";
+            this.lblSection57_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection56_6
             // 
@@ -1039,6 +1289,16 @@
             this.pnlSection56_6.Name = "pnlSection56_6";
             this.pnlSection56_6.Size = new System.Drawing.Size(50, 30);
             this.pnlSection56_6.TabIndex = 1;
+            this.pnlSection56_6.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection56_6
+            // 
+            this.lblSection56_6.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection56_6.Name = "lblSection56_6";
+            this.lblSection56_6.Size = new System.Drawing.Size(50, 30);
+            this.lblSection56_6.TabIndex = 0;
+            this.lblSection56_6.Text = "...";
+            this.lblSection56_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection55_6
             // 
@@ -1048,6 +1308,16 @@
             this.pnlSection55_6.Name = "pnlSection55_6";
             this.pnlSection55_6.Size = new System.Drawing.Size(50, 30);
             this.pnlSection55_6.TabIndex = 1;
+            this.pnlSection55_6.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection55_6
+            // 
+            this.lblSection55_6.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection55_6.Name = "lblSection55_6";
+            this.lblSection55_6.Size = new System.Drawing.Size(50, 30);
+            this.lblSection55_6.TabIndex = 0;
+            this.lblSection55_6.Text = "...";
+            this.lblSection55_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection54_6
             // 
@@ -1057,6 +1327,16 @@
             this.pnlSection54_6.Name = "pnlSection54_6";
             this.pnlSection54_6.Size = new System.Drawing.Size(50, 30);
             this.pnlSection54_6.TabIndex = 1;
+            this.pnlSection54_6.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection54_6
+            // 
+            this.lblSection54_6.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection54_6.Name = "lblSection54_6";
+            this.lblSection54_6.Size = new System.Drawing.Size(50, 30);
+            this.lblSection54_6.TabIndex = 0;
+            this.lblSection54_6.Text = "...";
+            this.lblSection54_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection53_6
             // 
@@ -1066,6 +1346,16 @@
             this.pnlSection53_6.Name = "pnlSection53_6";
             this.pnlSection53_6.Size = new System.Drawing.Size(50, 30);
             this.pnlSection53_6.TabIndex = 1;
+            this.pnlSection53_6.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection53_6
+            // 
+            this.lblSection53_6.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection53_6.Name = "lblSection53_6";
+            this.lblSection53_6.Size = new System.Drawing.Size(50, 30);
+            this.lblSection53_6.TabIndex = 0;
+            this.lblSection53_6.Text = "...";
+            this.lblSection53_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection52_6
             // 
@@ -1075,6 +1365,7 @@
             this.pnlSection52_6.Name = "pnlSection52_6";
             this.pnlSection52_6.Size = new System.Drawing.Size(50, 30);
             this.pnlSection52_6.TabIndex = 1;
+            this.pnlSection52_6.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection52_6
             // 
@@ -1093,6 +1384,16 @@
             this.pnlSection57_5.Name = "pnlSection57_5";
             this.pnlSection57_5.Size = new System.Drawing.Size(50, 30);
             this.pnlSection57_5.TabIndex = 1;
+            this.pnlSection57_5.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection57_5
+            // 
+            this.lblSection57_5.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection57_5.Name = "lblSection57_5";
+            this.lblSection57_5.Size = new System.Drawing.Size(50, 30);
+            this.lblSection57_5.TabIndex = 0;
+            this.lblSection57_5.Text = "...";
+            this.lblSection57_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection56_5
             // 
@@ -1102,6 +1403,16 @@
             this.pnlSection56_5.Name = "pnlSection56_5";
             this.pnlSection56_5.Size = new System.Drawing.Size(50, 30);
             this.pnlSection56_5.TabIndex = 1;
+            this.pnlSection56_5.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection56_5
+            // 
+            this.lblSection56_5.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection56_5.Name = "lblSection56_5";
+            this.lblSection56_5.Size = new System.Drawing.Size(50, 30);
+            this.lblSection56_5.TabIndex = 0;
+            this.lblSection56_5.Text = "...";
+            this.lblSection56_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection55_5
             // 
@@ -1111,6 +1422,16 @@
             this.pnlSection55_5.Name = "pnlSection55_5";
             this.pnlSection55_5.Size = new System.Drawing.Size(50, 30);
             this.pnlSection55_5.TabIndex = 1;
+            this.pnlSection55_5.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection55_5
+            // 
+            this.lblSection55_5.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection55_5.Name = "lblSection55_5";
+            this.lblSection55_5.Size = new System.Drawing.Size(50, 30);
+            this.lblSection55_5.TabIndex = 0;
+            this.lblSection55_5.Text = "...";
+            this.lblSection55_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection54_5
             // 
@@ -1120,6 +1441,16 @@
             this.pnlSection54_5.Name = "pnlSection54_5";
             this.pnlSection54_5.Size = new System.Drawing.Size(50, 30);
             this.pnlSection54_5.TabIndex = 1;
+            this.pnlSection54_5.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection54_5
+            // 
+            this.lblSection54_5.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection54_5.Name = "lblSection54_5";
+            this.lblSection54_5.Size = new System.Drawing.Size(50, 30);
+            this.lblSection54_5.TabIndex = 0;
+            this.lblSection54_5.Text = "...";
+            this.lblSection54_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection53_5
             // 
@@ -1129,6 +1460,16 @@
             this.pnlSection53_5.Name = "pnlSection53_5";
             this.pnlSection53_5.Size = new System.Drawing.Size(50, 30);
             this.pnlSection53_5.TabIndex = 1;
+            this.pnlSection53_5.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection53_5
+            // 
+            this.lblSection53_5.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection53_5.Name = "lblSection53_5";
+            this.lblSection53_5.Size = new System.Drawing.Size(50, 30);
+            this.lblSection53_5.TabIndex = 0;
+            this.lblSection53_5.Text = "...";
+            this.lblSection53_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection52_5
             // 
@@ -1138,6 +1479,7 @@
             this.pnlSection52_5.Name = "pnlSection52_5";
             this.pnlSection52_5.Size = new System.Drawing.Size(50, 30);
             this.pnlSection52_5.TabIndex = 1;
+            this.pnlSection52_5.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection52_5
             // 
@@ -1156,6 +1498,7 @@
             this.pnlSection52_4.Name = "pnlSection52_4";
             this.pnlSection52_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection52_4.TabIndex = 1;
+            this.pnlSection52_4.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection52_4
             // 
@@ -1174,6 +1517,7 @@
             this.pnlSection51_5.Name = "pnlSection51_5";
             this.pnlSection51_5.Size = new System.Drawing.Size(50, 30);
             this.pnlSection51_5.TabIndex = 1;
+            this.pnlSection51_5.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection51_5
             // 
@@ -1192,6 +1536,7 @@
             this.pnlSection51_4.Name = "pnlSection51_4";
             this.pnlSection51_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection51_4.TabIndex = 1;
+            this.pnlSection51_4.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection51_4
             // 
@@ -1210,6 +1555,7 @@
             this.pnlSection38_4.Name = "pnlSection38_4";
             this.pnlSection38_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection38_4.TabIndex = 1;
+            this.pnlSection38_4.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection38_4
             // 
@@ -1229,6 +1575,16 @@
             this.pnlSection42_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection42_4.TabIndex = 1;
             // 
+            // lblSection42_4
+            // 
+            this.lblSection42_4.Location = new System.Drawing.Point(-1, 0);
+            this.lblSection42_4.Name = "lblSection42_4";
+            this.lblSection42_4.Size = new System.Drawing.Size(50, 30);
+            this.lblSection42_4.TabIndex = 0;
+            this.lblSection42_4.Text = "...";
+            this.lblSection42_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection42_4.Click += new System.EventHandler(this.SectorClick);
+            // 
             // pnlSection37_4
             // 
             this.pnlSection37_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -1237,6 +1593,7 @@
             this.pnlSection37_4.Name = "pnlSection37_4";
             this.pnlSection37_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection37_4.TabIndex = 1;
+            this.pnlSection37_4.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection37_4
             // 
@@ -1256,6 +1613,16 @@
             this.pnlSection44_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection44_4.TabIndex = 1;
             // 
+            // lblSection44_4
+            // 
+            this.lblSection44_4.Location = new System.Drawing.Point(-1, 0);
+            this.lblSection44_4.Name = "lblSection44_4";
+            this.lblSection44_4.Size = new System.Drawing.Size(50, 30);
+            this.lblSection44_4.TabIndex = 0;
+            this.lblSection44_4.Text = "...";
+            this.lblSection44_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection44_4.Click += new System.EventHandler(this.SectorClick);
+            // 
             // pnlSection43_4
             // 
             this.pnlSection43_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -1265,6 +1632,16 @@
             this.pnlSection43_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection43_4.TabIndex = 1;
             // 
+            // lblSection43_4
+            // 
+            this.lblSection43_4.Location = new System.Drawing.Point(-1, 0);
+            this.lblSection43_4.Name = "lblSection43_4";
+            this.lblSection43_4.Size = new System.Drawing.Size(50, 30);
+            this.lblSection43_4.TabIndex = 0;
+            this.lblSection43_4.Text = "...";
+            this.lblSection43_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection43_4.Click += new System.EventHandler(this.SectorClick);
+            // 
             // pnlSection36_4
             // 
             this.pnlSection36_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -1273,6 +1650,7 @@
             this.pnlSection36_4.Name = "pnlSection36_4";
             this.pnlSection36_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection36_4.TabIndex = 1;
+            this.pnlSection36_4.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection36_4
             // 
@@ -1291,6 +1669,7 @@
             this.pnlSection35_4.Name = "pnlSection35_4";
             this.pnlSection35_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection35_4.TabIndex = 1;
+            this.pnlSection35_4.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection35_4
             // 
@@ -1309,6 +1688,7 @@
             this.pnlSection34_4.Name = "pnlSection34_4";
             this.pnlSection34_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection34_4.TabIndex = 1;
+            this.pnlSection34_4.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection34_4
             // 
@@ -1327,6 +1707,7 @@
             this.pnlSection34_3.Name = "pnlSection34_3";
             this.pnlSection34_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection34_3.TabIndex = 1;
+            this.pnlSection34_3.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection34_3
             // 
@@ -1345,6 +1726,7 @@
             this.pnlSection33_4.Name = "pnlSection33_4";
             this.pnlSection33_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection33_4.TabIndex = 1;
+            this.pnlSection33_4.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection33_4
             // 
@@ -1363,6 +1745,7 @@
             this.pnlSection33_3.Name = "pnlSection33_3";
             this.pnlSection33_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection33_3.TabIndex = 1;
+            this.pnlSection33_3.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection33_3
             // 
@@ -1381,6 +1764,7 @@
             this.pnlSection32_4.Name = "pnlSection32_4";
             this.pnlSection32_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection32_4.TabIndex = 1;
+            this.pnlSection32_4.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection32_4
             // 
@@ -1399,6 +1783,7 @@
             this.pnlSection32_3.Name = "pnlSection32_3";
             this.pnlSection32_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection32_3.TabIndex = 1;
+            this.pnlSection32_3.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection32_3
             // 
@@ -1417,6 +1802,7 @@
             this.pnlSection31_3.Name = "pnlSection31_3";
             this.pnlSection31_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection31_3.TabIndex = 1;
+            this.pnlSection31_3.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection31_3
             // 
@@ -1435,6 +1821,7 @@
             this.pnlSection30_3.Name = "pnlSection30_3";
             this.pnlSection30_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection30_3.TabIndex = 1;
+            this.pnlSection30_3.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection30_3
             // 
@@ -1454,6 +1841,16 @@
             this.pnlSection41_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection41_2.TabIndex = 1;
             // 
+            // lblSection41_2
+            // 
+            this.lblSection41_2.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection41_2.Name = "lblSection41_2";
+            this.lblSection41_2.Size = new System.Drawing.Size(50, 30);
+            this.lblSection41_2.TabIndex = 0;
+            this.lblSection41_2.Text = "...";
+            this.lblSection41_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection41_2.Click += new System.EventHandler(this.SectorClick);
+            // 
             // pnlSection64_2
             // 
             this.pnlSection64_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -1462,6 +1859,16 @@
             this.pnlSection64_2.Name = "pnlSection64_2";
             this.pnlSection64_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection64_2.TabIndex = 1;
+            this.pnlSection64_2.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection64_2
+            // 
+            this.lblSection64_2.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection64_2.Name = "lblSection64_2";
+            this.lblSection64_2.Size = new System.Drawing.Size(50, 30);
+            this.lblSection64_2.TabIndex = 0;
+            this.lblSection64_2.Text = "...";
+            this.lblSection64_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection63_2
             // 
@@ -1471,6 +1878,16 @@
             this.pnlSection63_2.Name = "pnlSection63_2";
             this.pnlSection63_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection63_2.TabIndex = 1;
+            this.pnlSection63_2.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection63_2
+            // 
+            this.lblSection63_2.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection63_2.Name = "lblSection63_2";
+            this.lblSection63_2.Size = new System.Drawing.Size(50, 30);
+            this.lblSection63_2.TabIndex = 0;
+            this.lblSection63_2.Text = "...";
+            this.lblSection63_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection62_2
             // 
@@ -1480,6 +1897,16 @@
             this.pnlSection62_2.Name = "pnlSection62_2";
             this.pnlSection62_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection62_2.TabIndex = 1;
+            this.pnlSection62_2.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection62_2
+            // 
+            this.lblSection62_2.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection62_2.Name = "lblSection62_2";
+            this.lblSection62_2.Size = new System.Drawing.Size(50, 30);
+            this.lblSection62_2.TabIndex = 0;
+            this.lblSection62_2.Text = "...";
+            this.lblSection62_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection61_2
             // 
@@ -1489,6 +1916,16 @@
             this.pnlSection61_2.Name = "pnlSection61_2";
             this.pnlSection61_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection61_2.TabIndex = 1;
+            this.pnlSection61_2.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection61_2
+            // 
+            this.lblSection61_2.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection61_2.Name = "lblSection61_2";
+            this.lblSection61_2.Size = new System.Drawing.Size(50, 30);
+            this.lblSection61_2.TabIndex = 0;
+            this.lblSection61_2.Text = "...";
+            this.lblSection61_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection57_2
             // 
@@ -1498,6 +1935,16 @@
             this.pnlSection57_2.Name = "pnlSection57_2";
             this.pnlSection57_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection57_2.TabIndex = 1;
+            this.pnlSection57_2.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection57_2
+            // 
+            this.lblSection57_2.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection57_2.Name = "lblSection57_2";
+            this.lblSection57_2.Size = new System.Drawing.Size(50, 30);
+            this.lblSection57_2.TabIndex = 0;
+            this.lblSection57_2.Text = "...";
+            this.lblSection57_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection56_2
             // 
@@ -1507,6 +1954,16 @@
             this.pnlSection56_2.Name = "pnlSection56_2";
             this.pnlSection56_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection56_2.TabIndex = 1;
+            this.pnlSection56_2.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection56_2
+            // 
+            this.lblSection56_2.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection56_2.Name = "lblSection56_2";
+            this.lblSection56_2.Size = new System.Drawing.Size(50, 30);
+            this.lblSection56_2.TabIndex = 0;
+            this.lblSection56_2.Text = "...";
+            this.lblSection56_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection55_2
             // 
@@ -1516,6 +1973,16 @@
             this.pnlSection55_2.Name = "pnlSection55_2";
             this.pnlSection55_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection55_2.TabIndex = 1;
+            this.pnlSection55_2.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection55_2
+            // 
+            this.lblSection55_2.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection55_2.Name = "lblSection55_2";
+            this.lblSection55_2.Size = new System.Drawing.Size(50, 30);
+            this.lblSection55_2.TabIndex = 0;
+            this.lblSection55_2.Text = "...";
+            this.lblSection55_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection54_2
             // 
@@ -1525,6 +1992,16 @@
             this.pnlSection54_2.Name = "pnlSection54_2";
             this.pnlSection54_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection54_2.TabIndex = 1;
+            this.pnlSection54_2.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection54_2
+            // 
+            this.lblSection54_2.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection54_2.Name = "lblSection54_2";
+            this.lblSection54_2.Size = new System.Drawing.Size(50, 30);
+            this.lblSection54_2.TabIndex = 0;
+            this.lblSection54_2.Text = "...";
+            this.lblSection54_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection53_2
             // 
@@ -1534,6 +2011,16 @@
             this.pnlSection53_2.Name = "pnlSection53_2";
             this.pnlSection53_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection53_2.TabIndex = 1;
+            this.pnlSection53_2.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection53_2
+            // 
+            this.lblSection53_2.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection53_2.Name = "lblSection53_2";
+            this.lblSection53_2.Size = new System.Drawing.Size(50, 30);
+            this.lblSection53_2.TabIndex = 0;
+            this.lblSection53_2.Text = "...";
+            this.lblSection53_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection52_2
             // 
@@ -1543,6 +2030,7 @@
             this.pnlSection52_2.Name = "pnlSection52_2";
             this.pnlSection52_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection52_2.TabIndex = 1;
+            this.pnlSection52_2.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection52_2
             // 
@@ -1561,6 +2049,7 @@
             this.pnlSection51_2.Name = "pnlSection51_2";
             this.pnlSection51_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection51_2.TabIndex = 1;
+            this.pnlSection51_2.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection51_2
             // 
@@ -1579,6 +2068,7 @@
             this.pnlSection38_2.Name = "pnlSection38_2";
             this.pnlSection38_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection38_2.TabIndex = 1;
+            this.pnlSection38_2.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection38_2
             // 
@@ -1598,6 +2088,16 @@
             this.pnlSection42_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection42_2.TabIndex = 1;
             // 
+            // lblSection42_2
+            // 
+            this.lblSection42_2.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection42_2.Name = "lblSection42_2";
+            this.lblSection42_2.Size = new System.Drawing.Size(50, 30);
+            this.lblSection42_2.TabIndex = 0;
+            this.lblSection42_2.Text = "...";
+            this.lblSection42_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection42_2.Click += new System.EventHandler(this.SectorClick);
+            // 
             // pnlSection37_2
             // 
             this.pnlSection37_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -1606,6 +2106,7 @@
             this.pnlSection37_2.Name = "pnlSection37_2";
             this.pnlSection37_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection37_2.TabIndex = 1;
+            this.pnlSection37_2.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection37_2
             // 
@@ -1625,6 +2126,16 @@
             this.pnlSection44_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection44_2.TabIndex = 1;
             // 
+            // lblSection44_2
+            // 
+            this.lblSection44_2.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection44_2.Name = "lblSection44_2";
+            this.lblSection44_2.Size = new System.Drawing.Size(50, 30);
+            this.lblSection44_2.TabIndex = 0;
+            this.lblSection44_2.Text = "...";
+            this.lblSection44_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection44_2.Click += new System.EventHandler(this.SectorClick);
+            // 
             // pnlSection43_2
             // 
             this.pnlSection43_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -1634,6 +2145,16 @@
             this.pnlSection43_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection43_2.TabIndex = 1;
             // 
+            // lblSection43_2
+            // 
+            this.lblSection43_2.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection43_2.Name = "lblSection43_2";
+            this.lblSection43_2.Size = new System.Drawing.Size(50, 30);
+            this.lblSection43_2.TabIndex = 0;
+            this.lblSection43_2.Text = "...";
+            this.lblSection43_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection43_2.Click += new System.EventHandler(this.SectorClick);
+            // 
             // pnlSection36_2
             // 
             this.pnlSection36_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -1642,6 +2163,7 @@
             this.pnlSection36_2.Name = "pnlSection36_2";
             this.pnlSection36_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection36_2.TabIndex = 1;
+            this.pnlSection36_2.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection36_2
             // 
@@ -1660,6 +2182,7 @@
             this.pnlSection35_2.Name = "pnlSection35_2";
             this.pnlSection35_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection35_2.TabIndex = 1;
+            this.pnlSection35_2.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection35_2
             // 
@@ -1678,6 +2201,7 @@
             this.pnlSection34_2.Name = "pnlSection34_2";
             this.pnlSection34_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection34_2.TabIndex = 1;
+            this.pnlSection34_2.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection34_2
             // 
@@ -1696,6 +2220,7 @@
             this.pnlSection33_2.Name = "pnlSection33_2";
             this.pnlSection33_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection33_2.TabIndex = 1;
+            this.pnlSection33_2.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection33_2
             // 
@@ -1714,6 +2239,7 @@
             this.pnlSection32_2.Name = "pnlSection32_2";
             this.pnlSection32_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection32_2.TabIndex = 1;
+            this.pnlSection32_2.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection32_2
             // 
@@ -1732,6 +2258,7 @@
             this.pnlSection31_2.Name = "pnlSection31_2";
             this.pnlSection31_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection31_2.TabIndex = 1;
+            this.pnlSection31_2.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection31_2
             // 
@@ -1750,6 +2277,7 @@
             this.pnlSection30_2.Name = "pnlSection30_2";
             this.pnlSection30_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection30_2.TabIndex = 1;
+            this.pnlSection30_2.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection30_2
             // 
@@ -1769,6 +2297,16 @@
             this.pnlSection41_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection41_1.TabIndex = 1;
             // 
+            // lblSection41_1
+            // 
+            this.lblSection41_1.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection41_1.Name = "lblSection41_1";
+            this.lblSection41_1.Size = new System.Drawing.Size(50, 30);
+            this.lblSection41_1.TabIndex = 0;
+            this.lblSection41_1.Text = "...";
+            this.lblSection41_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection41_1.Click += new System.EventHandler(this.SectorClick);
+            // 
             // pnlSection64_1
             // 
             this.pnlSection64_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -1777,6 +2315,16 @@
             this.pnlSection64_1.Name = "pnlSection64_1";
             this.pnlSection64_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection64_1.TabIndex = 1;
+            this.pnlSection64_1.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection64_1
+            // 
+            this.lblSection64_1.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection64_1.Name = "lblSection64_1";
+            this.lblSection64_1.Size = new System.Drawing.Size(50, 30);
+            this.lblSection64_1.TabIndex = 0;
+            this.lblSection64_1.Text = "...";
+            this.lblSection64_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection63_1
             // 
@@ -1786,6 +2334,16 @@
             this.pnlSection63_1.Name = "pnlSection63_1";
             this.pnlSection63_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection63_1.TabIndex = 1;
+            this.pnlSection63_1.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection63_1
+            // 
+            this.lblSection63_1.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection63_1.Name = "lblSection63_1";
+            this.lblSection63_1.Size = new System.Drawing.Size(50, 30);
+            this.lblSection63_1.TabIndex = 0;
+            this.lblSection63_1.Text = "...";
+            this.lblSection63_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection62_1
             // 
@@ -1795,6 +2353,16 @@
             this.pnlSection62_1.Name = "pnlSection62_1";
             this.pnlSection62_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection62_1.TabIndex = 1;
+            this.pnlSection62_1.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection62_1
+            // 
+            this.lblSection62_1.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection62_1.Name = "lblSection62_1";
+            this.lblSection62_1.Size = new System.Drawing.Size(50, 30);
+            this.lblSection62_1.TabIndex = 0;
+            this.lblSection62_1.Text = "...";
+            this.lblSection62_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection61_1
             // 
@@ -1804,6 +2372,16 @@
             this.pnlSection61_1.Name = "pnlSection61_1";
             this.pnlSection61_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection61_1.TabIndex = 1;
+            this.pnlSection61_1.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection61_1
+            // 
+            this.lblSection61_1.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection61_1.Name = "lblSection61_1";
+            this.lblSection61_1.Size = new System.Drawing.Size(50, 30);
+            this.lblSection61_1.TabIndex = 0;
+            this.lblSection61_1.Text = "...";
+            this.lblSection61_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection57_1
             // 
@@ -1813,6 +2391,16 @@
             this.pnlSection57_1.Name = "pnlSection57_1";
             this.pnlSection57_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection57_1.TabIndex = 1;
+            this.pnlSection57_1.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection57_1
+            // 
+            this.lblSection57_1.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection57_1.Name = "lblSection57_1";
+            this.lblSection57_1.Size = new System.Drawing.Size(50, 30);
+            this.lblSection57_1.TabIndex = 0;
+            this.lblSection57_1.Text = "...";
+            this.lblSection57_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection56_1
             // 
@@ -1822,6 +2410,16 @@
             this.pnlSection56_1.Name = "pnlSection56_1";
             this.pnlSection56_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection56_1.TabIndex = 1;
+            this.pnlSection56_1.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection56_1
+            // 
+            this.lblSection56_1.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection56_1.Name = "lblSection56_1";
+            this.lblSection56_1.Size = new System.Drawing.Size(50, 30);
+            this.lblSection56_1.TabIndex = 0;
+            this.lblSection56_1.Text = "...";
+            this.lblSection56_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection55_1
             // 
@@ -1831,6 +2429,16 @@
             this.pnlSection55_1.Name = "pnlSection55_1";
             this.pnlSection55_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection55_1.TabIndex = 1;
+            this.pnlSection55_1.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection55_1
+            // 
+            this.lblSection55_1.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection55_1.Name = "lblSection55_1";
+            this.lblSection55_1.Size = new System.Drawing.Size(50, 30);
+            this.lblSection55_1.TabIndex = 0;
+            this.lblSection55_1.Text = "...";
+            this.lblSection55_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection54_1
             // 
@@ -1840,6 +2448,16 @@
             this.pnlSection54_1.Name = "pnlSection54_1";
             this.pnlSection54_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection54_1.TabIndex = 1;
+            this.pnlSection54_1.Click += new System.EventHandler(this.SectorClick);
+            // 
+            // lblSection54_1
+            // 
+            this.lblSection54_1.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection54_1.Name = "lblSection54_1";
+            this.lblSection54_1.Size = new System.Drawing.Size(50, 30);
+            this.lblSection54_1.TabIndex = 0;
+            this.lblSection54_1.Text = "...";
+            this.lblSection54_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSection53_1
             // 
@@ -1849,6 +2467,7 @@
             this.pnlSection53_1.Name = "pnlSection53_1";
             this.pnlSection53_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection53_1.TabIndex = 1;
+            this.pnlSection53_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection53_1
             // 
@@ -1867,6 +2486,7 @@
             this.pnlSection52_1.Name = "pnlSection52_1";
             this.pnlSection52_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection52_1.TabIndex = 1;
+            this.pnlSection52_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection52_1
             // 
@@ -1885,6 +2505,7 @@
             this.pnlSection51_1.Name = "pnlSection51_1";
             this.pnlSection51_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection51_1.TabIndex = 1;
+            this.pnlSection51_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection51_1
             // 
@@ -1903,6 +2524,7 @@
             this.pnlSection38_1.Name = "pnlSection38_1";
             this.pnlSection38_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection38_1.TabIndex = 1;
+            this.pnlSection38_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection38_1
             // 
@@ -1922,6 +2544,16 @@
             this.pnlSection42_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection42_1.TabIndex = 1;
             // 
+            // lblSection42_1
+            // 
+            this.lblSection42_1.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection42_1.Name = "lblSection42_1";
+            this.lblSection42_1.Size = new System.Drawing.Size(50, 30);
+            this.lblSection42_1.TabIndex = 0;
+            this.lblSection42_1.Text = "...";
+            this.lblSection42_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection42_1.Click += new System.EventHandler(this.SectorClick);
+            // 
             // pnlSection37_1
             // 
             this.pnlSection37_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -1930,6 +2562,7 @@
             this.pnlSection37_1.Name = "pnlSection37_1";
             this.pnlSection37_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection37_1.TabIndex = 1;
+            this.pnlSection37_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection37_1
             // 
@@ -1949,6 +2582,16 @@
             this.pnlSection15_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection15_1.TabIndex = 1;
             // 
+            // lblSection15_1
+            // 
+            this.lblSection15_1.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection15_1.Name = "lblSection15_1";
+            this.lblSection15_1.Size = new System.Drawing.Size(50, 30);
+            this.lblSection15_1.TabIndex = 0;
+            this.lblSection15_1.Text = "...";
+            this.lblSection15_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection15_1.Click += new System.EventHandler(this.SectorClick);
+            // 
             // pnlSection14_1
             // 
             this.pnlSection14_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -1957,6 +2600,16 @@
             this.pnlSection14_1.Name = "pnlSection14_1";
             this.pnlSection14_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection14_1.TabIndex = 1;
+            // 
+            // lblSection14_1
+            // 
+            this.lblSection14_1.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection14_1.Name = "lblSection14_1";
+            this.lblSection14_1.Size = new System.Drawing.Size(50, 30);
+            this.lblSection14_1.TabIndex = 0;
+            this.lblSection14_1.Text = "...";
+            this.lblSection14_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection14_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection13_1
             // 
@@ -1967,6 +2620,16 @@
             this.pnlSection13_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection13_1.TabIndex = 1;
             // 
+            // lblSection13_1
+            // 
+            this.lblSection13_1.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection13_1.Name = "lblSection13_1";
+            this.lblSection13_1.Size = new System.Drawing.Size(50, 30);
+            this.lblSection13_1.TabIndex = 0;
+            this.lblSection13_1.Text = "...";
+            this.lblSection13_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection13_1.Click += new System.EventHandler(this.SectorClick);
+            // 
             // pnlSection21_1
             // 
             this.pnlSection21_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -1975,6 +2638,16 @@
             this.pnlSection21_1.Name = "pnlSection21_1";
             this.pnlSection21_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection21_1.TabIndex = 1;
+            // 
+            // lblSection21_1
+            // 
+            this.lblSection21_1.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection21_1.Name = "lblSection21_1";
+            this.lblSection21_1.Size = new System.Drawing.Size(50, 30);
+            this.lblSection21_1.TabIndex = 0;
+            this.lblSection21_1.Text = "...";
+            this.lblSection21_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection21_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection20_1
             // 
@@ -1985,6 +2658,16 @@
             this.pnlSection20_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection20_1.TabIndex = 1;
             // 
+            // lblSection20_1
+            // 
+            this.lblSection20_1.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection20_1.Name = "lblSection20_1";
+            this.lblSection20_1.Size = new System.Drawing.Size(50, 30);
+            this.lblSection20_1.TabIndex = 0;
+            this.lblSection20_1.Text = "...";
+            this.lblSection20_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection20_1.Click += new System.EventHandler(this.SectorClick);
+            // 
             // pnlSection19_1
             // 
             this.pnlSection19_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -1993,6 +2676,16 @@
             this.pnlSection19_1.Name = "pnlSection19_1";
             this.pnlSection19_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection19_1.TabIndex = 1;
+            // 
+            // lblSection19_1
+            // 
+            this.lblSection19_1.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection19_1.Name = "lblSection19_1";
+            this.lblSection19_1.Size = new System.Drawing.Size(50, 30);
+            this.lblSection19_1.TabIndex = 0;
+            this.lblSection19_1.Text = "...";
+            this.lblSection19_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection19_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection18_1
             // 
@@ -2003,6 +2696,16 @@
             this.pnlSection18_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection18_1.TabIndex = 1;
             // 
+            // lblSection18_1
+            // 
+            this.lblSection18_1.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection18_1.Name = "lblSection18_1";
+            this.lblSection18_1.Size = new System.Drawing.Size(50, 30);
+            this.lblSection18_1.TabIndex = 0;
+            this.lblSection18_1.Text = "...";
+            this.lblSection18_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection18_1.Click += new System.EventHandler(this.SectorClick);
+            // 
             // pnlSection17_1
             // 
             this.pnlSection17_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -2011,6 +2714,16 @@
             this.pnlSection17_1.Name = "pnlSection17_1";
             this.pnlSection17_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection17_1.TabIndex = 1;
+            // 
+            // lblSection17_1
+            // 
+            this.lblSection17_1.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection17_1.Name = "lblSection17_1";
+            this.lblSection17_1.Size = new System.Drawing.Size(50, 30);
+            this.lblSection17_1.TabIndex = 0;
+            this.lblSection17_1.Text = "...";
+            this.lblSection17_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection17_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection16_1
             // 
@@ -2021,6 +2734,16 @@
             this.pnlSection16_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection16_1.TabIndex = 1;
             // 
+            // lblSection16_1
+            // 
+            this.lblSection16_1.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection16_1.Name = "lblSection16_1";
+            this.lblSection16_1.Size = new System.Drawing.Size(50, 30);
+            this.lblSection16_1.TabIndex = 0;
+            this.lblSection16_1.Text = "...";
+            this.lblSection16_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection16_1.Click += new System.EventHandler(this.SectorClick);
+            // 
             // pnlSection12_1
             // 
             this.pnlSection12_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -2029,6 +2752,16 @@
             this.pnlSection12_1.Name = "pnlSection12_1";
             this.pnlSection12_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection12_1.TabIndex = 1;
+            // 
+            // lblSection12_1
+            // 
+            this.lblSection12_1.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection12_1.Name = "lblSection12_1";
+            this.lblSection12_1.Size = new System.Drawing.Size(50, 30);
+            this.lblSection12_1.TabIndex = 0;
+            this.lblSection12_1.Text = "...";
+            this.lblSection12_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection12_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection44_1
             // 
@@ -2039,6 +2772,16 @@
             this.pnlSection44_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection44_1.TabIndex = 1;
             // 
+            // lblSection44_1
+            // 
+            this.lblSection44_1.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection44_1.Name = "lblSection44_1";
+            this.lblSection44_1.Size = new System.Drawing.Size(50, 30);
+            this.lblSection44_1.TabIndex = 0;
+            this.lblSection44_1.Text = "...";
+            this.lblSection44_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection44_1.Click += new System.EventHandler(this.SectorClick);
+            // 
             // pnlSection43_1
             // 
             this.pnlSection43_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -2048,6 +2791,16 @@
             this.pnlSection43_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection43_1.TabIndex = 1;
             // 
+            // lblSection43_1
+            // 
+            this.lblSection43_1.Location = new System.Drawing.Point(-1, -1);
+            this.lblSection43_1.Name = "lblSection43_1";
+            this.lblSection43_1.Size = new System.Drawing.Size(50, 30);
+            this.lblSection43_1.TabIndex = 0;
+            this.lblSection43_1.Text = "...";
+            this.lblSection43_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection43_1.Click += new System.EventHandler(this.SectorClick);
+            // 
             // pnlSection36_1
             // 
             this.pnlSection36_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -2056,6 +2809,7 @@
             this.pnlSection36_1.Name = "pnlSection36_1";
             this.pnlSection36_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection36_1.TabIndex = 1;
+            this.pnlSection36_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection36_1
             // 
@@ -2074,6 +2828,7 @@
             this.pnlSection35_1.Name = "pnlSection35_1";
             this.pnlSection35_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection35_1.TabIndex = 1;
+            this.pnlSection35_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection35_1
             // 
@@ -2092,6 +2847,7 @@
             this.pnlSection34_1.Name = "pnlSection34_1";
             this.pnlSection34_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection34_1.TabIndex = 1;
+            this.pnlSection34_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection34_1
             // 
@@ -2110,6 +2866,7 @@
             this.pnlSection33_1.Name = "pnlSection33_1";
             this.pnlSection33_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection33_1.TabIndex = 1;
+            this.pnlSection33_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection33_1
             // 
@@ -2128,6 +2885,7 @@
             this.pnlSection32_1.Name = "pnlSection32_1";
             this.pnlSection32_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection32_1.TabIndex = 1;
+            this.pnlSection32_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection32_1
             // 
@@ -2146,6 +2904,7 @@
             this.pnlSection31_1.Name = "pnlSection31_1";
             this.pnlSection31_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection31_1.TabIndex = 1;
+            this.pnlSection31_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection31_1
             // 
@@ -2164,6 +2923,7 @@
             this.pnlSection30_1.Name = "pnlSection30_1";
             this.pnlSection30_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection30_1.TabIndex = 1;
+            this.pnlSection30_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // lblSection30_1
             // 
@@ -2173,6 +2933,7 @@
             this.lblSection30_1.TabIndex = 0;
             this.lblSection30_1.Text = "...";
             this.lblSection30_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection30_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // panel114
             // 
@@ -3010,649 +3771,6 @@
             this.btnLogOut.Text = "Uitloggen";
             this.btnLogOut.UseVisualStyleBackColor = false;
             this.btnLogOut.Visible = false;
-            // 
-            // lblSection53_2
-            // 
-            this.lblSection53_2.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection53_2.Name = "lblSection53_2";
-            this.lblSection53_2.Size = new System.Drawing.Size(50, 30);
-            this.lblSection53_2.TabIndex = 0;
-            this.lblSection53_2.Text = "...";
-            this.lblSection53_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection53_3
-            // 
-            this.lblSection53_3.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection53_3.Name = "lblSection53_3";
-            this.lblSection53_3.Size = new System.Drawing.Size(50, 30);
-            this.lblSection53_3.TabIndex = 0;
-            this.lblSection53_3.Text = "...";
-            this.lblSection53_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection53_4
-            // 
-            this.lblSection53_4.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection53_4.Name = "lblSection53_4";
-            this.lblSection53_4.Size = new System.Drawing.Size(50, 30);
-            this.lblSection53_4.TabIndex = 0;
-            this.lblSection53_4.Text = "...";
-            this.lblSection53_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection53_5
-            // 
-            this.lblSection53_5.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection53_5.Name = "lblSection53_5";
-            this.lblSection53_5.Size = new System.Drawing.Size(50, 30);
-            this.lblSection53_5.TabIndex = 0;
-            this.lblSection53_5.Text = "...";
-            this.lblSection53_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection53_6
-            // 
-            this.lblSection53_6.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection53_6.Name = "lblSection53_6";
-            this.lblSection53_6.Size = new System.Drawing.Size(50, 30);
-            this.lblSection53_6.TabIndex = 0;
-            this.lblSection53_6.Text = "...";
-            this.lblSection53_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection54_1
-            // 
-            this.lblSection54_1.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection54_1.Name = "lblSection54_1";
-            this.lblSection54_1.Size = new System.Drawing.Size(50, 30);
-            this.lblSection54_1.TabIndex = 0;
-            this.lblSection54_1.Text = "...";
-            this.lblSection54_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection54_2
-            // 
-            this.lblSection54_2.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection54_2.Name = "lblSection54_2";
-            this.lblSection54_2.Size = new System.Drawing.Size(50, 30);
-            this.lblSection54_2.TabIndex = 0;
-            this.lblSection54_2.Text = "...";
-            this.lblSection54_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection54_3
-            // 
-            this.lblSection54_3.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection54_3.Name = "lblSection54_3";
-            this.lblSection54_3.Size = new System.Drawing.Size(50, 30);
-            this.lblSection54_3.TabIndex = 0;
-            this.lblSection54_3.Text = "...";
-            this.lblSection54_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection54_4
-            // 
-            this.lblSection54_4.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection54_4.Name = "lblSection54_4";
-            this.lblSection54_4.Size = new System.Drawing.Size(50, 30);
-            this.lblSection54_4.TabIndex = 0;
-            this.lblSection54_4.Text = "...";
-            this.lblSection54_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection54_5
-            // 
-            this.lblSection54_5.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection54_5.Name = "lblSection54_5";
-            this.lblSection54_5.Size = new System.Drawing.Size(50, 30);
-            this.lblSection54_5.TabIndex = 0;
-            this.lblSection54_5.Text = "...";
-            this.lblSection54_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection54_6
-            // 
-            this.lblSection54_6.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection54_6.Name = "lblSection54_6";
-            this.lblSection54_6.Size = new System.Drawing.Size(50, 30);
-            this.lblSection54_6.TabIndex = 0;
-            this.lblSection54_6.Text = "...";
-            this.lblSection54_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection55_1
-            // 
-            this.lblSection55_1.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection55_1.Name = "lblSection55_1";
-            this.lblSection55_1.Size = new System.Drawing.Size(50, 30);
-            this.lblSection55_1.TabIndex = 0;
-            this.lblSection55_1.Text = "...";
-            this.lblSection55_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection55_2
-            // 
-            this.lblSection55_2.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection55_2.Name = "lblSection55_2";
-            this.lblSection55_2.Size = new System.Drawing.Size(50, 30);
-            this.lblSection55_2.TabIndex = 0;
-            this.lblSection55_2.Text = "...";
-            this.lblSection55_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection55_3
-            // 
-            this.lblSection55_3.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection55_3.Name = "lblSection55_3";
-            this.lblSection55_3.Size = new System.Drawing.Size(50, 30);
-            this.lblSection55_3.TabIndex = 0;
-            this.lblSection55_3.Text = "...";
-            this.lblSection55_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection55_4
-            // 
-            this.lblSection55_4.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection55_4.Name = "lblSection55_4";
-            this.lblSection55_4.Size = new System.Drawing.Size(50, 30);
-            this.lblSection55_4.TabIndex = 0;
-            this.lblSection55_4.Text = "...";
-            this.lblSection55_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection55_5
-            // 
-            this.lblSection55_5.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection55_5.Name = "lblSection55_5";
-            this.lblSection55_5.Size = new System.Drawing.Size(50, 30);
-            this.lblSection55_5.TabIndex = 0;
-            this.lblSection55_5.Text = "...";
-            this.lblSection55_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection55_6
-            // 
-            this.lblSection55_6.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection55_6.Name = "lblSection55_6";
-            this.lblSection55_6.Size = new System.Drawing.Size(50, 30);
-            this.lblSection55_6.TabIndex = 0;
-            this.lblSection55_6.Text = "...";
-            this.lblSection55_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection55_7
-            // 
-            this.lblSection55_7.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection55_7.Name = "lblSection55_7";
-            this.lblSection55_7.Size = new System.Drawing.Size(50, 30);
-            this.lblSection55_7.TabIndex = 0;
-            this.lblSection55_7.Text = "...";
-            this.lblSection55_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection56_1
-            // 
-            this.lblSection56_1.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection56_1.Name = "lblSection56_1";
-            this.lblSection56_1.Size = new System.Drawing.Size(50, 30);
-            this.lblSection56_1.TabIndex = 0;
-            this.lblSection56_1.Text = "...";
-            this.lblSection56_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection56_2
-            // 
-            this.lblSection56_2.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection56_2.Name = "lblSection56_2";
-            this.lblSection56_2.Size = new System.Drawing.Size(50, 30);
-            this.lblSection56_2.TabIndex = 0;
-            this.lblSection56_2.Text = "...";
-            this.lblSection56_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection56_3
-            // 
-            this.lblSection56_3.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection56_3.Name = "lblSection56_3";
-            this.lblSection56_3.Size = new System.Drawing.Size(50, 30);
-            this.lblSection56_3.TabIndex = 0;
-            this.lblSection56_3.Text = "...";
-            this.lblSection56_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection56_4
-            // 
-            this.lblSection56_4.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection56_4.Name = "lblSection56_4";
-            this.lblSection56_4.Size = new System.Drawing.Size(50, 30);
-            this.lblSection56_4.TabIndex = 0;
-            this.lblSection56_4.Text = "...";
-            this.lblSection56_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection56_5
-            // 
-            this.lblSection56_5.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection56_5.Name = "lblSection56_5";
-            this.lblSection56_5.Size = new System.Drawing.Size(50, 30);
-            this.lblSection56_5.TabIndex = 0;
-            this.lblSection56_5.Text = "...";
-            this.lblSection56_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection56_6
-            // 
-            this.lblSection56_6.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection56_6.Name = "lblSection56_6";
-            this.lblSection56_6.Size = new System.Drawing.Size(50, 30);
-            this.lblSection56_6.TabIndex = 0;
-            this.lblSection56_6.Text = "...";
-            this.lblSection56_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection56_7
-            // 
-            this.lblSection56_7.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection56_7.Name = "lblSection56_7";
-            this.lblSection56_7.Size = new System.Drawing.Size(50, 30);
-            this.lblSection56_7.TabIndex = 0;
-            this.lblSection56_7.Text = "...";
-            this.lblSection56_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection57_1
-            // 
-            this.lblSection57_1.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection57_1.Name = "lblSection57_1";
-            this.lblSection57_1.Size = new System.Drawing.Size(50, 30);
-            this.lblSection57_1.TabIndex = 0;
-            this.lblSection57_1.Text = "...";
-            this.lblSection57_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection57_2
-            // 
-            this.lblSection57_2.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection57_2.Name = "lblSection57_2";
-            this.lblSection57_2.Size = new System.Drawing.Size(50, 30);
-            this.lblSection57_2.TabIndex = 0;
-            this.lblSection57_2.Text = "...";
-            this.lblSection57_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection57_3
-            // 
-            this.lblSection57_3.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection57_3.Name = "lblSection57_3";
-            this.lblSection57_3.Size = new System.Drawing.Size(50, 30);
-            this.lblSection57_3.TabIndex = 0;
-            this.lblSection57_3.Text = "...";
-            this.lblSection57_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection57_4
-            // 
-            this.lblSection57_4.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection57_4.Name = "lblSection57_4";
-            this.lblSection57_4.Size = new System.Drawing.Size(50, 30);
-            this.lblSection57_4.TabIndex = 0;
-            this.lblSection57_4.Text = "...";
-            this.lblSection57_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection57_5
-            // 
-            this.lblSection57_5.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection57_5.Name = "lblSection57_5";
-            this.lblSection57_5.Size = new System.Drawing.Size(50, 30);
-            this.lblSection57_5.TabIndex = 0;
-            this.lblSection57_5.Text = "...";
-            this.lblSection57_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection57_6
-            // 
-            this.lblSection57_6.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection57_6.Name = "lblSection57_6";
-            this.lblSection57_6.Size = new System.Drawing.Size(50, 30);
-            this.lblSection57_6.TabIndex = 0;
-            this.lblSection57_6.Text = "...";
-            this.lblSection57_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection57_7
-            // 
-            this.lblSection57_7.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection57_7.Name = "lblSection57_7";
-            this.lblSection57_7.Size = new System.Drawing.Size(50, 30);
-            this.lblSection57_7.TabIndex = 0;
-            this.lblSection57_7.Text = "...";
-            this.lblSection57_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection61_1
-            // 
-            this.lblSection61_1.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection61_1.Name = "lblSection61_1";
-            this.lblSection61_1.Size = new System.Drawing.Size(50, 30);
-            this.lblSection61_1.TabIndex = 0;
-            this.lblSection61_1.Text = "...";
-            this.lblSection61_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection61_2
-            // 
-            this.lblSection61_2.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection61_2.Name = "lblSection61_2";
-            this.lblSection61_2.Size = new System.Drawing.Size(50, 30);
-            this.lblSection61_2.TabIndex = 0;
-            this.lblSection61_2.Text = "...";
-            this.lblSection61_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection62_1
-            // 
-            this.lblSection62_1.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection62_1.Name = "lblSection62_1";
-            this.lblSection62_1.Size = new System.Drawing.Size(50, 30);
-            this.lblSection62_1.TabIndex = 0;
-            this.lblSection62_1.Text = "...";
-            this.lblSection62_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection62_2
-            // 
-            this.lblSection62_2.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection62_2.Name = "lblSection62_2";
-            this.lblSection62_2.Size = new System.Drawing.Size(50, 30);
-            this.lblSection62_2.TabIndex = 0;
-            this.lblSection62_2.Text = "...";
-            this.lblSection62_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection63_1
-            // 
-            this.lblSection63_1.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection63_1.Name = "lblSection63_1";
-            this.lblSection63_1.Size = new System.Drawing.Size(50, 30);
-            this.lblSection63_1.TabIndex = 0;
-            this.lblSection63_1.Text = "...";
-            this.lblSection63_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection63_2
-            // 
-            this.lblSection63_2.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection63_2.Name = "lblSection63_2";
-            this.lblSection63_2.Size = new System.Drawing.Size(50, 30);
-            this.lblSection63_2.TabIndex = 0;
-            this.lblSection63_2.Text = "...";
-            this.lblSection63_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection63_3
-            // 
-            this.lblSection63_3.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection63_3.Name = "lblSection63_3";
-            this.lblSection63_3.Size = new System.Drawing.Size(50, 30);
-            this.lblSection63_3.TabIndex = 0;
-            this.lblSection63_3.Text = "...";
-            this.lblSection63_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection63_4
-            // 
-            this.lblSection63_4.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection63_4.Name = "lblSection63_4";
-            this.lblSection63_4.Size = new System.Drawing.Size(50, 30);
-            this.lblSection63_4.TabIndex = 0;
-            this.lblSection63_4.Text = "...";
-            this.lblSection63_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection64_1
-            // 
-            this.lblSection64_1.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection64_1.Name = "lblSection64_1";
-            this.lblSection64_1.Size = new System.Drawing.Size(50, 30);
-            this.lblSection64_1.TabIndex = 0;
-            this.lblSection64_1.Text = "...";
-            this.lblSection64_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection64_2
-            // 
-            this.lblSection64_2.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection64_2.Name = "lblSection64_2";
-            this.lblSection64_2.Size = new System.Drawing.Size(50, 30);
-            this.lblSection64_2.TabIndex = 0;
-            this.lblSection64_2.Text = "...";
-            this.lblSection64_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection64_3
-            // 
-            this.lblSection64_3.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection64_3.Name = "lblSection64_3";
-            this.lblSection64_3.Size = new System.Drawing.Size(50, 30);
-            this.lblSection64_3.TabIndex = 0;
-            this.lblSection64_3.Text = "...";
-            this.lblSection64_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection64_4
-            // 
-            this.lblSection64_4.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection64_4.Name = "lblSection64_4";
-            this.lblSection64_4.Size = new System.Drawing.Size(50, 30);
-            this.lblSection64_4.TabIndex = 0;
-            this.lblSection64_4.Text = "...";
-            this.lblSection64_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection41_1
-            // 
-            this.lblSection41_1.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection41_1.Name = "lblSection41_1";
-            this.lblSection41_1.Size = new System.Drawing.Size(50, 30);
-            this.lblSection41_1.TabIndex = 0;
-            this.lblSection41_1.Text = "...";
-            this.lblSection41_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection41_2
-            // 
-            this.lblSection41_2.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection41_2.Name = "lblSection41_2";
-            this.lblSection41_2.Size = new System.Drawing.Size(50, 30);
-            this.lblSection41_2.TabIndex = 0;
-            this.lblSection41_2.Text = "...";
-            this.lblSection41_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection41_3
-            // 
-            this.lblSection41_3.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection41_3.Name = "lblSection41_3";
-            this.lblSection41_3.Size = new System.Drawing.Size(50, 30);
-            this.lblSection41_3.TabIndex = 0;
-            this.lblSection41_3.Text = "...";
-            this.lblSection41_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection41_4
-            // 
-            this.lblSection41_4.Location = new System.Drawing.Point(-1, 0);
-            this.lblSection41_4.Name = "lblSection41_4";
-            this.lblSection41_4.Size = new System.Drawing.Size(50, 30);
-            this.lblSection41_4.TabIndex = 0;
-            this.lblSection41_4.Text = "...";
-            this.lblSection41_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection42_1
-            // 
-            this.lblSection42_1.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection42_1.Name = "lblSection42_1";
-            this.lblSection42_1.Size = new System.Drawing.Size(50, 30);
-            this.lblSection42_1.TabIndex = 0;
-            this.lblSection42_1.Text = "...";
-            this.lblSection42_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection42_2
-            // 
-            this.lblSection42_2.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection42_2.Name = "lblSection42_2";
-            this.lblSection42_2.Size = new System.Drawing.Size(50, 30);
-            this.lblSection42_2.TabIndex = 0;
-            this.lblSection42_2.Text = "...";
-            this.lblSection42_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection42_3
-            // 
-            this.lblSection42_3.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection42_3.Name = "lblSection42_3";
-            this.lblSection42_3.Size = new System.Drawing.Size(50, 30);
-            this.lblSection42_3.TabIndex = 0;
-            this.lblSection42_3.Text = "...";
-            this.lblSection42_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection42_4
-            // 
-            this.lblSection42_4.Location = new System.Drawing.Point(-1, 0);
-            this.lblSection42_4.Name = "lblSection42_4";
-            this.lblSection42_4.Size = new System.Drawing.Size(50, 30);
-            this.lblSection42_4.TabIndex = 0;
-            this.lblSection42_4.Text = "...";
-            this.lblSection42_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection43_4
-            // 
-            this.lblSection43_4.Location = new System.Drawing.Point(-1, 0);
-            this.lblSection43_4.Name = "lblSection43_4";
-            this.lblSection43_4.Size = new System.Drawing.Size(50, 30);
-            this.lblSection43_4.TabIndex = 0;
-            this.lblSection43_4.Text = "...";
-            this.lblSection43_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection44_4
-            // 
-            this.lblSection44_4.Location = new System.Drawing.Point(-1, 0);
-            this.lblSection44_4.Name = "lblSection44_4";
-            this.lblSection44_4.Size = new System.Drawing.Size(50, 30);
-            this.lblSection44_4.TabIndex = 0;
-            this.lblSection44_4.Text = "...";
-            this.lblSection44_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection43_1
-            // 
-            this.lblSection43_1.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection43_1.Name = "lblSection43_1";
-            this.lblSection43_1.Size = new System.Drawing.Size(50, 30);
-            this.lblSection43_1.TabIndex = 0;
-            this.lblSection43_1.Text = "...";
-            this.lblSection43_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection43_2
-            // 
-            this.lblSection43_2.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection43_2.Name = "lblSection43_2";
-            this.lblSection43_2.Size = new System.Drawing.Size(50, 30);
-            this.lblSection43_2.TabIndex = 0;
-            this.lblSection43_2.Text = "...";
-            this.lblSection43_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection43_3
-            // 
-            this.lblSection43_3.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection43_3.Name = "lblSection43_3";
-            this.lblSection43_3.Size = new System.Drawing.Size(50, 30);
-            this.lblSection43_3.TabIndex = 0;
-            this.lblSection43_3.Text = "...";
-            this.lblSection43_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection44_1
-            // 
-            this.lblSection44_1.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection44_1.Name = "lblSection44_1";
-            this.lblSection44_1.Size = new System.Drawing.Size(50, 30);
-            this.lblSection44_1.TabIndex = 0;
-            this.lblSection44_1.Text = "...";
-            this.lblSection44_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection44_2
-            // 
-            this.lblSection44_2.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection44_2.Name = "lblSection44_2";
-            this.lblSection44_2.Size = new System.Drawing.Size(50, 30);
-            this.lblSection44_2.TabIndex = 0;
-            this.lblSection44_2.Text = "...";
-            this.lblSection44_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection44_3
-            // 
-            this.lblSection44_3.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection44_3.Name = "lblSection44_3";
-            this.lblSection44_3.Size = new System.Drawing.Size(50, 30);
-            this.lblSection44_3.TabIndex = 0;
-            this.lblSection44_3.Text = "...";
-            this.lblSection44_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection12_1
-            // 
-            this.lblSection12_1.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection12_1.Name = "lblSection12_1";
-            this.lblSection12_1.Size = new System.Drawing.Size(50, 30);
-            this.lblSection12_1.TabIndex = 0;
-            this.lblSection12_1.Text = "...";
-            this.lblSection12_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection13_1
-            // 
-            this.lblSection13_1.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection13_1.Name = "lblSection13_1";
-            this.lblSection13_1.Size = new System.Drawing.Size(50, 30);
-            this.lblSection13_1.TabIndex = 0;
-            this.lblSection13_1.Text = "...";
-            this.lblSection13_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection14_1
-            // 
-            this.lblSection14_1.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection14_1.Name = "lblSection14_1";
-            this.lblSection14_1.Size = new System.Drawing.Size(50, 30);
-            this.lblSection14_1.TabIndex = 0;
-            this.lblSection14_1.Text = "...";
-            this.lblSection14_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection15_1
-            // 
-            this.lblSection15_1.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection15_1.Name = "lblSection15_1";
-            this.lblSection15_1.Size = new System.Drawing.Size(50, 30);
-            this.lblSection15_1.TabIndex = 0;
-            this.lblSection15_1.Text = "...";
-            this.lblSection15_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection16_1
-            // 
-            this.lblSection16_1.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection16_1.Name = "lblSection16_1";
-            this.lblSection16_1.Size = new System.Drawing.Size(50, 30);
-            this.lblSection16_1.TabIndex = 0;
-            this.lblSection16_1.Text = "...";
-            this.lblSection16_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection17_1
-            // 
-            this.lblSection17_1.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection17_1.Name = "lblSection17_1";
-            this.lblSection17_1.Size = new System.Drawing.Size(50, 30);
-            this.lblSection17_1.TabIndex = 0;
-            this.lblSection17_1.Text = "...";
-            this.lblSection17_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection18_1
-            // 
-            this.lblSection18_1.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection18_1.Name = "lblSection18_1";
-            this.lblSection18_1.Size = new System.Drawing.Size(50, 30);
-            this.lblSection18_1.TabIndex = 0;
-            this.lblSection18_1.Text = "...";
-            this.lblSection18_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection19_1
-            // 
-            this.lblSection19_1.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection19_1.Name = "lblSection19_1";
-            this.lblSection19_1.Size = new System.Drawing.Size(50, 30);
-            this.lblSection19_1.TabIndex = 0;
-            this.lblSection19_1.Text = "...";
-            this.lblSection19_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection20_1
-            // 
-            this.lblSection20_1.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection20_1.Name = "lblSection20_1";
-            this.lblSection20_1.Size = new System.Drawing.Size(50, 30);
-            this.lblSection20_1.TabIndex = 0;
-            this.lblSection20_1.Text = "...";
-            this.lblSection20_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSection21_1
-            // 
-            this.lblSection21_1.Location = new System.Drawing.Point(-1, -1);
-            this.lblSection21_1.Name = "lblSection21_1";
-            this.lblSection21_1.Size = new System.Drawing.Size(50, 30);
-            this.lblSection21_1.TabIndex = 0;
-            this.lblSection21_1.Text = "...";
-            this.lblSection21_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblVergroot
-            // 
-            this.lblVergroot.AutoSize = true;
-            this.lblVergroot.Depth = 0;
-            this.lblVergroot.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lblVergroot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblVergroot.Location = new System.Drawing.Point(1021, 338);
-            this.lblVergroot.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblVergroot.Name = "lblVergroot";
-            this.lblVergroot.Size = new System.Drawing.Size(144, 19);
-            this.lblVergroot.TabIndex = 3;
-            this.lblVergroot.Text = "Klik om te vergroten";
             // 
             // Form1
             // 

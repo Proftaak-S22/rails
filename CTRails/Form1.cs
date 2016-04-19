@@ -16,10 +16,13 @@ namespace CTRails
 
         private UnitOfWork unit;
         private PopUp1 popAddTram = new PopUp1();
+        private bool addListeners = false;
 
         public Form1()
         {
             InitializeComponent();
+
+            
 
             unit = new UnitOfWork();
 
@@ -76,11 +79,6 @@ namespace CTRails
             }
         }
 
-        private void tpRemise_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void pbPlattegrond_Click(object sender, EventArgs e)
         {
             if (pbPlattegrond.Dock == DockStyle.None)
@@ -93,6 +91,13 @@ namespace CTRails
                 pbPlattegrond.Dock = DockStyle.None;
                 lblVergroot.Visible = true;
             }
+        }
+
+
+
+        private void SectorClick(object sender, EventArgs e)
+        {
+            MessageBox.Show("askljfklasdjfklj");
         }
     }
 }
