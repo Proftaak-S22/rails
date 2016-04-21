@@ -24,7 +24,7 @@ namespace CTRails.Entities.Employees
             )
             : base(id, accountType, username, password, firstName, lastName, prefix, email, dateOfBirth, nationality, address, gender)
         {
-            throw new NotImplementedException();
+            
         }
     }
 }

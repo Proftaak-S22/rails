@@ -1,6 +1,6 @@
 ﻿namespace CTRails
 {
-    partial class Form1
+    partial class Rails
     {
         /// <summary>
         /// Required designer variable.
@@ -4578,7 +4578,7 @@
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.tsTabs);
             this.Controls.Add(this.tabTabs);
-            this.Name = "Form1";
+            this.Name = "Rails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Remise App: Log in a.u.b.";
             this.tabTabs.ResumeLayout(false);

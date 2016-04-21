@@ -32,8 +32,8 @@ namespace CTRails.DAL.Contexts
                 Gender.M));
 
             Entities.Add(new Employee(ID, new AccountType(0, "FleetAdministrator"),
-                "willempjuuuh",
-                "0022335566",
+                "test",
+                "test",
                 "Willem",
                 "Keeris",
                 string.Empty,

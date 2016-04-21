@@ -118,11 +118,11 @@
     <Compile Include="Address.cs" />
     <Compile Include="Entities\Employees\Administrator.cs" />
     <Compile Include="Database.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Rails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Rails.Designer.cs">
+      <DependentUpon>Rails.cs</DependentUpon>
     </Compile>
     <Compile Include="Entities\Employees\LeadJanitor.cs" />
     <Compile Include="Entities\Employees\LeadTechnician.cs" />
@@ -138,8 +138,8 @@
     <Compile Include="Entities\Tram.cs" />
     <Compile Include="Entities\Employees\Employee.cs" />
     <Compile Include="Entities\Employees\FleetAdministrator.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Rails.resx">
+      <DependentUpon>Rails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginTabPage.resx">
       <DependentUpon>LoginTabPage.cs</DependentUpon>

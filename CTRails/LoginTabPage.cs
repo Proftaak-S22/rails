@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CTRails.DAL;
+using CTRails.Entities.Employees;
+
 
 namespace CTRails
 {
@@ -25,9 +28,18 @@ namespace CTRails
 
 
 
-        public void Login()
+        public bool Login(string username, string password)
         {
-            
+            UnitOfWork worker = new UnitOfWork(true);
+
+            // Get the first employee that matches the username/password combination, or null.
+            Employee user = worker.Employees.Get().FirstOrDefault(x => x.Username == username && x.Password == password);
+
+            // No matches?
+            if (user == null)
+                return false;
+
+            return Session.Start(user);
         }
     }
 }

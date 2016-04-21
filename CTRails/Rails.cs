@@ -11,29 +11,16 @@ using MaterialSkin.Controls;
 
 namespace CTRails
 {
-    public partial class Form1 : MaterialForm
+    public partial class Rails : MaterialForm
     {
         public string TramNummer { get; set; }
         private UnitOfWork unit;
         
         private bool addListeners = false;
 
-        public Form1()
+        public Rails()
         {
             InitializeComponent();
-
-            
-
-            unit = new UnitOfWork();
-
-            List<AttachedTrack> at = unit.AttachedTracks.Get().ToList();
-            foreach (AttachedTrack t in at)
-            {
-                Console.WriteLine(t.Track + " attached to: " + t.Attached);
-            }
-
-            unit.Complete();
-
 
             FormLoading();
         }
@@ -49,36 +36,24 @@ namespace CTRails
 
             tabTabs.TabPages.Remove(tpLijnen);
             tabTabs.SelectedIndex = tabTabs.TabPages.IndexOf(tpLogin);
-            //tpLijnen.Hide();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            //Controleer of gebruikersnaam en wachtwoord correct zijn
-            bool login = false;
-            List<Employee> employees = unit.Employees.Get().ToList();
-            foreach (Employee em in employees)
+            if (tpLogin.Login(txtUsername.Text, txtPassword.Text))
             {
-                if(em.Username == txtUsername.Text)
-                {
-                    if (em.Password == txtPassword.Text)
-                    {
-                        login = true;
-                        //Na login, ga naar hoofdscherm
-                        this.Text = "Welkom " + em.FirstName;
-                        tabTabs.SelectedIndex = tabTabs.TabPages.IndexOf(tpRemise);
-                        tsTabs.BaseTabControl = tabTabs;
-                        tabTabs.TabPages.Remove(tpLogin);
-                        btnLogOut.Visible = true;
-                    }
-                }
+                this.Text = "Welkom " + Session.User.FirstName;
+                tabTabs.SelectedIndex = tabTabs.TabPages.IndexOf(tpRemise);
+                tsTabs.BaseTabControl = tabTabs;
+                tabTabs.TabPages.Remove(tpLogin);
+                btnLogOut.Visible = true;
+
+                MessageBox.Show(Session.User.GetType().ToString());
+                return;
             }
-            unit.Complete();
-            if (login == false)
-            {
-                txtPassword.Text = string.Empty;
-                MessageBox.Show("Gebruikersnaam of wachtwoord is verkeerd");
-            }
+
+            txtPassword.Text = string.Empty;
+            MessageBox.Show("Gebruikersnaam of wachtwoord is verkeerd");
         }
 
         private void pbPlattegrond_Click(object sender, EventArgs e)
