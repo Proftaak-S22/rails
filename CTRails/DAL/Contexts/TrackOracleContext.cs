@@ -48,7 +48,7 @@ namespace CTRails.DAL.Contexts
         {
             OpenConnection();
 
-            string values = "('" + entity.ID + "')";
+            string values = "ID= '" + entity.ID + "'";
 
             OracleCommand cmd = new OracleCommand("UPDATE TRM_EMPLOYEE SET " + values + " WHERE ID = " + entity.ID, Connection);
 

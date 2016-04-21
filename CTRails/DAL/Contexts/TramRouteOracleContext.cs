@@ -50,8 +50,8 @@ namespace CTRails.DAL.Contexts
         {
             OpenConnection();
 
-            string values = "(" + entity.Tram.Code + ", ";
-            values += entity.Route.ID + ")";
+            string values = "TRAM_ID = " + entity.Tram.Code + ", ";
+            values += "ROUTE_ID = " + entity.Route.ID + ")";
 
             OracleCommand cmd = new OracleCommand("UPDATE TRM_TRAM_ROUTE SET " + values + " WHERE ID = " + entity.ID, Connection);
 
