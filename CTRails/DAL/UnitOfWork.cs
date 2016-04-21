@@ -32,7 +32,8 @@ namespace CTRails.DAL
                 Trams = new TramRepository(new TramTestContext());
                 AccountTypes = new AccountTypeRepository(new AccountTypeTestContext());
                 AttachedTracks = new AttachedTrackRepository(new AttachedTrackTestContext());
-
+                Routes = new RouteRepository(new RouteTestContext());
+                
             }
         }
 

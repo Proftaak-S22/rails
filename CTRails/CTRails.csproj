@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\Contexts\RouteTestContext.cs" />
     <Compile Include="DAL\Contexts\TrackTestContext.cs" />
     <Compile Include="DAL\Contexts\AttachedTrackTestContext.cs" />
     <Compile Include="DAL\Contexts\AccountTypeTestContext.cs" />
