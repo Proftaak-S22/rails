@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using CTRails;
 using System.Threading.Tasks;
 using CTRails.DAL;
+using CTRails.Entities;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Rails_Test
 {
     [TestClass]
-    public class TramTest
+    public class RouteTest
     {
         private UnitOfWork unitOfWork;
         [TestInitialize]
@@ -20,12 +20,11 @@ namespace Rails_Test
         }
 
         [TestMethod]
-        public void InsertTram()
+        public void InsertRoute()
         {
-            
-            //Tram tram = new Tram(1,
-            //                     unitOfWork.Statuses.Where(status => status.Name()));
-            // Tram moet meerdere statussen kunnen bevatten.
+            Route route = new Route(8,"Route naar hemel");
+            unitOfWork.Routes.Add(route);
+            Assert.AreEqual(route, unitOfWork.Routes.Where(x => x.Name == "Route naar hemel"));
         }
 
         [TestCleanup]
