@@ -17,7 +17,7 @@ namespace Rails_Test
         [TestInitialize]
         public void Initialize()
         {
-            unitOfWork = new UnitOfWork();
+            unitOfWork = new UnitOfWork(true);
         }
 
         [TestCleanup]
@@ -30,8 +30,8 @@ namespace Rails_Test
         [TestMethod]
         public void InsertEmployee()
         {
-
-            Employee employee = new Employee(
+            //test fields
+            unitOfWork.Employees.Add(new Employee(
                 unitOfWork.AccountTypes.Where(accountType => accountType.Name == "FleetAdministrator").First(),
                 "willem",
                 "willem",
@@ -43,12 +43,9 @@ namespace Rails_Test
                 "NL",
                 new Address("Willemstraat", 1, "Willemsinky", "Willem", "1234WI", "W"),
                 Gender.M
-                );
+                ));
 
-            //test fields
-            unitOfWork.Employees.Add(employee);
-
-            Assert.AreEqual(employee, unitOfWork.Employees.Where(x => x.Email == "willem@willem.willem").First());
+            Assert.AreEqual("willem@willem.willem", unitOfWork.Employees.Get().First(x => x.Email == "willem@willem.willem").Email);
         }
     }
 }

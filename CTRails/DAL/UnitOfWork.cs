@@ -29,6 +29,7 @@ namespace CTRails.DAL
                 Employees = new EmployeeRepository(new EmployeeTestContext());
                 Sectors = new SectorRepository(new SectorTestContext());
                 Trams = new TramRepository(new TramTestContext());
+                AccountTypes = new AccountTypeRepository(new AccountTypeTestContext());
             }
         }
 
