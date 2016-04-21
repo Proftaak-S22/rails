@@ -57,6 +57,7 @@
     <Compile Include="RouteTest.cs" />
     <Compile Include="SectorTest.cs" />
     <Compile Include="TramTest.cs" />
+    <Compile Include="TramRouteTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CTRails\CTRails.csproj">
