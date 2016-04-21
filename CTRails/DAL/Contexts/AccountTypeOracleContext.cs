@@ -55,9 +55,9 @@ namespace CTRails.DAL.Contexts
                 accountTypes.Add(accountType);
             }
 
-            return accountTypes;
-
             CloseConnection();
+
+            return accountTypes;
         }
 
     }
