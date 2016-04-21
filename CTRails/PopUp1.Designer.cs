@@ -78,6 +78,7 @@
             this.Controls.Add(this.btnAddTram);
             this.Name = "PopUp1";
             this.Text = "Tram plaatsen";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PopUp1_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
