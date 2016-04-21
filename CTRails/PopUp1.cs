@@ -19,6 +19,7 @@ namespace CTRails
         {
             InitializeComponent();
 
+            btnAddTram.DialogResult = DialogResult.OK;
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
@@ -29,14 +30,13 @@ namespace CTRails
 
         private void btnAddTram_Click(object sender, EventArgs e)
         {
-            //TramNummer = txtTramNummer.Text;
-            this.Hide();
+            this.DialogResult = DialogResult.OK;
+            Close();
         }
 
         private void PopUp1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            e.Cancel = true;
-            this.Hide(); 
+            //this.DialogResult = DialogResult.OK;
         }
     }
 }

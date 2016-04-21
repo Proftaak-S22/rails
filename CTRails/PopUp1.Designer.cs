@@ -168,12 +168,12 @@
         #endregion
 
         private MaterialSkin.Controls.MaterialRaisedButton btnAddTram;
-        private System.Windows.Forms.TextBox txtTramNummer;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private MaterialSkin.Controls.MaterialRadioButton cbStatusSchoonmaak;
         private MaterialSkin.Controls.MaterialRadioButton cbStatusDefect;
         private MaterialSkin.Controls.MaterialRadioButton cbStatusRemise;
+        public System.Windows.Forms.TextBox txtTramNummer;
     }
 }

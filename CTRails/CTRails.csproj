@@ -55,6 +55,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\Contexts\SectorTestContext.cs" />
+    <Compile Include="DAL\Contexts\EmployeeTestContext.cs" />
     <Compile Include="DAL\Contexts\RouteOracleContext.cs" />
     <Compile Include="DAL\Contexts\AttachedTrackOracleContext.cs" />
     <Compile Include="DAL\Contexts\SectorOracleContext.cs" />
@@ -85,7 +87,7 @@
     <Compile Include="DAL\Repositories\StatusRepository.cs" />
     <Compile Include="DAL\Repositories\EmployeeRepository.cs" />
     <Compile Include="DAL\Repositories\Repository.cs" />
-    <Compile Include="DAL\TestDataContext.cs" />
+    <Compile Include="DAL\TestDatabaseContext.cs" />
     <Compile Include="DAL\UnitOfWork.cs" />
     <Compile Include="DAL\Contexts\IDataContext.cs" />
     <Compile Include="DAL\IRailsDataContext.cs" />

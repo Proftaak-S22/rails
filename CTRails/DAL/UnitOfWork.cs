@@ -7,19 +7,26 @@ namespace CTRails.DAL
     public class UnitOfWork
     {
         
-        public UnitOfWork()
+        public UnitOfWork(bool test = false)
         {
+            if (!test)
+            {
+                AccountTypes = new AccountTypeRepository(new AccountTypeOracleContext());
+                AttachedTracks = new AttachedTrackRepository(new AttachedTrackOracleContext());
+                Employees = new EmployeeRepository(new EmployeeOracleContext());
+                Routes = new RouteRepository(new RouteOracleContext());
+                Sectors = new SectorRepository(new SectorOracleContext());
+                Statuses = new StatusRepository(new StatusOracleContext());
+                Tracks = new TrackRepository(new TrackOracleContext());
 
-            AccountTypes = new AccountTypeRepository(new AccountTypeOracleContext());
-            AttachedTracks = new AttachedTrackRepository(new AttachedTrackOracleContext());
-            Employees = new EmployeeRepository(new EmployeeOracleContext());
-            Routes = new RouteRepository(new RouteOracleContext());
-            Sectors = new SectorRepository(new SectorOracleContext());
-            Statuses = new StatusRepository(new StatusOracleContext());
-            Tracks = new TrackRepository(new TrackOracleContext());
-            //TrackRoutes = new TrackRouteRepository(new TrackRouteOracleContext());
-            Trams = new TramRepository(new TramOracleContext());
-            //TramRoutes = new TramRouteRepository(new TramRouteOracleContext());
+                //TrackRoutes = new TrackRouteRepository(new TrackRouteOracleContext());
+                Trams = new TramRepository(new TramOracleContext());
+
+                //TramRoutes = new TramRouteRepository(new TramRouteOracleContext());
+            }
+            {
+                Employees = new EmployeeRepository(new EmployeeTestContext());
+            }
         }
 
 
