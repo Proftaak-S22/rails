@@ -709,7 +709,7 @@
             this.lblSection41_3.TabIndex = 0;
             this.lblSection41_3.Text = "...";
             this.lblSection41_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection41_3.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection41_3.Click += new System.EventHandler(this.SectionClick);
             // 
             // pnlSection64_3
             // 
@@ -719,7 +719,7 @@
             this.pnlSection64_3.Name = "pnlSection64_3";
             this.pnlSection64_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection64_3.TabIndex = 1;
-            this.pnlSection64_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection64_3.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection64_3
             // 
@@ -738,7 +738,7 @@
             this.pnlSection63_3.Name = "pnlSection63_3";
             this.pnlSection63_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection63_3.TabIndex = 1;
-            this.pnlSection63_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection63_3.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection63_3
             // 
@@ -757,7 +757,7 @@
             this.pnlSection57_3.Name = "pnlSection57_3";
             this.pnlSection57_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection57_3.TabIndex = 1;
-            this.pnlSection57_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection57_3.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection57_3
             // 
@@ -776,7 +776,7 @@
             this.pnlSection56_3.Name = "pnlSection56_3";
             this.pnlSection56_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection56_3.TabIndex = 1;
-            this.pnlSection56_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection56_3.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection56_3
             // 
@@ -795,7 +795,7 @@
             this.pnlSection55_3.Name = "pnlSection55_3";
             this.pnlSection55_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection55_3.TabIndex = 1;
-            this.pnlSection55_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection55_3.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection55_3
             // 
@@ -814,7 +814,7 @@
             this.pnlSection54_3.Name = "pnlSection54_3";
             this.pnlSection54_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection54_3.TabIndex = 1;
-            this.pnlSection54_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection54_3.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection54_3
             // 
@@ -833,7 +833,7 @@
             this.pnlSection53_3.Name = "pnlSection53_3";
             this.pnlSection53_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection53_3.TabIndex = 1;
-            this.pnlSection53_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection53_3.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection53_3
             // 
@@ -852,7 +852,7 @@
             this.pnlSection52_3.Name = "pnlSection52_3";
             this.pnlSection52_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection52_3.TabIndex = 1;
-            this.pnlSection52_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection52_3.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection52_3
             // 
@@ -871,7 +871,7 @@
             this.pnlSection51_3.Name = "pnlSection51_3";
             this.pnlSection51_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection51_3.TabIndex = 1;
-            this.pnlSection51_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection51_3.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection51_3
             // 
@@ -890,7 +890,7 @@
             this.pnlSection38_3.Name = "pnlSection38_3";
             this.pnlSection38_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection38_3.TabIndex = 1;
-            this.pnlSection38_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection38_3.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection38_3
             // 
@@ -918,7 +918,7 @@
             this.lblSection42_3.TabIndex = 0;
             this.lblSection42_3.Text = "...";
             this.lblSection42_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection42_3.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection42_3.Click += new System.EventHandler(this.SectionClick);
             // 
             // pnlSection37_3
             // 
@@ -928,7 +928,7 @@
             this.pnlSection37_3.Name = "pnlSection37_3";
             this.pnlSection37_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection37_3.TabIndex = 1;
-            this.pnlSection37_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection37_3.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection37_3
             // 
@@ -956,7 +956,7 @@
             this.lblSection44_3.TabIndex = 0;
             this.lblSection44_3.Text = "...";
             this.lblSection44_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection44_3.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection44_3.Click += new System.EventHandler(this.SectionClick);
             // 
             // pnlSection43_3
             // 
@@ -975,7 +975,7 @@
             this.lblSection43_3.TabIndex = 0;
             this.lblSection43_3.Text = "...";
             this.lblSection43_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection43_3.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection43_3.Click += new System.EventHandler(this.SectionClick);
             // 
             // pnlSection36_3
             // 
@@ -985,7 +985,7 @@
             this.pnlSection36_3.Name = "pnlSection36_3";
             this.pnlSection36_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection36_3.TabIndex = 1;
-            this.pnlSection36_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection36_3.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection36_3
             // 
@@ -1004,7 +1004,7 @@
             this.pnlSection35_3.Name = "pnlSection35_3";
             this.pnlSection35_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection35_3.TabIndex = 1;
-            this.pnlSection35_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection35_3.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection35_3
             // 
@@ -1032,7 +1032,7 @@
             this.lblSection41_4.TabIndex = 0;
             this.lblSection41_4.Text = "...";
             this.lblSection41_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection41_4.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection41_4.Click += new System.EventHandler(this.SectionClick);
             // 
             // pnlSection64_4
             // 
@@ -1042,7 +1042,7 @@
             this.pnlSection64_4.Name = "pnlSection64_4";
             this.pnlSection64_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection64_4.TabIndex = 1;
-            this.pnlSection64_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection64_4.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection64_4
             // 
@@ -1061,7 +1061,7 @@
             this.pnlSection63_4.Name = "pnlSection63_4";
             this.pnlSection63_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection63_4.TabIndex = 1;
-            this.pnlSection63_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection63_4.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection63_4
             // 
@@ -1080,7 +1080,7 @@
             this.pnlSection57_4.Name = "pnlSection57_4";
             this.pnlSection57_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection57_4.TabIndex = 1;
-            this.pnlSection57_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection57_4.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection57_4
             // 
@@ -1099,7 +1099,7 @@
             this.pnlSection56_4.Name = "pnlSection56_4";
             this.pnlSection56_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection56_4.TabIndex = 1;
-            this.pnlSection56_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection56_4.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection56_4
             // 
@@ -1118,7 +1118,7 @@
             this.pnlSection55_4.Name = "pnlSection55_4";
             this.pnlSection55_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection55_4.TabIndex = 1;
-            this.pnlSection55_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection55_4.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection55_4
             // 
@@ -1137,7 +1137,7 @@
             this.pnlSection54_4.Name = "pnlSection54_4";
             this.pnlSection54_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection54_4.TabIndex = 1;
-            this.pnlSection54_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection54_4.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection54_4
             // 
@@ -1156,7 +1156,7 @@
             this.pnlSection53_4.Name = "pnlSection53_4";
             this.pnlSection53_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection53_4.TabIndex = 1;
-            this.pnlSection53_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection53_4.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection53_4
             // 
@@ -1184,7 +1184,7 @@
             this.lblSection57_8.TabIndex = 0;
             this.lblSection57_8.Text = "...";
             this.lblSection57_8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection57_8.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection57_8.Click += new System.EventHandler(this.SectionClick);
             // 
             // pnlSection57_7
             // 
@@ -1194,7 +1194,7 @@
             this.pnlSection57_7.Name = "pnlSection57_7";
             this.pnlSection57_7.Size = new System.Drawing.Size(50, 30);
             this.pnlSection57_7.TabIndex = 1;
-            this.pnlSection57_7.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection57_7.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection57_7
             // 
@@ -1213,7 +1213,7 @@
             this.pnlSection56_7.Name = "pnlSection56_7";
             this.pnlSection56_7.Size = new System.Drawing.Size(50, 30);
             this.pnlSection56_7.TabIndex = 1;
-            this.pnlSection56_7.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection56_7.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection56_7
             // 
@@ -1232,7 +1232,7 @@
             this.pnlSection55_7.Name = "pnlSection55_7";
             this.pnlSection55_7.Size = new System.Drawing.Size(50, 30);
             this.pnlSection55_7.TabIndex = 1;
-            this.pnlSection55_7.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection55_7.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection55_7
             // 
@@ -1251,7 +1251,7 @@
             this.pnlSection54_7.Name = "pnlSection54_7";
             this.pnlSection54_7.Size = new System.Drawing.Size(50, 30);
             this.pnlSection54_7.TabIndex = 1;
-            this.pnlSection54_7.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection54_7.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection54_7
             // 
@@ -1270,7 +1270,7 @@
             this.pnlSection57_6.Name = "pnlSection57_6";
             this.pnlSection57_6.Size = new System.Drawing.Size(50, 30);
             this.pnlSection57_6.TabIndex = 1;
-            this.pnlSection57_6.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection57_6.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection57_6
             // 
@@ -1289,7 +1289,7 @@
             this.pnlSection56_6.Name = "pnlSection56_6";
             this.pnlSection56_6.Size = new System.Drawing.Size(50, 30);
             this.pnlSection56_6.TabIndex = 1;
-            this.pnlSection56_6.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection56_6.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection56_6
             // 
@@ -1308,7 +1308,7 @@
             this.pnlSection55_6.Name = "pnlSection55_6";
             this.pnlSection55_6.Size = new System.Drawing.Size(50, 30);
             this.pnlSection55_6.TabIndex = 1;
-            this.pnlSection55_6.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection55_6.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection55_6
             // 
@@ -1327,7 +1327,7 @@
             this.pnlSection54_6.Name = "pnlSection54_6";
             this.pnlSection54_6.Size = new System.Drawing.Size(50, 30);
             this.pnlSection54_6.TabIndex = 1;
-            this.pnlSection54_6.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection54_6.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection54_6
             // 
@@ -1346,7 +1346,7 @@
             this.pnlSection53_6.Name = "pnlSection53_6";
             this.pnlSection53_6.Size = new System.Drawing.Size(50, 30);
             this.pnlSection53_6.TabIndex = 1;
-            this.pnlSection53_6.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection53_6.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection53_6
             // 
@@ -1365,7 +1365,7 @@
             this.pnlSection52_6.Name = "pnlSection52_6";
             this.pnlSection52_6.Size = new System.Drawing.Size(50, 30);
             this.pnlSection52_6.TabIndex = 1;
-            this.pnlSection52_6.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection52_6.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection52_6
             // 
@@ -1384,7 +1384,7 @@
             this.pnlSection57_5.Name = "pnlSection57_5";
             this.pnlSection57_5.Size = new System.Drawing.Size(50, 30);
             this.pnlSection57_5.TabIndex = 1;
-            this.pnlSection57_5.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection57_5.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection57_5
             // 
@@ -1403,7 +1403,7 @@
             this.pnlSection56_5.Name = "pnlSection56_5";
             this.pnlSection56_5.Size = new System.Drawing.Size(50, 30);
             this.pnlSection56_5.TabIndex = 1;
-            this.pnlSection56_5.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection56_5.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection56_5
             // 
@@ -1422,7 +1422,7 @@
             this.pnlSection55_5.Name = "pnlSection55_5";
             this.pnlSection55_5.Size = new System.Drawing.Size(50, 30);
             this.pnlSection55_5.TabIndex = 1;
-            this.pnlSection55_5.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection55_5.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection55_5
             // 
@@ -1441,7 +1441,7 @@
             this.pnlSection54_5.Name = "pnlSection54_5";
             this.pnlSection54_5.Size = new System.Drawing.Size(50, 30);
             this.pnlSection54_5.TabIndex = 1;
-            this.pnlSection54_5.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection54_5.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection54_5
             // 
@@ -1460,7 +1460,7 @@
             this.pnlSection53_5.Name = "pnlSection53_5";
             this.pnlSection53_5.Size = new System.Drawing.Size(50, 30);
             this.pnlSection53_5.TabIndex = 1;
-            this.pnlSection53_5.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection53_5.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection53_5
             // 
@@ -1479,7 +1479,7 @@
             this.pnlSection52_5.Name = "pnlSection52_5";
             this.pnlSection52_5.Size = new System.Drawing.Size(50, 30);
             this.pnlSection52_5.TabIndex = 1;
-            this.pnlSection52_5.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection52_5.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection52_5
             // 
@@ -1498,7 +1498,7 @@
             this.pnlSection52_4.Name = "pnlSection52_4";
             this.pnlSection52_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection52_4.TabIndex = 1;
-            this.pnlSection52_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection52_4.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection52_4
             // 
@@ -1517,7 +1517,7 @@
             this.pnlSection51_5.Name = "pnlSection51_5";
             this.pnlSection51_5.Size = new System.Drawing.Size(50, 30);
             this.pnlSection51_5.TabIndex = 1;
-            this.pnlSection51_5.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection51_5.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection51_5
             // 
@@ -1536,7 +1536,7 @@
             this.pnlSection51_4.Name = "pnlSection51_4";
             this.pnlSection51_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection51_4.TabIndex = 1;
-            this.pnlSection51_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection51_4.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection51_4
             // 
@@ -1555,7 +1555,7 @@
             this.pnlSection38_4.Name = "pnlSection38_4";
             this.pnlSection38_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection38_4.TabIndex = 1;
-            this.pnlSection38_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection38_4.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection38_4
             // 
@@ -1583,7 +1583,7 @@
             this.lblSection42_4.TabIndex = 0;
             this.lblSection42_4.Text = "...";
             this.lblSection42_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection42_4.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection42_4.Click += new System.EventHandler(this.SectionClick);
             // 
             // pnlSection37_4
             // 
@@ -1593,7 +1593,7 @@
             this.pnlSection37_4.Name = "pnlSection37_4";
             this.pnlSection37_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection37_4.TabIndex = 1;
-            this.pnlSection37_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection37_4.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection37_4
             // 
@@ -1621,7 +1621,7 @@
             this.lblSection44_4.TabIndex = 0;
             this.lblSection44_4.Text = "...";
             this.lblSection44_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection44_4.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection44_4.Click += new System.EventHandler(this.SectionClick);
             // 
             // pnlSection43_4
             // 
@@ -1640,7 +1640,7 @@
             this.lblSection43_4.TabIndex = 0;
             this.lblSection43_4.Text = "...";
             this.lblSection43_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection43_4.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection43_4.Click += new System.EventHandler(this.SectionClick);
             // 
             // pnlSection36_4
             // 
@@ -1650,7 +1650,7 @@
             this.pnlSection36_4.Name = "pnlSection36_4";
             this.pnlSection36_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection36_4.TabIndex = 1;
-            this.pnlSection36_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection36_4.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection36_4
             // 
@@ -1669,7 +1669,7 @@
             this.pnlSection35_4.Name = "pnlSection35_4";
             this.pnlSection35_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection35_4.TabIndex = 1;
-            this.pnlSection35_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection35_4.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection35_4
             // 
@@ -1688,7 +1688,7 @@
             this.pnlSection34_4.Name = "pnlSection34_4";
             this.pnlSection34_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection34_4.TabIndex = 1;
-            this.pnlSection34_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection34_4.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection34_4
             // 
@@ -1707,7 +1707,7 @@
             this.pnlSection34_3.Name = "pnlSection34_3";
             this.pnlSection34_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection34_3.TabIndex = 1;
-            this.pnlSection34_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection34_3.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection34_3
             // 
@@ -1726,7 +1726,7 @@
             this.pnlSection33_4.Name = "pnlSection33_4";
             this.pnlSection33_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection33_4.TabIndex = 1;
-            this.pnlSection33_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection33_4.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection33_4
             // 
@@ -1745,7 +1745,7 @@
             this.pnlSection33_3.Name = "pnlSection33_3";
             this.pnlSection33_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection33_3.TabIndex = 1;
-            this.pnlSection33_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection33_3.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection33_3
             // 
@@ -1764,7 +1764,7 @@
             this.pnlSection32_4.Name = "pnlSection32_4";
             this.pnlSection32_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection32_4.TabIndex = 1;
-            this.pnlSection32_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection32_4.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection32_4
             // 
@@ -1783,7 +1783,7 @@
             this.pnlSection32_3.Name = "pnlSection32_3";
             this.pnlSection32_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection32_3.TabIndex = 1;
-            this.pnlSection32_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection32_3.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection32_3
             // 
@@ -1802,7 +1802,7 @@
             this.pnlSection31_3.Name = "pnlSection31_3";
             this.pnlSection31_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection31_3.TabIndex = 1;
-            this.pnlSection31_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection31_3.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection31_3
             // 
@@ -1821,7 +1821,7 @@
             this.pnlSection30_3.Name = "pnlSection30_3";
             this.pnlSection30_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection30_3.TabIndex = 1;
-            this.pnlSection30_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection30_3.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection30_3
             // 
@@ -1849,7 +1849,7 @@
             this.lblSection41_2.TabIndex = 0;
             this.lblSection41_2.Text = "...";
             this.lblSection41_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection41_2.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection41_2.Click += new System.EventHandler(this.SectionClick);
             // 
             // pnlSection64_2
             // 
@@ -1859,7 +1859,7 @@
             this.pnlSection64_2.Name = "pnlSection64_2";
             this.pnlSection64_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection64_2.TabIndex = 1;
-            this.pnlSection64_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection64_2.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection64_2
             // 
@@ -1878,7 +1878,7 @@
             this.pnlSection63_2.Name = "pnlSection63_2";
             this.pnlSection63_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection63_2.TabIndex = 1;
-            this.pnlSection63_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection63_2.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection63_2
             // 
@@ -1897,7 +1897,7 @@
             this.pnlSection62_2.Name = "pnlSection62_2";
             this.pnlSection62_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection62_2.TabIndex = 1;
-            this.pnlSection62_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection62_2.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection62_2
             // 
@@ -1916,7 +1916,7 @@
             this.pnlSection61_2.Name = "pnlSection61_2";
             this.pnlSection61_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection61_2.TabIndex = 1;
-            this.pnlSection61_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection61_2.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection61_2
             // 
@@ -1935,7 +1935,7 @@
             this.pnlSection57_2.Name = "pnlSection57_2";
             this.pnlSection57_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection57_2.TabIndex = 1;
-            this.pnlSection57_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection57_2.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection57_2
             // 
@@ -1954,7 +1954,7 @@
             this.pnlSection56_2.Name = "pnlSection56_2";
             this.pnlSection56_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection56_2.TabIndex = 1;
-            this.pnlSection56_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection56_2.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection56_2
             // 
@@ -1973,7 +1973,7 @@
             this.pnlSection55_2.Name = "pnlSection55_2";
             this.pnlSection55_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection55_2.TabIndex = 1;
-            this.pnlSection55_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection55_2.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection55_2
             // 
@@ -1992,7 +1992,7 @@
             this.pnlSection54_2.Name = "pnlSection54_2";
             this.pnlSection54_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection54_2.TabIndex = 1;
-            this.pnlSection54_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection54_2.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection54_2
             // 
@@ -2011,7 +2011,7 @@
             this.pnlSection53_2.Name = "pnlSection53_2";
             this.pnlSection53_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection53_2.TabIndex = 1;
-            this.pnlSection53_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection53_2.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection53_2
             // 
@@ -2030,7 +2030,7 @@
             this.pnlSection52_2.Name = "pnlSection52_2";
             this.pnlSection52_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection52_2.TabIndex = 1;
-            this.pnlSection52_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection52_2.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection52_2
             // 
@@ -2049,7 +2049,7 @@
             this.pnlSection51_2.Name = "pnlSection51_2";
             this.pnlSection51_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection51_2.TabIndex = 1;
-            this.pnlSection51_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection51_2.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection51_2
             // 
@@ -2068,7 +2068,7 @@
             this.pnlSection38_2.Name = "pnlSection38_2";
             this.pnlSection38_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection38_2.TabIndex = 1;
-            this.pnlSection38_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection38_2.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection38_2
             // 
@@ -2096,7 +2096,7 @@
             this.lblSection42_2.TabIndex = 0;
             this.lblSection42_2.Text = "...";
             this.lblSection42_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection42_2.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection42_2.Click += new System.EventHandler(this.SectionClick);
             // 
             // pnlSection37_2
             // 
@@ -2106,7 +2106,7 @@
             this.pnlSection37_2.Name = "pnlSection37_2";
             this.pnlSection37_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection37_2.TabIndex = 1;
-            this.pnlSection37_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection37_2.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection37_2
             // 
@@ -2134,7 +2134,7 @@
             this.lblSection44_2.TabIndex = 0;
             this.lblSection44_2.Text = "...";
             this.lblSection44_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection44_2.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection44_2.Click += new System.EventHandler(this.SectionClick);
             // 
             // pnlSection43_2
             // 
@@ -2153,7 +2153,7 @@
             this.lblSection43_2.TabIndex = 0;
             this.lblSection43_2.Text = "...";
             this.lblSection43_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection43_2.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection43_2.Click += new System.EventHandler(this.SectionClick);
             // 
             // pnlSection36_2
             // 
@@ -2163,7 +2163,7 @@
             this.pnlSection36_2.Name = "pnlSection36_2";
             this.pnlSection36_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection36_2.TabIndex = 1;
-            this.pnlSection36_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection36_2.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection36_2
             // 
@@ -2182,7 +2182,7 @@
             this.pnlSection35_2.Name = "pnlSection35_2";
             this.pnlSection35_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection35_2.TabIndex = 1;
-            this.pnlSection35_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection35_2.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection35_2
             // 
@@ -2201,7 +2201,7 @@
             this.pnlSection34_2.Name = "pnlSection34_2";
             this.pnlSection34_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection34_2.TabIndex = 1;
-            this.pnlSection34_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection34_2.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection34_2
             // 
@@ -2220,7 +2220,7 @@
             this.pnlSection33_2.Name = "pnlSection33_2";
             this.pnlSection33_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection33_2.TabIndex = 1;
-            this.pnlSection33_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection33_2.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection33_2
             // 
@@ -2239,7 +2239,7 @@
             this.pnlSection32_2.Name = "pnlSection32_2";
             this.pnlSection32_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection32_2.TabIndex = 1;
-            this.pnlSection32_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection32_2.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection32_2
             // 
@@ -2258,7 +2258,7 @@
             this.pnlSection31_2.Name = "pnlSection31_2";
             this.pnlSection31_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection31_2.TabIndex = 1;
-            this.pnlSection31_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection31_2.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection31_2
             // 
@@ -2277,7 +2277,7 @@
             this.pnlSection30_2.Name = "pnlSection30_2";
             this.pnlSection30_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection30_2.TabIndex = 1;
-            this.pnlSection30_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection30_2.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection30_2
             // 
@@ -2305,7 +2305,7 @@
             this.lblSection41_1.TabIndex = 0;
             this.lblSection41_1.Text = "...";
             this.lblSection41_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection41_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection41_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // pnlSection64_1
             // 
@@ -2315,7 +2315,7 @@
             this.pnlSection64_1.Name = "pnlSection64_1";
             this.pnlSection64_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection64_1.TabIndex = 1;
-            this.pnlSection64_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection64_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection64_1
             // 
@@ -2334,7 +2334,7 @@
             this.pnlSection63_1.Name = "pnlSection63_1";
             this.pnlSection63_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection63_1.TabIndex = 1;
-            this.pnlSection63_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection63_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection63_1
             // 
@@ -2353,7 +2353,7 @@
             this.pnlSection62_1.Name = "pnlSection62_1";
             this.pnlSection62_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection62_1.TabIndex = 1;
-            this.pnlSection62_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection62_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection62_1
             // 
@@ -2372,7 +2372,7 @@
             this.pnlSection61_1.Name = "pnlSection61_1";
             this.pnlSection61_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection61_1.TabIndex = 1;
-            this.pnlSection61_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection61_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection61_1
             // 
@@ -2391,7 +2391,7 @@
             this.pnlSection57_1.Name = "pnlSection57_1";
             this.pnlSection57_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection57_1.TabIndex = 1;
-            this.pnlSection57_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection57_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection57_1
             // 
@@ -2410,7 +2410,7 @@
             this.pnlSection56_1.Name = "pnlSection56_1";
             this.pnlSection56_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection56_1.TabIndex = 1;
-            this.pnlSection56_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection56_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection56_1
             // 
@@ -2429,7 +2429,7 @@
             this.pnlSection55_1.Name = "pnlSection55_1";
             this.pnlSection55_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection55_1.TabIndex = 1;
-            this.pnlSection55_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection55_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection55_1
             // 
@@ -2448,7 +2448,7 @@
             this.pnlSection54_1.Name = "pnlSection54_1";
             this.pnlSection54_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection54_1.TabIndex = 1;
-            this.pnlSection54_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection54_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection54_1
             // 
@@ -2467,7 +2467,7 @@
             this.pnlSection53_1.Name = "pnlSection53_1";
             this.pnlSection53_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection53_1.TabIndex = 1;
-            this.pnlSection53_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection53_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection53_1
             // 
@@ -2486,7 +2486,7 @@
             this.pnlSection52_1.Name = "pnlSection52_1";
             this.pnlSection52_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection52_1.TabIndex = 1;
-            this.pnlSection52_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection52_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection52_1
             // 
@@ -2505,7 +2505,7 @@
             this.pnlSection51_1.Name = "pnlSection51_1";
             this.pnlSection51_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection51_1.TabIndex = 1;
-            this.pnlSection51_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection51_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection51_1
             // 
@@ -2524,7 +2524,7 @@
             this.pnlSection38_1.Name = "pnlSection38_1";
             this.pnlSection38_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection38_1.TabIndex = 1;
-            this.pnlSection38_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection38_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection38_1
             // 
@@ -2552,7 +2552,7 @@
             this.lblSection42_1.TabIndex = 0;
             this.lblSection42_1.Text = "...";
             this.lblSection42_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection42_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection42_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // pnlSection37_1
             // 
@@ -2562,7 +2562,7 @@
             this.pnlSection37_1.Name = "pnlSection37_1";
             this.pnlSection37_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection37_1.TabIndex = 1;
-            this.pnlSection37_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection37_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection37_1
             // 
@@ -2590,7 +2590,7 @@
             this.lblSection15_1.TabIndex = 0;
             this.lblSection15_1.Text = "...";
             this.lblSection15_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection15_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection15_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // pnlSection14_1
             // 
@@ -2609,7 +2609,7 @@
             this.lblSection14_1.TabIndex = 0;
             this.lblSection14_1.Text = "...";
             this.lblSection14_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection14_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection14_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // pnlSection13_1
             // 
@@ -2628,7 +2628,7 @@
             this.lblSection13_1.TabIndex = 0;
             this.lblSection13_1.Text = "...";
             this.lblSection13_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection13_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection13_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // pnlSection21_1
             // 
@@ -2647,7 +2647,7 @@
             this.lblSection21_1.TabIndex = 0;
             this.lblSection21_1.Text = "...";
             this.lblSection21_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection21_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection21_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // pnlSection20_1
             // 
@@ -2666,7 +2666,7 @@
             this.lblSection20_1.TabIndex = 0;
             this.lblSection20_1.Text = "...";
             this.lblSection20_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection20_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection20_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // pnlSection19_1
             // 
@@ -2685,7 +2685,7 @@
             this.lblSection19_1.TabIndex = 0;
             this.lblSection19_1.Text = "...";
             this.lblSection19_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection19_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection19_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // pnlSection18_1
             // 
@@ -2704,7 +2704,7 @@
             this.lblSection18_1.TabIndex = 0;
             this.lblSection18_1.Text = "...";
             this.lblSection18_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection18_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection18_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // pnlSection17_1
             // 
@@ -2723,7 +2723,7 @@
             this.lblSection17_1.TabIndex = 0;
             this.lblSection17_1.Text = "...";
             this.lblSection17_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection17_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection17_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // pnlSection16_1
             // 
@@ -2742,7 +2742,7 @@
             this.lblSection16_1.TabIndex = 0;
             this.lblSection16_1.Text = "...";
             this.lblSection16_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection16_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection16_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // pnlSection12_1
             // 
@@ -2761,7 +2761,7 @@
             this.lblSection12_1.TabIndex = 0;
             this.lblSection12_1.Text = "...";
             this.lblSection12_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection12_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection12_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // pnlSection44_1
             // 
@@ -2780,7 +2780,7 @@
             this.lblSection44_1.TabIndex = 0;
             this.lblSection44_1.Text = "...";
             this.lblSection44_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection44_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection44_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // pnlSection43_1
             // 
@@ -2799,7 +2799,7 @@
             this.lblSection43_1.TabIndex = 0;
             this.lblSection43_1.Text = "...";
             this.lblSection43_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection43_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection43_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // pnlSection36_1
             // 
@@ -2809,7 +2809,7 @@
             this.pnlSection36_1.Name = "pnlSection36_1";
             this.pnlSection36_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection36_1.TabIndex = 1;
-            this.pnlSection36_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection36_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection36_1
             // 
@@ -2828,7 +2828,7 @@
             this.pnlSection35_1.Name = "pnlSection35_1";
             this.pnlSection35_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection35_1.TabIndex = 1;
-            this.pnlSection35_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection35_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection35_1
             // 
@@ -2847,7 +2847,7 @@
             this.pnlSection34_1.Name = "pnlSection34_1";
             this.pnlSection34_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection34_1.TabIndex = 1;
-            this.pnlSection34_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection34_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection34_1
             // 
@@ -2866,7 +2866,7 @@
             this.pnlSection33_1.Name = "pnlSection33_1";
             this.pnlSection33_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection33_1.TabIndex = 1;
-            this.pnlSection33_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection33_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection33_1
             // 
@@ -2885,7 +2885,7 @@
             this.pnlSection32_1.Name = "pnlSection32_1";
             this.pnlSection32_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection32_1.TabIndex = 1;
-            this.pnlSection32_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection32_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection32_1
             // 
@@ -2904,7 +2904,7 @@
             this.pnlSection31_1.Name = "pnlSection31_1";
             this.pnlSection31_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection31_1.TabIndex = 1;
-            this.pnlSection31_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection31_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection31_1
             // 
@@ -2923,7 +2923,7 @@
             this.pnlSection30_1.Name = "pnlSection30_1";
             this.pnlSection30_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection30_1.TabIndex = 1;
-            this.pnlSection30_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection30_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // lblSection30_1
             // 
@@ -2933,7 +2933,7 @@
             this.lblSection30_1.TabIndex = 0;
             this.lblSection30_1.Text = "...";
             this.lblSection30_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection30_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection30_1.Click += new System.EventHandler(this.SectionClick);
             // 
             // panel114
             // 

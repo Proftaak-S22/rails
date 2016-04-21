@@ -95,7 +95,7 @@ namespace CTRails
 
 
 
-        private void SectorClick(object sender, EventArgs e)
+        private void SectionClick(object sender, EventArgs e)
         {
             MessageBox.Show("askljfklasdjfklj");
         }
