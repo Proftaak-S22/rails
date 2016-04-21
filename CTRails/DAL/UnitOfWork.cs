@@ -24,8 +24,10 @@ namespace CTRails.DAL
 
                 //TramRoutes = new TramRouteRepository(new TramRouteOracleContext());
             }
+            else
             {
                 Employees = new EmployeeRepository(new EmployeeTestContext());
+                Sectors = new SectorRepository(new SectorTestContext());
             }
         }
 
