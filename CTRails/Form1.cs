@@ -13,7 +13,7 @@ namespace CTRails
 {
     public partial class Form1 : MaterialForm
     {
-
+        public string TramNummer { get; set; }
         private UnitOfWork unit;
         private PopUp1 popAddTram = new PopUp1();
         private bool addListeners = false;
@@ -95,9 +95,11 @@ namespace CTRails
 
 
 
-        private void SectionClick(object sender, EventArgs e)
+        private void SectorClick(object sender, EventArgs e)
         {
-            MessageBox.Show("askljfklasdjfklj");
+            string senderName = ((Label)sender).Name;
+            MessageBox.Show(senderName);
+            popAddTram.Show();
         }
     }
 }

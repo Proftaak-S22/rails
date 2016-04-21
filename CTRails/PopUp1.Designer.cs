@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnAddTram = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTramNummer = new System.Windows.Forms.TextBox();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.SuspendLayout();
             // 
@@ -44,15 +44,16 @@
             this.btnAddTram.TabIndex = 0;
             this.btnAddTram.Text = "Plaats Tram";
             this.btnAddTram.UseVisualStyleBackColor = true;
+            this.btnAddTram.Click += new System.EventHandler(this.btnAddTram_Click);
             // 
-            // textBox1
+            // txtTramNummer
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(59, 114);
-            this.textBox1.MaxLength = 4;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(155, 53);
-            this.textBox1.TabIndex = 1;
+            this.txtTramNummer.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTramNummer.Location = new System.Drawing.Point(59, 114);
+            this.txtTramNummer.MaxLength = 4;
+            this.txtTramNummer.Name = "txtTramNummer";
+            this.txtTramNummer.Size = new System.Drawing.Size(155, 53);
+            this.txtTramNummer.TabIndex = 1;
             // 
             // materialLabel1
             // 
@@ -73,7 +74,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(274, 293);
             this.Controls.Add(this.materialLabel1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTramNummer);
             this.Controls.Add(this.btnAddTram);
             this.Name = "PopUp1";
             this.Text = "Tram plaatsen";
@@ -85,7 +86,7 @@
         #endregion
 
         private MaterialSkin.Controls.MaterialRaisedButton btnAddTram;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTramNummer;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
     }
 }
