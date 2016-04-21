@@ -31,12 +31,17 @@
             this.btnAddTram = new MaterialSkin.Controls.MaterialRaisedButton();
             this.txtTramNummer = new System.Windows.Forms.TextBox();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cbStatusSchoonmaak = new MaterialSkin.Controls.MaterialRadioButton();
+            this.cbStatusDefect = new MaterialSkin.Controls.MaterialRadioButton();
+            this.cbStatusRemise = new MaterialSkin.Controls.MaterialRadioButton();
             this.SuspendLayout();
             // 
             // btnAddTram
             // 
             this.btnAddTram.Depth = 0;
-            this.btnAddTram.Location = new System.Drawing.Point(59, 187);
+            this.btnAddTram.Location = new System.Drawing.Point(59, 264);
             this.btnAddTram.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnAddTram.Name = "btnAddTram";
             this.btnAddTram.Primary = true;
@@ -68,11 +73,86 @@
             this.materialLabel1.TabIndex = 2;
             this.materialLabel1.Text = "Tram Nummer";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(68, 323);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(136, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "* Vul X in om te blokkeren *";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(29, 336);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(215, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "* Laat leeg om te verwijderen/deblokkeren *";
+            // 
+            // cbStatusSchoonmaak
+            // 
+            this.cbStatusSchoonmaak.AutoSize = true;
+            this.cbStatusSchoonmaak.Depth = 0;
+            this.cbStatusSchoonmaak.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbStatusSchoonmaak.Location = new System.Drawing.Point(82, 201);
+            this.cbStatusSchoonmaak.Margin = new System.Windows.Forms.Padding(0);
+            this.cbStatusSchoonmaak.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbStatusSchoonmaak.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbStatusSchoonmaak.Name = "cbStatusSchoonmaak";
+            this.cbStatusSchoonmaak.Ripple = true;
+            this.cbStatusSchoonmaak.Size = new System.Drawing.Size(109, 30);
+            this.cbStatusSchoonmaak.TabIndex = 4;
+            this.cbStatusSchoonmaak.TabStop = true;
+            this.cbStatusSchoonmaak.Text = "Schoonmaak";
+            this.cbStatusSchoonmaak.UseVisualStyleBackColor = true;
+            // 
+            // cbStatusDefect
+            // 
+            this.cbStatusDefect.AutoSize = true;
+            this.cbStatusDefect.Depth = 0;
+            this.cbStatusDefect.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbStatusDefect.Location = new System.Drawing.Point(82, 231);
+            this.cbStatusDefect.Margin = new System.Windows.Forms.Padding(0);
+            this.cbStatusDefect.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbStatusDefect.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbStatusDefect.Name = "cbStatusDefect";
+            this.cbStatusDefect.Ripple = true;
+            this.cbStatusDefect.Size = new System.Drawing.Size(69, 30);
+            this.cbStatusDefect.TabIndex = 4;
+            this.cbStatusDefect.TabStop = true;
+            this.cbStatusDefect.Text = "Defect";
+            this.cbStatusDefect.UseVisualStyleBackColor = true;
+            // 
+            // cbStatusRemise
+            // 
+            this.cbStatusRemise.AutoSize = true;
+            this.cbStatusRemise.Checked = true;
+            this.cbStatusRemise.Depth = 0;
+            this.cbStatusRemise.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbStatusRemise.Location = new System.Drawing.Point(82, 171);
+            this.cbStatusRemise.Margin = new System.Windows.Forms.Padding(0);
+            this.cbStatusRemise.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbStatusRemise.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbStatusRemise.Name = "cbStatusRemise";
+            this.cbStatusRemise.Ripple = true;
+            this.cbStatusRemise.Size = new System.Drawing.Size(75, 30);
+            this.cbStatusRemise.TabIndex = 4;
+            this.cbStatusRemise.TabStop = true;
+            this.cbStatusRemise.Text = "Remise";
+            this.cbStatusRemise.UseVisualStyleBackColor = true;
+            // 
             // PopUp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(274, 293);
+            this.ClientSize = new System.Drawing.Size(274, 359);
+            this.Controls.Add(this.cbStatusRemise);
+            this.Controls.Add(this.cbStatusDefect);
+            this.Controls.Add(this.cbStatusSchoonmaak);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.txtTramNummer);
             this.Controls.Add(this.btnAddTram);
@@ -90,5 +170,10 @@
         private MaterialSkin.Controls.MaterialRaisedButton btnAddTram;
         private System.Windows.Forms.TextBox txtTramNummer;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private MaterialSkin.Controls.MaterialRadioButton cbStatusSchoonmaak;
+        private MaterialSkin.Controls.MaterialRadioButton cbStatusDefect;
+        private MaterialSkin.Controls.MaterialRadioButton cbStatusRemise;
     }
 }

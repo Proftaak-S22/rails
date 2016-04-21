@@ -335,7 +335,14 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tpRoosterEdit = new System.Windows.Forms.TabPage();
+            this.dtpDatum = new System.Windows.Forms.DateTimePicker();
+            this.tbTijd = new System.Windows.Forms.TextBox();
+            this.tbTaak = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.cbGebruikerEdit = new System.Windows.Forms.ComboBox();
+            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.btnVerwijderTaak = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnWijzigTaak = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -349,7 +356,7 @@
             this.btnBekijkRoosters1 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.cbGebruikerBekijken = new System.Windows.Forms.ComboBox();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblRoosterVan = new System.Windows.Forms.Label();
             this.lvRoostersBekijken = new System.Windows.Forms.ListView();
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -364,13 +371,6 @@
             this.btnLogin = new MaterialSkin.Controls.MaterialRaisedButton();
             this.tsTabs = new MaterialSkin.Controls.MaterialTabSelector();
             this.btnLogOut = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.tbTaak = new System.Windows.Forms.TextBox();
-            this.tbTijd = new System.Windows.Forms.TextBox();
-            this.dtpDatum = new System.Windows.Forms.DateTimePicker();
             this.tabTabs.SuspendLayout();
             this.tpRemise.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlattegrond)).BeginInit();
@@ -764,6 +764,7 @@
             this.lblSection64_3.TabIndex = 0;
             this.lblSection64_3.Text = "...";
             this.lblSection64_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection64_3.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection63_3
             // 
@@ -783,6 +784,7 @@
             this.lblSection63_3.TabIndex = 0;
             this.lblSection63_3.Text = "...";
             this.lblSection63_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection63_3.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection57_3
             // 
@@ -802,6 +804,7 @@
             this.lblSection57_3.TabIndex = 0;
             this.lblSection57_3.Text = "...";
             this.lblSection57_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection57_3.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection56_3
             // 
@@ -821,6 +824,7 @@
             this.lblSection56_3.TabIndex = 0;
             this.lblSection56_3.Text = "...";
             this.lblSection56_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection56_3.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection55_3
             // 
@@ -840,6 +844,7 @@
             this.lblSection55_3.TabIndex = 0;
             this.lblSection55_3.Text = "...";
             this.lblSection55_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection55_3.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection54_3
             // 
@@ -859,6 +864,7 @@
             this.lblSection54_3.TabIndex = 0;
             this.lblSection54_3.Text = "...";
             this.lblSection54_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection54_3.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection53_3
             // 
@@ -878,6 +884,7 @@
             this.lblSection53_3.TabIndex = 0;
             this.lblSection53_3.Text = "...";
             this.lblSection53_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection53_3.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection52_3
             // 
@@ -897,6 +904,7 @@
             this.lblSection52_3.TabIndex = 0;
             this.lblSection52_3.Text = "...";
             this.lblSection52_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection52_3.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection51_3
             // 
@@ -916,6 +924,7 @@
             this.lblSection51_3.TabIndex = 0;
             this.lblSection51_3.Text = "...";
             this.lblSection51_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection51_3.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection38_3
             // 
@@ -935,6 +944,7 @@
             this.lblSection38_3.TabIndex = 0;
             this.lblSection38_3.Text = "...";
             this.lblSection38_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection38_3.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection42_3
             // 
@@ -973,6 +983,7 @@
             this.lblSection37_3.TabIndex = 0;
             this.lblSection37_3.Text = "...";
             this.lblSection37_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection37_3.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection44_3
             // 
@@ -1030,6 +1041,7 @@
             this.lblSection36_3.TabIndex = 0;
             this.lblSection36_3.Text = "...";
             this.lblSection36_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection36_3.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection35_3
             // 
@@ -1049,6 +1061,7 @@
             this.lblSection35_3.TabIndex = 0;
             this.lblSection35_3.Text = "...";
             this.lblSection35_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection35_3.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection41_4
             // 
@@ -1087,6 +1100,7 @@
             this.lblSection64_4.TabIndex = 0;
             this.lblSection64_4.Text = "...";
             this.lblSection64_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection64_4.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection63_4
             // 
@@ -1106,6 +1120,7 @@
             this.lblSection63_4.TabIndex = 0;
             this.lblSection63_4.Text = "...";
             this.lblSection63_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection63_4.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection57_4
             // 
@@ -1125,6 +1140,7 @@
             this.lblSection57_4.TabIndex = 0;
             this.lblSection57_4.Text = "...";
             this.lblSection57_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection57_4.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection56_4
             // 
@@ -1144,6 +1160,7 @@
             this.lblSection56_4.TabIndex = 0;
             this.lblSection56_4.Text = "...";
             this.lblSection56_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection56_4.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection55_4
             // 
@@ -1163,6 +1180,7 @@
             this.lblSection55_4.TabIndex = 0;
             this.lblSection55_4.Text = "...";
             this.lblSection55_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection55_4.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection54_4
             // 
@@ -1182,6 +1200,7 @@
             this.lblSection54_4.TabIndex = 0;
             this.lblSection54_4.Text = "...";
             this.lblSection54_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection54_4.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection53_4
             // 
@@ -1201,6 +1220,7 @@
             this.lblSection53_4.TabIndex = 0;
             this.lblSection53_4.Text = "...";
             this.lblSection53_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection53_4.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection57_8
             // 
@@ -1239,6 +1259,7 @@
             this.lblSection57_7.TabIndex = 0;
             this.lblSection57_7.Text = "...";
             this.lblSection57_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection57_7.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection56_7
             // 
@@ -1258,6 +1279,7 @@
             this.lblSection56_7.TabIndex = 0;
             this.lblSection56_7.Text = "...";
             this.lblSection56_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection56_7.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection55_7
             // 
@@ -1277,6 +1299,7 @@
             this.lblSection55_7.TabIndex = 0;
             this.lblSection55_7.Text = "...";
             this.lblSection55_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection55_7.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection54_7
             // 
@@ -1296,6 +1319,7 @@
             this.lblSection54_7.TabIndex = 0;
             this.lblSection54_7.Text = "...";
             this.lblSection54_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection54_7.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection57_6
             // 
@@ -1315,6 +1339,7 @@
             this.lblSection57_6.TabIndex = 0;
             this.lblSection57_6.Text = "...";
             this.lblSection57_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection57_6.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection56_6
             // 
@@ -1334,6 +1359,7 @@
             this.lblSection56_6.TabIndex = 0;
             this.lblSection56_6.Text = "...";
             this.lblSection56_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection56_6.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection55_6
             // 
@@ -1353,6 +1379,7 @@
             this.lblSection55_6.TabIndex = 0;
             this.lblSection55_6.Text = "...";
             this.lblSection55_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection55_6.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection54_6
             // 
@@ -1372,6 +1399,7 @@
             this.lblSection54_6.TabIndex = 0;
             this.lblSection54_6.Text = "...";
             this.lblSection54_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection54_6.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection53_6
             // 
@@ -1391,6 +1419,7 @@
             this.lblSection53_6.TabIndex = 0;
             this.lblSection53_6.Text = "...";
             this.lblSection53_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection53_6.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection52_6
             // 
@@ -1410,6 +1439,7 @@
             this.lblSection52_6.TabIndex = 0;
             this.lblSection52_6.Text = "...";
             this.lblSection52_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection52_6.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection57_5
             // 
@@ -1429,6 +1459,7 @@
             this.lblSection57_5.TabIndex = 0;
             this.lblSection57_5.Text = "...";
             this.lblSection57_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection57_5.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection56_5
             // 
@@ -1448,6 +1479,7 @@
             this.lblSection56_5.TabIndex = 0;
             this.lblSection56_5.Text = "...";
             this.lblSection56_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection56_5.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection55_5
             // 
@@ -1467,6 +1499,7 @@
             this.lblSection55_5.TabIndex = 0;
             this.lblSection55_5.Text = "...";
             this.lblSection55_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection55_5.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection54_5
             // 
@@ -1486,6 +1519,7 @@
             this.lblSection54_5.TabIndex = 0;
             this.lblSection54_5.Text = "...";
             this.lblSection54_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection54_5.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection53_5
             // 
@@ -1505,6 +1539,7 @@
             this.lblSection53_5.TabIndex = 0;
             this.lblSection53_5.Text = "...";
             this.lblSection53_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection53_5.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection52_5
             // 
@@ -1524,6 +1559,7 @@
             this.lblSection52_5.TabIndex = 0;
             this.lblSection52_5.Text = "...";
             this.lblSection52_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection52_5.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection52_4
             // 
@@ -1543,6 +1579,7 @@
             this.lblSection52_4.TabIndex = 0;
             this.lblSection52_4.Text = "...";
             this.lblSection52_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection52_4.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection51_5
             // 
@@ -1562,6 +1599,7 @@
             this.lblSection51_5.TabIndex = 0;
             this.lblSection51_5.Text = "...";
             this.lblSection51_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection51_5.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection51_4
             // 
@@ -1581,6 +1619,7 @@
             this.lblSection51_4.TabIndex = 0;
             this.lblSection51_4.Text = "...";
             this.lblSection51_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection51_4.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection38_4
             // 
@@ -1600,6 +1639,7 @@
             this.lblSection38_4.TabIndex = 0;
             this.lblSection38_4.Text = "...";
             this.lblSection38_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection38_4.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection42_4
             // 
@@ -1638,6 +1678,7 @@
             this.lblSection37_4.TabIndex = 0;
             this.lblSection37_4.Text = "...";
             this.lblSection37_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection37_4.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection44_4
             // 
@@ -1695,6 +1736,7 @@
             this.lblSection36_4.TabIndex = 0;
             this.lblSection36_4.Text = "...";
             this.lblSection36_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection36_4.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection35_4
             // 
@@ -1714,6 +1756,7 @@
             this.lblSection35_4.TabIndex = 0;
             this.lblSection35_4.Text = "...";
             this.lblSection35_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection35_4.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection34_4
             // 
@@ -1733,6 +1776,7 @@
             this.lblSection34_4.TabIndex = 0;
             this.lblSection34_4.Text = "...";
             this.lblSection34_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection34_4.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection34_3
             // 
@@ -1752,6 +1796,7 @@
             this.lblSection34_3.TabIndex = 0;
             this.lblSection34_3.Text = "...";
             this.lblSection34_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection34_3.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection33_4
             // 
@@ -1771,6 +1816,7 @@
             this.lblSection33_4.TabIndex = 0;
             this.lblSection33_4.Text = "...";
             this.lblSection33_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection33_4.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection33_3
             // 
@@ -1790,6 +1836,7 @@
             this.lblSection33_3.TabIndex = 0;
             this.lblSection33_3.Text = "...";
             this.lblSection33_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection33_3.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection32_4
             // 
@@ -1809,6 +1856,7 @@
             this.lblSection32_4.TabIndex = 0;
             this.lblSection32_4.Text = "...";
             this.lblSection32_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection32_4.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection32_3
             // 
@@ -1828,6 +1876,7 @@
             this.lblSection32_3.TabIndex = 0;
             this.lblSection32_3.Text = "...";
             this.lblSection32_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection32_3.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection31_3
             // 
@@ -1847,6 +1896,7 @@
             this.lblSection31_3.TabIndex = 0;
             this.lblSection31_3.Text = "...";
             this.lblSection31_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection31_3.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection30_3
             // 
@@ -1866,6 +1916,7 @@
             this.lblSection30_3.TabIndex = 0;
             this.lblSection30_3.Text = "...";
             this.lblSection30_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection30_3.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection41_2
             // 
@@ -1904,6 +1955,7 @@
             this.lblSection64_2.TabIndex = 0;
             this.lblSection64_2.Text = "...";
             this.lblSection64_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection64_2.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection63_2
             // 
@@ -1923,6 +1975,7 @@
             this.lblSection63_2.TabIndex = 0;
             this.lblSection63_2.Text = "...";
             this.lblSection63_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection63_2.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection62_2
             // 
@@ -1942,6 +1995,7 @@
             this.lblSection62_2.TabIndex = 0;
             this.lblSection62_2.Text = "...";
             this.lblSection62_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection62_2.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection61_2
             // 
@@ -1961,6 +2015,7 @@
             this.lblSection61_2.TabIndex = 0;
             this.lblSection61_2.Text = "...";
             this.lblSection61_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection61_2.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection57_2
             // 
@@ -1980,6 +2035,7 @@
             this.lblSection57_2.TabIndex = 0;
             this.lblSection57_2.Text = "...";
             this.lblSection57_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection57_2.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection56_2
             // 
@@ -1999,6 +2055,7 @@
             this.lblSection56_2.TabIndex = 0;
             this.lblSection56_2.Text = "...";
             this.lblSection56_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection56_2.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection55_2
             // 
@@ -2018,6 +2075,7 @@
             this.lblSection55_2.TabIndex = 0;
             this.lblSection55_2.Text = "...";
             this.lblSection55_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection55_2.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection54_2
             // 
@@ -2037,6 +2095,7 @@
             this.lblSection54_2.TabIndex = 0;
             this.lblSection54_2.Text = "...";
             this.lblSection54_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection54_2.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection53_2
             // 
@@ -2056,6 +2115,7 @@
             this.lblSection53_2.TabIndex = 0;
             this.lblSection53_2.Text = "...";
             this.lblSection53_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection53_2.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection52_2
             // 
@@ -2075,6 +2135,7 @@
             this.lblSection52_2.TabIndex = 0;
             this.lblSection52_2.Text = "...";
             this.lblSection52_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection52_2.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection51_2
             // 
@@ -2094,6 +2155,7 @@
             this.lblSection51_2.TabIndex = 0;
             this.lblSection51_2.Text = "...";
             this.lblSection51_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection51_2.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection38_2
             // 
@@ -2113,6 +2175,7 @@
             this.lblSection38_2.TabIndex = 0;
             this.lblSection38_2.Text = "...";
             this.lblSection38_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection38_2.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection42_2
             // 
@@ -2151,6 +2214,7 @@
             this.lblSection37_2.TabIndex = 0;
             this.lblSection37_2.Text = "...";
             this.lblSection37_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection37_2.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection44_2
             // 
@@ -2208,6 +2272,7 @@
             this.lblSection36_2.TabIndex = 0;
             this.lblSection36_2.Text = "...";
             this.lblSection36_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection36_2.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection35_2
             // 
@@ -2227,6 +2292,7 @@
             this.lblSection35_2.TabIndex = 0;
             this.lblSection35_2.Text = "...";
             this.lblSection35_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection35_2.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection34_2
             // 
@@ -2246,6 +2312,7 @@
             this.lblSection34_2.TabIndex = 0;
             this.lblSection34_2.Text = "...";
             this.lblSection34_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection34_2.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection33_2
             // 
@@ -2265,6 +2332,7 @@
             this.lblSection33_2.TabIndex = 0;
             this.lblSection33_2.Text = "...";
             this.lblSection33_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection33_2.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection32_2
             // 
@@ -2284,6 +2352,7 @@
             this.lblSection32_2.TabIndex = 0;
             this.lblSection32_2.Text = "...";
             this.lblSection32_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection32_2.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection31_2
             // 
@@ -2303,6 +2372,7 @@
             this.lblSection31_2.TabIndex = 0;
             this.lblSection31_2.Text = "...";
             this.lblSection31_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection31_2.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection30_2
             // 
@@ -2322,6 +2392,7 @@
             this.lblSection30_2.TabIndex = 0;
             this.lblSection30_2.Text = "...";
             this.lblSection30_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection30_2.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection41_1
             // 
@@ -2360,6 +2431,7 @@
             this.lblSection64_1.TabIndex = 0;
             this.lblSection64_1.Text = "...";
             this.lblSection64_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection64_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection63_1
             // 
@@ -2379,6 +2451,7 @@
             this.lblSection63_1.TabIndex = 0;
             this.lblSection63_1.Text = "...";
             this.lblSection63_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection63_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection62_1
             // 
@@ -2398,6 +2471,7 @@
             this.lblSection62_1.TabIndex = 0;
             this.lblSection62_1.Text = "...";
             this.lblSection62_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection62_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection61_1
             // 
@@ -2417,6 +2491,7 @@
             this.lblSection61_1.TabIndex = 0;
             this.lblSection61_1.Text = "...";
             this.lblSection61_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection61_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection57_1
             // 
@@ -2436,6 +2511,7 @@
             this.lblSection57_1.TabIndex = 0;
             this.lblSection57_1.Text = "...";
             this.lblSection57_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection57_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection56_1
             // 
@@ -2455,6 +2531,7 @@
             this.lblSection56_1.TabIndex = 0;
             this.lblSection56_1.Text = "...";
             this.lblSection56_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection56_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection55_1
             // 
@@ -2474,6 +2551,7 @@
             this.lblSection55_1.TabIndex = 0;
             this.lblSection55_1.Text = "...";
             this.lblSection55_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection55_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection54_1
             // 
@@ -2493,6 +2571,7 @@
             this.lblSection54_1.TabIndex = 0;
             this.lblSection54_1.Text = "...";
             this.lblSection54_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection54_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection53_1
             // 
@@ -2512,6 +2591,7 @@
             this.lblSection53_1.TabIndex = 0;
             this.lblSection53_1.Text = "...";
             this.lblSection53_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection53_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection52_1
             // 
@@ -2531,6 +2611,7 @@
             this.lblSection52_1.TabIndex = 0;
             this.lblSection52_1.Text = "...";
             this.lblSection52_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection52_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection51_1
             // 
@@ -2550,6 +2631,7 @@
             this.lblSection51_1.TabIndex = 0;
             this.lblSection51_1.Text = "...";
             this.lblSection51_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection51_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection38_1
             // 
@@ -2569,6 +2651,7 @@
             this.lblSection38_1.TabIndex = 0;
             this.lblSection38_1.Text = "...";
             this.lblSection38_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection38_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection42_1
             // 
@@ -2607,6 +2690,7 @@
             this.lblSection37_1.TabIndex = 0;
             this.lblSection37_1.Text = "...";
             this.lblSection37_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection37_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection15_1
             // 
@@ -2854,6 +2938,7 @@
             this.lblSection36_1.TabIndex = 0;
             this.lblSection36_1.Text = "...";
             this.lblSection36_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection36_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection35_1
             // 
@@ -2873,6 +2958,7 @@
             this.lblSection35_1.TabIndex = 0;
             this.lblSection35_1.Text = "...";
             this.lblSection35_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection35_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection34_1
             // 
@@ -2892,6 +2978,7 @@
             this.lblSection34_1.TabIndex = 0;
             this.lblSection34_1.Text = "...";
             this.lblSection34_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection34_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection33_1
             // 
@@ -2911,6 +2998,7 @@
             this.lblSection33_1.TabIndex = 0;
             this.lblSection33_1.Text = "...";
             this.lblSection33_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection33_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection32_1
             // 
@@ -2930,6 +3018,7 @@
             this.lblSection32_1.TabIndex = 0;
             this.lblSection32_1.Text = "...";
             this.lblSection32_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection32_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection31_1
             // 
@@ -2949,6 +3038,7 @@
             this.lblSection31_1.TabIndex = 0;
             this.lblSection31_1.Text = "...";
             this.lblSection31_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSection31_1.Click += new System.EventHandler(this.SectorClick);
             // 
             // pnlSection30_1
             // 
@@ -3763,6 +3853,54 @@
             this.tpRoosterEdit.Text = "Roosters Aanpassen";
             this.tpRoosterEdit.UseVisualStyleBackColor = true;
             // 
+            // dtpDatum
+            // 
+            this.dtpDatum.Location = new System.Drawing.Point(884, 170);
+            this.dtpDatum.Name = "dtpDatum";
+            this.dtpDatum.Size = new System.Drawing.Size(276, 20);
+            this.dtpDatum.TabIndex = 12;
+            // 
+            // tbTijd
+            // 
+            this.tbTijd.Location = new System.Drawing.Point(884, 214);
+            this.tbTijd.Name = "tbTijd";
+            this.tbTijd.Size = new System.Drawing.Size(276, 20);
+            this.tbTijd.TabIndex = 11;
+            // 
+            // tbTaak
+            // 
+            this.tbTaak.Location = new System.Drawing.Point(884, 126);
+            this.tbTaak.Name = "tbTaak";
+            this.tbTaak.Size = new System.Drawing.Size(276, 20);
+            this.tbTaak.TabIndex = 11;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(881, 198);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(24, 13);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Tijd";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(881, 154);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(38, 13);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Datum";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(881, 110);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(32, 13);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Taak";
+            // 
             // cbGebruikerEdit
             // 
             this.cbGebruikerEdit.FormattingEnabled = true;
@@ -3771,6 +3909,19 @@
             this.cbGebruikerEdit.Size = new System.Drawing.Size(276, 21);
             this.cbGebruikerEdit.TabIndex = 9;
             this.cbGebruikerEdit.Text = "Kies een gebruiker...";
+            // 
+            // materialLabel4
+            // 
+            this.materialLabel4.AutoSize = true;
+            this.materialLabel4.Depth = 0;
+            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel4.Location = new System.Drawing.Point(880, 91);
+            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel4.Name = "materialLabel4";
+            this.materialLabel4.Size = new System.Drawing.Size(161, 19);
+            this.materialLabel4.TabIndex = 8;
+            this.materialLabel4.Text = "Nieuwe gegevens/taak";
             // 
             // materialLabel3
             // 
@@ -3865,7 +4016,7 @@
             this.tpTrams.Controls.Add(this.btnBekijkRoosters1);
             this.tpTrams.Controls.Add(this.cbGebruikerBekijken);
             this.tpTrams.Controls.Add(this.materialLabel1);
-            this.tpTrams.Controls.Add(this.label2);
+            this.tpTrams.Controls.Add(this.lblRoosterVan);
             this.tpTrams.Controls.Add(this.lvRoostersBekijken);
             this.tpTrams.Location = new System.Drawing.Point(4, 22);
             this.tpTrams.Name = "tpTrams";
@@ -3909,15 +4060,15 @@
             this.materialLabel1.TabIndex = 5;
             this.materialLabel1.Text = "Bekijk rooster van:";
             // 
-            // label2
+            // lblRoosterVan
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.label2.Location = new System.Drawing.Point(6, 3);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(315, 39);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Rooster van <user>";
+            this.lblRoosterVan.AutoSize = true;
+            this.lblRoosterVan.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.lblRoosterVan.Location = new System.Drawing.Point(6, 3);
+            this.lblRoosterVan.Name = "lblRoosterVan";
+            this.lblRoosterVan.Size = new System.Drawing.Size(315, 39);
+            this.lblRoosterVan.TabIndex = 4;
+            this.lblRoosterVan.Text = "Rooster van <user>";
             // 
             // lvRoostersBekijken
             // 
@@ -3936,17 +4087,17 @@
             // columnHeader4
             // 
             this.columnHeader4.Text = "Taak";
-            this.columnHeader4.Width = 667;
+            this.columnHeader4.Width = 472;
             // 
             // columnHeader5
             // 
             this.columnHeader5.Text = "Datum";
-            this.columnHeader5.Width = 162;
+            this.columnHeader5.Width = 154;
             // 
             // columnHeader6
             // 
             this.columnHeader6.Text = "Tijd";
-            this.columnHeader6.Width = 131;
+            this.columnHeader6.Width = 128;
             // 
             // tpSporen
             // 
@@ -4062,67 +4213,6 @@
             this.btnLogOut.Text = "Uitloggen";
             this.btnLogOut.UseVisualStyleBackColor = false;
             this.btnLogOut.Visible = false;
-            // 
-            // materialLabel4
-            // 
-            this.materialLabel4.AutoSize = true;
-            this.materialLabel4.Depth = 0;
-            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel4.Location = new System.Drawing.Point(880, 91);
-            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel4.Name = "materialLabel4";
-            this.materialLabel4.Size = new System.Drawing.Size(161, 19);
-            this.materialLabel4.TabIndex = 8;
-            this.materialLabel4.Text = "Nieuwe gegevens/taak";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(881, 110);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(32, 13);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Taak";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(881, 154);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 13);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Datum";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(881, 198);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(24, 13);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Tijd";
-            // 
-            // tbTaak
-            // 
-            this.tbTaak.Location = new System.Drawing.Point(884, 126);
-            this.tbTaak.Name = "tbTaak";
-            this.tbTaak.Size = new System.Drawing.Size(276, 20);
-            this.tbTaak.TabIndex = 11;
-            // 
-            // tbTijd
-            // 
-            this.tbTijd.Location = new System.Drawing.Point(884, 214);
-            this.tbTijd.Name = "tbTijd";
-            this.tbTijd.Size = new System.Drawing.Size(276, 20);
-            this.tbTijd.TabIndex = 11;
-            // 
-            // dtpDatum
-            // 
-            this.dtpDatum.Location = new System.Drawing.Point(884, 170);
-            this.dtpDatum.Name = "dtpDatum";
-            this.dtpDatum.Size = new System.Drawing.Size(276, 20);
-            this.dtpDatum.TabIndex = 12;
             // 
             // Form1
             // 
@@ -4591,7 +4681,7 @@
         private System.Windows.Forms.Label label1;
         private MaterialSkin.Controls.MaterialRaisedButton btnBekijkRoosters1;
         private System.Windows.Forms.ComboBox cbGebruikerBekijken;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblRoosterVan;
         private System.Windows.Forms.ListView lvRoostersBekijken;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
