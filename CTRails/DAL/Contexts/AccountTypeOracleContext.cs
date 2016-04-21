@@ -17,21 +17,29 @@ namespace CTRails.DAL.Contexts
 
         public void Add(AccountType entity)
         {
-            throw new NotImplementedException();
+            OpenConnection();
+            string values = "('" + entity.Name + "')";
+            OracleCommand cmd = new OracleCommand("INSERT INTO TRM_ACCOUNTTYPE (NAME) VALUES" + values, Connection);
+            CloseConnection();
         }
 
 
 
         public void Delete(AccountType entity)
         {
-            throw new NotImplementedException();
+            OpenConnection();
+            OracleCommand cmd = new OracleCommand("DELETE FROM TRM_ACCOUNTTYPE WHERE ID = " + entity.ID, Connection);
+            CloseConnection();
         }
 
 
 
         public void Update(AccountType entity)
         {
-            throw new NotImplementedException();
+            OpenConnection();
+            string values = "('" + entity.Name + "')";
+            OracleCommand cmd = new OracleCommand("UPDATE TRM_ACCOUNTTYPE SET NAME = '" + entity.Name + "' WHERE ID = " + entity.ID, Connection);
+            CloseConnection();
         }
 
 
