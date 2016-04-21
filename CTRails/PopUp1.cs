@@ -30,11 +30,12 @@ namespace CTRails
         private void btnAddTram_Click(object sender, EventArgs e)
         {
             //TramNummer = txtTramNummer.Text;
-            this.Close();
+            this.Hide();
         }
 
         private void PopUp1_FormClosing(object sender, FormClosingEventArgs e)
         {
+            e.Cancel = true;
             this.Hide(); 
         }
     }

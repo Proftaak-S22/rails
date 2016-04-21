@@ -93,8 +93,6 @@ namespace CTRails
             }
         }
 
-
-
         private void SectorClick(object sender, EventArgs e)
         {
             string senderName = ((Label)sender).Name;
