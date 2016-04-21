@@ -13,9 +13,9 @@ using MaterialSkin.Controls;
 
 namespace CTRails
 {
-    public partial class PopUp1 : MaterialForm
+    public partial class TramPlaatsenForm : MaterialForm
     {
-        public PopUp1()
+        public TramPlaatsenForm()
         {
             InitializeComponent();
 
