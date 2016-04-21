@@ -20,7 +20,7 @@ namespace CTRails.DAL
                 Tracks = new TrackRepository(new TrackOracleContext());
                 //TrackRoutes = new TrackRouteRepository(new TrackRouteOracleContext());
                 Trams = new TramRepository(new TramOracleContext());
-                //TramRoutes = new TramRouteRepository(new TramRouteOracleContext());
+                TramRoutes = new TramRouteRepository(new TramRouteOracleContext());
             }
             else
             {
