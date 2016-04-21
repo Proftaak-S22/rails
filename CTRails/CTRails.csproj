@@ -59,6 +59,7 @@
     <Compile Include="DAL\Contexts\TrackTestContext.cs" />
     <Compile Include="DAL\Contexts\AttachedTrackTestContext.cs" />
     <Compile Include="DAL\Contexts\AccountTypeTestContext.cs" />
+    <Compile Include="DAL\Contexts\TramRouteTestContext.cs" />
     <Compile Include="DAL\Contexts\TramTestContext.cs" />
     <Compile Include="DAL\Contexts\SectorTestContext.cs" />
     <Compile Include="DAL\Contexts\EmployeeTestContext.cs" />
