@@ -18,10 +18,8 @@ namespace CTRails.DAL
                 Sectors = new SectorRepository(new SectorOracleContext());
                 Statuses = new StatusRepository(new StatusOracleContext());
                 Tracks = new TrackRepository(new TrackOracleContext());
-
                 //TrackRoutes = new TrackRouteRepository(new TrackRouteOracleContext());
                 Trams = new TramRepository(new TramOracleContext());
-
                 //TramRoutes = new TramRouteRepository(new TramRouteOracleContext());
             }
             else
