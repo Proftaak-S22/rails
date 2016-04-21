@@ -17,21 +17,45 @@ namespace CTRails.DAL.Contexts
 
         public void Add(Status entity)
         {
-            throw new NotImplementedException();
+            OpenConnection();
+
+            string values = "('" + entity.ID + "', ";
+            values += "'" + entity.Name + "')";
+
+            OracleCommand cmd = new OracleCommand("INSERT INTO TRM_STATUS (ID, NAME) VALUES" + values, Connection);
+
+            cmd.ExecuteNonQuery();
+
+            CloseConnection();
         }
 
 
 
         public void Delete(Status entity)
         {
-            throw new NotImplementedException();
+            OpenConnection();
+
+            OracleCommand cmd = new OracleCommand("DELETE FROM TRM_STATUS WHERE ID = " + entity.ID, Connection);
+
+            cmd.ExecuteNonQuery();
+
+            CloseConnection();
         }
 
 
 
         public void Update(Status entity)
         {
-            throw new NotImplementedException();
+            OpenConnection();
+
+            string values = "ID = '" + entity.ID + "', ";
+            values += "NAME = '" + entity.Name + "'";
+
+            OracleCommand cmd = new OracleCommand("UPDATE TRM_STATUS SET " + values + " WHERE ID = " + entity.ID, Connection);
+
+            cmd.ExecuteNonQuery();
+
+            CloseConnection();
         }
 
 
