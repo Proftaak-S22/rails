@@ -19,21 +19,45 @@ namespace CTRails.DAL.Contexts
 
         public void Add(TramRoute entity)
         {
-            throw new NotImplementedException();
+            OpenConnection();
+
+            string values = "(" + entity.Tram.Code + ", ";
+            values += entity.Route.ID + ")";
+
+            OracleCommand cmd = new OracleCommand("INSERT INTO TRM_TRAM_ROUTE (TRAM_ID, ROUTE_ID) VALUES" + values, Connection);
+
+            cmd.ExecuteNonQuery();
+
+            CloseConnection();
         }
 
 
 
         public void Delete(TramRoute entity)
         {
-            throw new NotImplementedException();
+            OpenConnection();
+
+            OracleCommand cmd = new OracleCommand("DELETE FROM TRM_TRAM_ROUTE WHERE ID = " + entity.Tram.Code, Connection);
+
+            cmd.ExecuteNonQuery();
+
+            CloseConnection();
         }
 
 
 
         public void Update(TramRoute entity)
         {
-            throw new NotImplementedException();
+            OpenConnection();
+
+            string values = "(" + entity.Tram.Code + ", ";
+            values += entity.Route.ID + ")";
+
+            OracleCommand cmd = new OracleCommand("UPDATE TRM_TRAM_ROUTE SET " + values + " WHERE ID = " + entity.ID, Connection);
+
+            cmd.ExecuteNonQuery();
+
+            CloseConnection();
         }
 
 
