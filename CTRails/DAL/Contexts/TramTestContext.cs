@@ -19,7 +19,7 @@ namespace CTRails.DAL.Contexts
         public TramTestContext()
             : base()
         {
-
+            
         }
 
         public void Add(Tram entity)

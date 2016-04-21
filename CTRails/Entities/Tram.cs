@@ -22,5 +22,10 @@ namespace CTRails
             Code = code;
             Status = status;
         }
+
+        public Tram(int id, int code) : base(id)
+        {
+            Code = code;
+        }
     }
 }
