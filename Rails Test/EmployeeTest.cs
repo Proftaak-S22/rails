@@ -5,6 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using CTRails.DAL;
 using CTRails.DAL.Contexts;
 using CTRails.Entities;
+using CTRails.Entities.Employees;
 
 
 namespace Rails_Test
@@ -13,46 +14,41 @@ namespace Rails_Test
     public class EmployeeTest
     {
         private UnitOfWork unitOfWork;
-        private Tram tram;
-        private IDataContext<Tram> context;
-
-        [TestMethod]
-        public void Insert()
+        [TestInitialize]
+        public void Initialize()
         {
-            //test fields
-            int code = 1;
-
             unitOfWork = new UnitOfWork();
-
-            unitOfWork.Employees.Add(new CTRails.Entities.Employees.Employee(
-                unitOfWork.AccountTypes.Where(accountType => accountType.Name == "FleetAdministrator").First(), 
-                "willem", 
-                "willem", 
-                "willem", 
-                "willem", 
-                string.Empty, 
-                "willem@willem.willem", 
-                DateTime.Now, 
-                "NL", 
-                new Address("Willemstraat", 1, "Willemsinky", "Willem", "1234WI", "W"),
-                Gender.M 
-                ));
         }
 
-        //[TestMethod]
-        //public void tramrepository(IDataContext<Tram> context)
-        //{
-        //    context = this.context;
-        //}
 
-        //[TestMethod]
-        //public int GetInt()
-        //{
-            
-        //    if (tram.ID != this.tram.ID)
-        //        return tram.ID;
+        [TestMethod]
+        public void InsertEmployee()
+        {
 
-        //    else return 0;
-        //}
+            Employee employee = new Employee(
+                unitOfWork.AccountTypes.Where(accountType => accountType.Name == "FleetAdministrator").First(),
+                "willem",
+                "willem",
+                "willem",
+                "willem",
+                string.Empty,
+                "willem@willem.willem",
+                DateTime.Now,
+                "NL",
+                new Address("Willemstraat", 1, "Willemsinky", "Willem", "1234WI", "W"),
+                Gender.M
+                );
+
+            //test fields
+            unitOfWork.Employees.Add(employee);
+
+            Assert.AreEqual(employee, unitOfWork.Employees.Where(x => x.Email == "willem@willem.willem").First());
+        }
+
+        [TestCleanup]
+        public void CleanUp()
+        {
+            unitOfWork = null;
+        }
     }
 }
