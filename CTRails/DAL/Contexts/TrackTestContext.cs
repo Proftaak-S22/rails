@@ -19,6 +19,7 @@ namespace CTRails.DAL.Contexts
         public TrackTestContext()
             : base()
         {
+            
             Entities.Add(new Track(1));
             Entities.Add(new Track(2));
             Entities.Add(new Track(3));
