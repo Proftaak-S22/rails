@@ -22,7 +22,7 @@ namespace CTRails
         {
             InitializeComponent();
 
-            tpRemise.Visible = false;
+            
 
             unit = new UnitOfWork();
 
@@ -49,6 +49,7 @@ namespace CTRails
 
             tabTabs.TabPages.Remove(tpLijnen);
             tabTabs.SelectedIndex = tabTabs.TabPages.IndexOf(tpLogin);
+            //tpLijnen.Hide();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)

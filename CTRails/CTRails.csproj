@@ -101,6 +101,13 @@
     <Compile Include="DAL\Repositories\IRepository.cs" />
     <Compile Include="DAL\IUnitOfWork.cs" />
     <Compile Include="DAL\Contexts\OracleDatabaseContext.cs" />
+    <Compile Include="LoginTabPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LoginTabPage.Designer.cs">
+      <DependentUpon>LoginTabPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Session.cs" />
     <Compile Include="TramPlaatsenForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +140,9 @@
     <Compile Include="Entities\Employees\FleetAdministrator.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginTabPage.resx">
+      <DependentUpon>LoginTabPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TramPlaatsenForm.resx">
       <DependentUpon>TramPlaatsenForm.cs</DependentUpon>

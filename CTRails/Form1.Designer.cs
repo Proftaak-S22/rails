@@ -398,7 +398,7 @@
             this.materialRaisedButton36 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.label9 = new System.Windows.Forms.Label();
             this.tpLijnen = new System.Windows.Forms.TabPage();
-            this.tpLogin = new System.Windows.Forms.TabPage();
+            this.tpLogin = new CTRails.LoginTabPage();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
@@ -544,11 +544,11 @@
             this.tabTabs.Controls.Add(this.tpLijnen);
             this.tabTabs.Controls.Add(this.tpLogin);
             this.tabTabs.Depth = 0;
-            this.tabTabs.Location = new System.Drawing.Point(0, 63);
+            this.tabTabs.Location = new System.Drawing.Point(0, 99);
             this.tabTabs.MouseState = MaterialSkin.MouseState.HOVER;
             this.tabTabs.Name = "tabTabs";
             this.tabTabs.SelectedIndex = 0;
-            this.tabTabs.Size = new System.Drawing.Size(1176, 481);
+            this.tabTabs.Size = new System.Drawing.Size(1176, 477);
             this.tabTabs.TabIndex = 0;
             // 
             // tpRemise
@@ -734,7 +734,7 @@
             this.tpRemise.Location = new System.Drawing.Point(4, 22);
             this.tpRemise.Name = "tpRemise";
             this.tpRemise.Padding = new System.Windows.Forms.Padding(3);
-            this.tpRemise.Size = new System.Drawing.Size(1168, 455);
+            this.tpRemise.Size = new System.Drawing.Size(1168, 451);
             this.tpRemise.TabIndex = 0;
             this.tpRemise.Text = "Remise";
             this.tpRemise.UseVisualStyleBackColor = true;
@@ -4548,7 +4548,7 @@
             this.tsTabs.BaseTabControl = null;
             this.tsTabs.Depth = 0;
             this.tsTabs.ForeColor = System.Drawing.Color.White;
-            this.tsTabs.Location = new System.Drawing.Point(0, 550);
+            this.tsTabs.Location = new System.Drawing.Point(0, 582);
             this.tsTabs.MouseState = MaterialSkin.MouseState.HOVER;
             this.tsTabs.Name = "tsTabs";
             this.tsTabs.Size = new System.Drawing.Size(1176, 45);
@@ -4574,7 +4574,7 @@
             this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1176, 607);
+            this.ClientSize = new System.Drawing.Size(1176, 639);
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.tsTabs);
             this.Controls.Add(this.tabTabs);
@@ -4726,7 +4726,6 @@
         private System.Windows.Forms.TabPage tpRoosterEdit;
         private System.Windows.Forms.TabPage tpGebruikers;
         private System.Windows.Forms.TabPage tpLijnen;
-        private System.Windows.Forms.TabPage tpLogin;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtUsername;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
@@ -5096,6 +5095,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader11;
         private System.Windows.Forms.ColumnHeader columnHeader10;
         private System.Windows.Forms.ListView lvGebruikers;
+        private LoginTabPage tpLogin;
     }
 }
 
