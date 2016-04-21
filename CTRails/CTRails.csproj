@@ -38,7 +38,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Oracle.ManagedDataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
-      <HintPath>packages\Oracle.ManagedDataAccess.12.1.022\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+      <HintPath>packages\Oracle.ManagedDataAccess.12.1.2400\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -101,11 +101,11 @@
     <Compile Include="DAL\Repositories\IRepository.cs" />
     <Compile Include="DAL\IUnitOfWork.cs" />
     <Compile Include="DAL\Contexts\OracleDatabaseContext.cs" />
-    <Compile Include="PopUp1.cs">
+    <Compile Include="TramPlaatsenForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PopUp1.Designer.cs">
-      <DependentUpon>PopUp1.cs</DependentUpon>
+    <Compile Include="TramPlaatsenForm.Designer.cs">
+      <DependentUpon>TramPlaatsenForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Reservation.cs" />
     <Compile Include="Address.cs" />
@@ -134,8 +134,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PopUp1.resx">
-      <DependentUpon>PopUp1.cs</DependentUpon>
+    <EmbeddedResource Include="TramPlaatsenForm.resx">
+      <DependentUpon>TramPlaatsenForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

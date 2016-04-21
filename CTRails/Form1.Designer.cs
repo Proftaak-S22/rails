@@ -362,6 +362,16 @@
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tpGebruikers = new System.Windows.Forms.TabPage();
+            this.lvGebruikers = new System.Windows.Forms.ListView();
+            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
@@ -396,16 +406,6 @@
             this.btnLogin = new MaterialSkin.Controls.MaterialRaisedButton();
             this.tsTabs = new MaterialSkin.Controls.MaterialTabSelector();
             this.btnLogOut = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.lvGebruikers = new System.Windows.Forms.ListView();
-            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabTabs.SuspendLayout();
             this.tpRemise.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlattegrond)).BeginInit();
@@ -4171,6 +4171,74 @@
             this.tpGebruikers.Text = "Gebruikers";
             this.tpGebruikers.UseVisualStyleBackColor = true;
             // 
+            // lvGebruikers
+            // 
+            this.lvGebruikers.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader10,
+            this.columnHeader11,
+            this.columnHeader12,
+            this.columnHeader13,
+            this.columnHeader14,
+            this.columnHeader15,
+            this.columnHeader16,
+            this.columnHeader17,
+            this.columnHeader18});
+            this.lvGebruikers.GridLines = true;
+            this.lvGebruikers.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.lvGebruikers.Location = new System.Drawing.Point(8, 45);
+            this.lvGebruikers.Name = "lvGebruikers";
+            this.lvGebruikers.Size = new System.Drawing.Size(866, 427);
+            this.lvGebruikers.TabIndex = 26;
+            this.lvGebruikers.UseCompatibleStateImageBehavior = false;
+            this.lvGebruikers.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader10
+            // 
+            this.columnHeader10.Text = "Gebruikersnaam";
+            this.columnHeader10.Width = 104;
+            // 
+            // columnHeader11
+            // 
+            this.columnHeader11.Text = "Geslacht";
+            this.columnHeader11.Width = 54;
+            // 
+            // columnHeader12
+            // 
+            this.columnHeader12.DisplayIndex = 3;
+            this.columnHeader12.Text = "Volledige naam";
+            this.columnHeader12.Width = 147;
+            // 
+            // columnHeader13
+            // 
+            this.columnHeader13.DisplayIndex = 2;
+            this.columnHeader13.Text = "Geboortedatum";
+            this.columnHeader13.Width = 88;
+            // 
+            // columnHeader14
+            // 
+            this.columnHeader14.Text = "Email";
+            this.columnHeader14.Width = 121;
+            // 
+            // columnHeader15
+            // 
+            this.columnHeader15.Text = "Land";
+            this.columnHeader15.Width = 74;
+            // 
+            // columnHeader16
+            // 
+            this.columnHeader16.Text = "Stad";
+            this.columnHeader16.Width = 72;
+            // 
+            // columnHeader17
+            // 
+            this.columnHeader17.Text = "Postcode";
+            this.columnHeader17.Width = 84;
+            // 
+            // columnHeader18
+            // 
+            this.columnHeader18.Text = "Huisnummer";
+            this.columnHeader18.Width = 75;
+            // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(1013, 128);
@@ -4500,74 +4568,6 @@
             this.btnLogOut.Text = "Uitloggen";
             this.btnLogOut.UseVisualStyleBackColor = false;
             this.btnLogOut.Visible = false;
-            // 
-            // lvGebruikers
-            // 
-            this.lvGebruikers.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader10,
-            this.columnHeader11,
-            this.columnHeader12,
-            this.columnHeader13,
-            this.columnHeader14,
-            this.columnHeader15,
-            this.columnHeader16,
-            this.columnHeader17,
-            this.columnHeader18});
-            this.lvGebruikers.GridLines = true;
-            this.lvGebruikers.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.lvGebruikers.Location = new System.Drawing.Point(8, 45);
-            this.lvGebruikers.Name = "lvGebruikers";
-            this.lvGebruikers.Size = new System.Drawing.Size(866, 427);
-            this.lvGebruikers.TabIndex = 26;
-            this.lvGebruikers.UseCompatibleStateImageBehavior = false;
-            this.lvGebruikers.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader10
-            // 
-            this.columnHeader10.Text = "Gebruikersnaam";
-            this.columnHeader10.Width = 104;
-            // 
-            // columnHeader11
-            // 
-            this.columnHeader11.Text = "Geslacht";
-            this.columnHeader11.Width = 54;
-            // 
-            // columnHeader12
-            // 
-            this.columnHeader12.DisplayIndex = 3;
-            this.columnHeader12.Text = "Volledige naam";
-            this.columnHeader12.Width = 147;
-            // 
-            // columnHeader13
-            // 
-            this.columnHeader13.DisplayIndex = 2;
-            this.columnHeader13.Text = "Geboortedatum";
-            this.columnHeader13.Width = 88;
-            // 
-            // columnHeader14
-            // 
-            this.columnHeader14.Text = "Email";
-            this.columnHeader14.Width = 121;
-            // 
-            // columnHeader15
-            // 
-            this.columnHeader15.Text = "Land";
-            this.columnHeader15.Width = 74;
-            // 
-            // columnHeader16
-            // 
-            this.columnHeader16.Text = "Stad";
-            this.columnHeader16.Width = 72;
-            // 
-            // columnHeader17
-            // 
-            this.columnHeader17.Text = "Postcode";
-            this.columnHeader17.Width = 84;
-            // 
-            // columnHeader18
-            // 
-            this.columnHeader18.Text = "Huisnummer";
-            this.columnHeader18.Width = 75;
             // 
             // Form1
             // 

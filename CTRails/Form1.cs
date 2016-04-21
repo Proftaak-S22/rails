@@ -22,7 +22,7 @@ namespace CTRails
         {
             InitializeComponent();
 
-            
+            tpRemise.Visible = false;
 
             unit = new UnitOfWork();
 
@@ -96,7 +96,7 @@ namespace CTRails
 
         private void SectorClick(object sender, EventArgs e)
         {
-            PopUp1 popAddTram = new PopUp1();
+            TramPlaatsenForm popAddTram = new TramPlaatsenForm();
             string senderName = ((Label)sender).Name;
 
             if (popAddTram.ShowDialog() == DialogResult.OK)
