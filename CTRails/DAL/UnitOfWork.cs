@@ -34,6 +34,7 @@ namespace CTRails.DAL
                 AttachedTracks = new AttachedTrackRepository(new AttachedTrackTestContext());
                 Routes = new RouteRepository(new RouteTestContext());
                 TramRoutes = new TramRouteRepository(new TramRouteTestContext());
+                TrackRoutes = new TrackRouteRepository(new TrackRouteTestContext());
             }
         }
 
