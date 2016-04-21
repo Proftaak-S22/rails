@@ -47,7 +47,6 @@ namespace CTRails
             materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500,
                 Accent.LightBlue200, TextShade.WHITE);
 
-            tabTabs.TabPages.Remove(tpSporen);
             tabTabs.TabPages.Remove(tpLijnen);
             tabTabs.SelectedIndex = tabTabs.TabPages.IndexOf(tpLogin);
         }
