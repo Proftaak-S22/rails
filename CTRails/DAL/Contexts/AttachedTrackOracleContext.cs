@@ -19,7 +19,7 @@ namespace CTRails.DAL.Contexts
         public void Add(AttachedTrack entity)
         {
             OpenConnection();
-            OracleCommand cmd = new OracleCommand("INSERT INTO TRM_ATTACHEDTRACK (TRACK_ID, NEXTTRACK_ID) VALUES(" + entity.Track + ", " + entity.Attached+ ")", Connection);
+            OracleCommand cmd = new OracleCommand("INSERT INTO TRM_ATTACHEDTRACK (TRACK_ID, NEXTTRACK_ID) VALUES(" + entity.Track + ", " + entity.Attached + ")", Connection);
             CloseConnection();
         }
 

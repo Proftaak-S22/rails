@@ -17,21 +17,27 @@ namespace CTRails.DAL.Contexts
 
         public void Add(Route entity)
         {
-            throw new NotImplementedException();
+            OpenConnection();
+            OracleCommand cmd = new OracleCommand("INSERT INTO TRM_ROUTE (NAME) VALUES('" + entity.Name + "')", Connection);
+            CloseConnection();
         }
 
 
 
         public void Delete(Route entity)
         {
-            throw new NotImplementedException();
+            OpenConnection();
+            OracleCommand cmd = new OracleCommand("DELETE FROM TRM_ROUTE WHERE ID =" + entity.ID, Connection);
+            CloseConnection();
         }
 
 
 
         public void Update(Route entity)
         {
-            throw new NotImplementedException();
+            OpenConnection();
+            OracleCommand cmd = new OracleCommand("UPDATE TRM_ROUTE SET NAME = '" + entity.Name + "' WHERE ID = " + entity.ID, Connection);
+            CloseConnection();
         }
 
 
