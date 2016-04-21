@@ -31,15 +31,15 @@ namespace CTRails.Entities.Employees
         /// <param name="id"> The employee id number. </param>
         /// <param name="accountType"> Specifies the employee's account type. </param>
         /// <param name="username"> Specifies the employee's username. </param>
-        /// <param name="password"></param>
-        /// <param name="firstName"></param>
-        /// <param name="lastName"></param>
-        /// <param name="prefix"></param>
-        /// <param name="email"></param>
-        /// <param name="dateOfBirth"></param>
-        /// <param name="nationality"></param>
-        /// <param name="address"></param>
-        /// <param name="gender"></param>
+        /// <param name="password"> Specifies the employee's password. </param>
+        /// <param name="firstName"> Specifies the employee's first name. </param>
+        /// <param name="lastName"> Specifies the employee's last name. </param>
+        /// <param name="prefix"> Specifies the employee's prefix. </param>
+        /// <param name="email"> Specifies the employee's email address. </param>
+        /// <param name="dateOfBirth"> Specifies the employee's date of birth. </param>
+        /// <param name="nationality"> Specifies the employee's nationality </param>
+        /// <param name="address"> Specifies the employee's home address. </param>
+        /// <param name="gender"> Specifies the employee's gender. </param>
         public Employee(
             int id, 
             AccountType accountType, 
@@ -70,6 +70,20 @@ namespace CTRails.Entities.Employees
         }
 
 
+        /// <summary>
+        /// Creates an employee.
+        /// </summary>
+        /// <param name="accountType"> Specifies the employee's account type. </param>
+        /// <param name="username"> Specifies the employee's username. </param>
+        /// <param name="password"> Specifies the employee's password. </param>
+        /// <param name="firstName"> Specifies the employee's first name. </param>
+        /// <param name="lastName"> Specifies the employee's last name. </param>
+        /// <param name="prefix"> Specifies the employee's prefix. </param>
+        /// <param name="email"> Specifies the employee's email address. </param>
+        /// <param name="dateOfBirth"> Specifies the employee's date of birth. </param>
+        /// <param name="nationality"> Specifies the employee's nationality </param>
+        /// <param name="address"> Specifies the employee's home address. </param>
+        /// <param name="gender"> Specifies the employee's gender. </param>
         public Employee(
             AccountType accountType,
             string username,
