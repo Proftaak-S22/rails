@@ -88,7 +88,7 @@
         #endregion
 
         private MaterialSkin.Controls.MaterialRaisedButton btnAddTram;
-        private System.Windows.Forms.TextBox txtTramNummer;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        public System.Windows.Forms.TextBox txtTramNummer;
     }
 }

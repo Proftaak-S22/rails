@@ -15,7 +15,7 @@ namespace CTRails
     {
         public string TramNummer { get; set; }
         private UnitOfWork unit;
-        private PopUp1 popAddTram = new PopUp1();
+        
         private bool addListeners = false;
 
         public Form1()
@@ -97,9 +97,13 @@ namespace CTRails
 
         private void SectorClick(object sender, EventArgs e)
         {
+            PopUp1 popAddTram = new PopUp1();
             string senderName = ((Label)sender).Name;
-            MessageBox.Show(senderName);
-            popAddTram.Show();
+
+            if (popAddTram.ShowDialog() == DialogResult.OK)
+            {
+                ((Label)sender).Text = popAddTram.txtTramNummer.Text;
+            }
         }
     }
 }
