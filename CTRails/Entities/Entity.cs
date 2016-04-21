@@ -12,5 +12,10 @@
         {
             ID = id;
         }
+
+        protected Entity()
+        {
+            
+        }
     }
 }
