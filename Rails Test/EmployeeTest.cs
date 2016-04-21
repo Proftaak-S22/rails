@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Linq;
 using CTRails;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using CTRails.DAL;
 using CTRails.DAL.Contexts;
+using CTRails.Entities;
+
 
 namespace Rails_Test
 {
@@ -20,8 +23,20 @@ namespace Rails_Test
             int code = 1;
 
             unitOfWork = new UnitOfWork();
-            unitOfWork.Trams.Add(new Tram(code));
-            unitOfWork.Employees.Add(new CTRails.Entities.Employees.Employee());
+
+            unitOfWork.Employees.Add(new CTRails.Entities.Employees.Employee(
+                unitOfWork.AccountTypes.Where(accountType => accountType.Name == "FleetAdministrator").First(), 
+                "willem", 
+                "willem", 
+                "willem", 
+                "willem", 
+                string.Empty, 
+                "willem@willem.willem", 
+                DateTime.Now, 
+                "NL", 
+                new Address("Willemstraat", 1, "Willemsinky", "Willem", "1234WI", "W"),
+                Gender.M 
+                ));
         }
 
         //[TestMethod]
