@@ -47,7 +47,9 @@ namespace CTRails
             materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500,
                 Accent.LightBlue200, TextShade.WHITE);
 
-            tabTabs.SelectedIndex = 6;
+            tabTabs.TabPages.Remove(tpSporen);
+            tabTabs.TabPages.Remove(tpLijnen);
+            tabTabs.SelectedIndex = tabTabs.TabPages.IndexOf(tpLogin);
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -64,7 +66,7 @@ namespace CTRails
                         login = true;
                         //Na login, ga naar hoofdscherm
                         this.Text = "Welkom " + em.FirstName;
-                        tabTabs.SelectedIndex = 0;
+                        tabTabs.SelectedIndex = tabTabs.TabPages.IndexOf(tpRemise);
                         tsTabs.BaseTabControl = tabTabs;
                         tabTabs.TabPages.Remove(tpLogin);
                         btnLogOut.Visible = true;

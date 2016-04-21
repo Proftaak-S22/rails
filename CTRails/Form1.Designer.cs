@@ -326,9 +326,34 @@
             this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnLine = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.tpSchoonmaak = new System.Windows.Forms.TabPage();
-            this.tpReparatie = new System.Windows.Forms.TabPage();
+            this.tpRooster = new System.Windows.Forms.TabPage();
+            this.btnBekijkRoosters = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnEditScedule = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.lvPersoonlijkRooster = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tpRoosterEdit = new System.Windows.Forms.TabPage();
+            this.cbGebruikerEdit = new System.Windows.Forms.ComboBox();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.btnVerwijderTaak = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnWijzigTaak = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnNieuweTaak = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lvRoostersWijzigen = new System.Windows.Forms.ListView();
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tpTrams = new System.Windows.Forms.TabPage();
+            this.btnBekijkRoosters1 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.cbGebruikerBekijken = new System.Windows.Forms.ComboBox();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lvRoostersBekijken = new System.Windows.Forms.ListView();
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tpSporen = new System.Windows.Forms.TabPage();
             this.tpLijnen = new System.Windows.Forms.TabPage();
             this.tpLogin = new System.Windows.Forms.TabPage();
@@ -339,6 +364,13 @@
             this.btnLogin = new MaterialSkin.Controls.MaterialRaisedButton();
             this.tsTabs = new MaterialSkin.Controls.MaterialTabSelector();
             this.btnLogOut = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tbTaak = new System.Windows.Forms.TextBox();
+            this.tbTijd = new System.Windows.Forms.TextBox();
+            this.dtpDatum = new System.Windows.Forms.DateTimePicker();
             this.tabTabs.SuspendLayout();
             this.tpRemise.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlattegrond)).BeginInit();
@@ -460,14 +492,17 @@
             this.pnlSection32_1.SuspendLayout();
             this.pnlSection31_1.SuspendLayout();
             this.pnlSection30_1.SuspendLayout();
+            this.tpRooster.SuspendLayout();
+            this.tpRoosterEdit.SuspendLayout();
+            this.tpTrams.SuspendLayout();
             this.tpLogin.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabTabs
             // 
             this.tabTabs.Controls.Add(this.tpRemise);
-            this.tabTabs.Controls.Add(this.tpSchoonmaak);
-            this.tabTabs.Controls.Add(this.tpReparatie);
+            this.tabTabs.Controls.Add(this.tpRooster);
+            this.tabTabs.Controls.Add(this.tpRoosterEdit);
             this.tabTabs.Controls.Add(this.tpTrams);
             this.tabTabs.Controls.Add(this.tpSporen);
             this.tabTabs.Controls.Add(this.tpLijnen);
@@ -3627,35 +3662,291 @@
             this.btnLine.Text = "30";
             this.btnLine.UseVisualStyleBackColor = false;
             // 
-            // tpSchoonmaak
+            // tpRooster
             // 
-            this.tpSchoonmaak.Location = new System.Drawing.Point(4, 22);
-            this.tpSchoonmaak.Name = "tpSchoonmaak";
-            this.tpSchoonmaak.Padding = new System.Windows.Forms.Padding(3);
-            this.tpSchoonmaak.Size = new System.Drawing.Size(1168, 455);
-            this.tpSchoonmaak.TabIndex = 1;
-            this.tpSchoonmaak.Text = "Schoonmaak";
-            this.tpSchoonmaak.UseVisualStyleBackColor = true;
+            this.tpRooster.Controls.Add(this.btnBekijkRoosters);
+            this.tpRooster.Controls.Add(this.label1);
+            this.tpRooster.Controls.Add(this.btnEditScedule);
+            this.tpRooster.Controls.Add(this.lvPersoonlijkRooster);
+            this.tpRooster.Location = new System.Drawing.Point(4, 22);
+            this.tpRooster.Name = "tpRooster";
+            this.tpRooster.Padding = new System.Windows.Forms.Padding(3);
+            this.tpRooster.Size = new System.Drawing.Size(1168, 455);
+            this.tpRooster.TabIndex = 1;
+            this.tpRooster.Text = "Rooster";
+            this.tpRooster.UseVisualStyleBackColor = true;
             // 
-            // tpReparatie
+            // btnBekijkRoosters
             // 
-            this.tpReparatie.Location = new System.Drawing.Point(4, 22);
-            this.tpReparatie.Name = "tpReparatie";
-            this.tpReparatie.Padding = new System.Windows.Forms.Padding(3);
-            this.tpReparatie.Size = new System.Drawing.Size(1168, 455);
-            this.tpReparatie.TabIndex = 2;
-            this.tpReparatie.Text = "Reparatie";
-            this.tpReparatie.UseVisualStyleBackColor = true;
+            this.btnBekijkRoosters.Depth = 0;
+            this.btnBekijkRoosters.Location = new System.Drawing.Point(884, 97);
+            this.btnBekijkRoosters.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnBekijkRoosters.Name = "btnBekijkRoosters";
+            this.btnBekijkRoosters.Primary = true;
+            this.btnBekijkRoosters.Size = new System.Drawing.Size(276, 46);
+            this.btnBekijkRoosters.TabIndex = 4;
+            this.btnBekijkRoosters.Text = "Bekijk alle roosters";
+            this.btnBekijkRoosters.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.label1.Location = new System.Drawing.Point(8, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(313, 39);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Persoonlijk Rooster";
+            // 
+            // btnEditScedule
+            // 
+            this.btnEditScedule.Depth = 0;
+            this.btnEditScedule.Location = new System.Drawing.Point(884, 45);
+            this.btnEditScedule.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnEditScedule.Name = "btnEditScedule";
+            this.btnEditScedule.Primary = true;
+            this.btnEditScedule.Size = new System.Drawing.Size(278, 46);
+            this.btnEditScedule.TabIndex = 1;
+            this.btnEditScedule.Text = "Wijzig rooster(s)";
+            this.btnEditScedule.UseVisualStyleBackColor = true;
+            // 
+            // lvPersoonlijkRooster
+            // 
+            this.lvPersoonlijkRooster.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3});
+            this.lvPersoonlijkRooster.GridLines = true;
+            this.lvPersoonlijkRooster.Location = new System.Drawing.Point(8, 45);
+            this.lvPersoonlijkRooster.Name = "lvPersoonlijkRooster";
+            this.lvPersoonlijkRooster.Size = new System.Drawing.Size(866, 427);
+            this.lvPersoonlijkRooster.TabIndex = 0;
+            this.lvPersoonlijkRooster.UseCompatibleStateImageBehavior = false;
+            this.lvPersoonlijkRooster.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Taak";
+            this.columnHeader1.Width = 472;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Datum";
+            this.columnHeader2.Width = 154;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Tijd";
+            this.columnHeader3.Width = 128;
+            // 
+            // tpRoosterEdit
+            // 
+            this.tpRoosterEdit.Controls.Add(this.dtpDatum);
+            this.tpRoosterEdit.Controls.Add(this.tbTijd);
+            this.tpRoosterEdit.Controls.Add(this.tbTaak);
+            this.tpRoosterEdit.Controls.Add(this.label6);
+            this.tpRoosterEdit.Controls.Add(this.label5);
+            this.tpRoosterEdit.Controls.Add(this.label4);
+            this.tpRoosterEdit.Controls.Add(this.cbGebruikerEdit);
+            this.tpRoosterEdit.Controls.Add(this.materialLabel4);
+            this.tpRoosterEdit.Controls.Add(this.materialLabel3);
+            this.tpRoosterEdit.Controls.Add(this.btnVerwijderTaak);
+            this.tpRoosterEdit.Controls.Add(this.btnWijzigTaak);
+            this.tpRoosterEdit.Controls.Add(this.btnNieuweTaak);
+            this.tpRoosterEdit.Controls.Add(this.label3);
+            this.tpRoosterEdit.Controls.Add(this.lvRoostersWijzigen);
+            this.tpRoosterEdit.Location = new System.Drawing.Point(4, 22);
+            this.tpRoosterEdit.Name = "tpRoosterEdit";
+            this.tpRoosterEdit.Padding = new System.Windows.Forms.Padding(3);
+            this.tpRoosterEdit.Size = new System.Drawing.Size(1168, 455);
+            this.tpRoosterEdit.TabIndex = 2;
+            this.tpRoosterEdit.Text = "Roosters Aanpassen";
+            this.tpRoosterEdit.UseVisualStyleBackColor = true;
+            // 
+            // cbGebruikerEdit
+            // 
+            this.cbGebruikerEdit.FormattingEnabled = true;
+            this.cbGebruikerEdit.Location = new System.Drawing.Point(884, 67);
+            this.cbGebruikerEdit.Name = "cbGebruikerEdit";
+            this.cbGebruikerEdit.Size = new System.Drawing.Size(276, 21);
+            this.cbGebruikerEdit.TabIndex = 9;
+            this.cbGebruikerEdit.Text = "Kies een gebruiker...";
+            // 
+            // materialLabel3
+            // 
+            this.materialLabel3.AutoSize = true;
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel3.Location = new System.Drawing.Point(880, 45);
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            this.materialLabel3.Size = new System.Drawing.Size(134, 19);
+            this.materialLabel3.TabIndex = 8;
+            this.materialLabel3.Text = "Bekijk rooster van:";
+            // 
+            // btnVerwijderTaak
+            // 
+            this.btnVerwijderTaak.Depth = 0;
+            this.btnVerwijderTaak.Location = new System.Drawing.Point(884, 426);
+            this.btnVerwijderTaak.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnVerwijderTaak.Name = "btnVerwijderTaak";
+            this.btnVerwijderTaak.Primary = true;
+            this.btnVerwijderTaak.Size = new System.Drawing.Size(276, 46);
+            this.btnVerwijderTaak.TabIndex = 7;
+            this.btnVerwijderTaak.Text = "Geselecteerd taak verwijderen";
+            this.btnVerwijderTaak.UseVisualStyleBackColor = true;
+            // 
+            // btnWijzigTaak
+            // 
+            this.btnWijzigTaak.Depth = 0;
+            this.btnWijzigTaak.Location = new System.Drawing.Point(884, 292);
+            this.btnWijzigTaak.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnWijzigTaak.Name = "btnWijzigTaak";
+            this.btnWijzigTaak.Primary = true;
+            this.btnWijzigTaak.Size = new System.Drawing.Size(276, 46);
+            this.btnWijzigTaak.TabIndex = 7;
+            this.btnWijzigTaak.Text = "Geselecteerd taak wijzigen";
+            this.btnWijzigTaak.UseVisualStyleBackColor = true;
+            // 
+            // btnNieuweTaak
+            // 
+            this.btnNieuweTaak.Depth = 0;
+            this.btnNieuweTaak.Location = new System.Drawing.Point(884, 240);
+            this.btnNieuweTaak.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnNieuweTaak.Name = "btnNieuweTaak";
+            this.btnNieuweTaak.Primary = true;
+            this.btnNieuweTaak.Size = new System.Drawing.Size(276, 46);
+            this.btnNieuweTaak.TabIndex = 6;
+            this.btnNieuweTaak.Text = "Taak toevoegen";
+            this.btnNieuweTaak.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.label3.Location = new System.Drawing.Point(6, 3);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(292, 39);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Roosters Wijzigen";
+            // 
+            // lvRoostersWijzigen
+            // 
+            this.lvRoostersWijzigen.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader7,
+            this.columnHeader8,
+            this.columnHeader9});
+            this.lvRoostersWijzigen.GridLines = true;
+            this.lvRoostersWijzigen.Location = new System.Drawing.Point(8, 45);
+            this.lvRoostersWijzigen.Name = "lvRoostersWijzigen";
+            this.lvRoostersWijzigen.Size = new System.Drawing.Size(866, 427);
+            this.lvRoostersWijzigen.TabIndex = 4;
+            this.lvRoostersWijzigen.UseCompatibleStateImageBehavior = false;
+            this.lvRoostersWijzigen.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Taak";
+            this.columnHeader7.Width = 472;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "Datum";
+            this.columnHeader8.Width = 154;
+            // 
+            // columnHeader9
+            // 
+            this.columnHeader9.Text = "Tijd";
+            this.columnHeader9.Width = 128;
             // 
             // tpTrams
             // 
+            this.tpTrams.Controls.Add(this.btnBekijkRoosters1);
+            this.tpTrams.Controls.Add(this.cbGebruikerBekijken);
+            this.tpTrams.Controls.Add(this.materialLabel1);
+            this.tpTrams.Controls.Add(this.label2);
+            this.tpTrams.Controls.Add(this.lvRoostersBekijken);
             this.tpTrams.Location = new System.Drawing.Point(4, 22);
             this.tpTrams.Name = "tpTrams";
             this.tpTrams.Padding = new System.Windows.Forms.Padding(3);
             this.tpTrams.Size = new System.Drawing.Size(1168, 455);
             this.tpTrams.TabIndex = 3;
-            this.tpTrams.Text = "Trams";
+            this.tpTrams.Text = "Alle roosters bekijken";
             this.tpTrams.UseVisualStyleBackColor = true;
+            // 
+            // btnBekijkRoosters1
+            // 
+            this.btnBekijkRoosters1.Depth = 0;
+            this.btnBekijkRoosters1.Location = new System.Drawing.Point(884, 426);
+            this.btnBekijkRoosters1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnBekijkRoosters1.Name = "btnBekijkRoosters1";
+            this.btnBekijkRoosters1.Primary = true;
+            this.btnBekijkRoosters1.Size = new System.Drawing.Size(276, 46);
+            this.btnBekijkRoosters1.TabIndex = 9;
+            this.btnBekijkRoosters1.Text = "Wijzig roosters";
+            this.btnBekijkRoosters1.UseVisualStyleBackColor = true;
+            // 
+            // cbGebruikerBekijken
+            // 
+            this.cbGebruikerBekijken.FormattingEnabled = true;
+            this.cbGebruikerBekijken.Location = new System.Drawing.Point(884, 67);
+            this.cbGebruikerBekijken.Name = "cbGebruikerBekijken";
+            this.cbGebruikerBekijken.Size = new System.Drawing.Size(276, 21);
+            this.cbGebruikerBekijken.TabIndex = 6;
+            this.cbGebruikerBekijken.Text = "Kies een gebruiker...";
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel1.Location = new System.Drawing.Point(880, 45);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(134, 19);
+            this.materialLabel1.TabIndex = 5;
+            this.materialLabel1.Text = "Bekijk rooster van:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.label2.Location = new System.Drawing.Point(6, 3);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(315, 39);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Rooster van <user>";
+            // 
+            // lvRoostersBekijken
+            // 
+            this.lvRoostersBekijken.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6});
+            this.lvRoostersBekijken.GridLines = true;
+            this.lvRoostersBekijken.Location = new System.Drawing.Point(8, 45);
+            this.lvRoostersBekijken.Name = "lvRoostersBekijken";
+            this.lvRoostersBekijken.Size = new System.Drawing.Size(866, 427);
+            this.lvRoostersBekijken.TabIndex = 1;
+            this.lvRoostersBekijken.UseCompatibleStateImageBehavior = false;
+            this.lvRoostersBekijken.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Taak";
+            this.columnHeader4.Width = 667;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Datum";
+            this.columnHeader5.Width = 162;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Tijd";
+            this.columnHeader6.Width = 131;
             // 
             // tpSporen
             // 
@@ -3772,6 +4063,67 @@
             this.btnLogOut.UseVisualStyleBackColor = false;
             this.btnLogOut.Visible = false;
             // 
+            // materialLabel4
+            // 
+            this.materialLabel4.AutoSize = true;
+            this.materialLabel4.Depth = 0;
+            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel4.Location = new System.Drawing.Point(880, 91);
+            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel4.Name = "materialLabel4";
+            this.materialLabel4.Size = new System.Drawing.Size(161, 19);
+            this.materialLabel4.TabIndex = 8;
+            this.materialLabel4.Text = "Nieuwe gegevens/taak";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(881, 110);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(32, 13);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Taak";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(881, 154);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(38, 13);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Datum";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(881, 198);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(24, 13);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Tijd";
+            // 
+            // tbTaak
+            // 
+            this.tbTaak.Location = new System.Drawing.Point(884, 126);
+            this.tbTaak.Name = "tbTaak";
+            this.tbTaak.Size = new System.Drawing.Size(276, 20);
+            this.tbTaak.TabIndex = 11;
+            // 
+            // tbTijd
+            // 
+            this.tbTijd.Location = new System.Drawing.Point(884, 214);
+            this.tbTijd.Name = "tbTijd";
+            this.tbTijd.Size = new System.Drawing.Size(276, 20);
+            this.tbTijd.TabIndex = 11;
+            // 
+            // dtpDatum
+            // 
+            this.dtpDatum.Location = new System.Drawing.Point(884, 170);
+            this.dtpDatum.Name = "dtpDatum";
+            this.dtpDatum.Size = new System.Drawing.Size(276, 20);
+            this.dtpDatum.TabIndex = 12;
+            // 
             // Form1
             // 
             this.AcceptButton = this.btnLogin;
@@ -3782,6 +4134,7 @@
             this.Controls.Add(this.tsTabs);
             this.Controls.Add(this.tabTabs);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Remise App: Log in a.u.b.";
             this.tabTabs.ResumeLayout(false);
             this.tpRemise.ResumeLayout(false);
@@ -3905,6 +4258,12 @@
             this.pnlSection32_1.ResumeLayout(false);
             this.pnlSection31_1.ResumeLayout(false);
             this.pnlSection30_1.ResumeLayout(false);
+            this.tpRooster.ResumeLayout(false);
+            this.tpRooster.PerformLayout();
+            this.tpRoosterEdit.ResumeLayout(false);
+            this.tpRoosterEdit.PerformLayout();
+            this.tpTrams.ResumeLayout(false);
+            this.tpTrams.PerformLayout();
             this.tpLogin.ResumeLayout(false);
             this.tpLogin.PerformLayout();
             this.ResumeLayout(false);
@@ -3913,12 +4272,11 @@
 
         #endregion
         private MaterialSkin.Controls.MaterialTabSelector tsTabs;
-        private System.Windows.Forms.TabPage tpSchoonmaak;
+        private System.Windows.Forms.TabPage tpRooster;
         private System.Windows.Forms.TabPage tpRemise;
         private MaterialSkin.Controls.MaterialTabControl tabTabs;
         private MaterialSkin.Controls.MaterialRaisedButton btnLine;
-        private System.Windows.Forms.TabPage tpReparatie;
-        private System.Windows.Forms.TabPage tpTrams;
+        private System.Windows.Forms.TabPage tpRoosterEdit;
         private System.Windows.Forms.TabPage tpSporen;
         private System.Windows.Forms.TabPage tpLijnen;
         private System.Windows.Forms.TabPage tpLogin;
@@ -4223,6 +4581,39 @@
         private System.Windows.Forms.Label lblSection44_1;
         private System.Windows.Forms.Label lblSection43_1;
         private MaterialSkin.Controls.MaterialLabel lblVergroot;
+        private System.Windows.Forms.TabPage tpTrams;
+        private System.Windows.Forms.ListView lvPersoonlijkRooster;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private MaterialSkin.Controls.MaterialRaisedButton btnEditScedule;
+        private MaterialSkin.Controls.MaterialRaisedButton btnBekijkRoosters;
+        private System.Windows.Forms.Label label1;
+        private MaterialSkin.Controls.MaterialRaisedButton btnBekijkRoosters1;
+        private System.Windows.Forms.ComboBox cbGebruikerBekijken;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ListView lvRoostersBekijken;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private System.Windows.Forms.ColumnHeader columnHeader9;
+        private System.Windows.Forms.ColumnHeader columnHeader8;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ListView lvRoostersWijzigen;
+        private System.Windows.Forms.Label label3;
+        private MaterialSkin.Controls.MaterialRaisedButton btnNieuweTaak;
+        private MaterialSkin.Controls.MaterialRaisedButton btnWijzigTaak;
+        private MaterialSkin.Controls.MaterialLabel materialLabel3;
+        private System.Windows.Forms.ComboBox cbGebruikerEdit;
+        private MaterialSkin.Controls.MaterialRaisedButton btnVerwijderTaak;
+        private MaterialSkin.Controls.MaterialLabel materialLabel4;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox tbTijd;
+        private System.Windows.Forms.TextBox tbTaak;
+        private System.Windows.Forms.DateTimePicker dtpDatum;
     }
 }
 
