@@ -20,6 +20,12 @@ namespace Rails_Test
             unitOfWork = new UnitOfWork();
         }
 
+        [TestCleanup]
+        public void CleanUp()
+        {
+            unitOfWork = null;
+        }
+
 
         [TestMethod]
         public void InsertEmployee()
@@ -43,12 +49,6 @@ namespace Rails_Test
             unitOfWork.Employees.Add(employee);
 
             Assert.AreEqual(employee, unitOfWork.Employees.Where(x => x.Email == "willem@willem.willem").First());
-        }
-
-        [TestCleanup]
-        public void CleanUp()
-        {
-            unitOfWork = null;
         }
     }
 }

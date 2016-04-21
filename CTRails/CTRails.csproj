@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\Contexts\TramTestContext.cs" />
     <Compile Include="DAL\Contexts\SectorTestContext.cs" />
     <Compile Include="DAL\Contexts\EmployeeTestContext.cs" />
     <Compile Include="DAL\Contexts\RouteOracleContext.cs" />
