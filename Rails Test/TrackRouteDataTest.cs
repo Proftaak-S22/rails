@@ -2,12 +2,13 @@
 using System.Linq;
 using CTRails.DAL;
 using CTRails.Entities;
+using CTRails.Entities.Employees;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Rails_Test
 {
     [TestClass]
-    public class TrackDataTest
+    public class TrackRouteDataTest
     {
 
         private UnitOfWork work;
@@ -26,20 +27,25 @@ namespace Rails_Test
         }
 
         [TestMethod]
-        public void TrackRetrieve()
+        public void TrackRouteRetrieve()
         {
-            Assert.AreEqual(1, work.Tracks.Get().First(track => track.ID == 1).ID);
+
+            TrackRoute t = new TrackRoute(2, new Track(2), new Route(2, "B"));
+
+
+
+            Assert.AreEqual(1, work.TrackRoutes.Get().First(tr => tr.ID == 1).ID);
         }
 
         [TestMethod]
-        public void TrackAdd()
+        public void TrackRouteAdd()
         {
             work.Tracks.Add(new Track(60));
             Assert.AreEqual(60, work.Tracks.Get().First(track => track.ID == 60).ID);
         }
 
         [TestMethod]
-        public void TrackUpdate()
+        public void TrackRouteUpdate()
         {
             Track track = work.Tracks.Get().First();
 
