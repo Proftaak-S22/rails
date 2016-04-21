@@ -55,6 +55,7 @@
     <Compile Include="EmployeeTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RouteTest.cs" />
+    <Compile Include="TrackDataTest.cs" />
     <Compile Include="SectorTest.cs" />
     <Compile Include="TramTest.cs" />
     <Compile Include="TramRouteTest.cs" />
