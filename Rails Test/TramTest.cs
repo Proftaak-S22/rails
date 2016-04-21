@@ -23,8 +23,8 @@ namespace Rails_Test
         public void InsertTram()
         {
             
-            Tram tram = new Tram(1,
-                                 unitOfWork.Statuses.Where(status => status.Name()));
+            //Tram tram = new Tram(1,
+            //                     unitOfWork.Statuses.Where(status => status.Name()));
             // Tram moet meerdere statussen kunnen bevatten.
         }
 
