@@ -67,6 +67,12 @@
     <Compile Include="Controls\RemiseWindow.Designer.cs">
       <DependentUpon>RemiseWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\UsersWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UsersWindow.Designer.cs">
+      <DependentUpon>UsersWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="DAL\Contexts\RouteTestContext.cs" />
     <Compile Include="DAL\Contexts\TramStatusTestContext.cs" />
     <Compile Include="DAL\Contexts\TrackTestContext.cs" />
@@ -167,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\ScheduleWindow.resx">
       <DependentUpon>ScheduleWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UsersWindow.resx">
+      <DependentUpon>UsersWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Rails.resx">
       <DependentUpon>Rails.cs</DependentUpon>
