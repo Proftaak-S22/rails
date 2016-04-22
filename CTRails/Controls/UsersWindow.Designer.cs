@@ -59,8 +59,8 @@
             this.lvGebruikers = new System.Windows.Forms.ListView();
             this.chUsername = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chGender = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chFullname = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chDateOfBirth = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.chFullName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chEmail = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chCountry = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chCity = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -322,8 +322,8 @@
             this.lvGebruikers.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.chUsername,
             this.chGender,
+            this.chFullname,
             this.chDateOfBirth,
-            this.chFullName,
             this.chEmail,
             this.chCountry,
             this.chCity,
@@ -349,15 +349,15 @@
             this.chGender.Text = "Geslacht";
             this.chGender.Width = 54;
             // 
+            // chFullname
+            // 
+            this.chFullname.Text = "Volledige naam";
+            this.chFullname.Width = 147;
+            // 
             // chDateOfBirth
             // 
-            this.chDateOfBirth.Text = "Volledige naam";
-            this.chDateOfBirth.Width = 147;
-            // 
-            // chFullName
-            // 
-            this.chFullName.Text = "Geboortedatum";
-            this.chFullName.Width = 88;
+            this.chDateOfBirth.Text = "Geboortedatum";
+            this.chDateOfBirth.Width = 88;
             // 
             // chEmail
             // 
@@ -456,8 +456,8 @@
         private System.Windows.Forms.ListView lvGebruikers;
         private System.Windows.Forms.ColumnHeader chUsername;
         private System.Windows.Forms.ColumnHeader chGender;
+        private System.Windows.Forms.ColumnHeader chFullname;
         private System.Windows.Forms.ColumnHeader chDateOfBirth;
-        private System.Windows.Forms.ColumnHeader chFullName;
         private System.Windows.Forms.ColumnHeader chEmail;
         private System.Windows.Forms.ColumnHeader chCountry;
         private System.Windows.Forms.ColumnHeader chCity;

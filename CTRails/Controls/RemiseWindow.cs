@@ -31,20 +31,18 @@ namespace CTRails.Controls
             CleanColor = Color.Blue;
             DefaultColor = Color.Black;
 
-            foreach (Control c in Controls)
-            {
-                if (c.GetType() == typeof (Label))
-                    c.Click += OnSectorClick;
-            }
-
-
         }
 
         private void OnSectorClick(object sender, EventArgs e)
         {
             placeTramForm = new PlaceTramForm();
 
+            // Prevent invalid cast error.
+            if (sender.GetType() != typeof (Label))
+                return;
+
             Label clickedLabel = ((Label) sender);
+
 
             if (placeTramForm.ShowDialog() == DialogResult.OK)
             {
