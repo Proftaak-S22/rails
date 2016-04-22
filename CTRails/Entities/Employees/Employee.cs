@@ -10,7 +10,7 @@ namespace CTRails.Entities.Employees
 {
     public class Employee : Entity
     {
-        public AccountType AccountType { get;  set; }
+        public int AccountTypeID { get;  set; }
 
 
         public string Username { get;  set; }
@@ -38,7 +38,7 @@ namespace CTRails.Entities.Employees
         /// Creates an employee.
         /// </summary>
         /// <param name="id"> The employee id number. </param>
-        /// <param name="accountType"> Specifies the employee's account type. </param>
+        /// <param name="accountTypeID"> Specifies the employee's account type. </param>
         /// <param name="username"> Specifies the employee's username. </param>
         /// <param name="password"> Specifies the employee's password. </param>
         /// <param name="firstName"> Specifies the employee's first name. </param>
@@ -51,7 +51,7 @@ namespace CTRails.Entities.Employees
         /// <param name="gender"> Specifies the employee's gender. </param>
         public Employee(
             int id, 
-            AccountType accountType, 
+            int accountTypeID, 
             string username,
             string password,
             string firstName,
@@ -65,7 +65,7 @@ namespace CTRails.Entities.Employees
             )
             : base(id)
         {
-            AccountType = accountType;
+            AccountTypeID = accountTypeID;
             Username = username;
             Password = password;
             FirstName = firstName;
@@ -82,7 +82,7 @@ namespace CTRails.Entities.Employees
         /// <summary>
         /// Creates an employee.
         /// </summary>
-        /// <param name="accountType"> Specifies the employee's account type. </param>
+        /// <param name="accountTypeID"> Specifies the employee's account type. </param>
         /// <param name="username"> Specifies the employee's username. </param>
         /// <param name="password"> Specifies the employee's password. </param>
         /// <param name="firstName"> Specifies the employee's first name. </param>
@@ -94,7 +94,7 @@ namespace CTRails.Entities.Employees
         /// <param name="address"> Specifies the employee's home address. </param>
         /// <param name="gender"> Specifies the employee's gender. </param>
         public Employee(
-            AccountType accountType,
+            int accountTypeID,
             string username,
             string password,
             string firstName,
@@ -107,7 +107,7 @@ namespace CTRails.Entities.Employees
             Gender gender
             )
         {
-            AccountType = accountType;
+            AccountTypeID = accountTypeID;
             Username = username;
             Password = password;
             FirstName = firstName;

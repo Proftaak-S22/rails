@@ -53,8 +53,8 @@
   </Choose>
   <ItemGroup>
     <Compile Include="EmployeeTest.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RouteTest.cs" />
+    <Compile Include="SectorTestOracle.cs" />
     <Compile Include="TrackRouteDataTest.cs" />
     <Compile Include="TrackDataTest.cs" />
     <Compile Include="SectorTest.cs" />
@@ -66,6 +66,9 @@
       <Project>{f43138ca-6774-4770-9a01-e9a5af2f544e}</Project>
       <Name>CTRails</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

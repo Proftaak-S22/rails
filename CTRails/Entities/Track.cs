@@ -1,56 +1,45 @@
 ﻿using CTRails.DAL;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using CTRails.Entities.Employees;
+
 
 namespace CTRails.Entities
 {
+    /// <summary>
+    /// Represents a track for tram transportation.
+    /// </summary>
     public class Track : Entity
     {
-        //Fields
-        private UnitOfWork unit;
-        public int Number { get; private set; }
 
-        public IEnumerable<Sector> Sectors
-        {
-            get
-            {
-                unit = new UnitOfWork();
-                return unit.Sectors.Get();
-            }
-        }
-        public IEnumerable<Track> Tracks
-        {
-            get
-            {
-                unit = new UnitOfWork();
-                return unit.Tracks.Get();
-            }
-        }
-        public IEnumerable<Route> Routes
-        {
-            get
-            {
-                unit = new UnitOfWork();
-                return unit.Routes.Get();
-            }
-        }
+        /// <summary>
+        /// A list of routes available for this track.
+        /// </summary>
+        public List<Route> Routes { get; set; } = new List<Route>(); 
 
-        //Constructor
-        public Track(int id) : base(id)
-        {
-            Number = id;
-        }
 
-        //Methoden
-        public void Update()
-        {
-            List<Sector> sectors = Sectors.ToList();
-            foreach (Sector s in sectors)
-            {
-                
-            }
-        }
+
+        /// <summary>
+        /// A list of tracks attached to this one.
+        /// </summary>
+        public List<Track> Attached { get; set; } = new List<Track>();
+
+
+
+        /// <summary>
+        /// The list of sectors that make up this track.
+        /// </summary>
+        public List<Sector> Sectors { get; set; } = new List<Sector>(); 
+
+
+
+        /// <summary>
+        /// Creates a new track instance.
+        /// </summary>
+        /// <param name="id"> Specifies the unique intentifier for this track. </param>
+        public Track(int id) : base(id) { }
     }
 }
 

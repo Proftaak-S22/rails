@@ -3,14 +3,14 @@
 
 namespace CTRails.Entities.Employees
 {
-    public class Technicus : Employee
+    public class Technician : Employee
     {
         //Fields
 
         //Constructor
-        public Technicus(
+        public Technician(
             int id,
-            AccountType accountType,
+            int AccountTypeID,
             string username,
             string password,
             string firstName,
@@ -22,9 +22,9 @@ namespace CTRails.Entities.Employees
             Address address,
             Gender gender
             )
-            : base(id, accountType, username, password, firstName, lastName, prefix, email, dateOfBirth, nationality, address, gender)
+            : base(id, AccountTypeID, username, password, firstName, lastName, prefix, email, dateOfBirth, nationality, address, gender)
         {
-            throw new NotImplementedException();
+            
         }
 
     }

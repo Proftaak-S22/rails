@@ -8,6 +8,7 @@ using Task = CTRails.Entities.Task;
 
 namespace CTRails
 {
+    /*
     public class Schedule
     {
         public Schedule(Task task, Reservation reservation)
@@ -19,5 +20,5 @@ namespace CTRails
         {
             
         }
-    }
+    }*/
 }

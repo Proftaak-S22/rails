@@ -1,6 +1,6 @@
-﻿namespace CTRails
+﻿namespace CTRails.Forms
 {
-    partial class TramPlaatsenForm
+    partial class PlaceTramForm
     {
         /// <summary>
         /// Required designer variable.
@@ -156,10 +156,9 @@
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.txtTramNummer);
             this.Controls.Add(this.btnAddTram);
-            this.Name = "TramPlaatsenForm";
+            this.Name = "PlaceTramForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tram plaatsen";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PopUp1_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -9,14 +9,14 @@ namespace CTRails.Entities.Employees
     public class TramRoute : Entity
     {
         //Fields
-        public Tram Tram { get; private set;}
-        public Route Route { get; private set; }
+        public int TramID { get; private set;}
+        public int RouteID { get; private set; }
 
         //Constructor
-        public TramRoute(int id, Tram tram, Route route) : base(id)
+        public TramRoute(int tramID, int routeID)
         {
-            Tram = tram;
-            Route = route;
+            TramID = tramID;
+            RouteID = routeID;
         }
     }
 }

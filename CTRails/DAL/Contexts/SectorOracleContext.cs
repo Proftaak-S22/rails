@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using Oracle.ManagedDataAccess.Client;
 using CTRails.Entities;
 
@@ -19,12 +20,23 @@ namespace CTRails.DAL.Contexts
         {
             OpenConnection();
 
-            string values = "(" + sector.SectionNumber + ", ";
-            values += sector.TrackNumber + ")";
+            string query = @"INSERT INTO TRM_SECTION (ID, TRACK_ID, TRAM_ID) VALUES(:id, :track_id, :tram_id)";
+            
+            OracleCommand command = new OracleCommand(query, Connection);
 
-            OracleCommand cmd = new OracleCommand("INSERT INTO TRM_SECTION (ID, TRACK_ID) VALUES" + values, Connection);
+            OracleParameter[] parameters = {
+                    new OracleParameter("id", sector.ID),
+                    new OracleParameter("track_id", sector.TrackID)
+            };
 
-            cmd.ExecuteNonQuery();
+            command.Parameters.AddRange(parameters);
+
+            if (sector.TramID == -1)
+                command.Parameters.Add(new OracleParameter("tram_id", DBNull.Value));
+            else
+                command.Parameters.Add(new OracleParameter("tram_id", sector.TramID));
+
+            command.ExecuteNonQuery();
 
             CloseConnection();
         }
@@ -33,9 +45,15 @@ namespace CTRails.DAL.Contexts
         {
             OpenConnection();
 
-            OracleCommand cmd = new OracleCommand("DELETE FROM TRM_SECTION WHERE ID = " + sector.SectionNumber, Connection);
+            string query = @"DELETE FROM TRM_SECTION WHERE ID = :id";
 
-            cmd.ExecuteNonQuery();
+            OracleCommand command = new OracleCommand(query, Connection);
+
+            OracleParameter[] parameters = {
+                    new OracleParameter("id", sector.ID)
+            };
+
+            command.ExecuteNonQuery();
 
             CloseConnection();
         }
@@ -44,19 +62,47 @@ namespace CTRails.DAL.Contexts
         {
             OpenConnection();
 
-            OracleCommand command = new OracleCommand("SELECT * FROM TRM_SECTION", Connection);
+            string selectSectors = @"SELECT ID, TRACK_ID, TRAM_ID FROM TRM_SECTION";
+
+            OracleCommand command = new OracleCommand(selectSectors, Connection);
 
             OracleDataReader reader = command.ExecuteReader();
 
             List<Sector> sectors = new List<Sector>();
 
+            // Load in sectors.
             while (reader.Read())
             {
-                Sector next = new Sector(
-                        Convert.ToInt32(reader["ID"]),
-                        Convert.ToInt32(reader["TRACK_ID"]));
+                int id = (reader["ID"] == DBNull.Value) ? -1 : Convert.ToInt32(reader["ID"]);
+                int track_id = (reader["TRACK_ID"] == DBNull.Value) ? -1 : Convert.ToInt32(reader["TRACK_ID"]);
+                int tram_id = (reader["TRAM_ID"] == DBNull.Value) ? -1 : Convert.ToInt32(reader["TRAM_ID"]);
 
-                sectors.Add(next);
+                sectors.Add(new Sector(id, track_id, tram_id));
+            }
+
+
+            // For every sector, find the tram that occupies it.
+            foreach (Sector s in sectors)
+            {
+                string selectSectorTram = @"SELECT ID, TRAMCODE FROM TRM_TRAM WHERE ID = :tram_id";
+
+                OracleParameter[] parameters = {
+                    new OracleParameter("tram_id", s.TramID)
+                };
+
+                command = new OracleCommand(selectSectorTram, Connection);
+
+                command.Parameters.AddRange(parameters);
+
+                reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    int id = (reader["ID"] == DBNull.Value) ? -1 : Convert.ToInt32(reader["ID"]);
+                    int tramcode = (reader["TRAMCODE"] == DBNull.Value) ? -1 : Convert.ToInt32(reader["TRAMCODE"]);
+
+                    s.Tram = new Tram(id, tramcode);
+                }
             }
 
             CloseConnection();
@@ -68,12 +114,19 @@ namespace CTRails.DAL.Contexts
         {
             OpenConnection();
 
-            string values = "ID = " + sector.SectionNumber + ", ";
-            values += "TRACK_ID = " + sector.TrackNumber ;
+            string query = @"UPDATE TRM_SECTION SET TRACK_ID = :track_id, TRAM_ID = :tram_id WHERE ID = :id";
 
-            OracleCommand cmd = new OracleCommand("UPDATE TRM_SECTION SET ID = " + values + " WHERE ID = " + sector.SectionNumber, Connection);
+            OracleParameter[] parameters = {
+                 new OracleParameter("id",sector.ID),
+                 new OracleParameter("track_id",sector.TrackID),
+                 new OracleParameter("tram_id", sector.TramID)
+            };
 
-            cmd.ExecuteNonQuery();
+            OracleCommand command = new OracleCommand(query, Connection);
+
+            command.Parameters.AddRange(parameters);
+
+            command.ExecuteNonQuery();
 
             CloseConnection();
         }
