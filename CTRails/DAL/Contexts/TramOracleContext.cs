@@ -45,7 +45,7 @@ namespace CTRails.DAL.Contexts
         {
             OpenConnection();
 
-            OracleCommand command = new OracleCommand("SELECT * FROM TRM_TRACK", Connection);
+            OracleCommand command = new OracleCommand("SELECT * FROM TRM_TRAM", Connection);
 
             OracleDataReader reader = command.ExecuteReader();
 
@@ -53,10 +53,12 @@ namespace CTRails.DAL.Contexts
 
             while (reader.Read())
             {
-                Tram next = new Tram(Convert.ToInt32(reader["ID"]), Convert.ToInt32(reader["TRAMCODE"]), null);
+                Tram next = new Tram(Convert.ToInt32(reader["ID"]), Convert.ToInt32(reader["TRAMCODE"]));
 
                 trams.Add(next);
             }
+
+            CloseConnection();
 
             return trams;
         }

@@ -32,12 +32,6 @@ namespace CTRails
         public Driver Driver { get; set; }
 
 
-        // TODO: REMOVE
-        public Tram(int id, int code, Status status) : base(id)
-        {
-            Code = code;
-        }
-
         public Tram(int id, int code) : base(id)
         {
             Code = code;

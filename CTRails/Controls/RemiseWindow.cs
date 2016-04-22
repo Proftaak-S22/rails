@@ -43,7 +43,6 @@ namespace CTRails.Controls
 
             Label clickedLabel = ((Label) sender);
 
-
             if (placeTramForm.ShowDialog() == DialogResult.OK)
             {
                 int code = placeTramForm.TramCode;
