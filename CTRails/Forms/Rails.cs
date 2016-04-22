@@ -1,16 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Windows.Forms;
 using CTRails.DAL;
-using CTRails.Entities;
 using CTRails.Entities.Employees;
 using CTRails.Events;
 using MaterialSkin;
 using MaterialSkin.Controls;
 
 
-namespace CTRails
+namespace CTRails.Forms
 {
     public partial class Rails : MaterialForm
     {
@@ -42,8 +39,8 @@ namespace CTRails
         private void OnUserLogin(SessionEventArgs e)
         {
             btnLogOut.Visible = true;
-
-            BuildTabPageForUser(e.User);
+            Text = "Welkom " + Session.User.FirstName;
+            buildTabPageForUser(e.User);
         }
 
 
@@ -81,14 +78,14 @@ namespace CTRails
             }
         }
 
-        private void SectorClick(object sender, EventArgs e)
+        private void sectorClick(object sender, EventArgs e)
         {
-            TramPlaatsenForm popAddTram = new TramPlaatsenForm();
+            PlaceTramForm popAddPlaceTram = new PlaceTramForm();
             string senderName = ((Label)sender).Name;
 
-            if (popAddTram.ShowDialog() == DialogResult.OK)
+            if (popAddPlaceTram.ShowDialog() == DialogResult.OK)
             {
-                ((Label)sender).Text = popAddTram.txtTramNummer.Text;
+                ((Label)sender).Text = popAddPlaceTram.txtTramNummer.Text;
             }
         }
 
@@ -98,7 +95,7 @@ namespace CTRails
         /// Constructs the tab page control based on the given user's permissions.
         /// </summary>
         /// <param name="user"> Specifies the user to generate the control by. </param>
-        private void BuildTabPageForUser(Employee user)
+        private void buildTabPageForUser(Employee user)
         {
             tcNavigation.TabPages.Remove(tpLogin);
 

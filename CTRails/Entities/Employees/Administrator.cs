@@ -26,11 +26,12 @@ namespace CTRails.Entities.Employees
             ) 
             : base(id, accountType, username, password, firstName, lastName, prefix, email, dateOfBirth, nationality, address, gender)
         {
-            throw new NotImplementedException();
+            
         }
 
 
 
+        // TODO Redundant method.
         //Methods
         public void DeleteTram(Tram tram)
         {
@@ -38,12 +39,14 @@ namespace CTRails.Entities.Employees
             //unit.Trams.Delete(tram);
         }
 
+        // TODO Redundant method.
         public void AddTram(int tramNumber, Status status)
         {
             unit = new UnitOfWork();
             //unit.Trams.Add(tramNumber, status);
         }
 
+        // TODO Redundant method.
         public void AddAccount(int id,AccountType accountType, string username, string password, string firstName, 
             string lastName, string prefix, string email, DateTime dateOfBirth, string nationality, Address address, Gender gender)
         {
@@ -51,6 +54,7 @@ namespace CTRails.Entities.Employees
             unit.Employees.Add(new Employee(id, accountType, username, password, firstName, lastName, prefix, email, dateOfBirth, nationality, address, gender));
         }
 
+        // TODO Redundant method.
         public void DeleteAccount(Employee user)
         {
             unit = new UnitOfWork();

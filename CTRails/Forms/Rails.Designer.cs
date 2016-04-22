@@ -1,7 +1,7 @@
 ﻿using CTRails.Controls;
 
 
-namespace CTRails
+namespace CTRails.Forms
 {
     partial class Rails
     {
@@ -35,6 +35,7 @@ namespace CTRails
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.tcNavigation = new System.Windows.Forms.TabControl();
             this.tpLogin = new System.Windows.Forms.TabPage();
+            this.loginWindow = new CTRails.Controls.LoginWindow();
             this.tpRemise = new System.Windows.Forms.TabPage();
             this.lblVergroot = new MaterialSkin.Controls.MaterialLabel();
             this.pbPlattegrond = new System.Windows.Forms.PictureBox();
@@ -341,7 +342,16 @@ namespace CTRails
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tpSchedule = new CTRails.Controls.ScheduleWindow();
+            this.btnBekijkRoosters = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnEditScedule = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.lvPersoonlijkRooster = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tpRoosterEdit = new System.Windows.Forms.TabPage();
+            this.editScheduleTabPage1 = new CTRails.Controls.EditScheduleWindow();
             this.tpGebruikers = new System.Windows.Forms.TabPage();
             this.lvGebruikers = new System.Windows.Forms.ListView();
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -378,16 +388,6 @@ namespace CTRails
             this.materialRaisedButton35 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton36 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.label9 = new System.Windows.Forms.Label();
-            this.loginWindow = new CTRails.Controls.LoginWindow();
-            this.tpSchedule = new CTRails.Controls.ScheduleWindow();
-            this.btnBekijkRoosters = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnEditScedule = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.lvPersoonlijkRooster = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.editScheduleTabPage1 = new CTRails.Controls.EditScheduleWindow();
             this.tcNavigation.SuspendLayout();
             this.tpLogin.SuspendLayout();
             this.tpRemise.SuspendLayout();
@@ -511,9 +511,9 @@ namespace CTRails
             this.pnlSection31_1.SuspendLayout();
             this.pnlSection30_1.SuspendLayout();
             this.tpTrams.SuspendLayout();
+            this.tpSchedule.SuspendLayout();
             this.tpRoosterEdit.SuspendLayout();
             this.tpGebruikers.SuspendLayout();
-            this.tpSchedule.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLogOut
@@ -566,6 +566,13 @@ namespace CTRails
             this.tpLogin.TabIndex = 6;
             this.tpLogin.Text = "Login";
             this.tpLogin.UseVisualStyleBackColor = true;
+            // 
+            // loginWindow
+            // 
+            this.loginWindow.Location = new System.Drawing.Point(80, 67);
+            this.loginWindow.Name = "loginWindow";
+            this.loginWindow.Size = new System.Drawing.Size(989, 432);
+            this.loginWindow.TabIndex = 3;
             // 
             // tpRemise
             // 
@@ -796,7 +803,7 @@ namespace CTRails
             this.lblSection41_3.TabIndex = 0;
             this.lblSection41_3.Text = "...";
             this.lblSection41_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection41_3.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection41_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection64_3
             // 
@@ -806,7 +813,7 @@ namespace CTRails
             this.pnlSection64_3.Name = "pnlSection64_3";
             this.pnlSection64_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection64_3.TabIndex = 1;
-            this.pnlSection64_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection64_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection64_3
             // 
@@ -816,7 +823,7 @@ namespace CTRails
             this.lblSection64_3.TabIndex = 0;
             this.lblSection64_3.Text = "...";
             this.lblSection64_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection64_3.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection64_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection63_3
             // 
@@ -826,7 +833,7 @@ namespace CTRails
             this.pnlSection63_3.Name = "pnlSection63_3";
             this.pnlSection63_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection63_3.TabIndex = 1;
-            this.pnlSection63_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection63_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection63_3
             // 
@@ -836,7 +843,7 @@ namespace CTRails
             this.lblSection63_3.TabIndex = 0;
             this.lblSection63_3.Text = "...";
             this.lblSection63_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection63_3.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection63_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection57_3
             // 
@@ -846,7 +853,7 @@ namespace CTRails
             this.pnlSection57_3.Name = "pnlSection57_3";
             this.pnlSection57_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection57_3.TabIndex = 1;
-            this.pnlSection57_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection57_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection57_3
             // 
@@ -856,7 +863,7 @@ namespace CTRails
             this.lblSection57_3.TabIndex = 0;
             this.lblSection57_3.Text = "...";
             this.lblSection57_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection57_3.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection57_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection56_3
             // 
@@ -866,7 +873,7 @@ namespace CTRails
             this.pnlSection56_3.Name = "pnlSection56_3";
             this.pnlSection56_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection56_3.TabIndex = 1;
-            this.pnlSection56_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection56_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection56_3
             // 
@@ -876,7 +883,7 @@ namespace CTRails
             this.lblSection56_3.TabIndex = 0;
             this.lblSection56_3.Text = "...";
             this.lblSection56_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection56_3.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection56_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection55_3
             // 
@@ -886,7 +893,7 @@ namespace CTRails
             this.pnlSection55_3.Name = "pnlSection55_3";
             this.pnlSection55_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection55_3.TabIndex = 1;
-            this.pnlSection55_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection55_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection55_3
             // 
@@ -896,7 +903,7 @@ namespace CTRails
             this.lblSection55_3.TabIndex = 0;
             this.lblSection55_3.Text = "...";
             this.lblSection55_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection55_3.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection55_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection54_3
             // 
@@ -906,7 +913,7 @@ namespace CTRails
             this.pnlSection54_3.Name = "pnlSection54_3";
             this.pnlSection54_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection54_3.TabIndex = 1;
-            this.pnlSection54_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection54_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection54_3
             // 
@@ -916,7 +923,7 @@ namespace CTRails
             this.lblSection54_3.TabIndex = 0;
             this.lblSection54_3.Text = "...";
             this.lblSection54_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection54_3.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection54_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection53_3
             // 
@@ -926,7 +933,7 @@ namespace CTRails
             this.pnlSection53_3.Name = "pnlSection53_3";
             this.pnlSection53_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection53_3.TabIndex = 1;
-            this.pnlSection53_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection53_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection53_3
             // 
@@ -936,7 +943,7 @@ namespace CTRails
             this.lblSection53_3.TabIndex = 0;
             this.lblSection53_3.Text = "...";
             this.lblSection53_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection53_3.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection53_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection52_3
             // 
@@ -946,7 +953,7 @@ namespace CTRails
             this.pnlSection52_3.Name = "pnlSection52_3";
             this.pnlSection52_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection52_3.TabIndex = 1;
-            this.pnlSection52_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection52_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection52_3
             // 
@@ -956,7 +963,7 @@ namespace CTRails
             this.lblSection52_3.TabIndex = 0;
             this.lblSection52_3.Text = "...";
             this.lblSection52_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection52_3.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection52_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection51_3
             // 
@@ -966,7 +973,7 @@ namespace CTRails
             this.pnlSection51_3.Name = "pnlSection51_3";
             this.pnlSection51_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection51_3.TabIndex = 1;
-            this.pnlSection51_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection51_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection51_3
             // 
@@ -976,7 +983,7 @@ namespace CTRails
             this.lblSection51_3.TabIndex = 0;
             this.lblSection51_3.Text = "...";
             this.lblSection51_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection51_3.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection51_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection38_3
             // 
@@ -986,7 +993,7 @@ namespace CTRails
             this.pnlSection38_3.Name = "pnlSection38_3";
             this.pnlSection38_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection38_3.TabIndex = 1;
-            this.pnlSection38_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection38_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection38_3
             // 
@@ -996,7 +1003,7 @@ namespace CTRails
             this.lblSection38_3.TabIndex = 0;
             this.lblSection38_3.Text = "...";
             this.lblSection38_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection38_3.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection38_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection42_3
             // 
@@ -1015,7 +1022,7 @@ namespace CTRails
             this.lblSection42_3.TabIndex = 0;
             this.lblSection42_3.Text = "...";
             this.lblSection42_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection42_3.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection42_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection37_3
             // 
@@ -1025,7 +1032,7 @@ namespace CTRails
             this.pnlSection37_3.Name = "pnlSection37_3";
             this.pnlSection37_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection37_3.TabIndex = 1;
-            this.pnlSection37_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection37_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection37_3
             // 
@@ -1035,7 +1042,7 @@ namespace CTRails
             this.lblSection37_3.TabIndex = 0;
             this.lblSection37_3.Text = "...";
             this.lblSection37_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection37_3.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection37_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection44_3
             // 
@@ -1054,7 +1061,7 @@ namespace CTRails
             this.lblSection44_3.TabIndex = 0;
             this.lblSection44_3.Text = "...";
             this.lblSection44_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection44_3.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection44_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection43_3
             // 
@@ -1073,7 +1080,7 @@ namespace CTRails
             this.lblSection43_3.TabIndex = 0;
             this.lblSection43_3.Text = "...";
             this.lblSection43_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection43_3.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection43_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection36_3
             // 
@@ -1083,7 +1090,7 @@ namespace CTRails
             this.pnlSection36_3.Name = "pnlSection36_3";
             this.pnlSection36_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection36_3.TabIndex = 1;
-            this.pnlSection36_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection36_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection36_3
             // 
@@ -1093,7 +1100,7 @@ namespace CTRails
             this.lblSection36_3.TabIndex = 0;
             this.lblSection36_3.Text = "...";
             this.lblSection36_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection36_3.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection36_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection35_3
             // 
@@ -1103,7 +1110,7 @@ namespace CTRails
             this.pnlSection35_3.Name = "pnlSection35_3";
             this.pnlSection35_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection35_3.TabIndex = 1;
-            this.pnlSection35_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection35_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection35_3
             // 
@@ -1113,7 +1120,7 @@ namespace CTRails
             this.lblSection35_3.TabIndex = 0;
             this.lblSection35_3.Text = "...";
             this.lblSection35_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection35_3.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection35_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection41_4
             // 
@@ -1132,7 +1139,7 @@ namespace CTRails
             this.lblSection41_4.TabIndex = 0;
             this.lblSection41_4.Text = "...";
             this.lblSection41_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection41_4.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection41_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection64_4
             // 
@@ -1142,7 +1149,7 @@ namespace CTRails
             this.pnlSection64_4.Name = "pnlSection64_4";
             this.pnlSection64_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection64_4.TabIndex = 1;
-            this.pnlSection64_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection64_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection64_4
             // 
@@ -1152,7 +1159,7 @@ namespace CTRails
             this.lblSection64_4.TabIndex = 0;
             this.lblSection64_4.Text = "...";
             this.lblSection64_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection64_4.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection64_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection63_4
             // 
@@ -1162,7 +1169,7 @@ namespace CTRails
             this.pnlSection63_4.Name = "pnlSection63_4";
             this.pnlSection63_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection63_4.TabIndex = 1;
-            this.pnlSection63_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection63_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection63_4
             // 
@@ -1172,7 +1179,7 @@ namespace CTRails
             this.lblSection63_4.TabIndex = 0;
             this.lblSection63_4.Text = "...";
             this.lblSection63_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection63_4.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection63_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection57_4
             // 
@@ -1182,7 +1189,7 @@ namespace CTRails
             this.pnlSection57_4.Name = "pnlSection57_4";
             this.pnlSection57_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection57_4.TabIndex = 1;
-            this.pnlSection57_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection57_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection57_4
             // 
@@ -1192,7 +1199,7 @@ namespace CTRails
             this.lblSection57_4.TabIndex = 0;
             this.lblSection57_4.Text = "...";
             this.lblSection57_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection57_4.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection57_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection56_4
             // 
@@ -1202,7 +1209,7 @@ namespace CTRails
             this.pnlSection56_4.Name = "pnlSection56_4";
             this.pnlSection56_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection56_4.TabIndex = 1;
-            this.pnlSection56_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection56_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection56_4
             // 
@@ -1212,7 +1219,7 @@ namespace CTRails
             this.lblSection56_4.TabIndex = 0;
             this.lblSection56_4.Text = "...";
             this.lblSection56_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection56_4.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection56_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection55_4
             // 
@@ -1222,7 +1229,7 @@ namespace CTRails
             this.pnlSection55_4.Name = "pnlSection55_4";
             this.pnlSection55_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection55_4.TabIndex = 1;
-            this.pnlSection55_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection55_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection55_4
             // 
@@ -1232,7 +1239,7 @@ namespace CTRails
             this.lblSection55_4.TabIndex = 0;
             this.lblSection55_4.Text = "...";
             this.lblSection55_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection55_4.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection55_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection54_4
             // 
@@ -1242,7 +1249,7 @@ namespace CTRails
             this.pnlSection54_4.Name = "pnlSection54_4";
             this.pnlSection54_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection54_4.TabIndex = 1;
-            this.pnlSection54_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection54_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection54_4
             // 
@@ -1252,7 +1259,7 @@ namespace CTRails
             this.lblSection54_4.TabIndex = 0;
             this.lblSection54_4.Text = "...";
             this.lblSection54_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection54_4.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection54_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection53_4
             // 
@@ -1262,7 +1269,7 @@ namespace CTRails
             this.pnlSection53_4.Name = "pnlSection53_4";
             this.pnlSection53_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection53_4.TabIndex = 1;
-            this.pnlSection53_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection53_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection53_4
             // 
@@ -1272,7 +1279,7 @@ namespace CTRails
             this.lblSection53_4.TabIndex = 0;
             this.lblSection53_4.Text = "...";
             this.lblSection53_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection53_4.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection53_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection57_8
             // 
@@ -1291,7 +1298,7 @@ namespace CTRails
             this.lblSection57_8.TabIndex = 0;
             this.lblSection57_8.Text = "...";
             this.lblSection57_8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection57_8.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection57_8.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection57_7
             // 
@@ -1301,7 +1308,7 @@ namespace CTRails
             this.pnlSection57_7.Name = "pnlSection57_7";
             this.pnlSection57_7.Size = new System.Drawing.Size(50, 30);
             this.pnlSection57_7.TabIndex = 1;
-            this.pnlSection57_7.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection57_7.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection57_7
             // 
@@ -1311,7 +1318,7 @@ namespace CTRails
             this.lblSection57_7.TabIndex = 0;
             this.lblSection57_7.Text = "...";
             this.lblSection57_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection57_7.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection57_7.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection56_7
             // 
@@ -1321,7 +1328,7 @@ namespace CTRails
             this.pnlSection56_7.Name = "pnlSection56_7";
             this.pnlSection56_7.Size = new System.Drawing.Size(50, 30);
             this.pnlSection56_7.TabIndex = 1;
-            this.pnlSection56_7.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection56_7.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection56_7
             // 
@@ -1331,7 +1338,7 @@ namespace CTRails
             this.lblSection56_7.TabIndex = 0;
             this.lblSection56_7.Text = "...";
             this.lblSection56_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection56_7.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection56_7.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection55_7
             // 
@@ -1341,7 +1348,7 @@ namespace CTRails
             this.pnlSection55_7.Name = "pnlSection55_7";
             this.pnlSection55_7.Size = new System.Drawing.Size(50, 30);
             this.pnlSection55_7.TabIndex = 1;
-            this.pnlSection55_7.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection55_7.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection55_7
             // 
@@ -1351,7 +1358,7 @@ namespace CTRails
             this.lblSection55_7.TabIndex = 0;
             this.lblSection55_7.Text = "...";
             this.lblSection55_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection55_7.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection55_7.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection54_7
             // 
@@ -1361,7 +1368,7 @@ namespace CTRails
             this.pnlSection54_7.Name = "pnlSection54_7";
             this.pnlSection54_7.Size = new System.Drawing.Size(50, 30);
             this.pnlSection54_7.TabIndex = 1;
-            this.pnlSection54_7.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection54_7.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection54_7
             // 
@@ -1371,7 +1378,7 @@ namespace CTRails
             this.lblSection54_7.TabIndex = 0;
             this.lblSection54_7.Text = "...";
             this.lblSection54_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection54_7.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection54_7.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection57_6
             // 
@@ -1381,7 +1388,7 @@ namespace CTRails
             this.pnlSection57_6.Name = "pnlSection57_6";
             this.pnlSection57_6.Size = new System.Drawing.Size(50, 30);
             this.pnlSection57_6.TabIndex = 1;
-            this.pnlSection57_6.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection57_6.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection57_6
             // 
@@ -1391,7 +1398,7 @@ namespace CTRails
             this.lblSection57_6.TabIndex = 0;
             this.lblSection57_6.Text = "...";
             this.lblSection57_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection57_6.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection57_6.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection56_6
             // 
@@ -1401,7 +1408,7 @@ namespace CTRails
             this.pnlSection56_6.Name = "pnlSection56_6";
             this.pnlSection56_6.Size = new System.Drawing.Size(50, 30);
             this.pnlSection56_6.TabIndex = 1;
-            this.pnlSection56_6.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection56_6.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection56_6
             // 
@@ -1411,7 +1418,7 @@ namespace CTRails
             this.lblSection56_6.TabIndex = 0;
             this.lblSection56_6.Text = "...";
             this.lblSection56_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection56_6.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection56_6.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection55_6
             // 
@@ -1421,7 +1428,7 @@ namespace CTRails
             this.pnlSection55_6.Name = "pnlSection55_6";
             this.pnlSection55_6.Size = new System.Drawing.Size(50, 30);
             this.pnlSection55_6.TabIndex = 1;
-            this.pnlSection55_6.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection55_6.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection55_6
             // 
@@ -1431,7 +1438,7 @@ namespace CTRails
             this.lblSection55_6.TabIndex = 0;
             this.lblSection55_6.Text = "...";
             this.lblSection55_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection55_6.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection55_6.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection54_6
             // 
@@ -1441,7 +1448,7 @@ namespace CTRails
             this.pnlSection54_6.Name = "pnlSection54_6";
             this.pnlSection54_6.Size = new System.Drawing.Size(50, 30);
             this.pnlSection54_6.TabIndex = 1;
-            this.pnlSection54_6.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection54_6.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection54_6
             // 
@@ -1451,7 +1458,7 @@ namespace CTRails
             this.lblSection54_6.TabIndex = 0;
             this.lblSection54_6.Text = "...";
             this.lblSection54_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection54_6.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection54_6.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection53_6
             // 
@@ -1461,7 +1468,7 @@ namespace CTRails
             this.pnlSection53_6.Name = "pnlSection53_6";
             this.pnlSection53_6.Size = new System.Drawing.Size(50, 30);
             this.pnlSection53_6.TabIndex = 1;
-            this.pnlSection53_6.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection53_6.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection53_6
             // 
@@ -1471,7 +1478,7 @@ namespace CTRails
             this.lblSection53_6.TabIndex = 0;
             this.lblSection53_6.Text = "...";
             this.lblSection53_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection53_6.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection53_6.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection52_6
             // 
@@ -1481,7 +1488,7 @@ namespace CTRails
             this.pnlSection52_6.Name = "pnlSection52_6";
             this.pnlSection52_6.Size = new System.Drawing.Size(50, 30);
             this.pnlSection52_6.TabIndex = 1;
-            this.pnlSection52_6.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection52_6.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection52_6
             // 
@@ -1491,7 +1498,7 @@ namespace CTRails
             this.lblSection52_6.TabIndex = 0;
             this.lblSection52_6.Text = "...";
             this.lblSection52_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection52_6.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection52_6.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection57_5
             // 
@@ -1501,7 +1508,7 @@ namespace CTRails
             this.pnlSection57_5.Name = "pnlSection57_5";
             this.pnlSection57_5.Size = new System.Drawing.Size(50, 30);
             this.pnlSection57_5.TabIndex = 1;
-            this.pnlSection57_5.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection57_5.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection57_5
             // 
@@ -1511,7 +1518,7 @@ namespace CTRails
             this.lblSection57_5.TabIndex = 0;
             this.lblSection57_5.Text = "...";
             this.lblSection57_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection57_5.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection57_5.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection56_5
             // 
@@ -1521,7 +1528,7 @@ namespace CTRails
             this.pnlSection56_5.Name = "pnlSection56_5";
             this.pnlSection56_5.Size = new System.Drawing.Size(50, 30);
             this.pnlSection56_5.TabIndex = 1;
-            this.pnlSection56_5.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection56_5.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection56_5
             // 
@@ -1531,7 +1538,7 @@ namespace CTRails
             this.lblSection56_5.TabIndex = 0;
             this.lblSection56_5.Text = "...";
             this.lblSection56_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection56_5.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection56_5.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection55_5
             // 
@@ -1541,7 +1548,7 @@ namespace CTRails
             this.pnlSection55_5.Name = "pnlSection55_5";
             this.pnlSection55_5.Size = new System.Drawing.Size(50, 30);
             this.pnlSection55_5.TabIndex = 1;
-            this.pnlSection55_5.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection55_5.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection55_5
             // 
@@ -1551,7 +1558,7 @@ namespace CTRails
             this.lblSection55_5.TabIndex = 0;
             this.lblSection55_5.Text = "...";
             this.lblSection55_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection55_5.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection55_5.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection54_5
             // 
@@ -1561,7 +1568,7 @@ namespace CTRails
             this.pnlSection54_5.Name = "pnlSection54_5";
             this.pnlSection54_5.Size = new System.Drawing.Size(50, 30);
             this.pnlSection54_5.TabIndex = 1;
-            this.pnlSection54_5.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection54_5.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection54_5
             // 
@@ -1571,7 +1578,7 @@ namespace CTRails
             this.lblSection54_5.TabIndex = 0;
             this.lblSection54_5.Text = "...";
             this.lblSection54_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection54_5.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection54_5.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection53_5
             // 
@@ -1581,7 +1588,7 @@ namespace CTRails
             this.pnlSection53_5.Name = "pnlSection53_5";
             this.pnlSection53_5.Size = new System.Drawing.Size(50, 30);
             this.pnlSection53_5.TabIndex = 1;
-            this.pnlSection53_5.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection53_5.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection53_5
             // 
@@ -1591,7 +1598,7 @@ namespace CTRails
             this.lblSection53_5.TabIndex = 0;
             this.lblSection53_5.Text = "...";
             this.lblSection53_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection53_5.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection53_5.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection52_5
             // 
@@ -1601,7 +1608,7 @@ namespace CTRails
             this.pnlSection52_5.Name = "pnlSection52_5";
             this.pnlSection52_5.Size = new System.Drawing.Size(50, 30);
             this.pnlSection52_5.TabIndex = 1;
-            this.pnlSection52_5.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection52_5.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection52_5
             // 
@@ -1611,7 +1618,7 @@ namespace CTRails
             this.lblSection52_5.TabIndex = 0;
             this.lblSection52_5.Text = "...";
             this.lblSection52_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection52_5.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection52_5.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection52_4
             // 
@@ -1621,7 +1628,7 @@ namespace CTRails
             this.pnlSection52_4.Name = "pnlSection52_4";
             this.pnlSection52_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection52_4.TabIndex = 1;
-            this.pnlSection52_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection52_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection52_4
             // 
@@ -1631,7 +1638,7 @@ namespace CTRails
             this.lblSection52_4.TabIndex = 0;
             this.lblSection52_4.Text = "...";
             this.lblSection52_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection52_4.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection52_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection51_5
             // 
@@ -1641,7 +1648,7 @@ namespace CTRails
             this.pnlSection51_5.Name = "pnlSection51_5";
             this.pnlSection51_5.Size = new System.Drawing.Size(50, 30);
             this.pnlSection51_5.TabIndex = 1;
-            this.pnlSection51_5.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection51_5.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection51_5
             // 
@@ -1651,7 +1658,7 @@ namespace CTRails
             this.lblSection51_5.TabIndex = 0;
             this.lblSection51_5.Text = "...";
             this.lblSection51_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection51_5.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection51_5.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection51_4
             // 
@@ -1661,7 +1668,7 @@ namespace CTRails
             this.pnlSection51_4.Name = "pnlSection51_4";
             this.pnlSection51_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection51_4.TabIndex = 1;
-            this.pnlSection51_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection51_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection51_4
             // 
@@ -1671,7 +1678,7 @@ namespace CTRails
             this.lblSection51_4.TabIndex = 0;
             this.lblSection51_4.Text = "...";
             this.lblSection51_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection51_4.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection51_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection38_4
             // 
@@ -1681,7 +1688,7 @@ namespace CTRails
             this.pnlSection38_4.Name = "pnlSection38_4";
             this.pnlSection38_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection38_4.TabIndex = 1;
-            this.pnlSection38_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection38_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection38_4
             // 
@@ -1691,7 +1698,7 @@ namespace CTRails
             this.lblSection38_4.TabIndex = 0;
             this.lblSection38_4.Text = "...";
             this.lblSection38_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection38_4.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection38_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection42_4
             // 
@@ -1710,7 +1717,7 @@ namespace CTRails
             this.lblSection42_4.TabIndex = 0;
             this.lblSection42_4.Text = "...";
             this.lblSection42_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection42_4.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection42_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection37_4
             // 
@@ -1720,7 +1727,7 @@ namespace CTRails
             this.pnlSection37_4.Name = "pnlSection37_4";
             this.pnlSection37_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection37_4.TabIndex = 1;
-            this.pnlSection37_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection37_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection37_4
             // 
@@ -1730,7 +1737,7 @@ namespace CTRails
             this.lblSection37_4.TabIndex = 0;
             this.lblSection37_4.Text = "...";
             this.lblSection37_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection37_4.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection37_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection44_4
             // 
@@ -1749,7 +1756,7 @@ namespace CTRails
             this.lblSection44_4.TabIndex = 0;
             this.lblSection44_4.Text = "...";
             this.lblSection44_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection44_4.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection44_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection43_4
             // 
@@ -1768,7 +1775,7 @@ namespace CTRails
             this.lblSection43_4.TabIndex = 0;
             this.lblSection43_4.Text = "...";
             this.lblSection43_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection43_4.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection43_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection36_4
             // 
@@ -1778,7 +1785,7 @@ namespace CTRails
             this.pnlSection36_4.Name = "pnlSection36_4";
             this.pnlSection36_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection36_4.TabIndex = 1;
-            this.pnlSection36_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection36_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection36_4
             // 
@@ -1788,7 +1795,7 @@ namespace CTRails
             this.lblSection36_4.TabIndex = 0;
             this.lblSection36_4.Text = "...";
             this.lblSection36_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection36_4.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection36_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection35_4
             // 
@@ -1798,7 +1805,7 @@ namespace CTRails
             this.pnlSection35_4.Name = "pnlSection35_4";
             this.pnlSection35_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection35_4.TabIndex = 1;
-            this.pnlSection35_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection35_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection35_4
             // 
@@ -1808,7 +1815,7 @@ namespace CTRails
             this.lblSection35_4.TabIndex = 0;
             this.lblSection35_4.Text = "...";
             this.lblSection35_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection35_4.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection35_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection34_4
             // 
@@ -1818,7 +1825,7 @@ namespace CTRails
             this.pnlSection34_4.Name = "pnlSection34_4";
             this.pnlSection34_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection34_4.TabIndex = 1;
-            this.pnlSection34_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection34_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection34_4
             // 
@@ -1828,7 +1835,7 @@ namespace CTRails
             this.lblSection34_4.TabIndex = 0;
             this.lblSection34_4.Text = "...";
             this.lblSection34_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection34_4.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection34_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection34_3
             // 
@@ -1838,7 +1845,7 @@ namespace CTRails
             this.pnlSection34_3.Name = "pnlSection34_3";
             this.pnlSection34_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection34_3.TabIndex = 1;
-            this.pnlSection34_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection34_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection34_3
             // 
@@ -1848,7 +1855,7 @@ namespace CTRails
             this.lblSection34_3.TabIndex = 0;
             this.lblSection34_3.Text = "...";
             this.lblSection34_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection34_3.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection34_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection33_4
             // 
@@ -1858,7 +1865,7 @@ namespace CTRails
             this.pnlSection33_4.Name = "pnlSection33_4";
             this.pnlSection33_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection33_4.TabIndex = 1;
-            this.pnlSection33_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection33_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection33_4
             // 
@@ -1868,7 +1875,7 @@ namespace CTRails
             this.lblSection33_4.TabIndex = 0;
             this.lblSection33_4.Text = "...";
             this.lblSection33_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection33_4.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection33_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection33_3
             // 
@@ -1878,7 +1885,7 @@ namespace CTRails
             this.pnlSection33_3.Name = "pnlSection33_3";
             this.pnlSection33_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection33_3.TabIndex = 1;
-            this.pnlSection33_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection33_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection33_3
             // 
@@ -1888,7 +1895,7 @@ namespace CTRails
             this.lblSection33_3.TabIndex = 0;
             this.lblSection33_3.Text = "...";
             this.lblSection33_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection33_3.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection33_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection32_4
             // 
@@ -1898,7 +1905,7 @@ namespace CTRails
             this.pnlSection32_4.Name = "pnlSection32_4";
             this.pnlSection32_4.Size = new System.Drawing.Size(50, 30);
             this.pnlSection32_4.TabIndex = 1;
-            this.pnlSection32_4.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection32_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection32_4
             // 
@@ -1908,7 +1915,7 @@ namespace CTRails
             this.lblSection32_4.TabIndex = 0;
             this.lblSection32_4.Text = "...";
             this.lblSection32_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection32_4.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection32_4.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection32_3
             // 
@@ -1918,7 +1925,7 @@ namespace CTRails
             this.pnlSection32_3.Name = "pnlSection32_3";
             this.pnlSection32_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection32_3.TabIndex = 1;
-            this.pnlSection32_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection32_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection32_3
             // 
@@ -1928,7 +1935,7 @@ namespace CTRails
             this.lblSection32_3.TabIndex = 0;
             this.lblSection32_3.Text = "...";
             this.lblSection32_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection32_3.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection32_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection31_3
             // 
@@ -1938,7 +1945,7 @@ namespace CTRails
             this.pnlSection31_3.Name = "pnlSection31_3";
             this.pnlSection31_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection31_3.TabIndex = 1;
-            this.pnlSection31_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection31_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection31_3
             // 
@@ -1948,7 +1955,7 @@ namespace CTRails
             this.lblSection31_3.TabIndex = 0;
             this.lblSection31_3.Text = "...";
             this.lblSection31_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection31_3.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection31_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection30_3
             // 
@@ -1958,7 +1965,7 @@ namespace CTRails
             this.pnlSection30_3.Name = "pnlSection30_3";
             this.pnlSection30_3.Size = new System.Drawing.Size(50, 30);
             this.pnlSection30_3.TabIndex = 1;
-            this.pnlSection30_3.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection30_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection30_3
             // 
@@ -1968,7 +1975,7 @@ namespace CTRails
             this.lblSection30_3.TabIndex = 0;
             this.lblSection30_3.Text = "...";
             this.lblSection30_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection30_3.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection30_3.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection41_2
             // 
@@ -1987,7 +1994,7 @@ namespace CTRails
             this.lblSection41_2.TabIndex = 0;
             this.lblSection41_2.Text = "...";
             this.lblSection41_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection41_2.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection41_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection64_2
             // 
@@ -1997,7 +2004,7 @@ namespace CTRails
             this.pnlSection64_2.Name = "pnlSection64_2";
             this.pnlSection64_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection64_2.TabIndex = 1;
-            this.pnlSection64_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection64_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection64_2
             // 
@@ -2007,7 +2014,7 @@ namespace CTRails
             this.lblSection64_2.TabIndex = 0;
             this.lblSection64_2.Text = "...";
             this.lblSection64_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection64_2.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection64_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection63_2
             // 
@@ -2017,7 +2024,7 @@ namespace CTRails
             this.pnlSection63_2.Name = "pnlSection63_2";
             this.pnlSection63_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection63_2.TabIndex = 1;
-            this.pnlSection63_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection63_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection63_2
             // 
@@ -2027,7 +2034,7 @@ namespace CTRails
             this.lblSection63_2.TabIndex = 0;
             this.lblSection63_2.Text = "...";
             this.lblSection63_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection63_2.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection63_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection62_2
             // 
@@ -2037,7 +2044,7 @@ namespace CTRails
             this.pnlSection62_2.Name = "pnlSection62_2";
             this.pnlSection62_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection62_2.TabIndex = 1;
-            this.pnlSection62_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection62_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection62_2
             // 
@@ -2047,7 +2054,7 @@ namespace CTRails
             this.lblSection62_2.TabIndex = 0;
             this.lblSection62_2.Text = "...";
             this.lblSection62_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection62_2.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection62_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection61_2
             // 
@@ -2057,7 +2064,7 @@ namespace CTRails
             this.pnlSection61_2.Name = "pnlSection61_2";
             this.pnlSection61_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection61_2.TabIndex = 1;
-            this.pnlSection61_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection61_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection61_2
             // 
@@ -2067,7 +2074,7 @@ namespace CTRails
             this.lblSection61_2.TabIndex = 0;
             this.lblSection61_2.Text = "...";
             this.lblSection61_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection61_2.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection61_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection57_2
             // 
@@ -2077,7 +2084,7 @@ namespace CTRails
             this.pnlSection57_2.Name = "pnlSection57_2";
             this.pnlSection57_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection57_2.TabIndex = 1;
-            this.pnlSection57_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection57_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection57_2
             // 
@@ -2087,7 +2094,7 @@ namespace CTRails
             this.lblSection57_2.TabIndex = 0;
             this.lblSection57_2.Text = "...";
             this.lblSection57_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection57_2.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection57_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection56_2
             // 
@@ -2097,7 +2104,7 @@ namespace CTRails
             this.pnlSection56_2.Name = "pnlSection56_2";
             this.pnlSection56_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection56_2.TabIndex = 1;
-            this.pnlSection56_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection56_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection56_2
             // 
@@ -2107,7 +2114,7 @@ namespace CTRails
             this.lblSection56_2.TabIndex = 0;
             this.lblSection56_2.Text = "...";
             this.lblSection56_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection56_2.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection56_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection55_2
             // 
@@ -2117,7 +2124,7 @@ namespace CTRails
             this.pnlSection55_2.Name = "pnlSection55_2";
             this.pnlSection55_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection55_2.TabIndex = 1;
-            this.pnlSection55_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection55_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection55_2
             // 
@@ -2127,7 +2134,7 @@ namespace CTRails
             this.lblSection55_2.TabIndex = 0;
             this.lblSection55_2.Text = "...";
             this.lblSection55_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection55_2.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection55_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection54_2
             // 
@@ -2137,7 +2144,7 @@ namespace CTRails
             this.pnlSection54_2.Name = "pnlSection54_2";
             this.pnlSection54_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection54_2.TabIndex = 1;
-            this.pnlSection54_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection54_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection54_2
             // 
@@ -2147,7 +2154,7 @@ namespace CTRails
             this.lblSection54_2.TabIndex = 0;
             this.lblSection54_2.Text = "...";
             this.lblSection54_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection54_2.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection54_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection53_2
             // 
@@ -2157,7 +2164,7 @@ namespace CTRails
             this.pnlSection53_2.Name = "pnlSection53_2";
             this.pnlSection53_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection53_2.TabIndex = 1;
-            this.pnlSection53_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection53_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection53_2
             // 
@@ -2167,7 +2174,7 @@ namespace CTRails
             this.lblSection53_2.TabIndex = 0;
             this.lblSection53_2.Text = "...";
             this.lblSection53_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection53_2.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection53_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection52_2
             // 
@@ -2177,7 +2184,7 @@ namespace CTRails
             this.pnlSection52_2.Name = "pnlSection52_2";
             this.pnlSection52_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection52_2.TabIndex = 1;
-            this.pnlSection52_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection52_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection52_2
             // 
@@ -2187,7 +2194,7 @@ namespace CTRails
             this.lblSection52_2.TabIndex = 0;
             this.lblSection52_2.Text = "...";
             this.lblSection52_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection52_2.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection52_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection51_2
             // 
@@ -2197,7 +2204,7 @@ namespace CTRails
             this.pnlSection51_2.Name = "pnlSection51_2";
             this.pnlSection51_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection51_2.TabIndex = 1;
-            this.pnlSection51_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection51_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection51_2
             // 
@@ -2207,7 +2214,7 @@ namespace CTRails
             this.lblSection51_2.TabIndex = 0;
             this.lblSection51_2.Text = "...";
             this.lblSection51_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection51_2.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection51_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection38_2
             // 
@@ -2217,7 +2224,7 @@ namespace CTRails
             this.pnlSection38_2.Name = "pnlSection38_2";
             this.pnlSection38_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection38_2.TabIndex = 1;
-            this.pnlSection38_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection38_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection38_2
             // 
@@ -2227,7 +2234,7 @@ namespace CTRails
             this.lblSection38_2.TabIndex = 0;
             this.lblSection38_2.Text = "...";
             this.lblSection38_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection38_2.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection38_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection42_2
             // 
@@ -2246,7 +2253,7 @@ namespace CTRails
             this.lblSection42_2.TabIndex = 0;
             this.lblSection42_2.Text = "...";
             this.lblSection42_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection42_2.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection42_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection37_2
             // 
@@ -2256,7 +2263,7 @@ namespace CTRails
             this.pnlSection37_2.Name = "pnlSection37_2";
             this.pnlSection37_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection37_2.TabIndex = 1;
-            this.pnlSection37_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection37_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection37_2
             // 
@@ -2266,7 +2273,7 @@ namespace CTRails
             this.lblSection37_2.TabIndex = 0;
             this.lblSection37_2.Text = "...";
             this.lblSection37_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection37_2.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection37_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection44_2
             // 
@@ -2285,7 +2292,7 @@ namespace CTRails
             this.lblSection44_2.TabIndex = 0;
             this.lblSection44_2.Text = "...";
             this.lblSection44_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection44_2.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection44_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection43_2
             // 
@@ -2304,7 +2311,7 @@ namespace CTRails
             this.lblSection43_2.TabIndex = 0;
             this.lblSection43_2.Text = "...";
             this.lblSection43_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection43_2.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection43_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection36_2
             // 
@@ -2314,7 +2321,7 @@ namespace CTRails
             this.pnlSection36_2.Name = "pnlSection36_2";
             this.pnlSection36_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection36_2.TabIndex = 1;
-            this.pnlSection36_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection36_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection36_2
             // 
@@ -2324,7 +2331,7 @@ namespace CTRails
             this.lblSection36_2.TabIndex = 0;
             this.lblSection36_2.Text = "...";
             this.lblSection36_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection36_2.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection36_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection35_2
             // 
@@ -2334,7 +2341,7 @@ namespace CTRails
             this.pnlSection35_2.Name = "pnlSection35_2";
             this.pnlSection35_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection35_2.TabIndex = 1;
-            this.pnlSection35_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection35_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection35_2
             // 
@@ -2344,7 +2351,7 @@ namespace CTRails
             this.lblSection35_2.TabIndex = 0;
             this.lblSection35_2.Text = "...";
             this.lblSection35_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection35_2.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection35_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection34_2
             // 
@@ -2354,7 +2361,7 @@ namespace CTRails
             this.pnlSection34_2.Name = "pnlSection34_2";
             this.pnlSection34_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection34_2.TabIndex = 1;
-            this.pnlSection34_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection34_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection34_2
             // 
@@ -2364,7 +2371,7 @@ namespace CTRails
             this.lblSection34_2.TabIndex = 0;
             this.lblSection34_2.Text = "...";
             this.lblSection34_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection34_2.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection34_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection33_2
             // 
@@ -2374,7 +2381,7 @@ namespace CTRails
             this.pnlSection33_2.Name = "pnlSection33_2";
             this.pnlSection33_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection33_2.TabIndex = 1;
-            this.pnlSection33_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection33_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection33_2
             // 
@@ -2384,7 +2391,7 @@ namespace CTRails
             this.lblSection33_2.TabIndex = 0;
             this.lblSection33_2.Text = "...";
             this.lblSection33_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection33_2.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection33_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection32_2
             // 
@@ -2394,7 +2401,7 @@ namespace CTRails
             this.pnlSection32_2.Name = "pnlSection32_2";
             this.pnlSection32_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection32_2.TabIndex = 1;
-            this.pnlSection32_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection32_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection32_2
             // 
@@ -2404,7 +2411,7 @@ namespace CTRails
             this.lblSection32_2.TabIndex = 0;
             this.lblSection32_2.Text = "...";
             this.lblSection32_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection32_2.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection32_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection31_2
             // 
@@ -2414,7 +2421,7 @@ namespace CTRails
             this.pnlSection31_2.Name = "pnlSection31_2";
             this.pnlSection31_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection31_2.TabIndex = 1;
-            this.pnlSection31_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection31_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection31_2
             // 
@@ -2424,7 +2431,7 @@ namespace CTRails
             this.lblSection31_2.TabIndex = 0;
             this.lblSection31_2.Text = "...";
             this.lblSection31_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection31_2.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection31_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection30_2
             // 
@@ -2434,7 +2441,7 @@ namespace CTRails
             this.pnlSection30_2.Name = "pnlSection30_2";
             this.pnlSection30_2.Size = new System.Drawing.Size(50, 30);
             this.pnlSection30_2.TabIndex = 1;
-            this.pnlSection30_2.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection30_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection30_2
             // 
@@ -2444,7 +2451,7 @@ namespace CTRails
             this.lblSection30_2.TabIndex = 0;
             this.lblSection30_2.Text = "...";
             this.lblSection30_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection30_2.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection30_2.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection41_1
             // 
@@ -2463,7 +2470,7 @@ namespace CTRails
             this.lblSection41_1.TabIndex = 0;
             this.lblSection41_1.Text = "...";
             this.lblSection41_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection41_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection41_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection64_1
             // 
@@ -2473,7 +2480,7 @@ namespace CTRails
             this.pnlSection64_1.Name = "pnlSection64_1";
             this.pnlSection64_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection64_1.TabIndex = 1;
-            this.pnlSection64_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection64_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection64_1
             // 
@@ -2483,7 +2490,7 @@ namespace CTRails
             this.lblSection64_1.TabIndex = 0;
             this.lblSection64_1.Text = "...";
             this.lblSection64_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection64_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection64_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection63_1
             // 
@@ -2493,7 +2500,7 @@ namespace CTRails
             this.pnlSection63_1.Name = "pnlSection63_1";
             this.pnlSection63_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection63_1.TabIndex = 1;
-            this.pnlSection63_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection63_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection63_1
             // 
@@ -2503,7 +2510,7 @@ namespace CTRails
             this.lblSection63_1.TabIndex = 0;
             this.lblSection63_1.Text = "...";
             this.lblSection63_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection63_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection63_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection62_1
             // 
@@ -2513,7 +2520,7 @@ namespace CTRails
             this.pnlSection62_1.Name = "pnlSection62_1";
             this.pnlSection62_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection62_1.TabIndex = 1;
-            this.pnlSection62_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection62_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection62_1
             // 
@@ -2523,7 +2530,7 @@ namespace CTRails
             this.lblSection62_1.TabIndex = 0;
             this.lblSection62_1.Text = "...";
             this.lblSection62_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection62_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection62_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection61_1
             // 
@@ -2533,7 +2540,7 @@ namespace CTRails
             this.pnlSection61_1.Name = "pnlSection61_1";
             this.pnlSection61_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection61_1.TabIndex = 1;
-            this.pnlSection61_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection61_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection61_1
             // 
@@ -2543,7 +2550,7 @@ namespace CTRails
             this.lblSection61_1.TabIndex = 0;
             this.lblSection61_1.Text = "...";
             this.lblSection61_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection61_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection61_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection57_1
             // 
@@ -2553,7 +2560,7 @@ namespace CTRails
             this.pnlSection57_1.Name = "pnlSection57_1";
             this.pnlSection57_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection57_1.TabIndex = 1;
-            this.pnlSection57_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection57_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection57_1
             // 
@@ -2563,7 +2570,7 @@ namespace CTRails
             this.lblSection57_1.TabIndex = 0;
             this.lblSection57_1.Text = "...";
             this.lblSection57_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection57_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection57_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection56_1
             // 
@@ -2573,7 +2580,7 @@ namespace CTRails
             this.pnlSection56_1.Name = "pnlSection56_1";
             this.pnlSection56_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection56_1.TabIndex = 1;
-            this.pnlSection56_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection56_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection56_1
             // 
@@ -2583,7 +2590,7 @@ namespace CTRails
             this.lblSection56_1.TabIndex = 0;
             this.lblSection56_1.Text = "...";
             this.lblSection56_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection56_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection56_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection55_1
             // 
@@ -2593,7 +2600,7 @@ namespace CTRails
             this.pnlSection55_1.Name = "pnlSection55_1";
             this.pnlSection55_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection55_1.TabIndex = 1;
-            this.pnlSection55_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection55_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection55_1
             // 
@@ -2603,7 +2610,7 @@ namespace CTRails
             this.lblSection55_1.TabIndex = 0;
             this.lblSection55_1.Text = "...";
             this.lblSection55_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection55_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection55_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection54_1
             // 
@@ -2613,7 +2620,7 @@ namespace CTRails
             this.pnlSection54_1.Name = "pnlSection54_1";
             this.pnlSection54_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection54_1.TabIndex = 1;
-            this.pnlSection54_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection54_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection54_1
             // 
@@ -2623,7 +2630,7 @@ namespace CTRails
             this.lblSection54_1.TabIndex = 0;
             this.lblSection54_1.Text = "...";
             this.lblSection54_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection54_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection54_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection53_1
             // 
@@ -2633,7 +2640,7 @@ namespace CTRails
             this.pnlSection53_1.Name = "pnlSection53_1";
             this.pnlSection53_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection53_1.TabIndex = 1;
-            this.pnlSection53_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection53_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection53_1
             // 
@@ -2643,7 +2650,7 @@ namespace CTRails
             this.lblSection53_1.TabIndex = 0;
             this.lblSection53_1.Text = "...";
             this.lblSection53_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection53_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection53_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection52_1
             // 
@@ -2653,7 +2660,7 @@ namespace CTRails
             this.pnlSection52_1.Name = "pnlSection52_1";
             this.pnlSection52_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection52_1.TabIndex = 1;
-            this.pnlSection52_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection52_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection52_1
             // 
@@ -2663,7 +2670,7 @@ namespace CTRails
             this.lblSection52_1.TabIndex = 0;
             this.lblSection52_1.Text = "...";
             this.lblSection52_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection52_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection52_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection51_1
             // 
@@ -2673,7 +2680,7 @@ namespace CTRails
             this.pnlSection51_1.Name = "pnlSection51_1";
             this.pnlSection51_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection51_1.TabIndex = 1;
-            this.pnlSection51_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection51_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection51_1
             // 
@@ -2683,7 +2690,7 @@ namespace CTRails
             this.lblSection51_1.TabIndex = 0;
             this.lblSection51_1.Text = "...";
             this.lblSection51_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection51_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection51_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection38_1
             // 
@@ -2693,7 +2700,7 @@ namespace CTRails
             this.pnlSection38_1.Name = "pnlSection38_1";
             this.pnlSection38_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection38_1.TabIndex = 1;
-            this.pnlSection38_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection38_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection38_1
             // 
@@ -2703,7 +2710,7 @@ namespace CTRails
             this.lblSection38_1.TabIndex = 0;
             this.lblSection38_1.Text = "...";
             this.lblSection38_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection38_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection38_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection42_1
             // 
@@ -2722,7 +2729,7 @@ namespace CTRails
             this.lblSection42_1.TabIndex = 0;
             this.lblSection42_1.Text = "...";
             this.lblSection42_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection42_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection42_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection37_1
             // 
@@ -2732,7 +2739,7 @@ namespace CTRails
             this.pnlSection37_1.Name = "pnlSection37_1";
             this.pnlSection37_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection37_1.TabIndex = 1;
-            this.pnlSection37_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection37_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection37_1
             // 
@@ -2742,7 +2749,7 @@ namespace CTRails
             this.lblSection37_1.TabIndex = 0;
             this.lblSection37_1.Text = "...";
             this.lblSection37_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection37_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection37_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection15_1
             // 
@@ -2761,7 +2768,7 @@ namespace CTRails
             this.lblSection15_1.TabIndex = 0;
             this.lblSection15_1.Text = "...";
             this.lblSection15_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection15_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection15_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection14_1
             // 
@@ -2780,7 +2787,7 @@ namespace CTRails
             this.lblSection14_1.TabIndex = 0;
             this.lblSection14_1.Text = "...";
             this.lblSection14_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection14_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection14_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection13_1
             // 
@@ -2799,7 +2806,7 @@ namespace CTRails
             this.lblSection13_1.TabIndex = 0;
             this.lblSection13_1.Text = "...";
             this.lblSection13_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection13_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection13_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection21_1
             // 
@@ -2818,7 +2825,7 @@ namespace CTRails
             this.lblSection21_1.TabIndex = 0;
             this.lblSection21_1.Text = "...";
             this.lblSection21_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection21_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection21_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection20_1
             // 
@@ -2837,7 +2844,7 @@ namespace CTRails
             this.lblSection20_1.TabIndex = 0;
             this.lblSection20_1.Text = "...";
             this.lblSection20_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection20_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection20_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection19_1
             // 
@@ -2856,7 +2863,7 @@ namespace CTRails
             this.lblSection19_1.TabIndex = 0;
             this.lblSection19_1.Text = "...";
             this.lblSection19_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection19_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection19_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection18_1
             // 
@@ -2875,7 +2882,7 @@ namespace CTRails
             this.lblSection18_1.TabIndex = 0;
             this.lblSection18_1.Text = "...";
             this.lblSection18_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection18_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection18_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection17_1
             // 
@@ -2894,7 +2901,7 @@ namespace CTRails
             this.lblSection17_1.TabIndex = 0;
             this.lblSection17_1.Text = "...";
             this.lblSection17_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection17_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection17_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection16_1
             // 
@@ -2913,7 +2920,7 @@ namespace CTRails
             this.lblSection16_1.TabIndex = 0;
             this.lblSection16_1.Text = "...";
             this.lblSection16_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection16_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection16_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection12_1
             // 
@@ -2932,7 +2939,7 @@ namespace CTRails
             this.lblSection12_1.TabIndex = 0;
             this.lblSection12_1.Text = "...";
             this.lblSection12_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection12_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection12_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection44_1
             // 
@@ -2951,7 +2958,7 @@ namespace CTRails
             this.lblSection44_1.TabIndex = 0;
             this.lblSection44_1.Text = "...";
             this.lblSection44_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection44_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection44_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection43_1
             // 
@@ -2970,7 +2977,7 @@ namespace CTRails
             this.lblSection43_1.TabIndex = 0;
             this.lblSection43_1.Text = "...";
             this.lblSection43_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection43_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection43_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection36_1
             // 
@@ -2980,7 +2987,7 @@ namespace CTRails
             this.pnlSection36_1.Name = "pnlSection36_1";
             this.pnlSection36_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection36_1.TabIndex = 1;
-            this.pnlSection36_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection36_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection36_1
             // 
@@ -2990,7 +2997,7 @@ namespace CTRails
             this.lblSection36_1.TabIndex = 0;
             this.lblSection36_1.Text = "...";
             this.lblSection36_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection36_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection36_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection35_1
             // 
@@ -3000,7 +3007,7 @@ namespace CTRails
             this.pnlSection35_1.Name = "pnlSection35_1";
             this.pnlSection35_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection35_1.TabIndex = 1;
-            this.pnlSection35_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection35_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection35_1
             // 
@@ -3010,7 +3017,7 @@ namespace CTRails
             this.lblSection35_1.TabIndex = 0;
             this.lblSection35_1.Text = "...";
             this.lblSection35_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection35_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection35_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection34_1
             // 
@@ -3020,7 +3027,7 @@ namespace CTRails
             this.pnlSection34_1.Name = "pnlSection34_1";
             this.pnlSection34_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection34_1.TabIndex = 1;
-            this.pnlSection34_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection34_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection34_1
             // 
@@ -3030,7 +3037,7 @@ namespace CTRails
             this.lblSection34_1.TabIndex = 0;
             this.lblSection34_1.Text = "...";
             this.lblSection34_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection34_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection34_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection33_1
             // 
@@ -3040,7 +3047,7 @@ namespace CTRails
             this.pnlSection33_1.Name = "pnlSection33_1";
             this.pnlSection33_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection33_1.TabIndex = 1;
-            this.pnlSection33_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection33_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection33_1
             // 
@@ -3050,7 +3057,7 @@ namespace CTRails
             this.lblSection33_1.TabIndex = 0;
             this.lblSection33_1.Text = "...";
             this.lblSection33_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection33_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection33_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection32_1
             // 
@@ -3060,7 +3067,7 @@ namespace CTRails
             this.pnlSection32_1.Name = "pnlSection32_1";
             this.pnlSection32_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection32_1.TabIndex = 1;
-            this.pnlSection32_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection32_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection32_1
             // 
@@ -3070,7 +3077,7 @@ namespace CTRails
             this.lblSection32_1.TabIndex = 0;
             this.lblSection32_1.Text = "...";
             this.lblSection32_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection32_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection32_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection31_1
             // 
@@ -3080,17 +3087,18 @@ namespace CTRails
             this.pnlSection31_1.Name = "pnlSection31_1";
             this.pnlSection31_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection31_1.TabIndex = 1;
-            this.pnlSection31_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection31_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection31_1
             // 
+            this.lblSection31_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSection31_1.Location = new System.Drawing.Point(-1, -1);
             this.lblSection31_1.Name = "lblSection31_1";
             this.lblSection31_1.Size = new System.Drawing.Size(50, 30);
             this.lblSection31_1.TabIndex = 0;
             this.lblSection31_1.Text = "...";
             this.lblSection31_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection31_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection31_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // pnlSection30_1
             // 
@@ -3100,7 +3108,7 @@ namespace CTRails
             this.pnlSection30_1.Name = "pnlSection30_1";
             this.pnlSection30_1.Size = new System.Drawing.Size(50, 30);
             this.pnlSection30_1.TabIndex = 1;
-            this.pnlSection30_1.Click += new System.EventHandler(this.SectorClick);
+            this.pnlSection30_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // lblSection30_1
             // 
@@ -3110,7 +3118,7 @@ namespace CTRails
             this.lblSection30_1.TabIndex = 0;
             this.lblSection30_1.Text = "...";
             this.lblSection30_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSection30_1.Click += new System.EventHandler(this.SectorClick);
+            this.lblSection30_1.Click += new System.EventHandler(this.sectorClick);
             // 
             // panel114
             // 
@@ -3892,6 +3900,83 @@ namespace CTRails
             this.columnHeader6.Text = "Tijd";
             this.columnHeader6.Width = 128;
             // 
+            // tpSchedule
+            // 
+            this.tpSchedule.Controls.Add(this.btnBekijkRoosters);
+            this.tpSchedule.Controls.Add(this.label1);
+            this.tpSchedule.Controls.Add(this.btnEditScedule);
+            this.tpSchedule.Controls.Add(this.lvPersoonlijkRooster);
+            this.tpSchedule.Location = new System.Drawing.Point(4, 22);
+            this.tpSchedule.Name = "tpSchedule";
+            this.tpSchedule.Padding = new System.Windows.Forms.Padding(3);
+            this.tpSchedule.Size = new System.Drawing.Size(1168, 505);
+            this.tpSchedule.TabIndex = 1;
+            this.tpSchedule.Text = "Rooster";
+            this.tpSchedule.UseVisualStyleBackColor = true;
+            // 
+            // btnBekijkRoosters
+            // 
+            this.btnBekijkRoosters.Depth = 0;
+            this.btnBekijkRoosters.Location = new System.Drawing.Point(884, 97);
+            this.btnBekijkRoosters.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnBekijkRoosters.Name = "btnBekijkRoosters";
+            this.btnBekijkRoosters.Primary = true;
+            this.btnBekijkRoosters.Size = new System.Drawing.Size(276, 46);
+            this.btnBekijkRoosters.TabIndex = 4;
+            this.btnBekijkRoosters.Text = "Bekijk alle roosters";
+            this.btnBekijkRoosters.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.label1.Location = new System.Drawing.Point(8, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(313, 39);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Persoonlijk Rooster";
+            // 
+            // btnEditScedule
+            // 
+            this.btnEditScedule.Depth = 0;
+            this.btnEditScedule.Location = new System.Drawing.Point(884, 45);
+            this.btnEditScedule.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnEditScedule.Name = "btnEditScedule";
+            this.btnEditScedule.Primary = true;
+            this.btnEditScedule.Size = new System.Drawing.Size(278, 46);
+            this.btnEditScedule.TabIndex = 1;
+            this.btnEditScedule.Text = "Wijzig rooster(s)";
+            this.btnEditScedule.UseVisualStyleBackColor = true;
+            // 
+            // lvPersoonlijkRooster
+            // 
+            this.lvPersoonlijkRooster.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3});
+            this.lvPersoonlijkRooster.GridLines = true;
+            this.lvPersoonlijkRooster.Location = new System.Drawing.Point(8, 45);
+            this.lvPersoonlijkRooster.Name = "lvPersoonlijkRooster";
+            this.lvPersoonlijkRooster.Size = new System.Drawing.Size(866, 427);
+            this.lvPersoonlijkRooster.TabIndex = 0;
+            this.lvPersoonlijkRooster.UseCompatibleStateImageBehavior = false;
+            this.lvPersoonlijkRooster.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Taak";
+            this.columnHeader1.Width = 472;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Datum";
+            this.columnHeader2.Width = 154;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Tijd";
+            this.columnHeader3.Width = 128;
+            // 
             // tpRoosterEdit
             // 
             this.tpRoosterEdit.Controls.Add(this.editScheduleTabPage1);
@@ -3902,6 +3987,13 @@ namespace CTRails
             this.tpRoosterEdit.TabIndex = 2;
             this.tpRoosterEdit.Text = "Roosters Aanpassen";
             this.tpRoosterEdit.UseVisualStyleBackColor = true;
+            // 
+            // editScheduleTabPage1
+            // 
+            this.editScheduleTabPage1.Location = new System.Drawing.Point(6, 6);
+            this.editScheduleTabPage1.Name = "editScheduleTabPage1";
+            this.editScheduleTabPage1.Size = new System.Drawing.Size(1163, 493);
+            this.editScheduleTabPage1.TabIndex = 0;
             // 
             // tpGebruikers
             // 
@@ -4232,97 +4324,6 @@ namespace CTRails
             this.label9.TabIndex = 14;
             this.label9.Text = "Gebruikers";
             // 
-            // loginWindow
-            // 
-            this.loginWindow.Location = new System.Drawing.Point(80, 67);
-            this.loginWindow.Name = "loginWindow";
-            this.loginWindow.Size = new System.Drawing.Size(989, 432);
-            this.loginWindow.TabIndex = 3;
-            // 
-            // tpSchedule
-            // 
-            this.tpSchedule.Controls.Add(this.btnBekijkRoosters);
-            this.tpSchedule.Controls.Add(this.label1);
-            this.tpSchedule.Controls.Add(this.btnEditScedule);
-            this.tpSchedule.Controls.Add(this.lvPersoonlijkRooster);
-            this.tpSchedule.Location = new System.Drawing.Point(4, 22);
-            this.tpSchedule.Name = "tpSchedule";
-            this.tpSchedule.Padding = new System.Windows.Forms.Padding(3);
-            this.tpSchedule.Size = new System.Drawing.Size(1168, 505);
-            this.tpSchedule.TabIndex = 1;
-            this.tpSchedule.Text = "Rooster";
-            this.tpSchedule.UseVisualStyleBackColor = true;
-            // 
-            // btnBekijkRoosters
-            // 
-            this.btnBekijkRoosters.Depth = 0;
-            this.btnBekijkRoosters.Location = new System.Drawing.Point(884, 97);
-            this.btnBekijkRoosters.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnBekijkRoosters.Name = "btnBekijkRoosters";
-            this.btnBekijkRoosters.Primary = true;
-            this.btnBekijkRoosters.Size = new System.Drawing.Size(276, 46);
-            this.btnBekijkRoosters.TabIndex = 4;
-            this.btnBekijkRoosters.Text = "Bekijk alle roosters";
-            this.btnBekijkRoosters.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.label1.Location = new System.Drawing.Point(8, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(313, 39);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Persoonlijk Rooster";
-            // 
-            // btnEditScedule
-            // 
-            this.btnEditScedule.Depth = 0;
-            this.btnEditScedule.Location = new System.Drawing.Point(884, 45);
-            this.btnEditScedule.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnEditScedule.Name = "btnEditScedule";
-            this.btnEditScedule.Primary = true;
-            this.btnEditScedule.Size = new System.Drawing.Size(278, 46);
-            this.btnEditScedule.TabIndex = 1;
-            this.btnEditScedule.Text = "Wijzig rooster(s)";
-            this.btnEditScedule.UseVisualStyleBackColor = true;
-            // 
-            // lvPersoonlijkRooster
-            // 
-            this.lvPersoonlijkRooster.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3});
-            this.lvPersoonlijkRooster.GridLines = true;
-            this.lvPersoonlijkRooster.Location = new System.Drawing.Point(8, 45);
-            this.lvPersoonlijkRooster.Name = "lvPersoonlijkRooster";
-            this.lvPersoonlijkRooster.Size = new System.Drawing.Size(866, 427);
-            this.lvPersoonlijkRooster.TabIndex = 0;
-            this.lvPersoonlijkRooster.UseCompatibleStateImageBehavior = false;
-            this.lvPersoonlijkRooster.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Taak";
-            this.columnHeader1.Width = 472;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Datum";
-            this.columnHeader2.Width = 154;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Tijd";
-            this.columnHeader3.Width = 128;
-            // 
-            // editScheduleTabPage1
-            // 
-            this.editScheduleTabPage1.Location = new System.Drawing.Point(6, 6);
-            this.editScheduleTabPage1.Name = "editScheduleTabPage1";
-            this.editScheduleTabPage1.Size = new System.Drawing.Size(1163, 493);
-            this.editScheduleTabPage1.TabIndex = 0;
-            // 
             // Rails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4459,11 +4460,11 @@ namespace CTRails
             this.pnlSection30_1.ResumeLayout(false);
             this.tpTrams.ResumeLayout(false);
             this.tpTrams.PerformLayout();
+            this.tpSchedule.ResumeLayout(false);
+            this.tpSchedule.PerformLayout();
             this.tpRoosterEdit.ResumeLayout(false);
             this.tpGebruikers.ResumeLayout(false);
             this.tpGebruikers.PerformLayout();
-            this.tpSchedule.ResumeLayout(false);
-            this.tpSchedule.PerformLayout();
             this.ResumeLayout(false);
 
         }

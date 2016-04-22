@@ -61,6 +61,12 @@
     <Compile Include="Controls\EditScheduleWindow.Designer.cs">
       <DependentUpon>EditScheduleWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\RemiseWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\RemiseWindow.Designer.cs">
+      <DependentUpon>RemiseWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="DAL\Contexts\RouteTestContext.cs" />
     <Compile Include="DAL\Contexts\TrackTestContext.cs" />
     <Compile Include="DAL\Contexts\AttachedTrackTestContext.cs" />
@@ -121,20 +127,20 @@
     </Compile>
     <Compile Include="Events\SessionEventArgs.cs" />
     <Compile Include="Session.cs" />
-    <Compile Include="TramPlaatsenForm.cs">
+    <Compile Include="Forms\PlaceTramForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TramPlaatsenForm.Designer.cs">
-      <DependentUpon>TramPlaatsenForm.cs</DependentUpon>
+    <Compile Include="Forms\PlaceTramForm.Designer.cs">
+      <DependentUpon>PlaceTramForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Reservation.cs" />
     <Compile Include="Address.cs" />
     <Compile Include="Entities\Employees\Administrator.cs" />
     <Compile Include="Database.cs" />
-    <Compile Include="Rails.cs">
+    <Compile Include="Forms\Rails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Rails.Designer.cs">
+    <Compile Include="Forms\Rails.Designer.cs">
       <DependentUpon>Rails.cs</DependentUpon>
     </Compile>
     <Compile Include="Entities\Employees\LeadJanitor.cs" />
@@ -154,17 +160,20 @@
     <EmbeddedResource Include="Controls\EditScheduleWindow.resx">
       <DependentUpon>EditScheduleWindow.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\RemiseWindow.resx">
+      <DependentUpon>RemiseWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\ScheduleWindow.resx">
       <DependentUpon>ScheduleWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Rails.resx">
+    <EmbeddedResource Include="Forms\Rails.resx">
       <DependentUpon>Rails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\LoginWindow.resx">
       <DependentUpon>LoginWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TramPlaatsenForm.resx">
-      <DependentUpon>TramPlaatsenForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\PlaceTramForm.resx">
+      <DependentUpon>PlaceTramForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -193,9 +202,7 @@
   <ItemGroup>
     <None Include="Resources\Plattegrond-clear.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Forms\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

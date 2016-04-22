@@ -54,7 +54,7 @@ namespace CTRails.Controls
         {
             if (Login(tbUsername.Text, tbPassword.Text))
             {
-                this.Text = "Welkom " + Session.User.FirstName;
+                
                 return;
             }
 
