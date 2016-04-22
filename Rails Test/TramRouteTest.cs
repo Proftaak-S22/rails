@@ -21,7 +21,7 @@ namespace Rails_Test
         [TestMethod]
         public void InsertTramRoute()
         { 
-            TramRoute tramRoute =new TramRoute(1, unitOfWork.Trams.Where(x => x.Code == 2001).First(), unitOfWork.Routes.Where(x => x.ID == 1).First());
+            TramRoute tramRoute =new TramRoute(1, unitOfWork.Trams.Where(x => x.Code == 1023).First(), unitOfWork.Routes.Where(x => x.ID == 1).First());
             unitOfWork.TramRoutes.Add(tramRoute);
             Assert.AreEqual(tramRoute, unitOfWork.TramRoutes.Where(x => x.ID == 1).First());
         }
