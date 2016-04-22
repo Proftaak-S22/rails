@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CTRails.DAL;
 using CTRails.Forms;
 
 
@@ -30,6 +31,13 @@ namespace CTRails.Controls
             CleanColor = Color.Blue;
             DefaultColor = Color.Black;
 
+            foreach (Control c in Controls)
+            {
+                if (c.GetType() == typeof (Label))
+                    c.Click += OnSectorClick;
+            }
+
+
         }
 
         private void OnSectorClick(object sender, EventArgs e)
@@ -40,11 +48,26 @@ namespace CTRails.Controls
 
             if (placeTramForm.ShowDialog() == DialogResult.OK)
             {
+                int code = placeTramForm.TramCode;
+
+                UnitOfWork work = new UnitOfWork(true);
+
+                Tram tram = work.Trams.Get().FirstOrDefault(x => x.Code == code);
+
+                // Does the entered tram actually exist?
+                if (tram == null)
+                {
+                    MessageBox.Show("Tram bestaat niet.");
+                    return;
+                }
+
+
+
                 clickedLabel.ForeColor = placeTramForm.Clean ? CleanColor : DefaultColor;
 
                 clickedLabel.Font = placeTramForm.Maintenaince ? MaintenanceFont : DefaultFont;
 
-                clickedLabel.Text = placeTramForm.TramNummer.ToString();
+                clickedLabel.Text = placeTramForm.TramCode.ToString();
             }
         }
 

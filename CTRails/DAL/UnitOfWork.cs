@@ -33,6 +33,8 @@ namespace CTRails.DAL
                 Routes = new RouteRepository(new RouteTestContext());
                 TramRoutes = new TramRouteRepository(new TramRouteTestContext());
                 TrackRoutes = new TrackRouteRepository(new TrackRouteTestContext());
+                TramStatuses = new TramStatusRepository(new TramStatusTestContext());
+                
             }
         }
 
@@ -63,6 +65,8 @@ namespace CTRails.DAL
         public TrackRouteRepository TrackRoutes { get; private set; }
         public TramRepository Trams { get; private set; }
         public TramRouteRepository TramRoutes { get; private set; }
+
+        public TramStatusRepository TramStatuses { get; private set; }
 
 
 

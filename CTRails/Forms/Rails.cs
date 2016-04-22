@@ -64,20 +64,6 @@ namespace CTRails.Forms
             
         }
 
-        private void pbPlattegrond_Click(object sender, EventArgs e)
-        {
-            if (pbPlattegrond.Dock == DockStyle.None)
-            {
-                pbPlattegrond.Dock = DockStyle.Fill;
-                lblVergroot.Visible = false;
-            }
-            else
-            {
-                pbPlattegrond.Dock = DockStyle.None;
-                lblVergroot.Visible = true;
-            }
-        }
-
         private void sectorClick(object sender, EventArgs e)
         {
             PlaceTramForm popAddPlaceTram = new PlaceTramForm();

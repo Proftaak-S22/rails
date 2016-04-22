@@ -27,7 +27,7 @@ namespace CTRails.Forms
         }
 
 
-        public int TramNummer
+        public int TramCode
         {
             get { return Convert.ToInt32(txtTramNummer.Text); }
         }

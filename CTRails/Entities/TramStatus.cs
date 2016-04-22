@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CTRails.Entities
 {
-    class TramStatus : Entity
+    public class TramStatus : Entity
     {
         //Fields
         public Tram Tram { get; set; }
@@ -15,7 +15,8 @@ namespace CTRails.Entities
 
 
         //Constructor
-        public TramStatus(int id, Tram tram, Status status) : base(id)
+        public TramStatus(Tram tram, Status status) 
+            : base()
         {
             Tram = tram;
             Status = status;
