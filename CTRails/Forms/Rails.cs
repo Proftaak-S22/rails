@@ -111,5 +111,10 @@ namespace CTRails.Forms
         {
 
         }
+
+        private void usersWindow1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

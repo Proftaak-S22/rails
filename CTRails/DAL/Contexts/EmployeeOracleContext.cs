@@ -61,23 +61,25 @@ namespace CTRails.DAL.Contexts
         {
             OpenConnection();
 
-            string values = "USERNAME = '" + entity.Username + "', ";
-            values += "SEX = '" + entity.Gender + "', ";
-            values += "PASSWORDHASH = '" + entity.Password + "', ";
-            values += "FIRSTNAME = '" + entity.FirstName + "', ";
-            values += "LASTNAME = '" + entity.LastName + "', ";
-            values += "PREFIX = " + ((entity.Prefix == string.Empty) ? "NULL, " : "'" + entity.Prefix + "', ");
-            values += "EMAIL = '" + entity.Email + "', ";
-            values += "BIRTHDATE = TO_DATE('" + ToOracleDate(entity.DateOfBirth) + "', 'DD-MON-YY'), ";
-            values += "NATIONALITY = '" + entity.Nationality + "', ";
-            values += "POSTALCODE = '" + entity.Address.Zipcode + "', ";
-            values += "CITY = '" + entity.Address.City + "', ";
-            values += "HOUSENUMBER = " + entity.Address.Number + ", ";
-            values += "ADDITION = '" + entity.Address.Addition + "'";
+            string query = @"UPDATE TRM_EMPLOYEE SET ACCOUNTTYPE_ID = :accounttype_id, USERNAME = :username, SEX = :sex, PASSWORDHASH = :passwordhash, FIRSTNAME = :firstname, LASTNAME = :lastname, PREFIX = :prefix, EMAIL = :email, BIRTHDATE = :birthdate, NATIONALITY = :nationality, POSTALCODE = :zipcode, CITY = :city, HOUSENUMBER = :house_number, ADDITION = :addition WHERE ID = :id";
 
-            OracleCommand cmd = new OracleCommand("UPDATE TRM_EMPLOYEE SET ACCOUNTTYPE_ID = 1, " + values + " WHERE ID = " + entity.ID, Connection);
-
-            cmd.ExecuteNonQuery();
+            ExecuteQuery(query, new [] {
+                 new OracleParameter("accounttype_id",entity.AccountTypeID),
+                 new OracleParameter("username",entity.Username),
+                 new OracleParameter("sex",entity.Gender.ToString()),
+                 new OracleParameter("passwordhash",entity.Password),
+                 new OracleParameter("firstname",entity.FirstName),
+                 new OracleParameter("lastname",entity.LastName),
+                 new OracleParameter("prefix",entity.Prefix),
+                 new OracleParameter("email",entity.Email),
+                 new OracleParameter("birthdate",ToOracleDate(entity.DateOfBirth)),
+                 new OracleParameter("nationality",entity.Nationality),
+                 new OracleParameter("zipcode",entity.Address.Zipcode),
+                 new OracleParameter("city",entity.Address.City),
+                 new OracleParameter("house_number",entity.Address.Number),
+                 new OracleParameter("addition",entity.Address.Addition),
+                 new OracleParameter("id",entity.ID)
+            });
 
             CloseConnection();
         }
