@@ -58,18 +58,42 @@ namespace CTRails.Controls
             
             Employee selection = worker.Employees.Get().First(x => x.Email == e.Item.SubItems[4].Text);
 
-            tbUsername.Text = selection.Username;
-            tbPassword.Text = selection.Password;
-            tbEmail.Text = selection.Email;
-            tbFirstname.Text = selection.FirstName;
-            tbPrefix.Text = selection.Prefix;
-            tbLastName.Text = selection.LastName;
-            tbCountry.Text = selection.Address.Country;
-            tbZipcode.Text = selection.Address.Zipcode;
-            tbHouseNumber.Text = selection.Address.Number.ToString();
-            dtpDateOfBirth.Value = selection.DateOfBirth;
-            cbGender.SelectedIndex = cbGender.Items.IndexOf(selection.Gender.ToString());
-            tbCountry.Text = selection.Address.Country;
+            SetTextboxValues(selection.Username, selection.Password, selection.Email, selection.FirstName, selection.Prefix, selection.LastName, selection.Address.Country, selection.Address.Zipcode, selection.Address.Number, selection.DateOfBirth, selection.Gender, selection.Address.City);
         }
+
+
+
+        private void SetTextboxValues(string username, string password, string email, string firstname, string prefix, string lastname, string country, string zipcode, int number, DateTime date, Gender gender, string city)
+        {
+            tbUsername.Text = username;
+            tbPassword.Text = password;
+            tbEmail.Text = email;
+            tbFirstname.Text = firstname;
+            tbPrefix.Text = prefix;
+            tbLastName.Text = lastname;
+            tbCountry.Text = country;
+            tbZipcode.Text = zipcode;
+            tbHouseNumber.Text = number.ToString();
+            dtpDateOfBirth.Value = date;
+            cbGender.SelectedIndex = cbGender.Items.IndexOf(gender.ToString());
+            tbCity.Text = city;
+        }
+
+        private void OnDeleteUserClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OnAddUserClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OnUpdateUserClick(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

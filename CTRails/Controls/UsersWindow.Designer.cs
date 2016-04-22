@@ -49,9 +49,9 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialRaisedButton34 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton35 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton36 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnDeleteUser = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnUpdateUser = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnAddUser = new MaterialSkin.Controls.MaterialRaisedButton();
             this.label9 = new System.Windows.Forms.Label();
             this.tbLastName = new System.Windows.Forms.TextBox();
             this.tbPrefix = new System.Windows.Forms.TextBox();
@@ -247,41 +247,44 @@
             this.materialLabel5.TabIndex = 31;
             this.materialLabel5.Text = "Nieuwe gegevens/gebruiker";
             // 
-            // materialRaisedButton34
+            // btnDeleteUser
             // 
-            this.materialRaisedButton34.Depth = 0;
-            this.materialRaisedButton34.Location = new System.Drawing.Point(879, 432);
-            this.materialRaisedButton34.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton34.Name = "materialRaisedButton34";
-            this.materialRaisedButton34.Primary = true;
-            this.materialRaisedButton34.Size = new System.Drawing.Size(276, 46);
-            this.materialRaisedButton34.TabIndex = 29;
-            this.materialRaisedButton34.Text = "Geselecteerd gebruiker verwijderen";
-            this.materialRaisedButton34.UseVisualStyleBackColor = true;
+            this.btnDeleteUser.Depth = 0;
+            this.btnDeleteUser.Location = new System.Drawing.Point(879, 432);
+            this.btnDeleteUser.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnDeleteUser.Name = "btnDeleteUser";
+            this.btnDeleteUser.Primary = true;
+            this.btnDeleteUser.Size = new System.Drawing.Size(276, 46);
+            this.btnDeleteUser.TabIndex = 29;
+            this.btnDeleteUser.Text = "Geselecteerd gebruiker verwijderen";
+            this.btnDeleteUser.UseVisualStyleBackColor = true;
+            this.btnDeleteUser.Click += new System.EventHandler(this.OnDeleteUserClick);
             // 
-            // materialRaisedButton35
+            // btnUpdateUser
             // 
-            this.materialRaisedButton35.Depth = 0;
-            this.materialRaisedButton35.Location = new System.Drawing.Point(879, 380);
-            this.materialRaisedButton35.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton35.Name = "materialRaisedButton35";
-            this.materialRaisedButton35.Primary = true;
-            this.materialRaisedButton35.Size = new System.Drawing.Size(276, 46);
-            this.materialRaisedButton35.TabIndex = 30;
-            this.materialRaisedButton35.Text = "Geselecteerd gebruiker wijzigen";
-            this.materialRaisedButton35.UseVisualStyleBackColor = true;
+            this.btnUpdateUser.Depth = 0;
+            this.btnUpdateUser.Location = new System.Drawing.Point(879, 380);
+            this.btnUpdateUser.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnUpdateUser.Name = "btnUpdateUser";
+            this.btnUpdateUser.Primary = true;
+            this.btnUpdateUser.Size = new System.Drawing.Size(276, 46);
+            this.btnUpdateUser.TabIndex = 30;
+            this.btnUpdateUser.Text = "Geselecteerd gebruiker wijzigen";
+            this.btnUpdateUser.UseVisualStyleBackColor = true;
+            this.btnUpdateUser.Click += new System.EventHandler(this.OnUpdateUserClick);
             // 
-            // materialRaisedButton36
+            // btnAddUser
             // 
-            this.materialRaisedButton36.Depth = 0;
-            this.materialRaisedButton36.Location = new System.Drawing.Point(879, 328);
-            this.materialRaisedButton36.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton36.Name = "materialRaisedButton36";
-            this.materialRaisedButton36.Primary = true;
-            this.materialRaisedButton36.Size = new System.Drawing.Size(276, 46);
-            this.materialRaisedButton36.TabIndex = 28;
-            this.materialRaisedButton36.Text = "Gebruiker toevoegen";
-            this.materialRaisedButton36.UseVisualStyleBackColor = true;
+            this.btnAddUser.Depth = 0;
+            this.btnAddUser.Location = new System.Drawing.Point(879, 328);
+            this.btnAddUser.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnAddUser.Name = "btnAddUser";
+            this.btnAddUser.Primary = true;
+            this.btnAddUser.Size = new System.Drawing.Size(276, 46);
+            this.btnAddUser.TabIndex = 28;
+            this.btnAddUser.Text = "Gebruiker toevoegen";
+            this.btnAddUser.UseVisualStyleBackColor = true;
+            this.btnAddUser.Click += new System.EventHandler(this.OnAddUserClick);
             // 
             // label9
             // 
@@ -293,7 +296,7 @@
             this.label9.TabIndex = 27;
             this.label9.Text = "Gebruikers";
             // 
-            // tbAchternaam
+            // tbLastName
             // 
             this.tbLastName.Location = new System.Drawing.Point(1008, 173);
             this.tbLastName.Name = "tbLastName";
@@ -411,9 +414,9 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.materialLabel5);
-            this.Controls.Add(this.materialRaisedButton34);
-            this.Controls.Add(this.materialRaisedButton35);
-            this.Controls.Add(this.materialRaisedButton36);
+            this.Controls.Add(this.btnDeleteUser);
+            this.Controls.Add(this.btnUpdateUser);
+            this.Controls.Add(this.btnAddUser);
             this.Controls.Add(this.label9);
             this.Name = "UsersWindow";
             this.Size = new System.Drawing.Size(1162, 487);
@@ -444,9 +447,9 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label8;
         private MaterialSkin.Controls.MaterialLabel materialLabel5;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton34;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton35;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton36;
+        private MaterialSkin.Controls.MaterialRaisedButton btnDeleteUser;
+        private MaterialSkin.Controls.MaterialRaisedButton btnUpdateUser;
+        private MaterialSkin.Controls.MaterialRaisedButton btnAddUser;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox tbLastName;
         private System.Windows.Forms.TextBox tbPrefix;

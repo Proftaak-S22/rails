@@ -37,6 +37,7 @@
             // 
             // tbPassword
             // 
+            this.tbPassword.AcceptsReturn = true;
             this.tbPassword.Location = new System.Drawing.Point(403, 279);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.PasswordChar = '•';
