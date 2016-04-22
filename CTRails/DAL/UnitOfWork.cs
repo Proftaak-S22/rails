@@ -12,8 +12,8 @@ namespace CTRails.DAL
             if (!test)
             {
                 AccountTypes = new AccountTypeRepository(new AccountTypeOracleContext());
-                AttachedTracks = new AttachedTrackRepository(new AttachedTrackOracleContext());
                 Employees = new EmployeeRepository(new EmployeeOracleContext());
+                AttachedTracks = new AttachedTrackRepository(new AttachedTrackOracleContext());
                 Routes = new RouteRepository(new RouteOracleContext());
                 Sectors = new SectorRepository(new SectorOracleContext());
                 Statuses = new StatusRepository(new StatusOracleContext());
@@ -24,13 +24,16 @@ namespace CTRails.DAL
             }
             else
             {
+                AccountTypes = new AccountTypeRepository(new AccountTypeTestContext());
                 Employees = new EmployeeRepository(new EmployeeTestContext());
                 Tracks = new TrackRepository(new TrackTestContext());
                 Sectors = new SectorRepository(new SectorTestContext());
+                
+                
+
                 Trams = new TramRepository(new TramTestContext());
-                AccountTypes = new AccountTypeRepository(new AccountTypeTestContext());
-                AttachedTracks = new AttachedTrackRepository(new AttachedTrackTestContext());
                 Routes = new RouteRepository(new RouteTestContext());
+                AttachedTracks = new AttachedTrackRepository(new AttachedTrackTestContext());
                 TramRoutes = new TramRouteRepository(new TramRouteTestContext());
                 TrackRoutes = new TrackRouteRepository(new TrackRouteTestContext());
                 TramStatuses = new TramStatusRepository(new TramStatusTestContext());

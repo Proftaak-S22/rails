@@ -9,14 +9,15 @@ namespace CTRails.Entities
     public class AttachedTrack : Entity
     {
         //Fields
-        public Track Track { get; private set; }
-        public Track Attached { get; private set; }
+        public int TrackID { get; private set; }
+
+        public int NextTrackID { get; private set; }
 
         //Constructor
-        public AttachedTrack( int id, Track track, Track attached) : base(id)
+        public AttachedTrack(int trackID, int nextTrackID) : base()
         {
-            Track = track;
-            Attached = attached;
+            TrackID = trackID;
+            NextTrackID = nextTrackID;
         }
     }
 }

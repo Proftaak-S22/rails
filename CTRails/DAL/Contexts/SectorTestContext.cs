@@ -13,27 +13,14 @@ namespace CTRails.DAL.Contexts
     public class SectorTestContext : TestDatabaseContext<Sector>, IDataContext<Sector>
     {
 
-        private int ID => id++;
-        private int id = 0;
 
+        private int id = 0;
+        private int NextID => id++;
         public SectorTestContext()
             : base()
         {
-            Entities.Add(new Sector(1, 1));
-            Entities.Add(new Sector(2, 1));
-            Entities.Add(new Sector(3, 1));
-            Entities.Add(new Sector(4, 1));
-
-
-            Entities.Add(new Sector(5, 2));
-            Entities.Add(new Sector(6, 2));
-            Entities.Add(new Sector(7, 2));
-            Entities.Add(new Sector(8, 2));
-
-            Entities.Add(new Sector(9, 3));
-            Entities.Add(new Sector(10, 3));
-            Entities.Add(new Sector(11, 3));
-            Entities.Add(new Sector(12, 3));
+            for (int i = 0; i < 100; i++)
+                Entities.Add(new Sector(NextID, i / 4));
         }
 
         public void Add(Sector entity)
@@ -52,7 +39,7 @@ namespace CTRails.DAL.Contexts
 
         public void Update(Sector entity)
         {
-            Sector updated = Entities.First(x => x.SectionNumber == entity.SectionNumber);
+            Sector updated = Entities.First(x => x.Number == entity.Number);
             if (updated != null)
                 updated = entity;
         }

@@ -13,27 +13,15 @@ namespace CTRails.DAL.Contexts
     public class TrackTestContext : TestDatabaseContext<Track>, IDataContext<Track>
     {
 
-        private int ID => id++;
         private int id = 0;
-
+        private int NextID => id++;
         public TrackTestContext()
             : base()
         {
-            
-            Entities.Add(new Track(1));
-            Entities.Add(new Track(2));
-            Entities.Add(new Track(3));
-            Entities.Add(new Track(4));
-            Entities.Add(new Track(5));
-            Entities.Add(new Track(6));
-            Entities.Add(new Track(7));
-            Entities.Add(new Track(8));
-            Entities.Add(new Track(9));
-            Entities.Add(new Track(10));
-            Entities.Add(new Track(11));
-            Entities.Add(new Track(12));
-            Entities.Add(new Track(13));
-            Entities.Add(new Track(14));
+            for (int i = 0; i < 100; i++)
+                Entities.Add(new Track(NextID));
+
+
         }
 
         public void Add(Track entity)
