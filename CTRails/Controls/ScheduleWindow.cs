@@ -3,9 +3,9 @@
 
 namespace CTRails.Controls
 {
-    public partial class ScheduleTab : TabPage
+    public partial class ScheduleWindow : TabPage
     {
-        public ScheduleTab()
+        public ScheduleWindow()
         {
             InitializeComponent();
         }

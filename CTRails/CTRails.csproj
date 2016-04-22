@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\EditScheduleWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\EditScheduleWindow.Designer.cs">
+      <DependentUpon>EditScheduleWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="DAL\Contexts\RouteTestContext.cs" />
     <Compile Include="DAL\Contexts\TrackTestContext.cs" />
     <Compile Include="DAL\Contexts\AttachedTrackTestContext.cs" />
@@ -101,18 +107,19 @@
     <Compile Include="DAL\Repositories\IRepository.cs" />
     <Compile Include="DAL\IUnitOfWork.cs" />
     <Compile Include="DAL\Contexts\OracleDatabaseContext.cs" />
-    <Compile Include="Controls\LoginTabPage.cs">
+    <Compile Include="Controls\LoginWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LoginWindow.Designer.cs">
+      <DependentUpon>LoginWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ScheduleWindow.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\LoginTabPage.Designer.cs">
-      <DependentUpon>LoginTabPage.cs</DependentUpon>
+    <Compile Include="Controls\ScheduleWindow.Designer.cs">
+      <DependentUpon>ScheduleWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\ScheduleTab.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls\ScheduleTab.Designer.cs">
-      <DependentUpon>ScheduleTab.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Events\SessionEventArgs.cs" />
     <Compile Include="Session.cs" />
     <Compile Include="TramPlaatsenForm.cs">
       <SubType>Form</SubType>
@@ -144,11 +151,17 @@
     <Compile Include="Entities\Tram.cs" />
     <Compile Include="Entities\Employees\Employee.cs" />
     <Compile Include="Entities\Employees\FleetAdministrator.cs" />
+    <EmbeddedResource Include="Controls\EditScheduleWindow.resx">
+      <DependentUpon>EditScheduleWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ScheduleWindow.resx">
+      <DependentUpon>ScheduleWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Rails.resx">
       <DependentUpon>Rails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\LoginTabPage.resx">
-      <DependentUpon>LoginTabPage.cs</DependentUpon>
+    <EmbeddedResource Include="Controls\LoginWindow.resx">
+      <DependentUpon>LoginWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TramPlaatsenForm.resx">
       <DependentUpon>TramPlaatsenForm.cs</DependentUpon>
@@ -180,7 +193,9 @@
   <ItemGroup>
     <None Include="Resources\Plattegrond-clear.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Forms\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

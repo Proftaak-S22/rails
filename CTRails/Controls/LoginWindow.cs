@@ -6,10 +6,10 @@ using CTRails.Entities.Employees;
 
 namespace CTRails.Controls
 {
-    public partial class LoginTabPage : TabPage
+    public partial class LoginWindow : UserControl
     {
 
-        public LoginTabPage()
+        public LoginWindow()
         {
             InitializeComponent();
         }
@@ -48,6 +48,19 @@ namespace CTRails.Controls
             Session.End();
 
             return true;
+        }
+
+        private void loginClick(object sender, System.EventArgs e)
+        {
+            if (Login(tbUsername.Text, tbPassword.Text))
+            {
+                this.Text = "Welkom " + Session.User.FirstName;
+                return;
+            }
+
+            tbPassword.Text = string.Empty;
+
+            MessageBox.Show("Gebruikersnaam of wachtwoord is verkeerd");
         }
     }
 }

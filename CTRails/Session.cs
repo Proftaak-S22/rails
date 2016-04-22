@@ -1,17 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CTRails.DAL;
 using CTRails.Entities.Employees;
+using CTRails.Events;
 using CTRails.Exceptions;
 
 
 namespace CTRails
 {
+
     public static class Session
     {
+        public delegate void UserLoggedInHandler(SessionEventArgs e);
+        public delegate void UserLoggedOutHandler(SessionEventArgs e);
+        public static event UserLoggedInHandler UserLoggedIn;
+        public static event UserLoggedInHandler UserLoggedOut;
 
         public static Employee User { get; internal set; }
         public static bool Started { get; internal set; }
@@ -32,6 +37,8 @@ namespace CTRails
 
             Started = true;
 
+            UserLoggedIn(new SessionEventArgs(User));
+
             return true;
         }
 
@@ -39,6 +46,7 @@ namespace CTRails
 
         public static void End()
         {
+            UserLoggedOut(new SessionEventArgs(User));
             User = null;
             Started = false;
         }

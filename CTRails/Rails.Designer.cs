@@ -32,13 +32,9 @@ namespace CTRails
         private void InitializeComponent()
         {
             this.btnLogOut = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.btnLogin = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.tcNavigation = new System.Windows.Forms.TabControl();
-            this.tpLogin = new CTRails.Controls.LoginTabPage();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.txtUsername = new System.Windows.Forms.TextBox();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.lblUsername = new MaterialSkin.Controls.MaterialLabel();
+            this.tpLogin = new System.Windows.Forms.TabPage();
             this.tpRemise = new System.Windows.Forms.TabPage();
             this.lblVergroot = new MaterialSkin.Controls.MaterialLabel();
             this.pbPlattegrond = new System.Windows.Forms.PictureBox();
@@ -345,32 +341,7 @@ namespace CTRails
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.tpSchedule = new CTRails.Controls.ScheduleTab();
-            this.btnBekijkRoosters = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnEditScedule = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.lvPersoonlijkRooster = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tpRoosterEdit = new System.Windows.Forms.TabPage();
-            this.dtpDatum = new System.Windows.Forms.DateTimePicker();
-            this.tbTijd = new System.Windows.Forms.TextBox();
-            this.tbTaak = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.cbGebruikerEdit = new System.Windows.Forms.ComboBox();
-            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
-            this.btnVerwijderTaak = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.btnWijzigTaak = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.btnNieuweTaak = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lvRoostersWijzigen = new System.Windows.Forms.ListView();
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tpGebruikers = new System.Windows.Forms.TabPage();
             this.lvGebruikers = new System.Windows.Forms.ListView();
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -407,7 +378,16 @@ namespace CTRails
             this.materialRaisedButton35 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton36 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.label9 = new System.Windows.Forms.Label();
-            this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
+            this.loginWindow = new CTRails.Controls.LoginWindow();
+            this.tpSchedule = new CTRails.Controls.ScheduleWindow();
+            this.btnBekijkRoosters = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnEditScedule = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.lvPersoonlijkRooster = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.editScheduleTabPage1 = new CTRails.Controls.EditScheduleWindow();
             this.tcNavigation.SuspendLayout();
             this.tpLogin.SuspendLayout();
             this.tpRemise.SuspendLayout();
@@ -531,9 +511,9 @@ namespace CTRails
             this.pnlSection31_1.SuspendLayout();
             this.pnlSection30_1.SuspendLayout();
             this.tpTrams.SuspendLayout();
-            this.tpSchedule.SuspendLayout();
             this.tpRoosterEdit.SuspendLayout();
             this.tpGebruikers.SuspendLayout();
+            this.tpSchedule.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLogOut
@@ -551,18 +531,16 @@ namespace CTRails
             this.btnLogOut.Visible = false;
             this.btnLogOut.Click += new System.EventHandler(this.btnLogoutClick);
             // 
-            // btnLogin
+            // materialTabSelector1
             // 
-            this.btnLogin.Depth = 0;
-            this.btnLogin.Location = new System.Drawing.Point(565, 288);
-            this.btnLogin.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Primary = true;
-            this.btnLogin.Size = new System.Drawing.Size(75, 23);
-            this.btnLogin.TabIndex = 2;
-            this.btnLogin.Text = "Log In";
-            this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.materialTabSelector1.BaseTabControl = null;
+            this.materialTabSelector1.Depth = 0;
+            this.materialTabSelector1.Location = new System.Drawing.Point(4, 636);
+            this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialTabSelector1.Name = "materialTabSelector1";
+            this.materialTabSelector1.Size = new System.Drawing.Size(1168, 45);
+            this.materialTabSelector1.TabIndex = 3;
+            this.materialTabSelector1.Text = "materialTabSelector1";
             // 
             // tcNavigation
             // 
@@ -575,64 +553,19 @@ namespace CTRails
             this.tcNavigation.Location = new System.Drawing.Point(0, 99);
             this.tcNavigation.Name = "tcNavigation";
             this.tcNavigation.SelectedIndex = 0;
-            this.tcNavigation.Size = new System.Drawing.Size(1176, 477);
+            this.tcNavigation.Size = new System.Drawing.Size(1176, 531);
             this.tcNavigation.TabIndex = 0;
             // 
             // tpLogin
             // 
-            this.tpLogin.Controls.Add(this.txtPassword);
-            this.tpLogin.Controls.Add(this.txtUsername);
-            this.tpLogin.Controls.Add(this.materialLabel2);
-            this.tpLogin.Controls.Add(this.lblUsername);
-            this.tpLogin.Controls.Add(this.btnLogin);
+            this.tpLogin.Controls.Add(this.loginWindow);
             this.tpLogin.Location = new System.Drawing.Point(4, 22);
             this.tpLogin.Name = "tpLogin";
             this.tpLogin.Padding = new System.Windows.Forms.Padding(3);
-            this.tpLogin.Size = new System.Drawing.Size(1168, 451);
+            this.tpLogin.Size = new System.Drawing.Size(1168, 505);
             this.tpLogin.TabIndex = 6;
             this.tpLogin.Text = "Login";
             this.tpLogin.UseVisualStyleBackColor = true;
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.Location = new System.Drawing.Point(511, 262);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '•';
-            this.txtPassword.Size = new System.Drawing.Size(182, 20);
-            this.txtPassword.TabIndex = 1;
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.Location = new System.Drawing.Point(511, 186);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(182, 20);
-            this.txtUsername.TabIndex = 0;
-            // 
-            // materialLabel2
-            // 
-            this.materialLabel2.AutoSize = true;
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(556, 240);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(93, 19);
-            this.materialLabel2.TabIndex = 2;
-            this.materialLabel2.Text = "Wachtwoord";
-            // 
-            // lblUsername
-            // 
-            this.lblUsername.AutoSize = true;
-            this.lblUsername.Depth = 0;
-            this.lblUsername.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lblUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblUsername.Location = new System.Drawing.Point(542, 164);
-            this.lblUsername.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(118, 19);
-            this.lblUsername.TabIndex = 1;
-            this.lblUsername.Text = "Gebruikersnaam";
             // 
             // tpRemise
             // 
@@ -817,7 +750,7 @@ namespace CTRails
             this.tpRemise.Location = new System.Drawing.Point(4, 22);
             this.tpRemise.Name = "tpRemise";
             this.tpRemise.Padding = new System.Windows.Forms.Padding(3);
-            this.tpRemise.Size = new System.Drawing.Size(1168, 451);
+            this.tpRemise.Size = new System.Drawing.Size(1168, 505);
             this.tpRemise.TabIndex = 0;
             this.tpRemise.Text = "Remise";
             this.tpRemise.UseVisualStyleBackColor = true;
@@ -3881,7 +3814,7 @@ namespace CTRails
             this.tpTrams.Location = new System.Drawing.Point(4, 22);
             this.tpTrams.Name = "tpTrams";
             this.tpTrams.Padding = new System.Windows.Forms.Padding(3);
-            this.tpTrams.Size = new System.Drawing.Size(1168, 451);
+            this.tpTrams.Size = new System.Drawing.Size(1168, 505);
             this.tpTrams.TabIndex = 3;
             this.tpTrams.Text = "Alle roosters bekijken";
             this.tpTrams.UseVisualStyleBackColor = true;
@@ -3959,264 +3892,16 @@ namespace CTRails
             this.columnHeader6.Text = "Tijd";
             this.columnHeader6.Width = 128;
             // 
-            // tpSchedule
-            // 
-            this.tpSchedule.Controls.Add(this.btnBekijkRoosters);
-            this.tpSchedule.Controls.Add(this.label1);
-            this.tpSchedule.Controls.Add(this.btnEditScedule);
-            this.tpSchedule.Controls.Add(this.lvPersoonlijkRooster);
-            this.tpSchedule.Location = new System.Drawing.Point(4, 22);
-            this.tpSchedule.Name = "tpSchedule";
-            this.tpSchedule.Padding = new System.Windows.Forms.Padding(3);
-            this.tpSchedule.Size = new System.Drawing.Size(1168, 451);
-            this.tpSchedule.TabIndex = 1;
-            this.tpSchedule.Text = "Rooster";
-            this.tpSchedule.UseVisualStyleBackColor = true;
-            // 
-            // btnBekijkRoosters
-            // 
-            this.btnBekijkRoosters.Depth = 0;
-            this.btnBekijkRoosters.Location = new System.Drawing.Point(884, 97);
-            this.btnBekijkRoosters.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnBekijkRoosters.Name = "btnBekijkRoosters";
-            this.btnBekijkRoosters.Primary = true;
-            this.btnBekijkRoosters.Size = new System.Drawing.Size(276, 46);
-            this.btnBekijkRoosters.TabIndex = 4;
-            this.btnBekijkRoosters.Text = "Bekijk alle roosters";
-            this.btnBekijkRoosters.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.label1.Location = new System.Drawing.Point(8, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(313, 39);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Persoonlijk Rooster";
-            // 
-            // btnEditScedule
-            // 
-            this.btnEditScedule.Depth = 0;
-            this.btnEditScedule.Location = new System.Drawing.Point(884, 45);
-            this.btnEditScedule.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnEditScedule.Name = "btnEditScedule";
-            this.btnEditScedule.Primary = true;
-            this.btnEditScedule.Size = new System.Drawing.Size(278, 46);
-            this.btnEditScedule.TabIndex = 1;
-            this.btnEditScedule.Text = "Wijzig rooster(s)";
-            this.btnEditScedule.UseVisualStyleBackColor = true;
-            // 
-            // lvPersoonlijkRooster
-            // 
-            this.lvPersoonlijkRooster.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3});
-            this.lvPersoonlijkRooster.GridLines = true;
-            this.lvPersoonlijkRooster.Location = new System.Drawing.Point(8, 45);
-            this.lvPersoonlijkRooster.Name = "lvPersoonlijkRooster";
-            this.lvPersoonlijkRooster.Size = new System.Drawing.Size(866, 427);
-            this.lvPersoonlijkRooster.TabIndex = 0;
-            this.lvPersoonlijkRooster.UseCompatibleStateImageBehavior = false;
-            this.lvPersoonlijkRooster.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Taak";
-            this.columnHeader1.Width = 472;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Datum";
-            this.columnHeader2.Width = 154;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Tijd";
-            this.columnHeader3.Width = 128;
-            // 
             // tpRoosterEdit
             // 
-            this.tpRoosterEdit.Controls.Add(this.dtpDatum);
-            this.tpRoosterEdit.Controls.Add(this.tbTijd);
-            this.tpRoosterEdit.Controls.Add(this.tbTaak);
-            this.tpRoosterEdit.Controls.Add(this.label6);
-            this.tpRoosterEdit.Controls.Add(this.label5);
-            this.tpRoosterEdit.Controls.Add(this.label4);
-            this.tpRoosterEdit.Controls.Add(this.cbGebruikerEdit);
-            this.tpRoosterEdit.Controls.Add(this.materialLabel4);
-            this.tpRoosterEdit.Controls.Add(this.materialLabel3);
-            this.tpRoosterEdit.Controls.Add(this.btnVerwijderTaak);
-            this.tpRoosterEdit.Controls.Add(this.btnWijzigTaak);
-            this.tpRoosterEdit.Controls.Add(this.btnNieuweTaak);
-            this.tpRoosterEdit.Controls.Add(this.label3);
-            this.tpRoosterEdit.Controls.Add(this.lvRoostersWijzigen);
+            this.tpRoosterEdit.Controls.Add(this.editScheduleTabPage1);
             this.tpRoosterEdit.Location = new System.Drawing.Point(4, 22);
             this.tpRoosterEdit.Name = "tpRoosterEdit";
             this.tpRoosterEdit.Padding = new System.Windows.Forms.Padding(3);
-            this.tpRoosterEdit.Size = new System.Drawing.Size(1168, 451);
+            this.tpRoosterEdit.Size = new System.Drawing.Size(1168, 505);
             this.tpRoosterEdit.TabIndex = 2;
             this.tpRoosterEdit.Text = "Roosters Aanpassen";
             this.tpRoosterEdit.UseVisualStyleBackColor = true;
-            // 
-            // dtpDatum
-            // 
-            this.dtpDatum.Location = new System.Drawing.Point(884, 170);
-            this.dtpDatum.Name = "dtpDatum";
-            this.dtpDatum.Size = new System.Drawing.Size(276, 20);
-            this.dtpDatum.TabIndex = 12;
-            // 
-            // tbTijd
-            // 
-            this.tbTijd.Location = new System.Drawing.Point(884, 214);
-            this.tbTijd.Name = "tbTijd";
-            this.tbTijd.Size = new System.Drawing.Size(276, 20);
-            this.tbTijd.TabIndex = 11;
-            // 
-            // tbTaak
-            // 
-            this.tbTaak.Location = new System.Drawing.Point(884, 126);
-            this.tbTaak.Name = "tbTaak";
-            this.tbTaak.Size = new System.Drawing.Size(276, 20);
-            this.tbTaak.TabIndex = 11;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(881, 198);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(24, 13);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Tijd";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(881, 154);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 13);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Datum";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(881, 110);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(32, 13);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Taak";
-            // 
-            // cbGebruikerEdit
-            // 
-            this.cbGebruikerEdit.FormattingEnabled = true;
-            this.cbGebruikerEdit.Location = new System.Drawing.Point(884, 67);
-            this.cbGebruikerEdit.Name = "cbGebruikerEdit";
-            this.cbGebruikerEdit.Size = new System.Drawing.Size(276, 21);
-            this.cbGebruikerEdit.TabIndex = 9;
-            this.cbGebruikerEdit.Text = "Kies een gebruiker...";
-            // 
-            // materialLabel4
-            // 
-            this.materialLabel4.AutoSize = true;
-            this.materialLabel4.Depth = 0;
-            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel4.Location = new System.Drawing.Point(880, 91);
-            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel4.Name = "materialLabel4";
-            this.materialLabel4.Size = new System.Drawing.Size(161, 19);
-            this.materialLabel4.TabIndex = 8;
-            this.materialLabel4.Text = "Nieuwe gegevens/taak";
-            // 
-            // materialLabel3
-            // 
-            this.materialLabel3.AutoSize = true;
-            this.materialLabel3.Depth = 0;
-            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel3.Location = new System.Drawing.Point(880, 45);
-            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(134, 19);
-            this.materialLabel3.TabIndex = 8;
-            this.materialLabel3.Text = "Bekijk rooster van:";
-            // 
-            // btnVerwijderTaak
-            // 
-            this.btnVerwijderTaak.Depth = 0;
-            this.btnVerwijderTaak.Location = new System.Drawing.Point(884, 426);
-            this.btnVerwijderTaak.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnVerwijderTaak.Name = "btnVerwijderTaak";
-            this.btnVerwijderTaak.Primary = true;
-            this.btnVerwijderTaak.Size = new System.Drawing.Size(276, 46);
-            this.btnVerwijderTaak.TabIndex = 7;
-            this.btnVerwijderTaak.Text = "Geselecteerd taak verwijderen";
-            this.btnVerwijderTaak.UseVisualStyleBackColor = true;
-            // 
-            // btnWijzigTaak
-            // 
-            this.btnWijzigTaak.Depth = 0;
-            this.btnWijzigTaak.Location = new System.Drawing.Point(884, 292);
-            this.btnWijzigTaak.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnWijzigTaak.Name = "btnWijzigTaak";
-            this.btnWijzigTaak.Primary = true;
-            this.btnWijzigTaak.Size = new System.Drawing.Size(276, 46);
-            this.btnWijzigTaak.TabIndex = 7;
-            this.btnWijzigTaak.Text = "Geselecteerd taak wijzigen";
-            this.btnWijzigTaak.UseVisualStyleBackColor = true;
-            // 
-            // btnNieuweTaak
-            // 
-            this.btnNieuweTaak.Depth = 0;
-            this.btnNieuweTaak.Location = new System.Drawing.Point(884, 240);
-            this.btnNieuweTaak.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnNieuweTaak.Name = "btnNieuweTaak";
-            this.btnNieuweTaak.Primary = true;
-            this.btnNieuweTaak.Size = new System.Drawing.Size(276, 46);
-            this.btnNieuweTaak.TabIndex = 6;
-            this.btnNieuweTaak.Text = "Taak toevoegen";
-            this.btnNieuweTaak.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.label3.Location = new System.Drawing.Point(8, 3);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(292, 39);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Roosters Wijzigen";
-            // 
-            // lvRoostersWijzigen
-            // 
-            this.lvRoostersWijzigen.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader7,
-            this.columnHeader8,
-            this.columnHeader9});
-            this.lvRoostersWijzigen.GridLines = true;
-            this.lvRoostersWijzigen.Location = new System.Drawing.Point(8, 45);
-            this.lvRoostersWijzigen.Name = "lvRoostersWijzigen";
-            this.lvRoostersWijzigen.Size = new System.Drawing.Size(866, 427);
-            this.lvRoostersWijzigen.TabIndex = 4;
-            this.lvRoostersWijzigen.UseCompatibleStateImageBehavior = false;
-            this.lvRoostersWijzigen.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "Taak";
-            this.columnHeader7.Width = 472;
-            // 
-            // columnHeader8
-            // 
-            this.columnHeader8.Text = "Datum";
-            this.columnHeader8.Width = 154;
-            // 
-            // columnHeader9
-            // 
-            this.columnHeader9.Text = "Tijd";
-            this.columnHeader9.Width = 128;
             // 
             // tpGebruikers
             // 
@@ -4249,7 +3934,7 @@ namespace CTRails
             this.tpGebruikers.Location = new System.Drawing.Point(4, 22);
             this.tpGebruikers.Name = "tpGebruikers";
             this.tpGebruikers.Padding = new System.Windows.Forms.Padding(3);
-            this.tpGebruikers.Size = new System.Drawing.Size(1168, 451);
+            this.tpGebruikers.Size = new System.Drawing.Size(1168, 505);
             this.tpGebruikers.TabIndex = 4;
             this.tpGebruikers.Text = "Gebruikers";
             this.tpGebruikers.UseVisualStyleBackColor = true;
@@ -4547,23 +4232,102 @@ namespace CTRails
             this.label9.TabIndex = 14;
             this.label9.Text = "Gebruikers";
             // 
-            // materialTabSelector1
+            // loginWindow
             // 
-            this.materialTabSelector1.BaseTabControl = null;
-            this.materialTabSelector1.Depth = 0;
-            this.materialTabSelector1.Location = new System.Drawing.Point(4, 582);
-            this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialTabSelector1.Name = "materialTabSelector1";
-            this.materialTabSelector1.Size = new System.Drawing.Size(1168, 45);
-            this.materialTabSelector1.TabIndex = 3;
-            this.materialTabSelector1.Text = "materialTabSelector1";
+            this.loginWindow.Location = new System.Drawing.Point(80, 67);
+            this.loginWindow.Name = "loginWindow";
+            this.loginWindow.Size = new System.Drawing.Size(989, 432);
+            this.loginWindow.TabIndex = 3;
+            // 
+            // tpSchedule
+            // 
+            this.tpSchedule.Controls.Add(this.btnBekijkRoosters);
+            this.tpSchedule.Controls.Add(this.label1);
+            this.tpSchedule.Controls.Add(this.btnEditScedule);
+            this.tpSchedule.Controls.Add(this.lvPersoonlijkRooster);
+            this.tpSchedule.Location = new System.Drawing.Point(4, 22);
+            this.tpSchedule.Name = "tpSchedule";
+            this.tpSchedule.Padding = new System.Windows.Forms.Padding(3);
+            this.tpSchedule.Size = new System.Drawing.Size(1168, 505);
+            this.tpSchedule.TabIndex = 1;
+            this.tpSchedule.Text = "Rooster";
+            this.tpSchedule.UseVisualStyleBackColor = true;
+            // 
+            // btnBekijkRoosters
+            // 
+            this.btnBekijkRoosters.Depth = 0;
+            this.btnBekijkRoosters.Location = new System.Drawing.Point(884, 97);
+            this.btnBekijkRoosters.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnBekijkRoosters.Name = "btnBekijkRoosters";
+            this.btnBekijkRoosters.Primary = true;
+            this.btnBekijkRoosters.Size = new System.Drawing.Size(276, 46);
+            this.btnBekijkRoosters.TabIndex = 4;
+            this.btnBekijkRoosters.Text = "Bekijk alle roosters";
+            this.btnBekijkRoosters.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.label1.Location = new System.Drawing.Point(8, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(313, 39);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Persoonlijk Rooster";
+            // 
+            // btnEditScedule
+            // 
+            this.btnEditScedule.Depth = 0;
+            this.btnEditScedule.Location = new System.Drawing.Point(884, 45);
+            this.btnEditScedule.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnEditScedule.Name = "btnEditScedule";
+            this.btnEditScedule.Primary = true;
+            this.btnEditScedule.Size = new System.Drawing.Size(278, 46);
+            this.btnEditScedule.TabIndex = 1;
+            this.btnEditScedule.Text = "Wijzig rooster(s)";
+            this.btnEditScedule.UseVisualStyleBackColor = true;
+            // 
+            // lvPersoonlijkRooster
+            // 
+            this.lvPersoonlijkRooster.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3});
+            this.lvPersoonlijkRooster.GridLines = true;
+            this.lvPersoonlijkRooster.Location = new System.Drawing.Point(8, 45);
+            this.lvPersoonlijkRooster.Name = "lvPersoonlijkRooster";
+            this.lvPersoonlijkRooster.Size = new System.Drawing.Size(866, 427);
+            this.lvPersoonlijkRooster.TabIndex = 0;
+            this.lvPersoonlijkRooster.UseCompatibleStateImageBehavior = false;
+            this.lvPersoonlijkRooster.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Taak";
+            this.columnHeader1.Width = 472;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Datum";
+            this.columnHeader2.Width = 154;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Tijd";
+            this.columnHeader3.Width = 128;
+            // 
+            // editScheduleTabPage1
+            // 
+            this.editScheduleTabPage1.Location = new System.Drawing.Point(6, 6);
+            this.editScheduleTabPage1.Name = "editScheduleTabPage1";
+            this.editScheduleTabPage1.Size = new System.Drawing.Size(1163, 493);
+            this.editScheduleTabPage1.TabIndex = 0;
             // 
             // Rails
             // 
-            this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1176, 639);
+            this.ClientSize = new System.Drawing.Size(1176, 684);
             this.Controls.Add(this.materialTabSelector1);
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.tcNavigation);
@@ -4572,7 +4336,6 @@ namespace CTRails
             this.Text = "Remise App: Log in a.u.b.";
             this.tcNavigation.ResumeLayout(false);
             this.tpLogin.ResumeLayout(false);
-            this.tpLogin.PerformLayout();
             this.tpRemise.ResumeLayout(false);
             this.tpRemise.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlattegrond)).EndInit();
@@ -4696,12 +4459,11 @@ namespace CTRails
             this.pnlSection30_1.ResumeLayout(false);
             this.tpTrams.ResumeLayout(false);
             this.tpTrams.PerformLayout();
-            this.tpSchedule.ResumeLayout(false);
-            this.tpSchedule.PerformLayout();
             this.tpRoosterEdit.ResumeLayout(false);
-            this.tpRoosterEdit.PerformLayout();
             this.tpGebruikers.ResumeLayout(false);
             this.tpGebruikers.PerformLayout();
+            this.tpSchedule.ResumeLayout(false);
+            this.tpSchedule.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -4745,23 +4507,6 @@ namespace CTRails
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton36;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TabPage tpRoosterEdit;
-        private System.Windows.Forms.DateTimePicker dtpDatum;
-        private System.Windows.Forms.TextBox tbTijd;
-        private System.Windows.Forms.TextBox tbTaak;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox cbGebruikerEdit;
-        private MaterialSkin.Controls.MaterialLabel materialLabel4;
-        private MaterialSkin.Controls.MaterialLabel materialLabel3;
-        private MaterialSkin.Controls.MaterialRaisedButton btnVerwijderTaak;
-        private MaterialSkin.Controls.MaterialRaisedButton btnWijzigTaak;
-        private MaterialSkin.Controls.MaterialRaisedButton btnNieuweTaak;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ListView lvRoostersWijzigen;
-        private System.Windows.Forms.ColumnHeader columnHeader7;
-        private System.Windows.Forms.ColumnHeader columnHeader8;
-        private System.Windows.Forms.ColumnHeader columnHeader9;
         private MaterialSkin.Controls.MaterialRaisedButton btnBekijkRoosters;
         private System.Windows.Forms.Label label1;
         private MaterialSkin.Controls.MaterialRaisedButton btnEditScedule;
@@ -5075,15 +4820,12 @@ namespace CTRails
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton2;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
         private MaterialSkin.Controls.MaterialRaisedButton btnLine;
-        private LoginTabPage tpLogin;
-        private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.TextBox txtUsername;
-        private MaterialSkin.Controls.MaterialLabel materialLabel2;
-        private MaterialSkin.Controls.MaterialLabel lblUsername;
-        private MaterialSkin.Controls.MaterialRaisedButton btnLogin;
+        private System.Windows.Forms.TabPage tpLogin;
         private System.Windows.Forms.TabControl tcNavigation;
         private MaterialSkin.Controls.MaterialTabSelector materialTabSelector1;
-        private ScheduleTab tpSchedule;
+        private ScheduleWindow tpSchedule;
+        private EditScheduleWindow editScheduleTabPage1;
+        private LoginWindow loginWindow;
     }
 }
 
