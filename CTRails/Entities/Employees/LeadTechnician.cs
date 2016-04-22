@@ -3,7 +3,7 @@
 
 namespace CTRails.Entities.Employees
 {
-    public class LeadTechnician : Technicus
+    public class LeadTechnician : Technician
     {
         //Fields
 

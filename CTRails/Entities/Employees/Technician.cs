@@ -3,12 +3,12 @@
 
 namespace CTRails.Entities.Employees
 {
-    public class Technicus : Employee
+    public class Technician : Employee
     {
         //Fields
 
         //Constructor
-        public Technicus(
+        public Technician(
             int id,
             AccountType accountType,
             string username,

@@ -20,8 +20,8 @@ namespace CTRails.DAL.Contexts
             : base()
         {
             Entities.Add(new Employee(ID, new AccountType(0, "Janitor"),
-                "harrieIzAwesome",
-                "01239489018",
+                "janitor",
+                "janitor",
                 "Harrie",
                 "De Pariie",
                 "Van",
@@ -32,8 +32,8 @@ namespace CTRails.DAL.Contexts
                 Gender.M));
 
             Entities.Add(new Employee(ID, new AccountType(0, "FleetAdministrator"),
-                "test",
-                "test",
+                "fleet",
+                "fleet",
                 "Willem",
                 "Keeris",
                 string.Empty,

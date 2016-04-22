@@ -133,7 +133,7 @@
     <Compile Include="Entities\Employees\Janitor.cs" />
     <Compile Include="Entities\Sector.cs" />
     <Compile Include="Entities\Task.cs" />
-    <Compile Include="Entities\Employees\Technicus.cs" />
+    <Compile Include="Entities\Employees\Technician.cs" />
     <Compile Include="Entities\Track.cs" />
     <Compile Include="Entities\Tram.cs" />
     <Compile Include="Entities\Employees\Employee.cs" />

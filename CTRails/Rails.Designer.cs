@@ -28,7 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabTabs = new MaterialSkin.Controls.MaterialTabControl();
+            this.btnLogOut = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnLogin = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.tcNavigation = new System.Windows.Forms.TabControl();
+            this.tpLogin = new CTRails.LoginTabPage();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblUsername = new MaterialSkin.Controls.MaterialLabel();
             this.tpRemise = new System.Windows.Forms.TabPage();
             this.lblVergroot = new MaterialSkin.Controls.MaterialLabel();
             this.pbPlattegrond = new System.Windows.Forms.PictureBox();
@@ -326,6 +333,15 @@
             this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnLine = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.tpTrams = new System.Windows.Forms.TabPage();
+            this.btnBekijkRoosters1 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.cbGebruikerBekijken = new System.Windows.Forms.ComboBox();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblRoosterVan = new System.Windows.Forms.Label();
+            this.lvRoostersBekijken = new System.Windows.Forms.ListView();
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tpRooster = new System.Windows.Forms.TabPage();
             this.btnBekijkRoosters = new MaterialSkin.Controls.MaterialRaisedButton();
             this.label1 = new System.Windows.Forms.Label();
@@ -352,15 +368,6 @@
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.tpTrams = new System.Windows.Forms.TabPage();
-            this.btnBekijkRoosters1 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.cbGebruikerBekijken = new System.Windows.Forms.ComboBox();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.lblRoosterVan = new System.Windows.Forms.Label();
-            this.lvRoostersBekijken = new System.Windows.Forms.ListView();
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tpGebruikers = new System.Windows.Forms.TabPage();
             this.lvGebruikers = new System.Windows.Forms.ListView();
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -372,8 +379,6 @@
             this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -382,6 +387,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -397,16 +404,9 @@
             this.materialRaisedButton35 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton36 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.label9 = new System.Windows.Forms.Label();
-            this.tpLijnen = new System.Windows.Forms.TabPage();
-            this.tpLogin = new CTRails.LoginTabPage();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.txtUsername = new System.Windows.Forms.TextBox();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.lblUsername = new MaterialSkin.Controls.MaterialLabel();
-            this.btnLogin = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.tsTabs = new MaterialSkin.Controls.MaterialTabSelector();
-            this.btnLogOut = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.tabTabs.SuspendLayout();
+            this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
+            this.tcNavigation.SuspendLayout();
+            this.tpLogin.SuspendLayout();
             this.tpRemise.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlattegrond)).BeginInit();
             this.pnlSection41_3.SuspendLayout();
@@ -527,29 +527,109 @@
             this.pnlSection32_1.SuspendLayout();
             this.pnlSection31_1.SuspendLayout();
             this.pnlSection30_1.SuspendLayout();
+            this.tpTrams.SuspendLayout();
             this.tpRooster.SuspendLayout();
             this.tpRoosterEdit.SuspendLayout();
-            this.tpTrams.SuspendLayout();
             this.tpGebruikers.SuspendLayout();
-            this.tpLogin.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabTabs
+            // btnLogOut
             // 
-            this.tabTabs.Controls.Add(this.tpRemise);
-            this.tabTabs.Controls.Add(this.tpRooster);
-            this.tabTabs.Controls.Add(this.tpRoosterEdit);
-            this.tabTabs.Controls.Add(this.tpTrams);
-            this.tabTabs.Controls.Add(this.tpGebruikers);
-            this.tabTabs.Controls.Add(this.tpLijnen);
-            this.tabTabs.Controls.Add(this.tpLogin);
-            this.tabTabs.Depth = 0;
-            this.tabTabs.Location = new System.Drawing.Point(0, 99);
-            this.tabTabs.MouseState = MaterialSkin.MouseState.HOVER;
-            this.tabTabs.Name = "tabTabs";
-            this.tabTabs.SelectedIndex = 0;
-            this.tabTabs.Size = new System.Drawing.Size(1176, 477);
-            this.tabTabs.TabIndex = 0;
+            this.btnLogOut.BackColor = System.Drawing.Color.Transparent;
+            this.btnLogOut.Depth = 0;
+            this.btnLogOut.Location = new System.Drawing.Point(1075, 24);
+            this.btnLogOut.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Primary = true;
+            this.btnLogOut.Size = new System.Drawing.Size(101, 40);
+            this.btnLogOut.TabIndex = 2;
+            this.btnLogOut.Text = "Uitloggen";
+            this.btnLogOut.UseVisualStyleBackColor = false;
+            this.btnLogOut.Visible = false;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogoutClick);
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.Depth = 0;
+            this.btnLogin.Location = new System.Drawing.Point(565, 288);
+            this.btnLogin.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Primary = true;
+            this.btnLogin.Size = new System.Drawing.Size(75, 23);
+            this.btnLogin.TabIndex = 2;
+            this.btnLogin.Text = "Log In";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // tcNavigation
+            // 
+            this.tcNavigation.Controls.Add(this.tpLogin);
+            this.tcNavigation.Controls.Add(this.tpRemise);
+            this.tcNavigation.Controls.Add(this.tpTrams);
+            this.tcNavigation.Controls.Add(this.tpRooster);
+            this.tcNavigation.Controls.Add(this.tpRoosterEdit);
+            this.tcNavigation.Controls.Add(this.tpGebruikers);
+            this.tcNavigation.Location = new System.Drawing.Point(0, 99);
+            this.tcNavigation.Name = "tcNavigation";
+            this.tcNavigation.SelectedIndex = 0;
+            this.tcNavigation.Size = new System.Drawing.Size(1176, 477);
+            this.tcNavigation.TabIndex = 0;
+            // 
+            // tpLogin
+            // 
+            this.tpLogin.Controls.Add(this.txtPassword);
+            this.tpLogin.Controls.Add(this.txtUsername);
+            this.tpLogin.Controls.Add(this.materialLabel2);
+            this.tpLogin.Controls.Add(this.lblUsername);
+            this.tpLogin.Controls.Add(this.btnLogin);
+            this.tpLogin.Location = new System.Drawing.Point(4, 22);
+            this.tpLogin.Name = "tpLogin";
+            this.tpLogin.Padding = new System.Windows.Forms.Padding(3);
+            this.tpLogin.Size = new System.Drawing.Size(1168, 451);
+            this.tpLogin.TabIndex = 6;
+            this.tpLogin.Text = "Login";
+            this.tpLogin.UseVisualStyleBackColor = true;
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Location = new System.Drawing.Point(511, 262);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '•';
+            this.txtPassword.Size = new System.Drawing.Size(182, 20);
+            this.txtPassword.TabIndex = 1;
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.Location = new System.Drawing.Point(511, 186);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(182, 20);
+            this.txtUsername.TabIndex = 0;
+            // 
+            // materialLabel2
+            // 
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel2.Location = new System.Drawing.Point(556, 240);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(93, 19);
+            this.materialLabel2.TabIndex = 2;
+            this.materialLabel2.Text = "Wachtwoord";
+            // 
+            // lblUsername
+            // 
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Depth = 0;
+            this.lblUsername.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lblUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblUsername.Location = new System.Drawing.Point(542, 164);
+            this.lblUsername.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(118, 19);
+            this.lblUsername.TabIndex = 1;
+            this.lblUsername.Text = "Gebruikersnaam";
             // 
             // tpRemise
             // 
@@ -3788,6 +3868,94 @@
             this.btnLine.Text = "30";
             this.btnLine.UseVisualStyleBackColor = false;
             // 
+            // tpTrams
+            // 
+            this.tpTrams.Controls.Add(this.btnBekijkRoosters1);
+            this.tpTrams.Controls.Add(this.cbGebruikerBekijken);
+            this.tpTrams.Controls.Add(this.materialLabel1);
+            this.tpTrams.Controls.Add(this.lblRoosterVan);
+            this.tpTrams.Controls.Add(this.lvRoostersBekijken);
+            this.tpTrams.Location = new System.Drawing.Point(4, 22);
+            this.tpTrams.Name = "tpTrams";
+            this.tpTrams.Padding = new System.Windows.Forms.Padding(3);
+            this.tpTrams.Size = new System.Drawing.Size(1168, 451);
+            this.tpTrams.TabIndex = 3;
+            this.tpTrams.Text = "Alle roosters bekijken";
+            this.tpTrams.UseVisualStyleBackColor = true;
+            // 
+            // btnBekijkRoosters1
+            // 
+            this.btnBekijkRoosters1.Depth = 0;
+            this.btnBekijkRoosters1.Location = new System.Drawing.Point(884, 426);
+            this.btnBekijkRoosters1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnBekijkRoosters1.Name = "btnBekijkRoosters1";
+            this.btnBekijkRoosters1.Primary = true;
+            this.btnBekijkRoosters1.Size = new System.Drawing.Size(276, 46);
+            this.btnBekijkRoosters1.TabIndex = 9;
+            this.btnBekijkRoosters1.Text = "Wijzig roosters";
+            this.btnBekijkRoosters1.UseVisualStyleBackColor = true;
+            // 
+            // cbGebruikerBekijken
+            // 
+            this.cbGebruikerBekijken.FormattingEnabled = true;
+            this.cbGebruikerBekijken.Location = new System.Drawing.Point(884, 67);
+            this.cbGebruikerBekijken.Name = "cbGebruikerBekijken";
+            this.cbGebruikerBekijken.Size = new System.Drawing.Size(276, 21);
+            this.cbGebruikerBekijken.TabIndex = 6;
+            this.cbGebruikerBekijken.Text = "Kies een gebruiker...";
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel1.Location = new System.Drawing.Point(880, 45);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(134, 19);
+            this.materialLabel1.TabIndex = 5;
+            this.materialLabel1.Text = "Bekijk rooster van:";
+            // 
+            // lblRoosterVan
+            // 
+            this.lblRoosterVan.AutoSize = true;
+            this.lblRoosterVan.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.lblRoosterVan.Location = new System.Drawing.Point(8, 3);
+            this.lblRoosterVan.Name = "lblRoosterVan";
+            this.lblRoosterVan.Size = new System.Drawing.Size(315, 39);
+            this.lblRoosterVan.TabIndex = 4;
+            this.lblRoosterVan.Text = "Rooster van <user>";
+            // 
+            // lvRoostersBekijken
+            // 
+            this.lvRoostersBekijken.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6});
+            this.lvRoostersBekijken.GridLines = true;
+            this.lvRoostersBekijken.Location = new System.Drawing.Point(8, 45);
+            this.lvRoostersBekijken.Name = "lvRoostersBekijken";
+            this.lvRoostersBekijken.Size = new System.Drawing.Size(866, 427);
+            this.lvRoostersBekijken.TabIndex = 1;
+            this.lvRoostersBekijken.UseCompatibleStateImageBehavior = false;
+            this.lvRoostersBekijken.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Taak";
+            this.columnHeader4.Width = 472;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Datum";
+            this.columnHeader5.Width = 154;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Tijd";
+            this.columnHeader6.Width = 128;
+            // 
             // tpRooster
             // 
             this.tpRooster.Controls.Add(this.btnBekijkRoosters);
@@ -3797,7 +3965,7 @@
             this.tpRooster.Location = new System.Drawing.Point(4, 22);
             this.tpRooster.Name = "tpRooster";
             this.tpRooster.Padding = new System.Windows.Forms.Padding(3);
-            this.tpRooster.Size = new System.Drawing.Size(1168, 455);
+            this.tpRooster.Size = new System.Drawing.Size(1168, 451);
             this.tpRooster.TabIndex = 1;
             this.tpRooster.Text = "Rooster";
             this.tpRooster.UseVisualStyleBackColor = true;
@@ -3884,7 +4052,7 @@
             this.tpRoosterEdit.Location = new System.Drawing.Point(4, 22);
             this.tpRoosterEdit.Name = "tpRoosterEdit";
             this.tpRoosterEdit.Padding = new System.Windows.Forms.Padding(3);
-            this.tpRoosterEdit.Size = new System.Drawing.Size(1168, 455);
+            this.tpRoosterEdit.Size = new System.Drawing.Size(1168, 451);
             this.tpRoosterEdit.TabIndex = 2;
             this.tpRoosterEdit.Text = "Roosters Aanpassen";
             this.tpRoosterEdit.UseVisualStyleBackColor = true;
@@ -4047,99 +4215,9 @@
             this.columnHeader9.Text = "Tijd";
             this.columnHeader9.Width = 128;
             // 
-            // tpTrams
-            // 
-            this.tpTrams.Controls.Add(this.btnBekijkRoosters1);
-            this.tpTrams.Controls.Add(this.cbGebruikerBekijken);
-            this.tpTrams.Controls.Add(this.materialLabel1);
-            this.tpTrams.Controls.Add(this.lblRoosterVan);
-            this.tpTrams.Controls.Add(this.lvRoostersBekijken);
-            this.tpTrams.Location = new System.Drawing.Point(4, 22);
-            this.tpTrams.Name = "tpTrams";
-            this.tpTrams.Padding = new System.Windows.Forms.Padding(3);
-            this.tpTrams.Size = new System.Drawing.Size(1168, 455);
-            this.tpTrams.TabIndex = 3;
-            this.tpTrams.Text = "Alle roosters bekijken";
-            this.tpTrams.UseVisualStyleBackColor = true;
-            // 
-            // btnBekijkRoosters1
-            // 
-            this.btnBekijkRoosters1.Depth = 0;
-            this.btnBekijkRoosters1.Location = new System.Drawing.Point(884, 426);
-            this.btnBekijkRoosters1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnBekijkRoosters1.Name = "btnBekijkRoosters1";
-            this.btnBekijkRoosters1.Primary = true;
-            this.btnBekijkRoosters1.Size = new System.Drawing.Size(276, 46);
-            this.btnBekijkRoosters1.TabIndex = 9;
-            this.btnBekijkRoosters1.Text = "Wijzig roosters";
-            this.btnBekijkRoosters1.UseVisualStyleBackColor = true;
-            // 
-            // cbGebruikerBekijken
-            // 
-            this.cbGebruikerBekijken.FormattingEnabled = true;
-            this.cbGebruikerBekijken.Location = new System.Drawing.Point(884, 67);
-            this.cbGebruikerBekijken.Name = "cbGebruikerBekijken";
-            this.cbGebruikerBekijken.Size = new System.Drawing.Size(276, 21);
-            this.cbGebruikerBekijken.TabIndex = 6;
-            this.cbGebruikerBekijken.Text = "Kies een gebruiker...";
-            // 
-            // materialLabel1
-            // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(880, 45);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(134, 19);
-            this.materialLabel1.TabIndex = 5;
-            this.materialLabel1.Text = "Bekijk rooster van:";
-            // 
-            // lblRoosterVan
-            // 
-            this.lblRoosterVan.AutoSize = true;
-            this.lblRoosterVan.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.lblRoosterVan.Location = new System.Drawing.Point(8, 3);
-            this.lblRoosterVan.Name = "lblRoosterVan";
-            this.lblRoosterVan.Size = new System.Drawing.Size(315, 39);
-            this.lblRoosterVan.TabIndex = 4;
-            this.lblRoosterVan.Text = "Rooster van <user>";
-            // 
-            // lvRoostersBekijken
-            // 
-            this.lvRoostersBekijken.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader4,
-            this.columnHeader5,
-            this.columnHeader6});
-            this.lvRoostersBekijken.GridLines = true;
-            this.lvRoostersBekijken.Location = new System.Drawing.Point(8, 45);
-            this.lvRoostersBekijken.Name = "lvRoostersBekijken";
-            this.lvRoostersBekijken.Size = new System.Drawing.Size(866, 427);
-            this.lvRoostersBekijken.TabIndex = 1;
-            this.lvRoostersBekijken.UseCompatibleStateImageBehavior = false;
-            this.lvRoostersBekijken.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Taak";
-            this.columnHeader4.Width = 472;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Datum";
-            this.columnHeader5.Width = 154;
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "Tijd";
-            this.columnHeader6.Width = 128;
-            // 
             // tpGebruikers
             // 
             this.tpGebruikers.Controls.Add(this.lvGebruikers);
-            this.tpGebruikers.Controls.Add(this.dateTimePicker1);
-            this.tpGebruikers.Controls.Add(this.comboBox1);
             this.tpGebruikers.Controls.Add(this.textBox8);
             this.tpGebruikers.Controls.Add(this.textBox6);
             this.tpGebruikers.Controls.Add(this.textBox7);
@@ -4148,6 +4226,8 @@
             this.tpGebruikers.Controls.Add(this.textBox1);
             this.tpGebruikers.Controls.Add(this.textBox3);
             this.tpGebruikers.Controls.Add(this.textBox2);
+            this.tpGebruikers.Controls.Add(this.dateTimePicker1);
+            this.tpGebruikers.Controls.Add(this.comboBox1);
             this.tpGebruikers.Controls.Add(this.label7);
             this.tpGebruikers.Controls.Add(this.label16);
             this.tpGebruikers.Controls.Add(this.label14);
@@ -4166,7 +4246,7 @@
             this.tpGebruikers.Location = new System.Drawing.Point(4, 22);
             this.tpGebruikers.Name = "tpGebruikers";
             this.tpGebruikers.Padding = new System.Windows.Forms.Padding(3);
-            this.tpGebruikers.Size = new System.Drawing.Size(1168, 455);
+            this.tpGebruikers.Size = new System.Drawing.Size(1168, 451);
             this.tpGebruikers.TabIndex = 4;
             this.tpGebruikers.Text = "Gebruikers";
             this.tpGebruikers.UseVisualStyleBackColor = true;
@@ -4239,25 +4319,6 @@
             this.columnHeader18.Text = "Huisnummer";
             this.columnHeader18.Width = 75;
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(1013, 128);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(147, 20);
-            this.dateTimePicker1.TabIndex = 25;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "M",
-            "V"});
-            this.comboBox1.Location = new System.Drawing.Point(1114, 88);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(46, 21);
-            this.comboBox1.TabIndex = 24;
-            this.comboBox1.Text = "M";
-            // 
             // textBox8
             // 
             this.textBox8.Location = new System.Drawing.Point(1032, 284);
@@ -4314,6 +4375,25 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(224, 20);
             this.textBox2.TabIndex = 23;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(1013, 128);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(147, 20);
+            this.dateTimePicker1.TabIndex = 25;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "M",
+            "V"});
+            this.comboBox1.Location = new System.Drawing.Point(1114, 88);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(46, 21);
+            this.comboBox1.TabIndex = 24;
+            this.comboBox1.Text = "M";
             // 
             // label7
             // 
@@ -4464,124 +4544,32 @@
             this.label9.TabIndex = 14;
             this.label9.Text = "Gebruikers";
             // 
-            // tpLijnen
+            // materialTabSelector1
             // 
-            this.tpLijnen.Location = new System.Drawing.Point(4, 22);
-            this.tpLijnen.Name = "tpLijnen";
-            this.tpLijnen.Padding = new System.Windows.Forms.Padding(3);
-            this.tpLijnen.Size = new System.Drawing.Size(1168, 455);
-            this.tpLijnen.TabIndex = 5;
-            this.tpLijnen.Text = "Lijnen";
-            this.tpLijnen.UseVisualStyleBackColor = true;
+            this.materialTabSelector1.BaseTabControl = null;
+            this.materialTabSelector1.Depth = 0;
+            this.materialTabSelector1.Location = new System.Drawing.Point(4, 582);
+            this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialTabSelector1.Name = "materialTabSelector1";
+            this.materialTabSelector1.Size = new System.Drawing.Size(1168, 45);
+            this.materialTabSelector1.TabIndex = 3;
+            this.materialTabSelector1.Text = "materialTabSelector1";
             // 
-            // tpLogin
-            // 
-            this.tpLogin.Controls.Add(this.txtPassword);
-            this.tpLogin.Controls.Add(this.txtUsername);
-            this.tpLogin.Controls.Add(this.materialLabel2);
-            this.tpLogin.Controls.Add(this.lblUsername);
-            this.tpLogin.Controls.Add(this.btnLogin);
-            this.tpLogin.Location = new System.Drawing.Point(4, 22);
-            this.tpLogin.Name = "tpLogin";
-            this.tpLogin.Padding = new System.Windows.Forms.Padding(3);
-            this.tpLogin.Size = new System.Drawing.Size(1168, 455);
-            this.tpLogin.TabIndex = 6;
-            this.tpLogin.Text = "Login";
-            this.tpLogin.UseVisualStyleBackColor = true;
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.Location = new System.Drawing.Point(511, 262);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '•';
-            this.txtPassword.Size = new System.Drawing.Size(182, 20);
-            this.txtPassword.TabIndex = 1;
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.Location = new System.Drawing.Point(511, 186);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(182, 20);
-            this.txtUsername.TabIndex = 0;
-            // 
-            // materialLabel2
-            // 
-            this.materialLabel2.AutoSize = true;
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(556, 240);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(93, 19);
-            this.materialLabel2.TabIndex = 2;
-            this.materialLabel2.Text = "Wachtwoord";
-            // 
-            // lblUsername
-            // 
-            this.lblUsername.AutoSize = true;
-            this.lblUsername.Depth = 0;
-            this.lblUsername.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lblUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblUsername.Location = new System.Drawing.Point(542, 164);
-            this.lblUsername.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(118, 19);
-            this.lblUsername.TabIndex = 1;
-            this.lblUsername.Text = "Gebruikersnaam";
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.Depth = 0;
-            this.btnLogin.Location = new System.Drawing.Point(565, 288);
-            this.btnLogin.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Primary = true;
-            this.btnLogin.Size = new System.Drawing.Size(75, 23);
-            this.btnLogin.TabIndex = 2;
-            this.btnLogin.Text = "Log In";
-            this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            // 
-            // tsTabs
-            // 
-            this.tsTabs.BaseTabControl = null;
-            this.tsTabs.Depth = 0;
-            this.tsTabs.ForeColor = System.Drawing.Color.White;
-            this.tsTabs.Location = new System.Drawing.Point(0, 582);
-            this.tsTabs.MouseState = MaterialSkin.MouseState.HOVER;
-            this.tsTabs.Name = "tsTabs";
-            this.tsTabs.Size = new System.Drawing.Size(1176, 45);
-            this.tsTabs.TabIndex = 1;
-            this.tsTabs.Text = "Test";
-            // 
-            // btnLogOut
-            // 
-            this.btnLogOut.BackColor = System.Drawing.Color.Transparent;
-            this.btnLogOut.Depth = 0;
-            this.btnLogOut.Location = new System.Drawing.Point(1075, 24);
-            this.btnLogOut.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Primary = true;
-            this.btnLogOut.Size = new System.Drawing.Size(101, 40);
-            this.btnLogOut.TabIndex = 2;
-            this.btnLogOut.Text = "Uitloggen";
-            this.btnLogOut.UseVisualStyleBackColor = false;
-            this.btnLogOut.Visible = false;
-            // 
-            // Form1
+            // Rails
             // 
             this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1176, 639);
+            this.Controls.Add(this.materialTabSelector1);
             this.Controls.Add(this.btnLogOut);
-            this.Controls.Add(this.tsTabs);
-            this.Controls.Add(this.tabTabs);
+            this.Controls.Add(this.tcNavigation);
             this.Name = "Rails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Remise App: Log in a.u.b.";
-            this.tabTabs.ResumeLayout(false);
+            this.tcNavigation.ResumeLayout(false);
+            this.tpLogin.ResumeLayout(false);
+            this.tpLogin.PerformLayout();
             this.tpRemise.ResumeLayout(false);
             this.tpRemise.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlattegrond)).EndInit();
@@ -4703,160 +4691,368 @@
             this.pnlSection32_1.ResumeLayout(false);
             this.pnlSection31_1.ResumeLayout(false);
             this.pnlSection30_1.ResumeLayout(false);
+            this.tpTrams.ResumeLayout(false);
+            this.tpTrams.PerformLayout();
             this.tpRooster.ResumeLayout(false);
             this.tpRooster.PerformLayout();
             this.tpRoosterEdit.ResumeLayout(false);
             this.tpRoosterEdit.PerformLayout();
-            this.tpTrams.ResumeLayout(false);
-            this.tpTrams.PerformLayout();
             this.tpGebruikers.ResumeLayout(false);
             this.tpGebruikers.PerformLayout();
-            this.tpLogin.ResumeLayout(false);
-            this.tpLogin.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private MaterialSkin.Controls.MaterialTabSelector tsTabs;
-        private System.Windows.Forms.TabPage tpRooster;
-        private System.Windows.Forms.TabPage tpRemise;
-        private MaterialSkin.Controls.MaterialTabControl tabTabs;
-        private MaterialSkin.Controls.MaterialRaisedButton btnLine;
-        private System.Windows.Forms.TabPage tpRoosterEdit;
+        private MaterialSkin.Controls.MaterialRaisedButton btnLogOut;
         private System.Windows.Forms.TabPage tpGebruikers;
-        private System.Windows.Forms.TabPage tpLijnen;
-        private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.TextBox txtUsername;
-        private MaterialSkin.Controls.MaterialLabel materialLabel2;
-        private MaterialSkin.Controls.MaterialLabel lblUsername;
-        private MaterialSkin.Controls.MaterialRaisedButton btnLogin;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel pnlSection38_3;
-        private System.Windows.Forms.Panel pnlSection37_3;
-        private System.Windows.Forms.Panel pnlSection36_3;
-        private System.Windows.Forms.Panel pnlSection35_3;
-        private System.Windows.Forms.Panel pnlSection38_4;
-        private System.Windows.Forms.Panel pnlSection37_4;
-        private System.Windows.Forms.Panel pnlSection36_4;
-        private System.Windows.Forms.Panel pnlSection35_4;
-        private System.Windows.Forms.Panel pnlSection34_4;
-        private System.Windows.Forms.Panel pnlSection34_3;
-        private System.Windows.Forms.Panel pnlSection33_4;
-        private System.Windows.Forms.Panel pnlSection33_3;
-        private System.Windows.Forms.Panel pnlSection32_4;
-        private System.Windows.Forms.Panel pnlSection32_3;
-        private System.Windows.Forms.Panel pnlSection31_3;
-        private System.Windows.Forms.Panel pnlSection30_3;
-        private System.Windows.Forms.Panel pnlSection38_2;
-        private System.Windows.Forms.Panel pnlSection37_2;
-        private System.Windows.Forms.Panel pnlSection36_2;
-        private System.Windows.Forms.Panel pnlSection35_2;
-        private System.Windows.Forms.Panel pnlSection34_2;
-        private System.Windows.Forms.Panel pnlSection33_2;
-        private System.Windows.Forms.Panel pnlSection32_2;
-        private System.Windows.Forms.Panel pnlSection31_2;
-        private System.Windows.Forms.Panel pnlSection30_2;
-        private System.Windows.Forms.Panel pnlSection38_1;
-        private System.Windows.Forms.Panel pnlSection37_1;
-        private System.Windows.Forms.Panel pnlSection36_1;
-        private System.Windows.Forms.Panel pnlSection35_1;
-        private System.Windows.Forms.Panel pnlSection34_1;
-        private System.Windows.Forms.Panel pnlSection33_1;
-        private System.Windows.Forms.Panel pnlSection32_1;
-        private System.Windows.Forms.Panel pnlSection31_1;
-        private System.Windows.Forms.Panel pnlSection30_1;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel5;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton8;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton7;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton6;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton5;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton4;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton3;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton2;
+        private System.Windows.Forms.ListView lvGebruikers;
+        private System.Windows.Forms.ColumnHeader columnHeader10;
+        private System.Windows.Forms.ColumnHeader columnHeader11;
+        private System.Windows.Forms.ColumnHeader columnHeader12;
+        private System.Windows.Forms.ColumnHeader columnHeader13;
+        private System.Windows.Forms.ColumnHeader columnHeader14;
+        private System.Windows.Forms.ColumnHeader columnHeader15;
+        private System.Windows.Forms.ColumnHeader columnHeader16;
+        private System.Windows.Forms.ColumnHeader columnHeader17;
+        private System.Windows.Forms.ColumnHeader columnHeader18;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label8;
+        private MaterialSkin.Controls.MaterialLabel materialLabel5;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton34;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton35;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton36;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TabPage tpRoosterEdit;
+        private System.Windows.Forms.DateTimePicker dtpDatum;
+        private System.Windows.Forms.TextBox tbTijd;
+        private System.Windows.Forms.TextBox tbTaak;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cbGebruikerEdit;
+        private MaterialSkin.Controls.MaterialLabel materialLabel4;
+        private MaterialSkin.Controls.MaterialLabel materialLabel3;
+        private MaterialSkin.Controls.MaterialRaisedButton btnVerwijderTaak;
+        private MaterialSkin.Controls.MaterialRaisedButton btnWijzigTaak;
+        private MaterialSkin.Controls.MaterialRaisedButton btnNieuweTaak;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ListView lvRoostersWijzigen;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ColumnHeader columnHeader8;
+        private System.Windows.Forms.ColumnHeader columnHeader9;
+        private System.Windows.Forms.TabPage tpRooster;
+        private MaterialSkin.Controls.MaterialRaisedButton btnBekijkRoosters;
+        private System.Windows.Forms.Label label1;
+        private MaterialSkin.Controls.MaterialRaisedButton btnEditScedule;
+        private System.Windows.Forms.ListView lvPersoonlijkRooster;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.TabPage tpTrams;
+        private MaterialSkin.Controls.MaterialRaisedButton btnBekijkRoosters1;
+        private System.Windows.Forms.ComboBox cbGebruikerBekijken;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private System.Windows.Forms.Label lblRoosterVan;
+        private System.Windows.Forms.ListView lvRoostersBekijken;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.TabPage tpRemise;
+        private MaterialSkin.Controls.MaterialLabel lblVergroot;
+        private System.Windows.Forms.PictureBox pbPlattegrond;
         private System.Windows.Forms.Panel pnlSection41_3;
+        private System.Windows.Forms.Label lblSection41_3;
+        private System.Windows.Forms.Panel pnlSection64_3;
+        private System.Windows.Forms.Label lblSection64_3;
+        private System.Windows.Forms.Panel pnlSection63_3;
+        private System.Windows.Forms.Label lblSection63_3;
+        private System.Windows.Forms.Panel pnlSection57_3;
+        private System.Windows.Forms.Label lblSection57_3;
+        private System.Windows.Forms.Panel pnlSection56_3;
+        private System.Windows.Forms.Label lblSection56_3;
+        private System.Windows.Forms.Panel pnlSection55_3;
+        private System.Windows.Forms.Label lblSection55_3;
+        private System.Windows.Forms.Panel pnlSection54_3;
+        private System.Windows.Forms.Label lblSection54_3;
+        private System.Windows.Forms.Panel pnlSection53_3;
+        private System.Windows.Forms.Label lblSection53_3;
+        private System.Windows.Forms.Panel pnlSection52_3;
+        private System.Windows.Forms.Label lblSection52_3;
+        private System.Windows.Forms.Panel pnlSection51_3;
+        private System.Windows.Forms.Label lblSection51_3;
+        private System.Windows.Forms.Panel pnlSection38_3;
+        private System.Windows.Forms.Label lblSection38_3;
         private System.Windows.Forms.Panel pnlSection42_3;
+        private System.Windows.Forms.Label lblSection42_3;
+        private System.Windows.Forms.Panel pnlSection37_3;
+        private System.Windows.Forms.Label lblSection37_3;
         private System.Windows.Forms.Panel pnlSection44_3;
+        private System.Windows.Forms.Label lblSection44_3;
         private System.Windows.Forms.Panel pnlSection43_3;
+        private System.Windows.Forms.Label lblSection43_3;
+        private System.Windows.Forms.Panel pnlSection36_3;
+        private System.Windows.Forms.Label lblSection36_3;
+        private System.Windows.Forms.Panel pnlSection35_3;
+        private System.Windows.Forms.Label lblSection35_3;
         private System.Windows.Forms.Panel pnlSection41_4;
+        private System.Windows.Forms.Label lblSection41_4;
+        private System.Windows.Forms.Panel pnlSection64_4;
+        private System.Windows.Forms.Label lblSection64_4;
+        private System.Windows.Forms.Panel pnlSection63_4;
+        private System.Windows.Forms.Label lblSection63_4;
+        private System.Windows.Forms.Panel pnlSection57_4;
+        private System.Windows.Forms.Label lblSection57_4;
+        private System.Windows.Forms.Panel pnlSection56_4;
+        private System.Windows.Forms.Label lblSection56_4;
+        private System.Windows.Forms.Panel pnlSection55_4;
+        private System.Windows.Forms.Label lblSection55_4;
+        private System.Windows.Forms.Panel pnlSection54_4;
+        private System.Windows.Forms.Label lblSection54_4;
+        private System.Windows.Forms.Panel pnlSection53_4;
+        private System.Windows.Forms.Label lblSection53_4;
+        private System.Windows.Forms.Panel pnlSection57_8;
+        private System.Windows.Forms.Label lblSection57_8;
+        private System.Windows.Forms.Panel pnlSection57_7;
+        private System.Windows.Forms.Label lblSection57_7;
+        private System.Windows.Forms.Panel pnlSection56_7;
+        private System.Windows.Forms.Label lblSection56_7;
+        private System.Windows.Forms.Panel pnlSection55_7;
+        private System.Windows.Forms.Label lblSection55_7;
+        private System.Windows.Forms.Panel pnlSection54_7;
+        private System.Windows.Forms.Label lblSection54_7;
+        private System.Windows.Forms.Panel pnlSection57_6;
+        private System.Windows.Forms.Label lblSection57_6;
+        private System.Windows.Forms.Panel pnlSection56_6;
+        private System.Windows.Forms.Label lblSection56_6;
+        private System.Windows.Forms.Panel pnlSection55_6;
+        private System.Windows.Forms.Label lblSection55_6;
+        private System.Windows.Forms.Panel pnlSection54_6;
+        private System.Windows.Forms.Label lblSection54_6;
+        private System.Windows.Forms.Panel pnlSection53_6;
+        private System.Windows.Forms.Label lblSection53_6;
+        private System.Windows.Forms.Panel pnlSection52_6;
+        private System.Windows.Forms.Label lblSection52_6;
+        private System.Windows.Forms.Panel pnlSection57_5;
+        private System.Windows.Forms.Label lblSection57_5;
+        private System.Windows.Forms.Panel pnlSection56_5;
+        private System.Windows.Forms.Label lblSection56_5;
+        private System.Windows.Forms.Panel pnlSection55_5;
+        private System.Windows.Forms.Label lblSection55_5;
+        private System.Windows.Forms.Panel pnlSection54_5;
+        private System.Windows.Forms.Label lblSection54_5;
+        private System.Windows.Forms.Panel pnlSection53_5;
+        private System.Windows.Forms.Label lblSection53_5;
+        private System.Windows.Forms.Panel pnlSection52_5;
+        private System.Windows.Forms.Label lblSection52_5;
+        private System.Windows.Forms.Panel pnlSection52_4;
+        private System.Windows.Forms.Label lblSection52_4;
+        private System.Windows.Forms.Panel pnlSection51_5;
+        private System.Windows.Forms.Label lblSection51_5;
+        private System.Windows.Forms.Panel pnlSection51_4;
+        private System.Windows.Forms.Label lblSection51_4;
+        private System.Windows.Forms.Panel pnlSection38_4;
+        private System.Windows.Forms.Label lblSection38_4;
         private System.Windows.Forms.Panel pnlSection42_4;
+        private System.Windows.Forms.Label lblSection42_4;
+        private System.Windows.Forms.Panel pnlSection37_4;
+        private System.Windows.Forms.Label lblSection37_4;
         private System.Windows.Forms.Panel pnlSection44_4;
+        private System.Windows.Forms.Label lblSection44_4;
         private System.Windows.Forms.Panel pnlSection43_4;
+        private System.Windows.Forms.Label lblSection43_4;
+        private System.Windows.Forms.Panel pnlSection36_4;
+        private System.Windows.Forms.Label lblSection36_4;
+        private System.Windows.Forms.Panel pnlSection35_4;
+        private System.Windows.Forms.Label lblSection35_4;
+        private System.Windows.Forms.Panel pnlSection34_4;
+        private System.Windows.Forms.Label lblSection34_4;
+        private System.Windows.Forms.Panel pnlSection34_3;
+        private System.Windows.Forms.Label lblSection34_3;
+        private System.Windows.Forms.Panel pnlSection33_4;
+        private System.Windows.Forms.Label lblSection33_4;
+        private System.Windows.Forms.Panel pnlSection33_3;
+        private System.Windows.Forms.Label lblSection33_3;
+        private System.Windows.Forms.Panel pnlSection32_4;
+        private System.Windows.Forms.Label lblSection32_4;
+        private System.Windows.Forms.Panel pnlSection32_3;
+        private System.Windows.Forms.Label lblSection32_3;
+        private System.Windows.Forms.Panel pnlSection31_3;
+        private System.Windows.Forms.Label lblSection31_3;
+        private System.Windows.Forms.Panel pnlSection30_3;
+        private System.Windows.Forms.Label lblSection30_3;
         private System.Windows.Forms.Panel pnlSection41_2;
+        private System.Windows.Forms.Label lblSection41_2;
+        private System.Windows.Forms.Panel pnlSection64_2;
+        private System.Windows.Forms.Label lblSection64_2;
+        private System.Windows.Forms.Panel pnlSection63_2;
+        private System.Windows.Forms.Label lblSection63_2;
+        private System.Windows.Forms.Panel pnlSection62_2;
+        private System.Windows.Forms.Label lblSection62_2;
+        private System.Windows.Forms.Panel pnlSection61_2;
+        private System.Windows.Forms.Label lblSection61_2;
+        private System.Windows.Forms.Panel pnlSection57_2;
+        private System.Windows.Forms.Label lblSection57_2;
+        private System.Windows.Forms.Panel pnlSection56_2;
+        private System.Windows.Forms.Label lblSection56_2;
+        private System.Windows.Forms.Panel pnlSection55_2;
+        private System.Windows.Forms.Label lblSection55_2;
+        private System.Windows.Forms.Panel pnlSection54_2;
+        private System.Windows.Forms.Label lblSection54_2;
+        private System.Windows.Forms.Panel pnlSection53_2;
+        private System.Windows.Forms.Label lblSection53_2;
+        private System.Windows.Forms.Panel pnlSection52_2;
+        private System.Windows.Forms.Label lblSection52_2;
+        private System.Windows.Forms.Panel pnlSection51_2;
+        private System.Windows.Forms.Label lblSection51_2;
+        private System.Windows.Forms.Panel pnlSection38_2;
+        private System.Windows.Forms.Label lblSection38_2;
         private System.Windows.Forms.Panel pnlSection42_2;
+        private System.Windows.Forms.Label lblSection42_2;
+        private System.Windows.Forms.Panel pnlSection37_2;
+        private System.Windows.Forms.Label lblSection37_2;
         private System.Windows.Forms.Panel pnlSection44_2;
+        private System.Windows.Forms.Label lblSection44_2;
         private System.Windows.Forms.Panel pnlSection43_2;
+        private System.Windows.Forms.Label lblSection43_2;
+        private System.Windows.Forms.Panel pnlSection36_2;
+        private System.Windows.Forms.Label lblSection36_2;
+        private System.Windows.Forms.Panel pnlSection35_2;
+        private System.Windows.Forms.Label lblSection35_2;
+        private System.Windows.Forms.Panel pnlSection34_2;
+        private System.Windows.Forms.Label lblSection34_2;
+        private System.Windows.Forms.Panel pnlSection33_2;
+        private System.Windows.Forms.Label lblSection33_2;
+        private System.Windows.Forms.Panel pnlSection32_2;
+        private System.Windows.Forms.Label lblSection32_2;
+        private System.Windows.Forms.Panel pnlSection31_2;
+        private System.Windows.Forms.Label lblSection31_2;
+        private System.Windows.Forms.Panel pnlSection30_2;
+        private System.Windows.Forms.Label lblSection30_2;
         private System.Windows.Forms.Panel pnlSection41_1;
+        private System.Windows.Forms.Label lblSection41_1;
+        private System.Windows.Forms.Panel pnlSection64_1;
+        private System.Windows.Forms.Label lblSection64_1;
+        private System.Windows.Forms.Panel pnlSection63_1;
+        private System.Windows.Forms.Label lblSection63_1;
+        private System.Windows.Forms.Panel pnlSection62_1;
+        private System.Windows.Forms.Label lblSection62_1;
+        private System.Windows.Forms.Panel pnlSection61_1;
+        private System.Windows.Forms.Label lblSection61_1;
+        private System.Windows.Forms.Panel pnlSection57_1;
+        private System.Windows.Forms.Label lblSection57_1;
+        private System.Windows.Forms.Panel pnlSection56_1;
+        private System.Windows.Forms.Label lblSection56_1;
+        private System.Windows.Forms.Panel pnlSection55_1;
+        private System.Windows.Forms.Label lblSection55_1;
+        private System.Windows.Forms.Panel pnlSection54_1;
+        private System.Windows.Forms.Label lblSection54_1;
+        private System.Windows.Forms.Panel pnlSection53_1;
+        private System.Windows.Forms.Label lblSection53_1;
+        private System.Windows.Forms.Panel pnlSection52_1;
+        private System.Windows.Forms.Label lblSection52_1;
+        private System.Windows.Forms.Panel pnlSection51_1;
+        private System.Windows.Forms.Label lblSection51_1;
+        private System.Windows.Forms.Panel pnlSection38_1;
+        private System.Windows.Forms.Label lblSection38_1;
         private System.Windows.Forms.Panel pnlSection42_1;
+        private System.Windows.Forms.Label lblSection42_1;
+        private System.Windows.Forms.Panel pnlSection37_1;
+        private System.Windows.Forms.Label lblSection37_1;
+        private System.Windows.Forms.Panel pnlSection15_1;
+        private System.Windows.Forms.Label lblSection15_1;
+        private System.Windows.Forms.Panel pnlSection14_1;
+        private System.Windows.Forms.Label lblSection14_1;
+        private System.Windows.Forms.Panel pnlSection13_1;
+        private System.Windows.Forms.Label lblSection13_1;
+        private System.Windows.Forms.Panel pnlSection21_1;
+        private System.Windows.Forms.Label lblSection21_1;
+        private System.Windows.Forms.Panel pnlSection20_1;
+        private System.Windows.Forms.Label lblSection20_1;
+        private System.Windows.Forms.Panel pnlSection19_1;
+        private System.Windows.Forms.Label lblSection19_1;
+        private System.Windows.Forms.Panel pnlSection18_1;
+        private System.Windows.Forms.Label lblSection18_1;
+        private System.Windows.Forms.Panel pnlSection17_1;
+        private System.Windows.Forms.Label lblSection17_1;
+        private System.Windows.Forms.Panel pnlSection16_1;
+        private System.Windows.Forms.Label lblSection16_1;
+        private System.Windows.Forms.Panel pnlSection12_1;
+        private System.Windows.Forms.Label lblSection12_1;
         private System.Windows.Forms.Panel pnlSection44_1;
+        private System.Windows.Forms.Label lblSection44_1;
         private System.Windows.Forms.Panel pnlSection43_1;
-        private System.Windows.Forms.Panel panel45;
-        private System.Windows.Forms.Panel panel59;
-        private System.Windows.Forms.Panel panel54;
+        private System.Windows.Forms.Label lblSection43_1;
+        private System.Windows.Forms.Panel pnlSection36_1;
+        private System.Windows.Forms.Label lblSection36_1;
+        private System.Windows.Forms.Panel pnlSection35_1;
+        private System.Windows.Forms.Label lblSection35_1;
+        private System.Windows.Forms.Panel pnlSection34_1;
+        private System.Windows.Forms.Label lblSection34_1;
+        private System.Windows.Forms.Panel pnlSection33_1;
+        private System.Windows.Forms.Label lblSection33_1;
+        private System.Windows.Forms.Panel pnlSection32_1;
+        private System.Windows.Forms.Label lblSection32_1;
+        private System.Windows.Forms.Panel pnlSection31_1;
+        private System.Windows.Forms.Label lblSection31_1;
+        private System.Windows.Forms.Panel pnlSection30_1;
+        private System.Windows.Forms.Label lblSection30_1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel44;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel54;
+        private System.Windows.Forms.Panel panel59;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panel45;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel panel69;
+        private System.Windows.Forms.Panel panel64;
+        private System.Windows.Forms.Panel panel74;
+        private System.Windows.Forms.Panel panel79;
+        private System.Windows.Forms.Panel panel84;
+        private System.Windows.Forms.Panel panel89;
+        private System.Windows.Forms.Panel panel94;
+        private System.Windows.Forms.Panel panel99;
+        private System.Windows.Forms.Panel panel104;
+        private System.Windows.Forms.Panel panel109;
+        private System.Windows.Forms.Panel panel114;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton27;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton26;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton24;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton33;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton32;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton31;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton30;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton29;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton28;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton25;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton12;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton11;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton9;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton10;
-        private System.Windows.Forms.Panel pnlSection64_3;
-        private System.Windows.Forms.Panel pnlSection63_3;
-        private System.Windows.Forms.Panel pnlSection57_3;
-        private System.Windows.Forms.Panel pnlSection56_3;
-        private System.Windows.Forms.Panel pnlSection55_3;
-        private System.Windows.Forms.Panel pnlSection54_3;
-        private System.Windows.Forms.Panel pnlSection53_3;
-        private System.Windows.Forms.Panel pnlSection52_3;
-        private System.Windows.Forms.Panel pnlSection51_3;
-        private System.Windows.Forms.Panel pnlSection64_4;
-        private System.Windows.Forms.Panel pnlSection63_4;
-        private System.Windows.Forms.Panel pnlSection57_4;
-        private System.Windows.Forms.Panel pnlSection56_4;
-        private System.Windows.Forms.Panel pnlSection55_4;
-        private System.Windows.Forms.Panel pnlSection54_4;
-        private System.Windows.Forms.Panel pnlSection53_4;
-        private System.Windows.Forms.Panel pnlSection52_4;
-        private System.Windows.Forms.Panel pnlSection51_4;
-        private System.Windows.Forms.Panel pnlSection64_2;
-        private System.Windows.Forms.Panel pnlSection63_2;
-        private System.Windows.Forms.Panel pnlSection62_2;
-        private System.Windows.Forms.Panel pnlSection61_2;
-        private System.Windows.Forms.Panel pnlSection57_2;
-        private System.Windows.Forms.Panel pnlSection56_2;
-        private System.Windows.Forms.Panel pnlSection55_2;
-        private System.Windows.Forms.Panel pnlSection54_2;
-        private System.Windows.Forms.Panel pnlSection53_2;
-        private System.Windows.Forms.Panel pnlSection52_2;
-        private System.Windows.Forms.Panel pnlSection51_2;
-        private System.Windows.Forms.Panel pnlSection64_1;
-        private System.Windows.Forms.Panel pnlSection63_1;
-        private System.Windows.Forms.Panel pnlSection62_1;
-        private System.Windows.Forms.Panel pnlSection61_1;
-        private System.Windows.Forms.Panel pnlSection57_1;
-        private System.Windows.Forms.Panel pnlSection56_1;
-        private System.Windows.Forms.Panel pnlSection55_1;
-        private System.Windows.Forms.Panel pnlSection54_1;
-        private System.Windows.Forms.Panel pnlSection53_1;
-        private System.Windows.Forms.Panel pnlSection52_1;
-        private System.Windows.Forms.Panel pnlSection51_1;
-        private System.Windows.Forms.Panel panel114;
-        private System.Windows.Forms.Panel panel109;
-        private System.Windows.Forms.Panel panel104;
-        private System.Windows.Forms.Panel panel99;
-        private System.Windows.Forms.Panel panel94;
-        private System.Windows.Forms.Panel panel89;
-        private System.Windows.Forms.Panel panel84;
-        private System.Windows.Forms.Panel panel79;
-        private System.Windows.Forms.Panel panel74;
-        private System.Windows.Forms.Panel panel64;
-        private System.Windows.Forms.Panel panel69;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton23;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton22;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton21;
@@ -4868,234 +5064,23 @@
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton15;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton13;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton14;
-        private System.Windows.Forms.Panel pnlSection57_8;
-        private System.Windows.Forms.Panel pnlSection57_7;
-        private System.Windows.Forms.Panel pnlSection56_7;
-        private System.Windows.Forms.Panel pnlSection55_7;
-        private System.Windows.Forms.Panel pnlSection54_7;
-        private System.Windows.Forms.Panel pnlSection57_6;
-        private System.Windows.Forms.Panel pnlSection56_6;
-        private System.Windows.Forms.Panel pnlSection55_6;
-        private System.Windows.Forms.Panel pnlSection54_6;
-        private System.Windows.Forms.Panel pnlSection53_6;
-        private System.Windows.Forms.Panel pnlSection57_5;
-        private System.Windows.Forms.Panel pnlSection56_5;
-        private System.Windows.Forms.Panel pnlSection55_5;
-        private System.Windows.Forms.Panel pnlSection54_5;
-        private System.Windows.Forms.Panel pnlSection51_5;
-        private System.Windows.Forms.Panel pnlSection52_5;
-        private System.Windows.Forms.Panel pnlSection52_6;
-        private System.Windows.Forms.Panel pnlSection15_1;
-        private System.Windows.Forms.Panel pnlSection14_1;
-        private System.Windows.Forms.Panel pnlSection13_1;
-        private System.Windows.Forms.Panel pnlSection21_1;
-        private System.Windows.Forms.Panel pnlSection20_1;
-        private System.Windows.Forms.Panel pnlSection19_1;
-        private System.Windows.Forms.Panel pnlSection18_1;
-        private System.Windows.Forms.Panel pnlSection17_1;
-        private System.Windows.Forms.Panel pnlSection16_1;
-        private System.Windows.Forms.Panel pnlSection12_1;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton27;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton26;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton24;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton33;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton32;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton31;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton30;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton29;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton28;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton25;
-        private System.Windows.Forms.Panel pnlSection53_5;
-        private System.Windows.Forms.PictureBox pbPlattegrond;
-        private MaterialSkin.Controls.MaterialRaisedButton btnLogOut;
-        private System.Windows.Forms.Label lblSection30_1;
-        private System.Windows.Forms.Label lblSection30_2;
-        private System.Windows.Forms.Label lblSection31_1;
-        private System.Windows.Forms.Label lblSection32_1;
-        private System.Windows.Forms.Label lblSection33_1;
-        private System.Windows.Forms.Label lblSection34_1;
-        private System.Windows.Forms.Label lblSection35_1;
-        private System.Windows.Forms.Label lblSection36_1;
-        private System.Windows.Forms.Label lblSection37_1;
-        private System.Windows.Forms.Label lblSection38_1;
-        private System.Windows.Forms.Label lblSection31_2;
-        private System.Windows.Forms.Label lblSection32_2;
-        private System.Windows.Forms.Label lblSection33_2;
-        private System.Windows.Forms.Label lblSection34_2;
-        private System.Windows.Forms.Label lblSection35_2;
-        private System.Windows.Forms.Label lblSection36_2;
-        private System.Windows.Forms.Label lblSection37_2;
-        private System.Windows.Forms.Label lblSection38_2;
-        private System.Windows.Forms.Label lblSection30_3;
-        private System.Windows.Forms.Label lblSection31_3;
-        private System.Windows.Forms.Label lblSection32_3;
-        private System.Windows.Forms.Label lblSection32_4;
-        private System.Windows.Forms.Label lblSection33_3;
-        private System.Windows.Forms.Label lblSection33_4;
-        private System.Windows.Forms.Label lblSection34_3;
-        private System.Windows.Forms.Label lblSection34_4;
-        private System.Windows.Forms.Label lblSection35_4;
-        private System.Windows.Forms.Label lblSection36_4;
-        private System.Windows.Forms.Label lblSection37_4;
-        private System.Windows.Forms.Label lblSection38_4;
-        private System.Windows.Forms.Label lblSection35_3;
-        private System.Windows.Forms.Label lblSection36_3;
-        private System.Windows.Forms.Label lblSection37_3;
-        private System.Windows.Forms.Label lblSection38_3;
-        private System.Windows.Forms.Label lblSection52_3;
-        private System.Windows.Forms.Label lblSection51_3;
-        private System.Windows.Forms.Label lblSection57_8;
-        private System.Windows.Forms.Label lblSection54_7;
-        private System.Windows.Forms.Label lblSection52_6;
-        private System.Windows.Forms.Label lblSection52_5;
-        private System.Windows.Forms.Label lblSection52_4;
-        private System.Windows.Forms.Label lblSection51_5;
-        private System.Windows.Forms.Label lblSection51_4;
-        private System.Windows.Forms.Label lblSection52_2;
-        private System.Windows.Forms.Label lblSection51_2;
-        private System.Windows.Forms.Label lblSection52_1;
-        private System.Windows.Forms.Label lblSection51_1;
-        private System.Windows.Forms.Label lblSection53_1;
-        private System.Windows.Forms.Label lblSection64_3;
-        private System.Windows.Forms.Label lblSection63_3;
-        private System.Windows.Forms.Label lblSection57_3;
-        private System.Windows.Forms.Label lblSection56_3;
-        private System.Windows.Forms.Label lblSection55_3;
-        private System.Windows.Forms.Label lblSection54_3;
-        private System.Windows.Forms.Label lblSection53_3;
-        private System.Windows.Forms.Label lblSection64_4;
-        private System.Windows.Forms.Label lblSection63_4;
-        private System.Windows.Forms.Label lblSection57_4;
-        private System.Windows.Forms.Label lblSection56_4;
-        private System.Windows.Forms.Label lblSection55_4;
-        private System.Windows.Forms.Label lblSection54_4;
-        private System.Windows.Forms.Label lblSection53_4;
-        private System.Windows.Forms.Label lblSection57_7;
-        private System.Windows.Forms.Label lblSection56_7;
-        private System.Windows.Forms.Label lblSection55_7;
-        private System.Windows.Forms.Label lblSection57_6;
-        private System.Windows.Forms.Label lblSection56_6;
-        private System.Windows.Forms.Label lblSection55_6;
-        private System.Windows.Forms.Label lblSection54_6;
-        private System.Windows.Forms.Label lblSection53_6;
-        private System.Windows.Forms.Label lblSection57_5;
-        private System.Windows.Forms.Label lblSection56_5;
-        private System.Windows.Forms.Label lblSection55_5;
-        private System.Windows.Forms.Label lblSection54_5;
-        private System.Windows.Forms.Label lblSection53_5;
-        private System.Windows.Forms.Label lblSection64_2;
-        private System.Windows.Forms.Label lblSection63_2;
-        private System.Windows.Forms.Label lblSection62_2;
-        private System.Windows.Forms.Label lblSection61_2;
-        private System.Windows.Forms.Label lblSection57_2;
-        private System.Windows.Forms.Label lblSection56_2;
-        private System.Windows.Forms.Label lblSection55_2;
-        private System.Windows.Forms.Label lblSection54_2;
-        private System.Windows.Forms.Label lblSection53_2;
-        private System.Windows.Forms.Label lblSection64_1;
-        private System.Windows.Forms.Label lblSection63_1;
-        private System.Windows.Forms.Label lblSection62_1;
-        private System.Windows.Forms.Label lblSection61_1;
-        private System.Windows.Forms.Label lblSection57_1;
-        private System.Windows.Forms.Label lblSection56_1;
-        private System.Windows.Forms.Label lblSection55_1;
-        private System.Windows.Forms.Label lblSection54_1;
-        private System.Windows.Forms.Label lblSection41_3;
-        private System.Windows.Forms.Label lblSection42_3;
-        private System.Windows.Forms.Label lblSection44_3;
-        private System.Windows.Forms.Label lblSection43_3;
-        private System.Windows.Forms.Label lblSection41_4;
-        private System.Windows.Forms.Label lblSection42_4;
-        private System.Windows.Forms.Label lblSection44_4;
-        private System.Windows.Forms.Label lblSection43_4;
-        private System.Windows.Forms.Label lblSection41_2;
-        private System.Windows.Forms.Label lblSection42_2;
-        private System.Windows.Forms.Label lblSection44_2;
-        private System.Windows.Forms.Label lblSection43_2;
-        private System.Windows.Forms.Label lblSection41_1;
-        private System.Windows.Forms.Label lblSection42_1;
-        private System.Windows.Forms.Label lblSection15_1;
-        private System.Windows.Forms.Label lblSection14_1;
-        private System.Windows.Forms.Label lblSection13_1;
-        private System.Windows.Forms.Label lblSection21_1;
-        private System.Windows.Forms.Label lblSection20_1;
-        private System.Windows.Forms.Label lblSection19_1;
-        private System.Windows.Forms.Label lblSection18_1;
-        private System.Windows.Forms.Label lblSection17_1;
-        private System.Windows.Forms.Label lblSection16_1;
-        private System.Windows.Forms.Label lblSection12_1;
-        private System.Windows.Forms.Label lblSection44_1;
-        private System.Windows.Forms.Label lblSection43_1;
-        private MaterialSkin.Controls.MaterialLabel lblVergroot;
-        private System.Windows.Forms.TabPage tpTrams;
-        private System.Windows.Forms.ListView lvPersoonlijkRooster;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
-        private MaterialSkin.Controls.MaterialRaisedButton btnEditScedule;
-        private MaterialSkin.Controls.MaterialRaisedButton btnBekijkRoosters;
-        private System.Windows.Forms.Label label1;
-        private MaterialSkin.Controls.MaterialRaisedButton btnBekijkRoosters1;
-        private System.Windows.Forms.ComboBox cbGebruikerBekijken;
-        private System.Windows.Forms.Label lblRoosterVan;
-        private System.Windows.Forms.ListView lvRoostersBekijken;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
-        private System.Windows.Forms.ColumnHeader columnHeader6;
-        private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private System.Windows.Forms.ColumnHeader columnHeader9;
-        private System.Windows.Forms.ColumnHeader columnHeader8;
-        private System.Windows.Forms.ColumnHeader columnHeader7;
-        private System.Windows.Forms.ListView lvRoostersWijzigen;
-        private System.Windows.Forms.Label label3;
-        private MaterialSkin.Controls.MaterialRaisedButton btnNieuweTaak;
-        private MaterialSkin.Controls.MaterialRaisedButton btnWijzigTaak;
-        private MaterialSkin.Controls.MaterialLabel materialLabel3;
-        private System.Windows.Forms.ComboBox cbGebruikerEdit;
-        private MaterialSkin.Controls.MaterialRaisedButton btnVerwijderTaak;
-        private MaterialSkin.Controls.MaterialLabel materialLabel4;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox tbTijd;
-        private System.Windows.Forms.TextBox tbTaak;
-        private System.Windows.Forms.DateTimePicker dtpDatum;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label8;
-        private MaterialSkin.Controls.MaterialLabel materialLabel5;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton34;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton35;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton36;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ColumnHeader columnHeader12;
-        private System.Windows.Forms.ColumnHeader columnHeader14;
-        private System.Windows.Forms.ColumnHeader columnHeader15;
-        private System.Windows.Forms.ColumnHeader columnHeader16;
-        private System.Windows.Forms.ColumnHeader columnHeader17;
-        private System.Windows.Forms.ColumnHeader columnHeader18;
-        private System.Windows.Forms.ColumnHeader columnHeader13;
-        private System.Windows.Forms.ColumnHeader columnHeader11;
-        private System.Windows.Forms.ColumnHeader columnHeader10;
-        private System.Windows.Forms.ListView lvGebruikers;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton8;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton7;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton6;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton5;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton4;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton3;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton2;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
+        private MaterialSkin.Controls.MaterialRaisedButton btnLine;
         private LoginTabPage tpLogin;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtUsername;
+        private MaterialSkin.Controls.MaterialLabel materialLabel2;
+        private MaterialSkin.Controls.MaterialLabel lblUsername;
+        private MaterialSkin.Controls.MaterialRaisedButton btnLogin;
+        private System.Windows.Forms.TabControl tcNavigation;
+        private MaterialSkin.Controls.MaterialTabSelector materialTabSelector1;
     }
 }
 

@@ -13,10 +13,7 @@ namespace CTRails
 {
     public partial class Rails : MaterialForm
     {
-        public string TramNummer { get; set; }
-        private UnitOfWork unit;
-        
-        private bool addListeners = false;
+        private UnitOfWork worker;
 
         public Rails()
         {
@@ -34,8 +31,8 @@ namespace CTRails
             materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500,
                 Accent.LightBlue200, TextShade.WHITE);
 
-            tabTabs.TabPages.Remove(tpLijnen);
-            tabTabs.SelectedIndex = tabTabs.TabPages.IndexOf(tpLogin);
+            tcNavigation.TabPages.Clear();
+            tcNavigation.TabPages.Add(tpLogin);
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -43,12 +40,11 @@ namespace CTRails
             if (tpLogin.Login(txtUsername.Text, txtPassword.Text))
             {
                 this.Text = "Welkom " + Session.User.FirstName;
-                tabTabs.SelectedIndex = tabTabs.TabPages.IndexOf(tpRemise);
-                tsTabs.BaseTabControl = tabTabs;
-                tabTabs.TabPages.Remove(tpLogin);
+                
                 btnLogOut.Visible = true;
 
-                MessageBox.Show(Session.User.GetType().ToString());
+                BuildTabPageForUser(Session.User);
+
                 return;
             }
 
@@ -79,6 +75,58 @@ namespace CTRails
             {
                 ((Label)sender).Text = popAddTram.txtTramNummer.Text;
             }
+        }
+
+
+
+        /// <summary>
+        /// Constructs the tab page control based on the given user's permissions.
+        /// </summary>
+        /// <param name="user"> Specifies the user to generate the control by. </param>
+        private void BuildTabPageForUser(Employee user)
+        {
+            tcNavigation.TabPages.Remove(tpLogin);
+
+            if (user.GetType() == typeof (Janitor))
+            {
+                tcNavigation.TabPages.Add(tpRooster);
+            }
+            if (user.GetType() == typeof (LeadJanitor))
+            {
+                tcNavigation.TabPages.Add(tpRooster);
+                tcNavigation.TabPages.Add(tpRoosterEdit);
+            }
+            if (user.GetType() == typeof (Technician))
+            {
+                tcNavigation.TabPages.Add(tpRooster);
+            }
+            if (user.GetType() == typeof (LeadTechnician))
+            {
+                tcNavigation.TabPages.Add(tpRooster);
+                tcNavigation.TabPages.Add(tpRoosterEdit);
+            }
+
+            if (user.GetType() == typeof (FleetAdministrator))
+            {
+                tcNavigation.TabPages.Add(tpRemise);
+                tcNavigation.TabPages.Add(tpTrams);
+            }
+
+            if (user.GetType() == typeof(Administrator))
+            {
+                tcNavigation.TabPages.Add(tpRemise);
+                tcNavigation.TabPages.Add(tpTrams);
+                tcNavigation.TabPages.Add(tpGebruikers);
+            }
+
+        }
+
+        private void btnLogoutClick(object sender, EventArgs e)
+        {
+            Session.End();
+
+            tcNavigation.TabPages.Clear();
+            tcNavigation.TabPages.Add(tpLogin);
         }
     }
 }

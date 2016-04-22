@@ -58,7 +58,7 @@ namespace CTRails
             else if (employee.AccountType.Name == "LeadJanitor")
                 employee = new LeadJanitor(employee.ID, employee.AccountType, employee.Username, employee.Password, employee.FirstName, employee.LastName, employee.Prefix, employee.Email, employee.DateOfBirth, employee.Nationality, employee.Address, employee.Gender);
             else if (employee.AccountType.Name == "Technician")
-                employee = new Technicus(employee.ID, employee.AccountType, employee.Username, employee.Password, employee.FirstName, employee.LastName, employee.Prefix, employee.Email, employee.DateOfBirth, employee.Nationality, employee.Address, employee.Gender);
+                employee = new Technician(employee.ID, employee.AccountType, employee.Username, employee.Password, employee.FirstName, employee.LastName, employee.Prefix, employee.Email, employee.DateOfBirth, employee.Nationality, employee.Address, employee.Gender);
             else 
                 employee = new LeadTechnician(employee.ID, employee.AccountType, employee.Username, employee.Password, employee.FirstName, employee.LastName, employee.Prefix, employee.Email, employee.DateOfBirth, employee.Nationality, employee.Address, employee.Gender);
         }
