@@ -31,7 +31,7 @@ namespace Rails_Test
         public void InsertEmployee()
         {
             //test fields
-            unitOfWork.Employees.Add(new Employee(
+            /*unitOfWork.Employees.Add(new Employee(
                 unitOfWork.AccountTypes.Where(accountType => accountType.Name == "FleetAdministrator").First(),
                 "willem",
                 "willem",
@@ -43,7 +43,7 @@ namespace Rails_Test
                 "NL",
                 new Address("Willemstraat", 1, "Willemsinky", "Willem", "1234WI", "W"),
                 Gender.M
-                ));
+                ));*/
 
             Assert.AreEqual("willem@willem.willem", unitOfWork.Employees.Get().First(x => x.Email == "willem@willem.willem").Email);
         }

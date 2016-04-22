@@ -1,8 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CTRails.DAL;
+using CTRails.Entities;
 using CTRails.Entities.Employees;
 using CTRails.Events;
 using CTRails.Exceptions;
@@ -25,7 +27,7 @@ namespace CTRails
         public static bool Start(Employee employee)
         {
 
-            UnitOfWork worker = new UnitOfWork(true);
+            UnitOfWork worker = new UnitOfWork(false);
 
             // If the user does not exist.
             if (worker.Employees.Get().All(user => user.ID != employee.ID))
@@ -55,20 +57,29 @@ namespace CTRails
 
         public static void ToAccountType(ref Employee employee)
         {
-            if (employee.AccountType.Name == "Administrator")
-                employee = new Administrator(employee.ID, employee.AccountType, employee.Username, employee.Password, employee.FirstName, employee.LastName, employee.Prefix, employee.Email, employee.DateOfBirth, employee.Nationality, employee.Address, employee.Gender);
-            else if (employee.AccountType.Name == "FleetAdministrator")
-                employee = new FleetAdministrator(employee.ID, employee.AccountType, employee.Username, employee.Password, employee.FirstName, employee.LastName, employee.Prefix, employee.Email, employee.DateOfBirth, employee.Nationality, employee.Address, employee.Gender);
-            else if (employee.AccountType.Name == "Driver")
-                employee = new Driver(employee.ID, employee.AccountType, employee.Username, employee.Password, employee.FirstName, employee.LastName, employee.Prefix, employee.Email, employee.DateOfBirth, employee.Nationality, employee.Address, employee.Gender);
-            else if (employee.AccountType.Name == "Janitor")
-                employee = new Janitor(employee.ID, employee.AccountType, employee.Username, employee.Password, employee.FirstName, employee.LastName, employee.Prefix, employee.Email, employee.DateOfBirth, employee.Nationality, employee.Address, employee.Gender);
-            else if (employee.AccountType.Name == "LeadJanitor")
-                employee = new LeadJanitor(employee.ID, employee.AccountType, employee.Username, employee.Password, employee.FirstName, employee.LastName, employee.Prefix, employee.Email, employee.DateOfBirth, employee.Nationality, employee.Address, employee.Gender);
-            else if (employee.AccountType.Name == "Technician")
-                employee = new Technician(employee.ID, employee.AccountType, employee.Username, employee.Password, employee.FirstName, employee.LastName, employee.Prefix, employee.Email, employee.DateOfBirth, employee.Nationality, employee.Address, employee.Gender);
-            else 
-                employee = new LeadTechnician(employee.ID, employee.AccountType, employee.Username, employee.Password, employee.FirstName, employee.LastName, employee.Prefix, employee.Email, employee.DateOfBirth, employee.Nationality, employee.Address, employee.Gender);
+
+            UnitOfWork worker = new UnitOfWork(false);
+
+            foreach (AccountType t in worker.AccountTypes.Get())
+            {
+                if (t.ID == employee.AccountTypeID)
+                {
+                    if (t.Name == "Administrator")
+                        employee = new Administrator(employee.ID, employee.AccountTypeID, employee.Username, employee.Password, employee.FirstName, employee.LastName, employee.Prefix, employee.Email, employee.DateOfBirth, employee.Nationality, employee.Address, employee.Gender);
+                    else if (t.Name == "FleetAdministrator")
+                        employee = new FleetAdministrator(employee.ID, employee.AccountTypeID, employee.Username, employee.Password, employee.FirstName, employee.LastName, employee.Prefix, employee.Email, employee.DateOfBirth, employee.Nationality, employee.Address, employee.Gender);
+                    else if (t.Name == "Driver")
+                        employee = new Driver(employee.ID, employee.AccountTypeID, employee.Username, employee.Password, employee.FirstName, employee.LastName, employee.Prefix, employee.Email, employee.DateOfBirth, employee.Nationality, employee.Address, employee.Gender);
+                    else if (t.Name == "Janitor")
+                        employee = new Janitor(employee.ID, employee.AccountTypeID, employee.Username, employee.Password, employee.FirstName, employee.LastName, employee.Prefix, employee.Email, employee.DateOfBirth, employee.Nationality, employee.Address, employee.Gender);
+                    else if (t.Name == "LeadJanitor")
+                        employee = new LeadJanitor(employee.ID, employee.AccountTypeID, employee.Username, employee.Password, employee.FirstName, employee.LastName, employee.Prefix, employee.Email, employee.DateOfBirth, employee.Nationality, employee.Address, employee.Gender);
+                    else if (t.Name == "Technician")
+                        employee = new Technician(employee.ID, employee.AccountTypeID, employee.Username, employee.Password, employee.FirstName, employee.LastName, employee.Prefix, employee.Email, employee.DateOfBirth, employee.Nationality, employee.Address, employee.Gender);
+                    else
+                        employee = new LeadTechnician(employee.ID, employee.AccountTypeID, employee.Username, employee.Password, employee.FirstName, employee.LastName, employee.Prefix, employee.Email, employee.DateOfBirth, employee.Nationality, employee.Address, employee.Gender);
+                }
+            }
         }
     }
 }

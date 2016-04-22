@@ -11,7 +11,6 @@ namespace CTRails.Forms
 {
     public partial class Rails : MaterialForm
     {
-        private UnitOfWork worker;
 
         public Rails()
         {

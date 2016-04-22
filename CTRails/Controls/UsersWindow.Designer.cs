@@ -137,7 +137,7 @@
             this.cbGender.FormattingEnabled = true;
             this.cbGender.Items.AddRange(new object[] {
             "M",
-            "V"});
+            "F"});
             this.cbGender.Location = new System.Drawing.Point(1109, 94);
             this.cbGender.Name = "cbGender";
             this.cbGender.Size = new System.Drawing.Size(46, 21);

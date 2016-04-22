@@ -18,7 +18,7 @@ namespace CTRails.DAL.Contexts
         public EmployeeTestContext()
             : base()
         {
-            Entities.Add(new Employee(NextID, new AccountType(0, "Janitor"),
+            Entities.Add(new Employee(NextID, 4,
                 "janitor",
                 "janitor",
                 "Harrie",
@@ -30,7 +30,7 @@ namespace CTRails.DAL.Contexts
                 new Address("harriestraat", 22, "Son en Harrie", "Haat", "1337HA", "B"),
                 Gender.M));
 
-            Entities.Add(new Employee(NextID, new AccountType(0, "FleetAdministrator"),
+            Entities.Add(new Employee(NextID, 3,
                 "fleet",
                 "fleet",
                 "Willem",
@@ -42,7 +42,7 @@ namespace CTRails.DAL.Contexts
                 new Address("Satanlaan", 666, "Lucifer", "Hell", "0666XX", "B"),
                 Gender.M));
 
-            Entities.Add(new Employee(NextID, new AccountType(0, "LeadJanitor"),
+            Entities.Add(new Employee(NextID, 21,
                 "lj",
                 "lj",
                 "Kees",
@@ -54,7 +54,7 @@ namespace CTRails.DAL.Contexts
                 new Address("harriestraat", 24, "Son en Harrie", "Haat", "1337HA", "B"),
                 Gender.M));
 
-            Entities.Add(new Employee(NextID, new AccountType(0, "Administrator"),
+            Entities.Add(new Employee(NextID, 1,
                 "admin",
                 "admin",
                 "Jaap",

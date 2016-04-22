@@ -15,7 +15,7 @@ namespace CTRails.Controls
 {
     public partial class UsersWindow : UserControl
     {
-        UnitOfWork worker = new UnitOfWork(true);
+        UnitOfWork worker = new UnitOfWork(false);
 
         public UsersWindow()
         {

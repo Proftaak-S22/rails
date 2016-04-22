@@ -23,7 +23,7 @@ namespace CTRails.Controls
         /// <returns></returns>
         public bool Login(string username, string password)
         {
-            UnitOfWork worker = new UnitOfWork(true);
+            UnitOfWork worker = new UnitOfWork(false);
 
             // Get the first employee that matches the username/password combination, or null.
             Employee user = worker.Employees.Get().FirstOrDefault(x => x.Username == username && x.Password == password);

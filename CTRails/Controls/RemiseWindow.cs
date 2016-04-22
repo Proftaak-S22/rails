@@ -48,7 +48,7 @@ namespace CTRails.Controls
             {
                 int code = placeTramForm.TramCode;
 
-                UnitOfWork work = new UnitOfWork(true);
+                UnitOfWork work = new UnitOfWork(false);
 
                 Tram tram = work.Trams.Get().FirstOrDefault(x => x.Code == code);
 

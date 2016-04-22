@@ -10,7 +10,7 @@ namespace CTRails.Entities.Employees
         //Constructor
         public Technician(
             int id,
-            AccountType accountType,
+            int AccountTypeID,
             string username,
             string password,
             string firstName,
@@ -22,9 +22,9 @@ namespace CTRails.Entities.Employees
             Address address,
             Gender gender
             )
-            : base(id, accountType, username, password, firstName, lastName, prefix, email, dateOfBirth, nationality, address, gender)
+            : base(id, AccountTypeID, username, password, firstName, lastName, prefix, email, dateOfBirth, nationality, address, gender)
         {
-            throw new NotImplementedException();
+            
         }
 
     }

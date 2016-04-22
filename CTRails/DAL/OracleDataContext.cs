@@ -104,7 +104,7 @@ namespace CTRails.DAL
 
                     Employee next = new Janitor(
                         Convert.ToInt32(reader["ID"]),
-                        null,
+                        Convert.ToInt32(reader["ACCOUNTTYPE_ID"]),
                         reader["USERNAME"].ToString(),
                         reader["PASSWORDHASH"].ToString(),
                         reader["FIRSTNAME"].ToString(),

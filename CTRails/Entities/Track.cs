@@ -28,7 +28,7 @@ namespace CTRails.Entities
 
                 sectors = new List<Sector>();
 
-                worker = new UnitOfWork(true);
+                worker = new UnitOfWork(false);
 
                 sectors = new List<Sector>(worker.Sectors.Where(s => s.TrackID == ID));
 
