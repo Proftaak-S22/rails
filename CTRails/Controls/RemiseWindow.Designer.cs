@@ -1,4 +1,6 @@
-﻿namespace CTRails.Controls
+﻿using System.Drawing;
+
+namespace CTRails.Controls
 {
     partial class RemiseWindow
     {
@@ -447,7 +449,7 @@
             // 
             // pbPlattegrond
             // 
-            this.pbPlattegrond.Image = global::CTRails.Properties.Resources.Plattegrond_clear;
+            this.pbPlattegrond.Image = new Bitmap("Resources/Plattegrond-clear.jpg");
             this.pbPlattegrond.Location = new System.Drawing.Point(1048, 350);
             this.pbPlattegrond.Name = "pbPlattegrond";
             this.pbPlattegrond.Size = new System.Drawing.Size(204, 119);
