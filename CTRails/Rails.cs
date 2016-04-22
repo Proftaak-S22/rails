@@ -91,11 +91,11 @@ namespace CTRails
 
             if (user.GetType() == typeof (Janitor))
             {
-                tcNavigation.TabPages.Add(tpRooster);
+                tcNavigation.TabPages.Add(tpSchedule);
             }
             if (user.GetType() == typeof (LeadJanitor))
             {
-                tcNavigation.TabPages.Add(tpRooster);
+                tcNavigation.TabPages.Add(tpSchedule);
                 tcNavigation.TabPages.Add(tpRoosterEdit);
 
                 
@@ -103,11 +103,11 @@ namespace CTRails
             }
             if (user.GetType() == typeof (Technician))
             {
-                tcNavigation.TabPages.Add(tpRooster);
+                tcNavigation.TabPages.Add(tpSchedule);
             }
             if (user.GetType() == typeof (LeadTechnician))
             {
-                tcNavigation.TabPages.Add(tpRooster);
+                tcNavigation.TabPages.Add(tpSchedule);
                 tcNavigation.TabPages.Add(tpRoosterEdit);
             }
 

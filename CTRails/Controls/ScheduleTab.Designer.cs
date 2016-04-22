@@ -1,6 +1,6 @@
-﻿namespace CTRails
+﻿namespace CTRails.Controls
 {
-    partial class LoginTabPage
+    partial class ScheduleTab
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            this.ResumeLayout(false);
-
+            components = new System.ComponentModel.Container();
         }
 
         #endregion

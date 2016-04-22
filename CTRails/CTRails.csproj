@@ -101,11 +101,17 @@
     <Compile Include="DAL\Repositories\IRepository.cs" />
     <Compile Include="DAL\IUnitOfWork.cs" />
     <Compile Include="DAL\Contexts\OracleDatabaseContext.cs" />
-    <Compile Include="LoginTabPage.cs">
+    <Compile Include="Controls\LoginTabPage.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="LoginTabPage.Designer.cs">
+    <Compile Include="Controls\LoginTabPage.Designer.cs">
       <DependentUpon>LoginTabPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ScheduleTab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ScheduleTab.Designer.cs">
+      <DependentUpon>ScheduleTab.cs</DependentUpon>
     </Compile>
     <Compile Include="Session.cs" />
     <Compile Include="TramPlaatsenForm.cs">
@@ -141,7 +147,7 @@
     <EmbeddedResource Include="Rails.resx">
       <DependentUpon>Rails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginTabPage.resx">
+    <EmbeddedResource Include="Controls\LoginTabPage.resx">
       <DependentUpon>LoginTabPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TramPlaatsenForm.resx">
@@ -174,6 +180,7 @@
   <ItemGroup>
     <None Include="Resources\Plattegrond-clear.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
