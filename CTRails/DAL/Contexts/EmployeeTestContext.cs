@@ -42,6 +42,18 @@ namespace CTRails.DAL.Contexts
                 "NL",
                 new Address("Satanlaan", 666, "Lucifer", "Hell", "0666XX", "B"),
                 Gender.M));
+
+            Entities.Add(new Employee(ID, new AccountType(0, "LeadJanitor"),
+                "lj",
+                "lj",
+                "Kees",
+                "van Pees",
+                string.Empty,
+                "keesvp@pees.kees",
+                DateTime.MaxValue,
+                "NL",
+                new Address("harriestraat", 24, "Son en Harrie", "Haat", "1337HA", "B"),
+                Gender.M));
         }
 
         public void Add(Employee entity)

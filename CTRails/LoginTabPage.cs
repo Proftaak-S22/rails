@@ -21,13 +21,13 @@ namespace CTRails
             InitializeComponent();
         }
 
-        public LoginTabPage(string text) : base(text)
-        {
-            InitializeComponent();
-        }
 
-
-
+        /// <summary>
+        /// Attempts to login a user by the specified username and password combination.
+        /// </summary>
+        /// <param name="username"> Specifies the username. </param>
+        /// <param name="password"> Specifies the password. </param>
+        /// <returns></returns>
         public bool Login(string username, string password)
         {
             UnitOfWork worker = new UnitOfWork(true);
@@ -40,6 +40,21 @@ namespace CTRails
                 return false;
 
             return Session.Start(user);
+        }
+
+
+        /// <summary>
+        /// Logout the currently logged in user.
+        /// </summary>
+        /// <returns></returns>
+        public bool Logout()
+        {
+            if (!Session.Started)
+                return true;
+
+            Session.End();
+
+            return true;
         }
     }
 }

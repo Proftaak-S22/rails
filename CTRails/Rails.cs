@@ -37,12 +37,14 @@ namespace CTRails
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            // Attempt a login with the user specified u/p combo.
             if (tpLogin.Login(txtUsername.Text, txtPassword.Text))
             {
                 this.Text = "Welkom " + Session.User.FirstName;
                 
                 btnLogOut.Visible = true;
 
+                // Construct the tab page control according to the user.
                 BuildTabPageForUser(Session.User);
 
                 return;
@@ -95,6 +97,9 @@ namespace CTRails
             {
                 tcNavigation.TabPages.Add(tpRooster);
                 tcNavigation.TabPages.Add(tpRoosterEdit);
+
+                
+
             }
             if (user.GetType() == typeof (Technician))
             {
@@ -123,7 +128,7 @@ namespace CTRails
 
         private void btnLogoutClick(object sender, EventArgs e)
         {
-            Session.End();
+            tpLogin.Logout();
 
             tcNavigation.TabPages.Clear();
             tcNavigation.TabPages.Add(tpLogin);
