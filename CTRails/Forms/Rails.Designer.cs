@@ -346,7 +346,7 @@ namespace CTRails.Forms
             // 
             this.usersWindow1.Location = new System.Drawing.Point(3, 3);
             this.usersWindow1.Name = "usersWindow1";
-            this.usersWindow1.Size = new System.Drawing.Size(1169, 487);
+            this.usersWindow1.Size = new System.Drawing.Size(1162, 487);
             this.usersWindow1.TabIndex = 0;
             // 
             // Rails

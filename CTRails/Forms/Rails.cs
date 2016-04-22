@@ -64,17 +64,6 @@ namespace CTRails.Forms
             
         }
 
-        private void sectorClick(object sender, EventArgs e)
-        {
-            PlaceTramForm popAddPlaceTram = new PlaceTramForm();
-            string senderName = ((Label)sender).Name;
-
-            if (popAddPlaceTram.ShowDialog() == DialogResult.OK)
-            {
-                ((Label)sender).Text = popAddPlaceTram.txtTramNummer.Text;
-            }
-        }
-
 
 
         /// <summary>

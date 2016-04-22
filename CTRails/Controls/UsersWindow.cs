@@ -28,18 +28,24 @@ namespace CTRails.Controls
         {
             UnitOfWork worker = new UnitOfWork(true);
 
+            lvGebruikers.Items.Clear();
+
             foreach (Employee e in worker.Employees.Get())
             {
-                ListViewItem item = new ListViewItem();
-                item.SubItems.Add(e.Username);
-                item.SubItems.Add(e.Gender.ToString());
-                item.SubItems.Add(e.DateOfBirth.ToShortDateString());
-                item.SubItems.Add(e.FirstName + " " + e.Prefix + " " + e.LastName);
-                item.SubItems.Add(e.Email);
-                item.SubItems.Add(e.Address.Country);
-                item.SubItems.Add(e.Address.City);
-                item.SubItems.Add(e.Address.Zipcode);
-                item.SubItems.Add(e.Address.Number.ToString());
+                string[] row =
+                {
+                    e.Username,
+                    e.Gender.ToString(),
+                    e.FirstName + " " + e.Prefix + " " + e.LastName,
+                    e.DateOfBirth.ToShortDateString(),
+                    e.Email ,
+                    e.Address.Country ,
+                    e.Address.City,
+                    e.Address.Zipcode,
+                    e.Address.Number.ToString()
+                };
+
+                var item = new ListViewItem(row);
 
                 lvGebruikers.Items.Add(item);
             }

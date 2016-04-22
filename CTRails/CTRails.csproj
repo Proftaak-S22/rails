@@ -192,6 +192,9 @@
     <EmbeddedResource Include="Forms\PlaceTramForm.resx">
       <DependentUpon>PlaceTramForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Rails.resx">
+      <DependentUpon>Rails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <SubType>Designer</SubType>
       <Generator>ResXFileCodeGenerator</Generator>

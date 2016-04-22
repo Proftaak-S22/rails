@@ -65,7 +65,7 @@
             this.chCountry = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chCity = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chZipcode = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.chNumber = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chNummer = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // tbHouseNumber
@@ -318,7 +318,6 @@
             // 
             // lvGebruikers
             // 
-            this.lvGebruikers.AutoArrange = false;
             this.lvGebruikers.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.chUsername,
             this.chGender,
@@ -328,7 +327,7 @@
             this.chCountry,
             this.chCity,
             this.chZipcode,
-            this.chNumber});
+            this.chNummer});
             this.lvGebruikers.FullRowSelect = true;
             this.lvGebruikers.GridLines = true;
             this.lvGebruikers.ImeMode = System.Windows.Forms.ImeMode.On;
@@ -342,47 +341,38 @@
             // chUsername
             // 
             this.chUsername.Text = "Gebruikersnaam";
-            this.chUsername.Width = 104;
             // 
             // chGender
             // 
             this.chGender.Text = "Geslacht";
-            this.chGender.Width = 54;
             // 
             // chFullname
             // 
-            this.chFullname.Text = "Volledige naam";
-            this.chFullname.Width = 147;
+            this.chFullname.Text = "Naam";
             // 
             // chDateOfBirth
             // 
             this.chDateOfBirth.Text = "Geboortedatum";
-            this.chDateOfBirth.Width = 88;
             // 
             // chEmail
             // 
-            this.chEmail.Text = "Email";
-            this.chEmail.Width = 121;
+            this.chEmail.Text = "E-Mail";
             // 
             // chCountry
             // 
             this.chCountry.Text = "Land";
-            this.chCountry.Width = 74;
             // 
             // chCity
             // 
-            this.chCity.Text = "Stad";
-            this.chCity.Width = 72;
+            this.chCity.Text = "Woonplaats";
             // 
             // chZipcode
             // 
             this.chZipcode.Text = "Postcode";
-            this.chZipcode.Width = 84;
             // 
-            // chNumber
+            // chNummer
             // 
-            this.chNumber.Text = "Huisnummer";
-            this.chNumber.Width = 75;
+            this.chNummer.Text = "Huisnummer";
             // 
             // UsersWindow
             // 
@@ -462,6 +452,6 @@
         private System.Windows.Forms.ColumnHeader chCountry;
         private System.Windows.Forms.ColumnHeader chCity;
         private System.Windows.Forms.ColumnHeader chZipcode;
-        private System.Windows.Forms.ColumnHeader chNumber;
+        private System.Windows.Forms.ColumnHeader chNummer;
     }
 }

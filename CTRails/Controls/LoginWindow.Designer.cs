@@ -89,7 +89,7 @@
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.loginClick);
             // 
-            // LoginTabPage
+            // LoginWindow
             // 
             this.Controls.Add(this.tbPassword);
             this.Controls.Add(this.tbUsername);
