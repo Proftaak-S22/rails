@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 
 namespace CTRails.Exceptions
 {
-
+    [Serializable]
     public class EntityNotPresentException : Exception
     {
         public EntityNotPresentException()

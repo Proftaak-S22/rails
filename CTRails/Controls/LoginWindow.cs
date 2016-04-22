@@ -54,7 +54,6 @@ namespace CTRails.Controls
         {
             if (Login(tbUsername.Text, tbPassword.Text))
             {
-                
                 return;
             }
 

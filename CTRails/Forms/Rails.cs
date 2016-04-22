@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 using CTRails.DAL;
+using CTRails.Entities;
 using CTRails.Entities.Employees;
 using CTRails.Events;
 using MaterialSkin;
@@ -11,6 +14,8 @@ namespace CTRails.Forms
 {
     public partial class Rails : MaterialForm
     {
+
+        UnitOfWork worker = new UnitOfWork();
 
         public Rails()
         {
@@ -69,20 +74,16 @@ namespace CTRails.Forms
 
             if (user.GetType() == typeof (Janitor))
             {
-                tcNavigation.TabPages.Add(tpSchedule);
             }
             if (user.GetType() == typeof (LeadJanitor))
             {
-                tcNavigation.TabPages.Add(tpSchedule);
                 tcNavigation.TabPages.Add(tpRoosterEdit);
             }
             if (user.GetType() == typeof (Technician))
             {
-                tcNavigation.TabPages.Add(tpSchedule);
             }
             if (user.GetType() == typeof (LeadTechnician))
             {
-                tcNavigation.TabPages.Add(tpSchedule);
                 tcNavigation.TabPages.Add(tpRoosterEdit);
             }
 

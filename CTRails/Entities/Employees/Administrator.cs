@@ -6,8 +6,6 @@ namespace CTRails.Entities.Employees
 {
     public class Administrator : Employee
     {
-        //Fields
-        private UnitOfWork unit;
 
         //Constructor
         public Administrator(

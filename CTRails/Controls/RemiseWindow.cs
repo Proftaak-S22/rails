@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
-using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,7 +17,7 @@ namespace CTRails.Controls
 
         private PlaceTramForm placeTramForm;
         public Font MaintenanceFont { get; set; }
-        public Font DefaultFont { get; set; }
+        public new Font DefaultFont { get; set; }
         public Color CleanColor { get; set; }
         public Color DefaultColor { get; set; }
 

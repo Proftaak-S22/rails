@@ -22,6 +22,8 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,7 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\MaterialSkin.0.2.0\lib\MaterialSkin.dll</HintPath>
+      <HintPath>packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Oracle.ManagedDataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
@@ -46,7 +48,6 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
@@ -105,7 +106,6 @@
     <Compile Include="Entities\Route.cs" />
     <Compile Include="Entities\TramStatus.cs" />
     <Compile Include="Exceptions\EntityNotPresentException.cs" />
-    <Compile Include="DAL\OracleDataContext.cs" />
     <Compile Include="Entities\AccountType.cs" />
     <Compile Include="Entities\Entity.cs" />
     <Compile Include="Entities\Status.cs" />
@@ -128,7 +128,7 @@
       <DependentUpon>LoginWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\ScheduleWindow.cs">
-      <SubType>Component</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Controls\ScheduleWindow.Designer.cs">
       <DependentUpon>ScheduleWindow.cs</DependentUpon>
@@ -137,11 +137,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-    </Compile>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <AutoGen>True</AutoGen>
     </Compile>
     <Compile Include="Session.cs" />
@@ -154,7 +149,6 @@
     <Compile Include="Reservation.cs" />
     <Compile Include="Address.cs" />
     <Compile Include="Entities\Employees\Administrator.cs" />
-    <Compile Include="Database.cs" />
     <Compile Include="Forms\Rails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,16 +194,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
+    <None Include="packages.config" />
     <None Include="Resources\Plattegrond-clear.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

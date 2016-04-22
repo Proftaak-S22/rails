@@ -63,9 +63,9 @@ namespace CTRails.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Plattegrond_clear {
+        internal static System.Drawing.Bitmap plattegrond {
             get {
-                object obj = ResourceManager.GetObject("Plattegrond-clear", resourceCulture);
+                object obj = ResourceManager.GetObject("plattegrond", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

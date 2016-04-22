@@ -3,7 +3,7 @@
 
 namespace CTRails.Controls
 {
-    public partial class ScheduleWindow : TabPage
+    public partial class ScheduleWindow : UserControl
     {
         public ScheduleWindow()
         {

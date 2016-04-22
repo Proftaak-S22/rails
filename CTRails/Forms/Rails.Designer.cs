@@ -1,4 +1,5 @@
-﻿using CTRails.Controls;
+﻿using System.Windows.Forms;
+using CTRails.Controls;
 
 
 namespace CTRails.Forms
@@ -47,9 +48,8 @@ namespace CTRails.Forms
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tpRoosterEdit = new System.Windows.Forms.TabPage();
             this.tpGebruikers = new System.Windows.Forms.TabPage();
-            this.loginWindow = new CTRails.Controls.LoginWindow();
             this.remiseWindow1 = new CTRails.Controls.RemiseWindow();
-            this.tpSchedule = new CTRails.Controls.ScheduleWindow();
+            this.tpSchedule = new System.Windows.Forms.TabPage();
             this.btnBekijkRoosters = new MaterialSkin.Controls.MaterialRaisedButton();
             this.label1 = new System.Windows.Forms.Label();
             this.btnEditScedule = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -59,6 +59,7 @@ namespace CTRails.Forms
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.editScheduleTabPage1 = new CTRails.Controls.EditScheduleWindow();
             this.usersWindow1 = new CTRails.Controls.UsersWindow();
+            this.loginWindow = new CTRails.Controls.LoginWindow();
             this.tcNavigation.SuspendLayout();
             this.tpLogin.SuspendLayout();
             this.tpRemise.SuspendLayout();
@@ -240,13 +241,6 @@ namespace CTRails.Forms
             this.tpGebruikers.Text = "Gebruikers";
             this.tpGebruikers.UseVisualStyleBackColor = true;
             // 
-            // loginWindow
-            // 
-            this.loginWindow.Location = new System.Drawing.Point(80, 67);
-            this.loginWindow.Name = "loginWindow";
-            this.loginWindow.Size = new System.Drawing.Size(989, 432);
-            this.loginWindow.TabIndex = 3;
-            // 
             // remiseWindow1
             // 
             this.remiseWindow1.CleanColor = System.Drawing.Color.Blue;
@@ -349,6 +343,13 @@ namespace CTRails.Forms
             this.usersWindow1.Size = new System.Drawing.Size(1162, 487);
             this.usersWindow1.TabIndex = 0;
             // 
+            // loginWindow
+            // 
+            this.loginWindow.Location = new System.Drawing.Point(460, 160);
+            this.loginWindow.Name = "loginWindow";
+            this.loginWindow.Size = new System.Drawing.Size(250, 206);
+            this.loginWindow.TabIndex = 0;
+            // 
             // Rails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -397,11 +398,11 @@ namespace CTRails.Forms
         private System.Windows.Forms.TabPage tpLogin;
         private System.Windows.Forms.TabControl tcNavigation;
         private MaterialSkin.Controls.MaterialTabSelector materialTabSelector1;
-        private ScheduleWindow tpSchedule;
+        private System.Windows.Forms.TabPage tpSchedule;
         private EditScheduleWindow editScheduleTabPage1;
-        private LoginWindow loginWindow;
         private RemiseWindow remiseWindow1;
         private UsersWindow usersWindow1;
+        private LoginWindow loginWindow;
     }
 }
 

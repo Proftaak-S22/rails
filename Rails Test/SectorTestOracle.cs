@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using CTRails.DAL;
 using CTRails.Entities;
@@ -8,7 +7,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Rails_Test
 {
     [TestClass]
-    public class SectorTest
+    public class SectorTestOracle
     {
 
         private UnitOfWork work;
@@ -29,9 +28,7 @@ namespace Rails_Test
         [TestMethod]
         public void TestRetrieve()
         {
-            IEnumerable<Sector> sectors = work.Sectors.Get().Where(x => x.Tram != null);
-
-            Assert.AreNotEqual(0, sectors.Count());
+            Assert.AreEqual(1, work.Sectors.Where(x => x.Number == 1).First().TrackID);
         }
 
         [TestMethod]
@@ -46,11 +43,11 @@ namespace Rails_Test
         {
             Sector s = work.Sectors.Get().First();
 
-            s.TrackID = 25;
+            s.TrackID = 4;
 
             work.Sectors.Update(s);
 
-            Assert.AreEqual(25, work.Sectors.Get().First().TrackID);
+            Assert.AreEqual(4, work.Sectors.Get().First().TrackID);
         }
     }
 }

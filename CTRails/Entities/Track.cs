@@ -8,77 +8,38 @@ using CTRails.Entities.Employees;
 
 namespace CTRails.Entities
 {
+    /// <summary>
+    /// Represents a track for tram transportation.
+    /// </summary>
     public class Track : Entity
     {
-        //Fields
-        private UnitOfWork worker;
 
-        public int Number { get; private set; }
+        /// <summary>
+        /// A list of routes available for this track.
+        /// </summary>
+        public List<Route> Routes { get; set; } = new List<Route>(); 
+
 
 
         /// <summary>
-        /// The sectors that belong to the track.
+        /// A list of tracks attached to this one.
         /// </summary>
-        public List<Sector> Sectors
-        {
-            get
-            {
-                if (sectors != null)
-                    return sectors;
+        public List<Track> Attached { get; set; } = new List<Track>();
 
-                sectors = new List<Sector>();
-
-                worker = new UnitOfWork(false);
-
-                sectors = new List<Sector>(worker.Sectors.Where(s => s.TrackID == ID));
-
-                return sectors;
-            }
-        }
 
 
         /// <summary>
-        /// The routes that belong to the track.
+        /// The list of sectors that make up this track.
         /// </summary>
-        public List<Route> Routes
-        {
-            get
-            {
-                if (routes != null)
-                    return routes;
-
-                routes = new List<Route>();
-
-                worker = new UnitOfWork();
-
-                IEnumerable<TrackRoute> trackRoutes = worker.TrackRoutes.Where(track => track.TrackID == ID);
-
-                foreach (TrackRoute tr in trackRoutes)
-                    routes.AddRange(worker.Routes.Where(x => x.ID == tr.RouteID));
+        public List<Sector> Sectors { get; set; } = new List<Sector>(); 
 
 
-                return routes;
-            }
-        }
 
-
-        private List<Route> routes;
-        private List<Sector> sectors;
-
-        public Track(int id) : base(id)
-        {
-            Number = id;
-        }
-
-        //Methoden
-        public void Update()
-        {
-            List<Sector> sectors = Sectors.ToList();
-            foreach (Sector s in sectors)
-            {
-                
-            }
-        }
+        /// <summary>
+        /// Creates a new track instance.
+        /// </summary>
+        /// <param name="id"> Specifies the unique intentifier for this track. </param>
+        public Track(int id) : base(id) { }
     }
 }
 
