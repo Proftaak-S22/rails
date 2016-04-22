@@ -58,12 +58,6 @@ namespace CTRails.Forms
             tcNavigation.TabPages.Add(tpLogin);
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-            // Attempt a login with the user specified u/p combo.
-            
-        }
-
 
 
         /// <summary>
