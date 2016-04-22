@@ -171,6 +171,9 @@
     <EmbeddedResource Include="Controls\EditScheduleWindow.resx">
       <DependentUpon>EditScheduleWindow.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LoginWindow.resx">
+      <DependentUpon>LoginWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\RemiseWindow.resx">
       <DependentUpon>RemiseWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -179,9 +182,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\UsersWindow.resx">
       <DependentUpon>UsersWindow.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\LoginWindow.resx">
-      <DependentUpon>LoginWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PlaceTramForm.resx">
       <DependentUpon>PlaceTramForm.cs</DependentUpon>

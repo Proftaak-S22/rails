@@ -106,5 +106,10 @@ namespace CTRails.Forms
         {
             loginWindow.Logout();
         }
+
+        private void loginWindow1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

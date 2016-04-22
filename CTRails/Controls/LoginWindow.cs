@@ -16,7 +16,7 @@ namespace CTRails.Controls
 
 
         /// <summary>
-        /// Attempts to login a user by the specified username and password combination.
+        /// Makes a login attempt with the given credentials.
         /// </summary>
         /// <param name="username"> Specifies the username. </param>
         /// <param name="password"> Specifies the password. </param>
@@ -25,7 +25,7 @@ namespace CTRails.Controls
         {
             UnitOfWork worker = new UnitOfWork(false);
 
-            // Get the first employee that matches the username/password combination, or null.
+            // Get the first employee that matches the username/password combination.
             Employee user = worker.Employees.Get().FirstOrDefault(x => x.Username == username && x.Password == password);
 
             // No matches?
@@ -36,30 +36,24 @@ namespace CTRails.Controls
         }
 
 
-        /// <summary>
-        /// Logout the currently logged in user.
-        /// </summary>
-        /// <returns></returns>
-        public bool Logout()
+        
+        public void Logout()
         {
             if (!Session.Started)
-                return true;
+                return;
 
             Session.End();
-
-            return true;
         }
 
-        private void loginClick(object sender, System.EventArgs e)
+
+        private void LoginClick(object sender, System.EventArgs e)
         {
-            if (Login(tbUsername.Text, tbPassword.Text))
+            if (!Login(tbUsername.Text, tbPassword.Text))
             {
-                return;
+                tbPassword.Text = string.Empty;
+
+                MessageBox.Show("Gebruikersnaam of wachtwoord is verkeerd");
             }
-
-            tbPassword.Text = string.Empty;
-
-            MessageBox.Show("Gebruikersnaam of wachtwoord is verkeerd");
         }
     }
 }
