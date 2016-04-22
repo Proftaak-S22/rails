@@ -1,21 +1,39 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using CTRails.Properties;
 using MaterialSkin;
 using MaterialSkin.Controls;
 
-namespace CTRails
+
+namespace CTRails.Forms
 {
-    public partial class PopUp1 : MaterialForm
+    public partial class PlaceTramForm : MaterialForm
     {
-        public PopUp1()
+
+        public bool Remise
+        {
+            get { return cbStatusRemise.Checked; }
+        }
+
+
+        public bool Clean
+        {
+            get { return cbStatusDefect.Checked; }
+        }
+
+
+        public bool Maintenaince
+        {
+            get { return cbStatusSchoonmaak.Checked; }
+        }
+
+
+        public int TramCode
+        {
+            get { return Convert.ToInt32(txtTramNummer.Text); }
+        }
+
+
+        public PlaceTramForm()
         {
             InitializeComponent();
 
@@ -31,12 +49,10 @@ namespace CTRails
         private void btnAddTram_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.OK;
-            Close();
-        }
 
-        private void PopUp1_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            //this.DialogResult = DialogResult.OK;
+            
+
+            Close();
         }
     }
 }

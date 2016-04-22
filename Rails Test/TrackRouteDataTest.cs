@@ -30,7 +30,7 @@ namespace Rails_Test
         public void TrackRouteRetrieve()
         {
 
-            TrackRoute t = new TrackRoute(2, new Track(2), new Route(2, "B"));
+            //TrackRoute t = new TrackRoute(2, new Track(2), new Route(2, "B"));
 
 
 

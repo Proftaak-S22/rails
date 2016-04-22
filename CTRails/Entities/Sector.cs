@@ -1,16 +1,21 @@
-﻿namespace CTRails.Entities
+﻿using System.Collections.Generic;
+using CTRails.DAL;
+
+
+namespace CTRails.Entities
 {
     public class Sector
     {
         //Fields
-        public int SectionNumber { get; set; }
-        public int TrackNumber { get; set; }
+        public int Number { get; set; }
+
+        public int TrackID { get; set; }
 
         //Constructor
-        public Sector(int sectionNumber, int trackNumber)
+        public Sector(int number, int trackId)
         {
-            this.SectionNumber = sectionNumber;
-            this.TrackNumber = trackNumber;
+            this.Number = number;
+            this.TrackID = trackId;
         }
     }
 }

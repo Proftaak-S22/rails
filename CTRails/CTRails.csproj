@@ -38,7 +38,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Oracle.ManagedDataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
-      <HintPath>packages\Oracle.ManagedDataAccess.12.1.022\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+      <HintPath>packages\Oracle.ManagedDataAccess.12.1.2400\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -55,7 +55,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\EditScheduleWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\EditScheduleWindow.Designer.cs">
+      <DependentUpon>EditScheduleWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RemiseWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\RemiseWindow.Designer.cs">
+      <DependentUpon>RemiseWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UsersWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UsersWindow.Designer.cs">
+      <DependentUpon>UsersWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="DAL\Contexts\RouteTestContext.cs" />
+    <Compile Include="DAL\Contexts\TramStatusTestContext.cs" />
     <Compile Include="DAL\Contexts\TrackTestContext.cs" />
     <Compile Include="DAL\Contexts\AttachedTrackTestContext.cs" />
     <Compile Include="DAL\Contexts\AccountTypeTestContext.cs" />
@@ -73,6 +92,7 @@
     <Compile Include="DAL\Contexts\StatusOracleContext.cs" />
     <Compile Include="DAL\Contexts\AccountTypeOracleContext.cs" />
     <Compile Include="DAL\Contexts\EmployeeOracleContext.cs" />
+    <Compile Include="DAL\Repositories\TramStatusRepository.cs" />
     <Compile Include="DAL\Repositories\AttachedTrackRepository.cs" />
     <Compile Include="DAL\Repositories\RouteRepository.cs" />
     <Compile Include="DAL\Repositories\SectorRepository.cs" />
@@ -101,21 +121,35 @@
     <Compile Include="DAL\Repositories\IRepository.cs" />
     <Compile Include="DAL\IUnitOfWork.cs" />
     <Compile Include="DAL\Contexts\OracleDatabaseContext.cs" />
-    <Compile Include="PopUp1.cs">
+    <Compile Include="Controls\LoginWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LoginWindow.Designer.cs">
+      <DependentUpon>LoginWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ScheduleWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ScheduleWindow.Designer.cs">
+      <DependentUpon>ScheduleWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Events\SessionEventArgs.cs" />
+    <Compile Include="Session.cs" />
+    <Compile Include="Forms\PlaceTramForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PopUp1.Designer.cs">
-      <DependentUpon>PopUp1.cs</DependentUpon>
+    <Compile Include="Forms\PlaceTramForm.Designer.cs">
+      <DependentUpon>PlaceTramForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Reservation.cs" />
     <Compile Include="Address.cs" />
     <Compile Include="Entities\Employees\Administrator.cs" />
     <Compile Include="Database.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Forms\Rails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\Rails.Designer.cs">
+      <DependentUpon>Rails.cs</DependentUpon>
     </Compile>
     <Compile Include="Entities\Employees\LeadJanitor.cs" />
     <Compile Include="Entities\Employees\LeadTechnician.cs" />
@@ -126,16 +160,31 @@
     <Compile Include="Entities\Employees\Janitor.cs" />
     <Compile Include="Entities\Sector.cs" />
     <Compile Include="Entities\Task.cs" />
-    <Compile Include="Entities\Employees\Technicus.cs" />
+    <Compile Include="Entities\Employees\Technician.cs" />
     <Compile Include="Entities\Track.cs" />
     <Compile Include="Entities\Tram.cs" />
     <Compile Include="Entities\Employees\Employee.cs" />
     <Compile Include="Entities\Employees\FleetAdministrator.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Controls\EditScheduleWindow.resx">
+      <DependentUpon>EditScheduleWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PopUp1.resx">
-      <DependentUpon>PopUp1.cs</DependentUpon>
+    <EmbeddedResource Include="Controls\RemiseWindow.resx">
+      <DependentUpon>RemiseWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ScheduleWindow.resx">
+      <DependentUpon>ScheduleWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UsersWindow.resx">
+      <DependentUpon>UsersWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Rails.resx">
+      <DependentUpon>Rails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LoginWindow.resx">
+      <DependentUpon>LoginWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PlaceTramForm.resx">
+      <DependentUpon>PlaceTramForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -164,6 +213,7 @@
   <ItemGroup>
     <None Include="Resources\Plattegrond-clear.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

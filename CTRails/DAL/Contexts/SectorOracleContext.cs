@@ -19,8 +19,8 @@ namespace CTRails.DAL.Contexts
         {
             OpenConnection();
 
-            string values = "(" + sector.SectionNumber + ", ";
-            values += sector.TrackNumber + ")";
+            string values = "(" + sector.Number + ", ";
+            values += sector.TrackID + ")";
 
             OracleCommand cmd = new OracleCommand("INSERT INTO TRM_SECTION (ID, TRACK_ID) VALUES" + values, Connection);
 
@@ -33,7 +33,7 @@ namespace CTRails.DAL.Contexts
         {
             OpenConnection();
 
-            OracleCommand cmd = new OracleCommand("DELETE FROM TRM_SECTION WHERE ID = " + sector.SectionNumber, Connection);
+            OracleCommand cmd = new OracleCommand("DELETE FROM TRM_SECTION WHERE ID = " + sector.Number, Connection);
 
             cmd.ExecuteNonQuery();
 
@@ -68,10 +68,12 @@ namespace CTRails.DAL.Contexts
         {
             OpenConnection();
 
-            string values = "ID = " + sector.SectionNumber + ", ";
-            values += "TRACK_ID = " + sector.TrackNumber ;
+            string values = "ID = " + sector.Number + ", ";
+            values += "TRACK_ID = " + sector.TrackID ;
 
-            OracleCommand cmd = new OracleCommand("UPDATE TRM_SECTION SET ID = " + values + " WHERE ID = " + sector.SectionNumber, Connection);
+            
+
+            OracleCommand cmd = new OracleCommand("UPDATE TRM_SECTION SET ID = " + values + " WHERE ID = " + sector.Number, Connection);
 
             cmd.ExecuteNonQuery();
 

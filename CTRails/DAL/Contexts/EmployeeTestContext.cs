@@ -13,15 +13,14 @@ namespace CTRails.DAL.Contexts
     public class EmployeeTestContext : TestDatabaseContext<Employee>, IDataContext<Employee>
     {
 
-        private int ID => id++;
         private int id = 0;
-
+        private int NextID => id++;
         public EmployeeTestContext()
             : base()
         {
-            Entities.Add(new Employee(ID, new AccountType(0, "Janitor"),
-                "harrieIzAwesome",
-                "01239489018",
+            Entities.Add(new Employee(NextID, new AccountType(0, "Janitor"),
+                "janitor",
+                "janitor",
                 "Harrie",
                 "De Pariie",
                 "Van",
@@ -31,9 +30,9 @@ namespace CTRails.DAL.Contexts
                 new Address("harriestraat", 22, "Son en Harrie", "Haat", "1337HA", "B"),
                 Gender.M));
 
-            Entities.Add(new Employee(ID, new AccountType(0, "FleetAdministrator"),
-                "willempjuuuh",
-                "0022335566",
+            Entities.Add(new Employee(NextID, new AccountType(0, "FleetAdministrator"),
+                "fleet",
+                "fleet",
                 "Willem",
                 "Keeris",
                 string.Empty,
@@ -41,6 +40,30 @@ namespace CTRails.DAL.Contexts
                 DateTime.MinValue,
                 "NL",
                 new Address("Satanlaan", 666, "Lucifer", "Hell", "0666XX", "B"),
+                Gender.M));
+
+            Entities.Add(new Employee(NextID, new AccountType(0, "LeadJanitor"),
+                "lj",
+                "lj",
+                "Kees",
+                "van Pees",
+                string.Empty,
+                "keesvp@pees.kees",
+                DateTime.MaxValue,
+                "NL",
+                new Address("harriestraat", 24, "Son en Harrie", "Haat", "1337HA", "B"),
+                Gender.M));
+
+            Entities.Add(new Employee(NextID, new AccountType(0, "Administrator"),
+                "admin",
+                "admin",
+                "Jaap",
+                "Gaap",
+                string.Empty,
+                "hoihoi@hoi.hoi",
+                DateTime.MaxValue,
+                "NL",
+                new Address("harriestraat", 24, "Son en Harrie", "Haat", "1337HA", "B"),
                 Gender.M));
         }
 

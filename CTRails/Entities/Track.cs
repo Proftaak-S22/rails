@@ -1,42 +1,70 @@
 ﻿using CTRails.DAL;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using CTRails.Entities.Employees;
+
 
 namespace CTRails.Entities
 {
     public class Track : Entity
     {
         //Fields
-        private UnitOfWork unit;
+        private UnitOfWork worker;
+
         public int Number { get; private set; }
 
-        public IEnumerable<Sector> Sectors
+
+        /// <summary>
+        /// The sectors that belong to the track.
+        /// </summary>
+        public List<Sector> Sectors
         {
             get
             {
-                unit = new UnitOfWork();
-                return unit.Sectors.Get();
-            }
-        }
-        public IEnumerable<Track> Tracks
-        {
-            get
-            {
-                unit = new UnitOfWork();
-                return unit.Tracks.Get();
-            }
-        }
-        public IEnumerable<Route> Routes
-        {
-            get
-            {
-                unit = new UnitOfWork();
-                return unit.Routes.Get();
+                if (sectors != null)
+                    return sectors;
+
+                sectors = new List<Sector>();
+
+                worker = new UnitOfWork(true);
+
+                sectors = new List<Sector>(worker.Sectors.Where(s => s.TrackID == ID));
+
+                return sectors;
             }
         }
 
-        //Constructor
+
+        /// <summary>
+        /// The routes that belong to the track.
+        /// </summary>
+        public List<Route> Routes
+        {
+            get
+            {
+                if (routes != null)
+                    return routes;
+
+                routes = new List<Route>();
+
+                worker = new UnitOfWork();
+
+                IEnumerable<TrackRoute> trackRoutes = worker.TrackRoutes.Where(track => track.TrackID == ID);
+
+                foreach (TrackRoute tr in trackRoutes)
+                    routes.AddRange(worker.Routes.Where(x => x.ID == tr.RouteID));
+
+
+                return routes;
+            }
+        }
+
+
+        private List<Route> routes;
+        private List<Sector> sectors;
+
         public Track(int id) : base(id)
         {
             Number = id;

@@ -9,15 +9,15 @@ namespace CTRails.Entities.Employees
     public class TrackRoute : Entity
     {
         //Fields
-        public Track Track { get; private set; }
-        public Route Route { get; private set; }
+        public int TrackID { get; private set; }
+        public int RouteID { get; private set; }
         
 
         //Constructor
-        public TrackRoute(int id, Track track, Route route) : base(id)
+        public TrackRoute(int trackID, int routeID) : base()
         {
-            Track = track;
-            Route = route;
+            TrackID = trackID;
+            RouteID = routeID;
         }
     }
 }

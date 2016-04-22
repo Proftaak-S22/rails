@@ -18,21 +18,27 @@ namespace CTRails.DAL.Contexts
 
         public void Add(AttachedTrack entity)
         {
-            throw new NotImplementedException();
+            OpenConnection();
+            OracleCommand cmd = new OracleCommand("INSERT INTO TRM_ATTACHEDTRACK (TRACK_ID, NEXTTRACK_ID) VALUES(" + entity.TrackID + ", " + entity.NextTrackID + ")", Connection);
+            CloseConnection();
         }
 
 
 
         public void Delete(AttachedTrack entity)
         {
-            throw new NotImplementedException();
+            OpenConnection();
+            OracleCommand cmd = new OracleCommand("DELETE FROM TRM_ATTACHEDTRACK WHERE TRACK_ID = " + entity.TrackID + " AND NEXTTRACK_ID = " + entity.NextTrackID, Connection);
+            CloseConnection();
         }
 
 
 
         public void Update(AttachedTrack entity)
         {
-            throw new NotImplementedException();
+            OpenConnection();
+            OracleCommand cmd = new OracleCommand("UPDATE TRM_ATTACHEDTRACK SET NEXTTRACK_ID = " + entity.NextTrackID + " WHERE TRACK_ID = " + entity.TrackID, Connection);
+            CloseConnection();
         }
 
 
@@ -51,10 +57,10 @@ namespace CTRails.DAL.Contexts
 
                 while (reader.Read())
                 {
-                    Track a = uow.Tracks.Where(x => x.ID == Convert.ToInt32(reader["TRACK_ID"])).First();
-                    Track b = uow.Tracks.Where(x => x.ID == Convert.ToInt32(reader["NEXTTRACK_ID"])).First();
+                    int trackID = Convert.ToInt32(reader["TRACK_ID"]);
+                    int nextTrackID = Convert.ToInt32(reader["NEXTTRACK_ID"]);
 
-                    AttachedTrack next = new AttachedTrack(0, a, b);
+                    AttachedTrack next = new AttachedTrack(trackID, nextTrackID);
 
                     attachedTracks.Add(next);
                 }

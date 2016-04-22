@@ -13,13 +13,16 @@ namespace CTRails.DAL.Contexts
     public class TramTestContext : TestDatabaseContext<Tram>, IDataContext<Tram>
     {
 
-        private int ID => id++;
+
         private int id = 0;
+        private int NextID => id++;
+        private int code = 1;
 
         public TramTestContext()
             : base()
         {
-            
+            for (int i = 0; i < 75; i++)
+                Entities.Add(new Tram(NextID, code++));
         }
 
         public void Add(Tram entity)

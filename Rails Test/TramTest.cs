@@ -12,26 +12,27 @@ namespace Rails_Test
     [TestClass]
     public class TramTest
     {
-        private UnitOfWork unitOfWork;
+        private UnitOfWork work;
         [TestInitialize]
         public void Initialize()
         {
-            unitOfWork = new UnitOfWork(true);
+            work = new UnitOfWork(true);
         }
 
         [TestMethod]
         public void InsertTram()
         {
-            
-            //Tram tram = new Tram(1,
-            //                     unitOfWork.Statuses.Where(status => status.Name()));
-            // Tram moet meerdere statussen kunnen bevatten.
+            Tram tram = new Tram(50, 3345);
+
+            work.Trams.Add(tram);
+
+            //Assert.AreEqual(tram.Code, work.Trams.Get().);
         }
 
         [TestCleanup]
         public void CleanUp()
         {
-            unitOfWork = null;
+            work = null;
         }
     }
 }

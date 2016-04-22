@@ -19,21 +19,45 @@ namespace CTRails.DAL.Contexts
 
         public void Add(TramRoute entity)
         {
-            throw new NotImplementedException();
+            OpenConnection();
+
+            string values = "(" + entity.TramID + ", ";
+            values += entity.RouteID + ")";
+
+            OracleCommand cmd = new OracleCommand("INSERT INTO TRM_TRAM_ROUTE (TRAM_ID, ROUTE_ID) VALUES" + values, Connection);
+
+            cmd.ExecuteNonQuery();
+
+            CloseConnection();
         }
 
 
 
         public void Delete(TramRoute entity)
         {
-            throw new NotImplementedException();
+            OpenConnection();
+
+            OracleCommand cmd = new OracleCommand("DELETE FROM TRM_TRAM_ROUTE WHERE ID = " + entity.TramID, Connection);
+
+            cmd.ExecuteNonQuery();
+
+            CloseConnection();
         }
 
 
 
         public void Update(TramRoute entity)
         {
-            throw new NotImplementedException();
+            OpenConnection();
+
+            string values = "TRAM_ID = " + entity.TramID + ", ";
+            values += "ROUTE_ID = " + entity.RouteID + ")";
+
+            OracleCommand cmd = new OracleCommand("UPDATE TRM_TRAM_ROUTE SET " + values + " WHERE ID = " + entity.ID, Connection);
+
+            cmd.ExecuteNonQuery();
+
+            CloseConnection();
         }
 
 
@@ -54,10 +78,7 @@ namespace CTRails.DAL.Contexts
                 int tramId = Convert.ToInt32(reader["TRAM_ID"]);
                 int routeId = Convert.ToInt32(reader["ROUTE_ID"]);
 
-                Tram tram = work.Trams.Where(x => x.ID == tramId).First();
-                Route route = work.Routes.Where(x => x.ID == routeId).First();
-
-                TramRoute next = new TramRoute(0, tram, route);
+                TramRoute next = new TramRoute(tramId, routeId);
 
                 tramRoutes.Add(next);
             }

@@ -13,19 +13,19 @@ namespace CTRails.DAL.Contexts
     public class AccountTypeTestContext : TestDatabaseContext<AccountType>, IDataContext<AccountType>
     {
 
-        private int ID => id++;
         private int id = 0;
+        private int NextID => id++;
 
         public AccountTypeTestContext()
             : base()
         {
-            Entities.Add(new AccountType(1, "FleetAdministrator"));
-            Entities.Add(new AccountType(2, "Administrator"));
-            Entities.Add(new AccountType(3, "Janitor"));
-            Entities.Add(new AccountType(4, "LeadJanitor"));
-            Entities.Add(new AccountType(5, "Technician"));
-            Entities.Add(new AccountType(6, "LeadTechnician"));
-            Entities.Add(new AccountType(7, "Driver"));
+            Entities.Add(new AccountType(NextID, "FleetAdministrator"));
+            Entities.Add(new AccountType(NextID, "Administrator"));
+            Entities.Add(new AccountType(NextID, "Janitor"));
+            Entities.Add(new AccountType(NextID, "LeadJanitor"));
+            Entities.Add(new AccountType(NextID, "Technician"));
+            Entities.Add(new AccountType(NextID, "LeadTechnician"));
+            Entities.Add(new AccountType(NextID, "Driver"));
         }
 
         public void Add(AccountType entity)

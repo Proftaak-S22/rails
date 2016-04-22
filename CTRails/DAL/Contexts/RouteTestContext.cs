@@ -13,22 +13,22 @@ namespace CTRails.DAL.Contexts
     public class RouteTestContext : TestDatabaseContext<Route>, IDataContext<Route>
     {
 
-        private int ID => id++;
-        private int id = 0;
 
+        private int id = 0;
+        private int NextID => id++;
         public RouteTestContext()
             : base()
         {
-            Entities.Add(new Route(1, "Route 66"));
-            Entities.Add(new Route(2, "Stairway to Heaven"));
-            Entities.Add(new Route(3, "Bart Verminken met Bacon"));
-            Entities.Add(new Route(4, ""));
-            Entities.Add(new Route(5, ""));
-            Entities.Add(new Route(6, ""));
-            Entities.Add(new Route(7, ""));
-            Entities.Add(new Route(8, ""));
-            Entities.Add(new Route(9, ""));
-            Entities.Add(new Route(10, ""));
+            Entities.Add(new Route(NextID, "Route 66"));
+            Entities.Add(new Route(NextID, "Stairway to Heaven"));
+            Entities.Add(new Route(NextID, "Bart Verminken met Bacon"));
+            Entities.Add(new Route(NextID, ""));
+            Entities.Add(new Route(NextID, ""));
+            Entities.Add(new Route(NextID, ""));
+            Entities.Add(new Route(NextID, ""));
+            Entities.Add(new Route(NextID, ""));
+            Entities.Add(new Route(NextID, ""));
+            Entities.Add(new Route(NextID, ""));
         }
 
         public void Add(Route entity)

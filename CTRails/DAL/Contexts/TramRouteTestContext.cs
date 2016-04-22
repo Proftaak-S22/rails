@@ -19,11 +19,14 @@ namespace CTRails.DAL.Contexts
         public TramRouteTestContext()
             : base()
         {
-            Entities.Add(new TramRoute(1, new Tram(1, 1023), new Route(1, "A") ));
-            Entities.Add(new TramRoute(2, new Tram(2, 1024), new Route(2, "B")));
-            Entities.Add(new TramRoute(3, new Tram(3, 1025), new Route(3, "C")));
-            Entities.Add(new TramRoute(4, new Tram(4, 1026), new Route(4, "D")));
-            Entities.Add(new TramRoute(5, new Tram(5, 1027), new Route(5, "E")));
+            Entities.Add(new TramRoute(1, 2));
+        }
+
+        public TramRouteTestContext(IEnumerable<Tram> trams, IEnumerable<Route> routes  )
+            : base()
+        {
+
+            
         }
 
         public void Add(TramRoute entity)
