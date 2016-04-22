@@ -25,7 +25,7 @@ namespace CTRails.DAL.Contexts
                 "De Pariie",
                 "Van",
                 "harrie@m.i",
-                DateTime.MaxValue, 
+                new DateTime(1992, 1, 12), 
                 "BE",
                 new Address("harriestraat", 22, "Son en Harrie", "Haat", "1337HA", "B"),
                 Gender.M));
@@ -37,7 +37,7 @@ namespace CTRails.DAL.Contexts
                 "Keeris",
                 string.Empty,
                 "xXevil_devil_manXx@666.dark",
-                DateTime.MinValue,
+                new DateTime(1990, 5, 9),
                 "NL",
                 new Address("Satanlaan", 666, "Lucifer", "Hell", "0666XX", "B"),
                 Gender.M));
@@ -49,7 +49,7 @@ namespace CTRails.DAL.Contexts
                 "van Pees",
                 string.Empty,
                 "keesvp@pees.kees",
-                DateTime.MaxValue,
+                new DateTime(1992, 9, 15),
                 "NL",
                 new Address("harriestraat", 24, "Son en Harrie", "Haat", "1337HA", "B"),
                 Gender.M));
@@ -61,7 +61,7 @@ namespace CTRails.DAL.Contexts
                 "Gaap",
                 string.Empty,
                 "hoihoi@hoi.hoi",
-                DateTime.MaxValue,
+                new DateTime(1960, 4, 2),
                 "NL",
                 new Address("harriestraat", 24, "Son en Harrie", "Haat", "1337HA", "B"),
                 Gender.M));

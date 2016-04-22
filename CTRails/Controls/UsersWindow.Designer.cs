@@ -53,8 +53,8 @@
             this.materialRaisedButton35 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton36 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.label9 = new System.Windows.Forms.Label();
-            this.tbAchternaam = new System.Windows.Forms.TextBox();
-            this.tbTussenVoegsel = new System.Windows.Forms.TextBox();
+            this.tbLastName = new System.Windows.Forms.TextBox();
+            this.tbPrefix = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lvGebruikers = new System.Windows.Forms.ListView();
             this.chUsername = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -295,17 +295,17 @@
             // 
             // tbAchternaam
             // 
-            this.tbAchternaam.Location = new System.Drawing.Point(1008, 173);
-            this.tbAchternaam.Name = "tbAchternaam";
-            this.tbAchternaam.Size = new System.Drawing.Size(147, 20);
-            this.tbAchternaam.TabIndex = 53;
+            this.tbLastName.Location = new System.Drawing.Point(1008, 173);
+            this.tbLastName.Name = "tbLastName";
+            this.tbLastName.Size = new System.Drawing.Size(147, 20);
+            this.tbLastName.TabIndex = 53;
             // 
-            // tbTussenVoegsel
+            // tbPrefix
             // 
-            this.tbTussenVoegsel.Location = new System.Drawing.Point(966, 173);
-            this.tbTussenVoegsel.Name = "tbTussenVoegsel";
-            this.tbTussenVoegsel.Size = new System.Drawing.Size(36, 20);
-            this.tbTussenVoegsel.TabIndex = 54;
+            this.tbPrefix.Location = new System.Drawing.Point(966, 173);
+            this.tbPrefix.Name = "tbPrefix";
+            this.tbPrefix.Size = new System.Drawing.Size(36, 20);
+            this.tbPrefix.TabIndex = 54;
             // 
             // label1
             // 
@@ -337,26 +337,32 @@
             this.lvGebruikers.TabIndex = 56;
             this.lvGebruikers.UseCompatibleStateImageBehavior = false;
             this.lvGebruikers.View = System.Windows.Forms.View.Details;
+            this.lvGebruikers.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.OnUserSelected);
             // 
             // chUsername
             // 
             this.chUsername.Text = "Gebruikersnaam";
+            this.chUsername.Width = 146;
             // 
             // chGender
             // 
             this.chGender.Text = "Geslacht";
+            this.chGender.Width = 55;
             // 
             // chFullname
             // 
             this.chFullname.Text = "Naam";
+            this.chFullname.Width = 155;
             // 
             // chDateOfBirth
             // 
             this.chDateOfBirth.Text = "Geboortedatum";
+            this.chDateOfBirth.Width = 87;
             // 
             // chEmail
             // 
             this.chEmail.Text = "E-Mail";
+            this.chEmail.Width = 122;
             // 
             // chCountry
             // 
@@ -365,10 +371,12 @@
             // chCity
             // 
             this.chCity.Text = "Woonplaats";
+            this.chCity.Width = 105;
             // 
             // chZipcode
             // 
             this.chZipcode.Text = "Postcode";
+            this.chZipcode.Width = 74;
             // 
             // chNummer
             // 
@@ -380,8 +388,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.lvGebruikers);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.tbTussenVoegsel);
-            this.Controls.Add(this.tbAchternaam);
+            this.Controls.Add(this.tbPrefix);
+            this.Controls.Add(this.tbLastName);
             this.Controls.Add(this.tbHouseNumber);
             this.Controls.Add(this.tbCity);
             this.Controls.Add(this.tbZipcode);
@@ -440,8 +448,8 @@
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton35;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton36;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox tbAchternaam;
-        private System.Windows.Forms.TextBox tbTussenVoegsel;
+        private System.Windows.Forms.TextBox tbLastName;
+        private System.Windows.Forms.TextBox tbPrefix;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListView lvGebruikers;
         private System.Windows.Forms.ColumnHeader chUsername;

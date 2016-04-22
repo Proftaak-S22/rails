@@ -15,6 +15,8 @@ namespace CTRails.Controls
 {
     public partial class UsersWindow : UserControl
     {
+        UnitOfWork worker = new UnitOfWork(true);
+
         public UsersWindow()
         {
             InitializeComponent();
@@ -26,7 +28,7 @@ namespace CTRails.Controls
 
         private void LoadUsers()
         {
-            UnitOfWork worker = new UnitOfWork(true);
+            
 
             lvGebruikers.Items.Clear();
 
@@ -49,6 +51,25 @@ namespace CTRails.Controls
 
                 lvGebruikers.Items.Add(item);
             }
+        }
+
+        private void OnUserSelected(object sender, ListViewItemSelectionChangedEventArgs e)
+        {
+            
+            Employee selection = worker.Employees.Get().First(x => x.Email == e.Item.SubItems[4].Text);
+
+            tbUsername.Text = selection.Username;
+            tbPassword.Text = selection.Password;
+            tbEmail.Text = selection.Email;
+            tbFirstname.Text = selection.FirstName;
+            tbPrefix.Text = selection.Prefix;
+            tbLastName.Text = selection.LastName;
+            tbCountry.Text = selection.Address.Country;
+            tbZipcode.Text = selection.Address.Zipcode;
+            tbHouseNumber.Text = selection.Address.Number.ToString();
+            dtpDateOfBirth.Value = selection.DateOfBirth;
+            cbGender.SelectedIndex = cbGender.Items.IndexOf(selection.Gender.ToString());
+            tbCountry.Text = selection.Address.Country;
         }
     }
 }

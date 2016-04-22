@@ -76,9 +76,6 @@ namespace CTRails.Forms
             {
                 tcNavigation.TabPages.Add(tpSchedule);
                 tcNavigation.TabPages.Add(tpRoosterEdit);
-
-                
-
             }
             if (user.GetType() == typeof (Technician))
             {
@@ -105,7 +102,7 @@ namespace CTRails.Forms
 
         }
 
-        private void btnLogoutClick(object sender, EventArgs e)
+        private void BtnLogoutClick(object sender, EventArgs e)
         {
             loginWindow.Logout();
         }

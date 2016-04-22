@@ -81,7 +81,7 @@ namespace CTRails.Forms
             this.btnLogOut.Text = "Uitloggen";
             this.btnLogOut.UseVisualStyleBackColor = false;
             this.btnLogOut.Visible = false;
-            this.btnLogOut.Click += new System.EventHandler(this.btnLogoutClick);
+            this.btnLogOut.Click += new System.EventHandler(this.BtnLogoutClick);
             // 
             // materialTabSelector1
             // 
