@@ -23,6 +23,7 @@ namespace CTRails.DAL
                 //TrackRoutes = new TrackRouteRepository(new TrackRouteOracleContext());
                 Trams = new TramRepository(new TramOracleContext());
                 TramRoutes = new TramRouteRepository(new TramRouteOracleContext());
+                Tasks = new TaskRepository(new TaskOracleContext());
             }
             else
             {
@@ -30,9 +31,6 @@ namespace CTRails.DAL
                 Employees = new EmployeeRepository(new EmployeeTestContext());
                 Tracks = new TrackRepository(new TrackTestContext());
                 Sectors = new SectorRepository(new SectorTestContext());
-                
-                
-
                 Trams = new TramRepository(new TramTestContext());
                 Routes = new RouteRepository(new RouteTestContext());
                 AttachedTracks = new AttachedTrackRepository(new AttachedTrackTestContext());
@@ -72,6 +70,8 @@ namespace CTRails.DAL
         public TramRouteRepository TramRoutes { get; private set; }
 
         public TramStatusRepository TramStatuses { get; private set; }
+
+        public TaskRepository Tasks { get; private set; }
 
 
 

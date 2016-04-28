@@ -4,23 +4,25 @@ using CTRails.Entities.Employees;
 
 namespace CTRails.Entities
 {
-    public class Task
+    public class Task : Entity
     {
         //Fields
         private int taskNumber;
-        private DateTime time;
+        public int EmployeeID { get; set; }
+        public int TramID { get; set; }
+
+
+        public DateTime Date { get; set; }
+        public int IsDone { get; set; }
+
 
         //Constructor
-        public Task(int taskNumber, Employee user, Tram tram, DateTime time, Sector startSector, Sector endSector)
+        public Task(int id, int employeeID, int tramID, DateTime date, int isDone) : base(id)
         {
-            this.taskNumber = taskNumber;
-            this.time = time;
-        }
-
-        //Methods
-        public void RemoveTask(Task task)
-        {
-            
+            EmployeeID = employeeID;
+            TramID = tramID;
+            Date = date;
+            IsDone = isDone;
         }
     }
 }

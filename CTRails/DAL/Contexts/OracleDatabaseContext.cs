@@ -124,5 +124,10 @@ namespace CTRails.DAL.Contexts
                 Connection.Close();
         }
 
+
+        public string ToOracleDate(DateTime date)
+        {
+            return "TO_DATE('" + string.Format("{0:dd-MMM-yy}", date) + "', 'DD-MON-YY')";
+        }
     }
 }
