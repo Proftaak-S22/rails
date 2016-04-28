@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CTRails;
 using CTRails.DAL;
 using CTRails.Entities.Employees;
 
@@ -32,11 +33,11 @@ namespace CTRails.Controls
             {
                 if (emp.Prefix != "")
                 {
-                    cbGebruikerEdit.Items.Add(emp.LastName + ", " + emp.FirstName + " " + emp.Prefix);
+                    cbGebruikerEdit.Items.Add(emp.ID + " : " + emp.LastName + ", " + emp.FirstName + " " + emp.Prefix);
                 }
                 else
                 {
-                    cbGebruikerEdit.Items.Add(emp.LastName + ", " + emp.FirstName + " " + emp.Prefix);
+                    cbGebruikerEdit.Items.Add(emp.ID + " : " + emp.LastName + ", " + emp.FirstName);
                 }
             }
         }
@@ -50,6 +51,30 @@ namespace CTRails.Controls
             }
 
             return false;
+        }
+
+        private void cbGebruikerEdit_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string id = cbGebruikerEdit.Text;
+            id = id.Remove(id.IndexOf(" "));
+            lvRoostersWijzigen.Items.Clear();
+
+            foreach (CTRails.Entities.Task t in worker.Tasks.Get().ToList())
+            {
+                if (t.EmployeeID == Convert.ToInt32(id))
+                {
+                    string[] row =
+                    {
+                        t.TramID.ToString(),
+                        t.Date.ToString(),
+                        t.IsDone.ToString()
+                    };
+
+                    var item = new ListViewItem(row);
+
+                    lvRoostersWijzigen.Items.Add(item);
+                }
+            }
         }
     }
 }
