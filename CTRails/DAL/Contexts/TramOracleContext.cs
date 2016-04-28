@@ -12,7 +12,7 @@ namespace CTRails.DAL.Contexts
         public TramOracleContext()
             : base()
         {
-            
+
         }
 
         public void Add(Tram entity)
