@@ -59,7 +59,6 @@ namespace CTRails.Controls
             this.pnlSection21_1 = new System.Windows.Forms.Panel();
             this.lblSection21_1 = new System.Windows.Forms.Label();
             this.lblVergroot = new MaterialSkin.Controls.MaterialLabel();
-            this.btnDemo = new MaterialSkin.Controls.MaterialRaisedButton();
             this.pbPlattegrond = new System.Windows.Forms.PictureBox();
             this.trackView9 = new CTRails.Controls.TrackView();
             this.trackView8 = new CTRails.Controls.TrackView();
@@ -419,22 +418,9 @@ namespace CTRails.Controls
             this.lblVergroot.Location = new System.Drawing.Point(1085, 323);
             this.lblVergroot.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblVergroot.Name = "lblVergroot";
-            this.lblVergroot.Size = new System.Drawing.Size(149, 20);
+            this.lblVergroot.Size = new System.Drawing.Size(144, 19);
             this.lblVergroot.TabIndex = 182;
             this.lblVergroot.Text = "Klik om te vergroten";
-            // 
-            // btnDemo
-            // 
-            this.btnDemo.Depth = 0;
-            this.btnDemo.Location = new System.Drawing.Point(908, 432);
-            this.btnDemo.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnDemo.Name = "btnDemo";
-            this.btnDemo.Primary = true;
-            this.btnDemo.Size = new System.Drawing.Size(112, 38);
-            this.btnDemo.TabIndex = 183;
-            this.btnDemo.Text = "DEMO";
-            this.btnDemo.UseVisualStyleBackColor = true;
-            this.btnDemo.Click += new System.EventHandler(this.OnDemoClick);
             // 
             // pbPlattegrond
             // 
@@ -835,6 +821,7 @@ namespace CTRails.Controls
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.pbPlattegrond);
             this.Controls.Add(this.trackView24);
             this.Controls.Add(this.trackView23);
             this.Controls.Add(this.trackView22);
@@ -859,8 +846,6 @@ namespace CTRails.Controls
             this.Controls.Add(this.trackView3);
             this.Controls.Add(this.trackView2);
             this.Controls.Add(this.trackView1);
-            this.Controls.Add(this.btnDemo);
-            this.Controls.Add(this.pbPlattegrond);
             this.Controls.Add(this.lblVergroot);
             this.Controls.Add(this.pnlSection21_1);
             this.Controls.Add(this.pnlSection15_1);
@@ -931,7 +916,6 @@ namespace CTRails.Controls
         private System.Windows.Forms.Panel pnlSection21_1;
         private System.Windows.Forms.Label lblSection21_1;
         private MaterialSkin.Controls.MaterialLabel lblVergroot;
-        private MaterialSkin.Controls.MaterialRaisedButton btnDemo;
         private TrackView trackView1;
         private TrackView trackView2;
         private TrackView trackView3;

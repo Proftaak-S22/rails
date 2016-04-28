@@ -116,7 +116,7 @@ namespace CTRails.Forms
             // 
             // loginWindow
             // 
-            this.loginWindow.Location = new System.Drawing.Point(502, 242);
+            this.loginWindow.Location = new System.Drawing.Point(507, 142);
             this.loginWindow.Name = "loginWindow";
             this.loginWindow.Size = new System.Drawing.Size(250, 206);
             this.loginWindow.TabIndex = 0;
@@ -166,6 +166,7 @@ namespace CTRails.Forms
             this.btnBekijkRoosters1.TabIndex = 9;
             this.btnBekijkRoosters1.Text = "Wijzig roosters";
             this.btnBekijkRoosters1.UseVisualStyleBackColor = true;
+            this.btnBekijkRoosters1.Click += new System.EventHandler(this.btnBekijkRoosters1_Click);
             // 
             // cbGebruikerBekijken
             // 
@@ -173,8 +174,10 @@ namespace CTRails.Forms
             this.cbGebruikerBekijken.Location = new System.Drawing.Point(884, 67);
             this.cbGebruikerBekijken.Name = "cbGebruikerBekijken";
             this.cbGebruikerBekijken.Size = new System.Drawing.Size(276, 21);
+            this.cbGebruikerBekijken.Sorted = true;
             this.cbGebruikerBekijken.TabIndex = 6;
             this.cbGebruikerBekijken.Text = "Kies een gebruiker...";
+            this.cbGebruikerBekijken.SelectedIndexChanged += new System.EventHandler(this.cbGebruikerBekijken_SelectedIndexChanged);
             // 
             // materialLabel1
             // 
@@ -185,7 +188,7 @@ namespace CTRails.Forms
             this.materialLabel1.Location = new System.Drawing.Point(880, 45);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(133, 19);
+            this.materialLabel1.Size = new System.Drawing.Size(134, 19);
             this.materialLabel1.TabIndex = 5;
             this.materialLabel1.Text = "Bekijk rooster van:";
             // 
