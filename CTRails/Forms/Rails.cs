@@ -61,6 +61,8 @@ namespace CTRails.Forms
 
             tcNavigation.TabPages.Clear();
             tcNavigation.TabPages.Add(tpLogin);
+
+            LoadEmployeesForTasks();
         }
 
 
@@ -99,6 +101,7 @@ namespace CTRails.Forms
                 tcNavigation.TabPages.Add(tpRemise);
                 tcNavigation.TabPages.Add(tpTrams);
                 tcNavigation.TabPages.Add(tpGebruikers);
+                tcNavigation.TabPages.Add(tpRoosterEdit);
             }
 
         }
@@ -128,6 +131,32 @@ namespace CTRails.Forms
                 if (tv.GetType() == typeof(TrackView))
                     ((TrackView)tv).CreateSectors(tracks, sectors);
             }
+        }
+
+        private void cbGebruikerBekijken_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //List<Task> tasks = 
+        }
+
+        private void LoadEmployeesForTasks()
+        {
+            List<Employee> employees = worker.Employees.Get().ToList();
+            foreach (Employee emp in employees)
+            {
+                if (emp.Prefix != "")
+                {
+                    cbGebruikerBekijken.Items.Add(emp.LastName + ", " + emp.FirstName + " " + emp.Prefix);
+                }
+                else
+                {
+                    cbGebruikerBekijken.Items.Add(emp.LastName + ", " + emp.FirstName);
+                }
+            }
+        }
+
+        private void btnBekijkRoosters1_Click(object sender, EventArgs e)
+        {
+            tcNavigation.SelectedIndex = tcNavigation.TabPages.IndexOf(tpRoosterEdit);
         }
     }
 }
