@@ -5,6 +5,7 @@ using System.Drawing;
 using System.Data;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CTRails.DAL;
@@ -142,7 +143,26 @@ namespace CTRails.Controls
 
             if (tramPlacementForm.ShowDialog() == DialogResult.OK)
             {
-                int code = tramPlacementForm.TramCode;
+                if (tramPlacementForm.TramCode == "X")
+                {
+                    return;
+                }
+                if (tramPlacementForm.TramCode == string.Empty)
+                {
+                    clicked.Text = "...";
+                    return;
+                }
+
+                Regex regex = new Regex(@"^\d+$");
+
+                if (!regex.IsMatch(tramPlacementForm.TramCode))
+                {
+                    MessageBox.Show("Alleen nummers A.U.B.");
+                    return;
+                }
+
+
+                int code = Convert.ToInt32(tramPlacementForm.TramCode);
 
                 UnitOfWork work = new UnitOfWork(false);
 
