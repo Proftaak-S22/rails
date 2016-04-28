@@ -9,6 +9,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CTRails.DAL;
+using CTRails.DAL.Contexts;
 using CTRails.Entities;
 using CTRails.Exceptions;
 using CTRails.Forms;
@@ -138,13 +139,14 @@ namespace CTRails.Controls
         private void OnSectorClick(object sender, EventArgs e)
         {
             tramPlacementForm = new PlaceTramForm();
-
+            UnitOfWork work = new UnitOfWork(false);
             Sector clicked = (Sector) sender;
 
             if (tramPlacementForm.ShowDialog() == DialogResult.OK)
             {
-                if (tramPlacementForm.TramCode == "X")
+                if (tramPlacementForm.TramCode == "X" || tramPlacementForm.TramCode == "x")
                 {
+
                     return;
                 }
                 if (tramPlacementForm.TramCode == string.Empty)
@@ -157,16 +159,19 @@ namespace CTRails.Controls
 
                 if (!regex.IsMatch(tramPlacementForm.TramCode))
                 {
-                    MessageBox.Show("Alleen nummers A.U.B.");
+                    MessageBox.Show("Vul alleen tramnummers in, laat leeg voor de sector te deblokkeren of vul een 'x' in voor de sector te blokkeren.", "Syntax Error");
                     return;
                 }
 
 
                 int code = Convert.ToInt32(tramPlacementForm.TramCode);
 
-                UnitOfWork work = new UnitOfWork(false);
+
 
                 Tram tram = work.Trams.Get().FirstOrDefault(x => x.Code == code);
+                
+
+
 
                 // Does the given tram number actually exist?
                 if (tram == null)
@@ -174,8 +179,8 @@ namespace CTRails.Controls
                     MessageBox.Show("Tram bestaat niet.");
                     return;
                 }
-
-
+                clicked.SectorObject.Tram = tram;
+                work.Sectors.Update(clicked.SectorObject);
 
                 clicked.ForeColor = tramPlacementForm.Clean ? SectorCleanColor : SectorDefaultColor;
 
