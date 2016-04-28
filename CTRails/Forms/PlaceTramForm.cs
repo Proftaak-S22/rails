@@ -32,7 +32,6 @@ namespace CTRails.Forms
             get { return txtTramNummer.Text; }
         }
 
-
         public PlaceTramForm()
         {
             InitializeComponent();
