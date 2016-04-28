@@ -36,9 +36,7 @@ namespace CTRails.Forms
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.tcNavigation = new System.Windows.Forms.TabControl();
             this.tpLogin = new System.Windows.Forms.TabPage();
-            this.loginWindow = new CTRails.Controls.LoginWindow();
             this.tpRemise = new System.Windows.Forms.TabPage();
-            this.remiseWindow1 = new CTRails.Controls.RemiseWindow();
             this.tpTrams = new System.Windows.Forms.TabPage();
             this.btnBekijkRoosters1 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.cbGebruikerBekijken = new System.Windows.Forms.ComboBox();
@@ -49,10 +47,12 @@ namespace CTRails.Forms
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tpSchedule = new System.Windows.Forms.TabPage();
-            this.scheduleWindow1 = new CTRails.Controls.ScheduleWindow();
             this.tpRoosterEdit = new System.Windows.Forms.TabPage();
-            this.editScheduleTabPage1 = new CTRails.Controls.EditScheduleWindow();
             this.tpGebruikers = new System.Windows.Forms.TabPage();
+            this.loginWindow = new CTRails.Controls.LoginWindow();
+            this.remiseWindow1 = new CTRails.Controls.RemiseWindow();
+            this.scheduleWindow1 = new CTRails.Controls.ScheduleWindow();
+            this.editScheduleTabPage1 = new CTRails.Controls.EditScheduleWindow();
             this.usersWindow1 = new CTRails.Controls.UsersWindow();
             this.tcNavigation.SuspendLayout();
             this.tpLogin.SuspendLayout();
@@ -114,13 +114,6 @@ namespace CTRails.Forms
             this.tpLogin.Text = "Login";
             this.tpLogin.UseVisualStyleBackColor = true;
             // 
-            // loginWindow
-            // 
-            this.loginWindow.Location = new System.Drawing.Point(507, 142);
-            this.loginWindow.Name = "loginWindow";
-            this.loginWindow.Size = new System.Drawing.Size(250, 206);
-            this.loginWindow.TabIndex = 0;
-            // 
             // tpRemise
             // 
             this.tpRemise.Controls.Add(this.remiseWindow1);
@@ -131,14 +124,6 @@ namespace CTRails.Forms
             this.tpRemise.TabIndex = 0;
             this.tpRemise.Text = "Remise";
             this.tpRemise.UseVisualStyleBackColor = true;
-            // 
-            // remiseWindow1
-            // 
-            this.remiseWindow1.Location = new System.Drawing.Point(3, 3);
-            this.remiseWindow1.Name = "remiseWindow1";
-            this.remiseWindow1.Size = new System.Drawing.Size(1264, 478);
-            this.remiseWindow1.TabIndex = 0;
-            this.remiseWindow1.Load += new System.EventHandler(this.OnRemiseClick);
             // 
             // tpTrams
             // 
@@ -183,12 +168,12 @@ namespace CTRails.Forms
             // 
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel1.Location = new System.Drawing.Point(880, 45);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(134, 19);
+            this.materialLabel1.Size = new System.Drawing.Size(131, 18);
             this.materialLabel1.TabIndex = 5;
             this.materialLabel1.Text = "Bekijk rooster van:";
             // 
@@ -198,9 +183,9 @@ namespace CTRails.Forms
             this.lblRoosterVan.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
             this.lblRoosterVan.Location = new System.Drawing.Point(8, 3);
             this.lblRoosterVan.Name = "lblRoosterVan";
-            this.lblRoosterVan.Size = new System.Drawing.Size(315, 39);
+            this.lblRoosterVan.Size = new System.Drawing.Size(288, 39);
             this.lblRoosterVan.TabIndex = 4;
-            this.lblRoosterVan.Text = "Rooster van <user>";
+            this.lblRoosterVan.Text = "Roosters bekijken";
             // 
             // lvRoostersBekijken
             // 
@@ -215,21 +200,22 @@ namespace CTRails.Forms
             this.lvRoostersBekijken.TabIndex = 1;
             this.lvRoostersBekijken.UseCompatibleStateImageBehavior = false;
             this.lvRoostersBekijken.View = System.Windows.Forms.View.Details;
+            this.lvRoostersBekijken.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.OnUserSelected);
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "Taak";
-            this.columnHeader4.Width = 472;
+            this.columnHeader4.Text = "Tram ID";
+            this.columnHeader4.Width = 346;
             // 
             // columnHeader5
             // 
             this.columnHeader5.Text = "Datum";
-            this.columnHeader5.Width = 154;
+            this.columnHeader5.Width = 267;
             // 
             // columnHeader6
             // 
-            this.columnHeader6.Text = "Tijd";
-            this.columnHeader6.Width = 128;
+            this.columnHeader6.Text = "Done?";
+            this.columnHeader6.Width = 219;
             // 
             // tpSchedule
             // 
@@ -242,13 +228,6 @@ namespace CTRails.Forms
             this.tpSchedule.Text = "Rooster";
             this.tpSchedule.UseVisualStyleBackColor = true;
             // 
-            // scheduleWindow1
-            // 
-            this.scheduleWindow1.Location = new System.Drawing.Point(8, 3);
-            this.scheduleWindow1.Name = "scheduleWindow1";
-            this.scheduleWindow1.Size = new System.Drawing.Size(1171, 478);
-            this.scheduleWindow1.TabIndex = 0;
-            // 
             // tpRoosterEdit
             // 
             this.tpRoosterEdit.Controls.Add(this.editScheduleTabPage1);
@@ -260,13 +239,6 @@ namespace CTRails.Forms
             this.tpRoosterEdit.Text = "Roosters Aanpassen";
             this.tpRoosterEdit.UseVisualStyleBackColor = true;
             // 
-            // editScheduleTabPage1
-            // 
-            this.editScheduleTabPage1.Location = new System.Drawing.Point(6, 6);
-            this.editScheduleTabPage1.Name = "editScheduleTabPage1";
-            this.editScheduleTabPage1.Size = new System.Drawing.Size(1163, 493);
-            this.editScheduleTabPage1.TabIndex = 0;
-            // 
             // tpGebruikers
             // 
             this.tpGebruikers.Controls.Add(this.usersWindow1);
@@ -277,6 +249,35 @@ namespace CTRails.Forms
             this.tpGebruikers.TabIndex = 4;
             this.tpGebruikers.Text = "Gebruikers";
             this.tpGebruikers.UseVisualStyleBackColor = true;
+            // 
+            // loginWindow
+            // 
+            this.loginWindow.Location = new System.Drawing.Point(507, 142);
+            this.loginWindow.Name = "loginWindow";
+            this.loginWindow.Size = new System.Drawing.Size(250, 206);
+            this.loginWindow.TabIndex = 0;
+            // 
+            // remiseWindow1
+            // 
+            this.remiseWindow1.Location = new System.Drawing.Point(3, 3);
+            this.remiseWindow1.Name = "remiseWindow1";
+            this.remiseWindow1.Size = new System.Drawing.Size(1264, 478);
+            this.remiseWindow1.TabIndex = 0;
+            this.remiseWindow1.Load += new System.EventHandler(this.OnRemiseClick);
+            // 
+            // scheduleWindow1
+            // 
+            this.scheduleWindow1.Location = new System.Drawing.Point(8, 3);
+            this.scheduleWindow1.Name = "scheduleWindow1";
+            this.scheduleWindow1.Size = new System.Drawing.Size(1171, 478);
+            this.scheduleWindow1.TabIndex = 0;
+            // 
+            // editScheduleTabPage1
+            // 
+            this.editScheduleTabPage1.Location = new System.Drawing.Point(6, 6);
+            this.editScheduleTabPage1.Name = "editScheduleTabPage1";
+            this.editScheduleTabPage1.Size = new System.Drawing.Size(1163, 493);
+            this.editScheduleTabPage1.TabIndex = 0;
             // 
             // usersWindow1
             // 

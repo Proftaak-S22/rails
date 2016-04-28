@@ -17,6 +17,7 @@ namespace CTRails.Forms
     {
 
         UnitOfWork worker = new UnitOfWork();
+        private Employee target = null;
 
         public Rails()
         {
@@ -135,7 +136,28 @@ namespace CTRails.Forms
 
         private void cbGebruikerBekijken_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //List<Task> tasks = 
+            string id = cbGebruikerBekijken.Text;
+            id = id.Remove(id.IndexOf(" "));
+            lvRoostersBekijken.Items.Clear();
+
+            foreach (Task t in worker.Tasks.Get().ToList())
+            {
+                if (t.EmployeeID == Convert.ToInt32(id))
+                {
+                    string[] row =
+                    {
+                        t.TramID.ToString(),
+                        t.Date.ToString(),
+                        t.IsDone.ToString()
+                    };
+
+                    var item = new ListViewItem(row);
+
+                    lvRoostersBekijken.Items.Add(item);
+                }
+
+                
+            }
         }
 
         private void LoadEmployeesForTasks()
@@ -145,11 +167,11 @@ namespace CTRails.Forms
             {
                 if (emp.Prefix != "")
                 {
-                    cbGebruikerBekijken.Items.Add(emp.LastName + ", " + emp.FirstName + " " + emp.Prefix);
+                    cbGebruikerBekijken.Items.Add(emp.ID + " : " + emp.LastName + ", " + emp.FirstName + " " + emp.Prefix);
                 }
                 else
                 {
-                    cbGebruikerBekijken.Items.Add(emp.LastName + ", " + emp.FirstName);
+                    cbGebruikerBekijken.Items.Add(emp.ID + " : " + emp.LastName + ", " + emp.FirstName);
                 }
             }
         }
@@ -157,6 +179,11 @@ namespace CTRails.Forms
         private void btnBekijkRoosters1_Click(object sender, EventArgs e)
         {
             tcNavigation.SelectedIndex = tcNavigation.TabPages.IndexOf(tpRoosterEdit);
+        }
+
+        private void OnUserSelected(object sender, ListViewItemSelectionChangedEventArgs e)
+        {
+            
         }
     }
 }
