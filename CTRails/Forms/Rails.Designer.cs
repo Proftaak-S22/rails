@@ -36,7 +36,9 @@ namespace CTRails.Forms
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.tcNavigation = new System.Windows.Forms.TabControl();
             this.tpLogin = new System.Windows.Forms.TabPage();
+            this.loginWindow = new CTRails.Controls.LoginWindow();
             this.tpRemise = new System.Windows.Forms.TabPage();
+            this.remiseWindow1 = new CTRails.Controls.RemiseWindow();
             this.tpTrams = new System.Windows.Forms.TabPage();
             this.btnBekijkRoosters1 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.cbGebruikerBekijken = new System.Windows.Forms.ComboBox();
@@ -46,27 +48,19 @@ namespace CTRails.Forms
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.tpRoosterEdit = new System.Windows.Forms.TabPage();
-            this.tpGebruikers = new System.Windows.Forms.TabPage();
-            this.remiseWindow1 = new CTRails.Controls.RemiseWindow();
             this.tpSchedule = new System.Windows.Forms.TabPage();
-            this.btnBekijkRoosters = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnEditScedule = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.lvPersoonlijkRooster = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.scheduleWindow1 = new CTRails.Controls.ScheduleWindow();
+            this.tpRoosterEdit = new System.Windows.Forms.TabPage();
             this.editScheduleTabPage1 = new CTRails.Controls.EditScheduleWindow();
+            this.tpGebruikers = new System.Windows.Forms.TabPage();
             this.usersWindow1 = new CTRails.Controls.UsersWindow();
-            this.loginWindow = new CTRails.Controls.LoginWindow();
             this.tcNavigation.SuspendLayout();
             this.tpLogin.SuspendLayout();
             this.tpRemise.SuspendLayout();
             this.tpTrams.SuspendLayout();
+            this.tpSchedule.SuspendLayout();
             this.tpRoosterEdit.SuspendLayout();
             this.tpGebruikers.SuspendLayout();
-            this.tpSchedule.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLogOut
@@ -120,6 +114,13 @@ namespace CTRails.Forms
             this.tpLogin.Text = "Login";
             this.tpLogin.UseVisualStyleBackColor = true;
             // 
+            // loginWindow
+            // 
+            this.loginWindow.Location = new System.Drawing.Point(502, 242);
+            this.loginWindow.Name = "loginWindow";
+            this.loginWindow.Size = new System.Drawing.Size(250, 206);
+            this.loginWindow.TabIndex = 0;
+            // 
             // tpRemise
             // 
             this.tpRemise.Controls.Add(this.remiseWindow1);
@@ -130,6 +131,14 @@ namespace CTRails.Forms
             this.tpRemise.TabIndex = 0;
             this.tpRemise.Text = "Remise";
             this.tpRemise.UseVisualStyleBackColor = true;
+            // 
+            // remiseWindow1
+            // 
+            this.remiseWindow1.Location = new System.Drawing.Point(3, 3);
+            this.remiseWindow1.Name = "remiseWindow1";
+            this.remiseWindow1.Size = new System.Drawing.Size(1264, 478);
+            this.remiseWindow1.TabIndex = 0;
+            this.remiseWindow1.Load += new System.EventHandler(this.OnRemiseClick);
             // 
             // tpTrams
             // 
@@ -176,7 +185,7 @@ namespace CTRails.Forms
             this.materialLabel1.Location = new System.Drawing.Point(880, 45);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(134, 19);
+            this.materialLabel1.Size = new System.Drawing.Size(133, 19);
             this.materialLabel1.TabIndex = 5;
             this.materialLabel1.Text = "Bekijk rooster van:";
             // 
@@ -219,6 +228,24 @@ namespace CTRails.Forms
             this.columnHeader6.Text = "Tijd";
             this.columnHeader6.Width = 128;
             // 
+            // tpSchedule
+            // 
+            this.tpSchedule.Controls.Add(this.scheduleWindow1);
+            this.tpSchedule.Location = new System.Drawing.Point(4, 22);
+            this.tpSchedule.Name = "tpSchedule";
+            this.tpSchedule.Padding = new System.Windows.Forms.Padding(3);
+            this.tpSchedule.Size = new System.Drawing.Size(1268, 505);
+            this.tpSchedule.TabIndex = 1;
+            this.tpSchedule.Text = "Rooster";
+            this.tpSchedule.UseVisualStyleBackColor = true;
+            // 
+            // scheduleWindow1
+            // 
+            this.scheduleWindow1.Location = new System.Drawing.Point(8, 3);
+            this.scheduleWindow1.Name = "scheduleWindow1";
+            this.scheduleWindow1.Size = new System.Drawing.Size(1171, 478);
+            this.scheduleWindow1.TabIndex = 0;
+            // 
             // tpRoosterEdit
             // 
             this.tpRoosterEdit.Controls.Add(this.editScheduleTabPage1);
@@ -229,6 +256,13 @@ namespace CTRails.Forms
             this.tpRoosterEdit.TabIndex = 2;
             this.tpRoosterEdit.Text = "Roosters Aanpassen";
             this.tpRoosterEdit.UseVisualStyleBackColor = true;
+            // 
+            // editScheduleTabPage1
+            // 
+            this.editScheduleTabPage1.Location = new System.Drawing.Point(6, 6);
+            this.editScheduleTabPage1.Name = "editScheduleTabPage1";
+            this.editScheduleTabPage1.Size = new System.Drawing.Size(1163, 493);
+            this.editScheduleTabPage1.TabIndex = 0;
             // 
             // tpGebruikers
             // 
@@ -241,114 +275,13 @@ namespace CTRails.Forms
             this.tpGebruikers.Text = "Gebruikers";
             this.tpGebruikers.UseVisualStyleBackColor = true;
             // 
-            // remiseWindow1
-            // 
-            this.remiseWindow1.CleanColor = System.Drawing.Color.Blue;
-            this.remiseWindow1.DefaultColor = System.Drawing.Color.Black;
-            this.remiseWindow1.DefaultFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.remiseWindow1.Location = new System.Drawing.Point(3, 3);
-            this.remiseWindow1.MaintenanceFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline);
-            this.remiseWindow1.Name = "remiseWindow1";
-            this.remiseWindow1.Size = new System.Drawing.Size(1264, 478);
-            this.remiseWindow1.TabIndex = 0;
-            // 
-            // tpSchedule
-            // 
-            this.tpSchedule.Controls.Add(this.btnBekijkRoosters);
-            this.tpSchedule.Controls.Add(this.label1);
-            this.tpSchedule.Controls.Add(this.btnEditScedule);
-            this.tpSchedule.Controls.Add(this.lvPersoonlijkRooster);
-            this.tpSchedule.Location = new System.Drawing.Point(4, 22);
-            this.tpSchedule.Name = "tpSchedule";
-            this.tpSchedule.Padding = new System.Windows.Forms.Padding(3);
-            this.tpSchedule.Size = new System.Drawing.Size(1268, 505);
-            this.tpSchedule.TabIndex = 1;
-            this.tpSchedule.Text = "Rooster";
-            this.tpSchedule.UseVisualStyleBackColor = true;
-            // 
-            // btnBekijkRoosters
-            // 
-            this.btnBekijkRoosters.Depth = 0;
-            this.btnBekijkRoosters.Location = new System.Drawing.Point(884, 97);
-            this.btnBekijkRoosters.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnBekijkRoosters.Name = "btnBekijkRoosters";
-            this.btnBekijkRoosters.Primary = true;
-            this.btnBekijkRoosters.Size = new System.Drawing.Size(276, 46);
-            this.btnBekijkRoosters.TabIndex = 4;
-            this.btnBekijkRoosters.Text = "Bekijk alle roosters";
-            this.btnBekijkRoosters.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.label1.Location = new System.Drawing.Point(8, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(313, 39);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Persoonlijk Rooster";
-            // 
-            // btnEditScedule
-            // 
-            this.btnEditScedule.Depth = 0;
-            this.btnEditScedule.Location = new System.Drawing.Point(884, 45);
-            this.btnEditScedule.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnEditScedule.Name = "btnEditScedule";
-            this.btnEditScedule.Primary = true;
-            this.btnEditScedule.Size = new System.Drawing.Size(278, 46);
-            this.btnEditScedule.TabIndex = 1;
-            this.btnEditScedule.Text = "Wijzig rooster(s)";
-            this.btnEditScedule.UseVisualStyleBackColor = true;
-            // 
-            // lvPersoonlijkRooster
-            // 
-            this.lvPersoonlijkRooster.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3});
-            this.lvPersoonlijkRooster.GridLines = true;
-            this.lvPersoonlijkRooster.Location = new System.Drawing.Point(8, 45);
-            this.lvPersoonlijkRooster.Name = "lvPersoonlijkRooster";
-            this.lvPersoonlijkRooster.Size = new System.Drawing.Size(866, 427);
-            this.lvPersoonlijkRooster.TabIndex = 0;
-            this.lvPersoonlijkRooster.UseCompatibleStateImageBehavior = false;
-            this.lvPersoonlijkRooster.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Taak";
-            this.columnHeader1.Width = 472;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Datum";
-            this.columnHeader2.Width = 154;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Tijd";
-            this.columnHeader3.Width = 128;
-            // 
-            // editScheduleTabPage1
-            // 
-            this.editScheduleTabPage1.Location = new System.Drawing.Point(6, 6);
-            this.editScheduleTabPage1.Name = "editScheduleTabPage1";
-            this.editScheduleTabPage1.Size = new System.Drawing.Size(1163, 493);
-            this.editScheduleTabPage1.TabIndex = 0;
-            // 
             // usersWindow1
             // 
             this.usersWindow1.Location = new System.Drawing.Point(3, 3);
             this.usersWindow1.Name = "usersWindow1";
             this.usersWindow1.Size = new System.Drawing.Size(1162, 487);
             this.usersWindow1.TabIndex = 0;
-            // 
-            // loginWindow
-            // 
-            this.loginWindow.Location = new System.Drawing.Point(460, 160);
-            this.loginWindow.Name = "loginWindow";
-            this.loginWindow.Size = new System.Drawing.Size(250, 206);
-            this.loginWindow.TabIndex = 0;
+            this.usersWindow1.Load += new System.EventHandler(this.usersWindow1_Load);
             // 
             // Rails
             // 
@@ -366,10 +299,9 @@ namespace CTRails.Forms
             this.tpRemise.ResumeLayout(false);
             this.tpTrams.ResumeLayout(false);
             this.tpTrams.PerformLayout();
+            this.tpSchedule.ResumeLayout(false);
             this.tpRoosterEdit.ResumeLayout(false);
             this.tpGebruikers.ResumeLayout(false);
-            this.tpSchedule.ResumeLayout(false);
-            this.tpSchedule.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -378,13 +310,6 @@ namespace CTRails.Forms
         private MaterialSkin.Controls.MaterialRaisedButton btnLogOut;
         private System.Windows.Forms.TabPage tpGebruikers;
         private System.Windows.Forms.TabPage tpRoosterEdit;
-        private MaterialSkin.Controls.MaterialRaisedButton btnBekijkRoosters;
-        private System.Windows.Forms.Label label1;
-        private MaterialSkin.Controls.MaterialRaisedButton btnEditScedule;
-        private System.Windows.Forms.ListView lvPersoonlijkRooster;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.TabPage tpTrams;
         private MaterialSkin.Controls.MaterialRaisedButton btnBekijkRoosters1;
         private System.Windows.Forms.ComboBox cbGebruikerBekijken;
@@ -403,6 +328,7 @@ namespace CTRails.Forms
         private RemiseWindow remiseWindow1;
         private UsersWindow usersWindow1;
         private LoginWindow loginWindow;
+        private ScheduleWindow scheduleWindow1;
     }
 }
 

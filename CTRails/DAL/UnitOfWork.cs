@@ -6,10 +6,12 @@ namespace CTRails.DAL
 {
     public class UnitOfWork
     {
-        
+
+        public static bool Test { get; set; } = false;
+
         public UnitOfWork(bool test = false)
         {
-            if (!test)
+            if (!test && !Test)
             {
                 AccountTypes = new AccountTypeRepository(new AccountTypeOracleContext());
                 Employees = new EmployeeRepository(new EmployeeOracleContext());

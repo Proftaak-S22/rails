@@ -16,6 +16,8 @@ namespace CTRails.Controls
     {
         UnitOfWork worker = new UnitOfWork(false);
 
+        private Employee target = null;
+
         public UsersWindow()
         {
             InitializeComponent();
@@ -55,9 +57,9 @@ namespace CTRails.Controls
         private void OnUserSelected(object sender, ListViewItemSelectionChangedEventArgs e)
         {
             
-            Employee selection = worker.Employees.Get().First(x => x.Email == e.Item.SubItems[4].Text);
+            target = worker.Employees.Get().First(x => x.Email == e.Item.SubItems[4].Text);
 
-            SetTextboxValues(selection.Username, selection.Password, selection.Email, selection.FirstName, selection.Prefix, selection.LastName, selection.Address.Country, selection.Address.Zipcode, selection.Address.Number, selection.DateOfBirth, selection.Gender, selection.Address.City);
+            SetTextboxValues(target.Username, target.Password, target.Email, target.FirstName, target.Prefix, target.LastName, target.Address.Country, target.Address.Zipcode, target.Address.Number, target.DateOfBirth, target.Gender, target.Address.City);
         }
 
 
@@ -91,6 +93,17 @@ namespace CTRails.Controls
         private void OnUpdateUserClick(object sender, EventArgs e)
         {
 
+            target.FirstName = tbFirstname.Text;
+            target.Gender = (Gender) Enum.Parse(typeof (Gender), cbGender.Text);
+            target.Password = tbPassword.Text;
+            target.Address.Number = Convert.ToInt32(tbHouseNumber.Text);
+            target.Address.City = tbCountry.Text;
+            target.LastName = tbLastName.Text;
+            target.Address.Zipcode = tbZipcode.Text;
+            target.Username = tbUsername.Text;
+
+            if (target != null)
+                worker.Employees.Update(target);
         }
 
         

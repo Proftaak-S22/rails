@@ -57,6 +57,8 @@ namespace CTRails.DAL.Contexts
             }
             catch (Oracle.ManagedDataAccess.Client.OracleException)
             {
+                UnitOfWork.Test = true;
+
                 Console.WriteLine("A connection could not be opened.");
             }
         }
@@ -74,7 +76,7 @@ namespace CTRails.DAL.Contexts
             if (parameters != null)
                 foreach (OracleParameter p in parameters)
                     command.Parameters.Add(p);
-
+            
             command.ExecuteNonQuery();
         }
 

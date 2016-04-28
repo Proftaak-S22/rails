@@ -18,7 +18,7 @@ namespace CTRails.DAL.Contexts
         public SectorTestContext()
             : base()
         {
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 1000; i++)
                 Entities.Add(new Sector(NextID, i / 4));
         }
 

@@ -1,6 +1,9 @@
-﻿namespace CTRails.Entities
+﻿using System;
+
+
+namespace CTRails.Entities
 {
-    public abstract class Entity
+    public abstract class Entity 
     {
         public int ID { get; set; }
         public bool IsDirty { get; set; }
@@ -17,5 +20,6 @@
         {
             
         }
+
     }
 }

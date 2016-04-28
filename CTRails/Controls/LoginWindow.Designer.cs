@@ -30,9 +30,9 @@
         {
             this.btnLogin = new MaterialSkin.Controls.MaterialRaisedButton();
             this.tbPassword = new System.Windows.Forms.TextBox();
-            this.lPassword = new MaterialSkin.Controls.MaterialLabel();
             this.tbUsername = new System.Windows.Forms.TextBox();
             this.lUsername = new MaterialSkin.Controls.MaterialLabel();
+            this.lPassword = new MaterialSkin.Controls.MaterialLabel();
             this.SuspendLayout();
             // 
             // btnLogin
@@ -46,7 +46,7 @@
             this.btnLogin.TabIndex = 7;
             this.btnLogin.Text = "Log In";
             this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Click += new System.EventHandler(this.loginClick);
+            this.btnLogin.Click += new System.EventHandler(this.LoginClick);
             // 
             // tbPassword
             // 
@@ -58,19 +58,7 @@
             this.tbPassword.Size = new System.Drawing.Size(182, 20);
             this.tbPassword.TabIndex = 2;
             this.tbPassword.WordWrap = false;
-            // 
-            // lPassword
-            // 
-            this.lPassword.AutoSize = true;
-            this.lPassword.Depth = 0;
-            this.lPassword.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lPassword.Location = new System.Drawing.Point(25, 111);
-            this.lPassword.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lPassword.Name = "lPassword";
-            this.lPassword.Size = new System.Drawing.Size(93, 19);
-            this.lPassword.TabIndex = 6;
-            this.lPassword.Text = "Wachtwoord";
+            this.tbPassword.KeyUp += new System.Windows.Forms.KeyEventHandler(this.OnKeyUp);
             // 
             // tbUsername
             // 
@@ -79,6 +67,7 @@
             this.tbUsername.Size = new System.Drawing.Size(182, 20);
             this.tbUsername.TabIndex = 1;
             this.tbUsername.WordWrap = false;
+            this.tbUsername.KeyUp += new System.Windows.Forms.KeyEventHandler(this.OnKeyUp);
             // 
             // lUsername
             // 
@@ -89,16 +78,29 @@
             this.lUsername.Location = new System.Drawing.Point(25, 36);
             this.lUsername.MouseState = MaterialSkin.MouseState.HOVER;
             this.lUsername.Name = "lUsername";
-            this.lUsername.Size = new System.Drawing.Size(118, 19);
-            this.lUsername.TabIndex = 1;
+            this.lUsername.Size = new System.Drawing.Size(107, 20);
+            this.lUsername.TabIndex = 8;
             this.lUsername.Text = "Gebruikersnaam";
+            // 
+            // lPassword
+            // 
+            this.lPassword.AutoSize = true;
+            this.lPassword.Depth = 0;
+            this.lPassword.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lPassword.Location = new System.Drawing.Point(25, 112);
+            this.lPassword.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lPassword.Name = "lPassword";
+            this.lPassword.Size = new System.Drawing.Size(85, 20);
+            this.lPassword.TabIndex = 9;
+            this.lPassword.Text = "Wachtwoord";
             // 
             // LoginWindow
             // 
+            this.Controls.Add(this.lPassword);
             this.Controls.Add(this.lUsername);
             this.Controls.Add(this.tbPassword);
             this.Controls.Add(this.tbUsername);
-            this.Controls.Add(this.lPassword);
             this.Controls.Add(this.btnLogin);
             this.Name = "LoginWindow";
             this.Size = new System.Drawing.Size(250, 206);
@@ -111,8 +113,8 @@
 
         private MaterialSkin.Controls.MaterialRaisedButton btnLogin;
         private System.Windows.Forms.TextBox tbPassword;
-        private MaterialSkin.Controls.MaterialLabel lPassword;
         private System.Windows.Forms.TextBox tbUsername;
-        private MaterialSkin.Controls.MaterialLabel lUsername;
+        public MaterialSkin.Controls.MaterialLabel lUsername;
+        public MaterialSkin.Controls.MaterialLabel lPassword;
     }
 }

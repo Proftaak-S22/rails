@@ -16,55 +16,16 @@ namespace CTRails.Controls
     {
 
         private PlaceTramForm placeTramForm;
-        public Font MaintenanceFont { get; set; }
-        public new Font DefaultFont { get; set; }
-        public Color CleanColor { get; set; }
-        public Color DefaultColor { get; set; }
+        
 
         public RemiseWindow()
         {
             InitializeComponent();
-
-            MaintenanceFont = new Font(lblSection12_1.Font.FontFamily, lblSection12_1.Font.SizeInPoints, FontStyle.Underline);
-            DefaultFont = new Font(lblSection12_1.Font.FontFamily, lblSection12_1.Font.SizeInPoints, FontStyle.Regular);
-            CleanColor = Color.Blue;
-            DefaultColor = Color.Black;
-
         }
 
         private void OnSectorClick(object sender, EventArgs e)
         {
-            placeTramForm = new PlaceTramForm();
-
-            // Prevent invalid cast error.
-            if (sender.GetType() != typeof (Label))
-                return;
-
-            Label clickedLabel = ((Label) sender);
-
-            if (placeTramForm.ShowDialog() == DialogResult.OK)
-            {
-                int code = placeTramForm.TramCode;
-
-                UnitOfWork work = new UnitOfWork(false);
-
-                Tram tram = work.Trams.Get().FirstOrDefault(x => x.Code == code);
-
-                // Does the entered tram actually exist?
-                if (tram == null)
-                {
-                    MessageBox.Show("Tram bestaat niet.");
-                    return;
-                }
-
-
-
-                clickedLabel.ForeColor = placeTramForm.Clean ? CleanColor : DefaultColor;
-
-                clickedLabel.Font = placeTramForm.Maintenaince ? MaintenanceFont : DefaultFont;
-
-                clickedLabel.Text = placeTramForm.TramCode.ToString();
-            }
+            
         }
 
         private void OnPlattegrondClick(object sender, EventArgs e)
@@ -79,6 +40,11 @@ namespace CTRails.Controls
                 pbPlattegrond.Dock = DockStyle.None;
                 lblVergroot.Visible = true;
             }
+        }
+
+        private void OnDemoClick(object sender, EventArgs e)
+        {
+
         }
     }
 }

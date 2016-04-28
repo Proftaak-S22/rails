@@ -11,5 +11,12 @@ namespace CTRails.DAL.Repositories
         {
             
         }
+
+
+
+        public Tram GetByTramCode(int code)
+        {
+            return null;
+        }
     }
 }
