@@ -419,7 +419,7 @@ namespace CTRails.Controls
             this.lblVergroot.Location = new System.Drawing.Point(1085, 323);
             this.lblVergroot.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblVergroot.Name = "lblVergroot";
-            this.lblVergroot.Size = new System.Drawing.Size(149, 20);
+            this.lblVergroot.Size = new System.Drawing.Size(144, 19);
             this.lblVergroot.TabIndex = 182;
             this.lblVergroot.Text = "Klik om te vergroten";
             // 
@@ -450,7 +450,7 @@ namespace CTRails.Controls
             // trackView24
             // 
             this.trackView24.AutoSize = true;
-            this.trackView24.LineColor = System.Drawing.Color.Maroon;
+            this.trackView24.LineColor = System.Drawing.Color.RoyalBlue;
             this.trackView24.Location = new System.Drawing.Point(168, 251);
             this.trackView24.Margin = new System.Windows.Forms.Padding(0);
             this.trackView24.Name = "trackView24";
@@ -466,7 +466,7 @@ namespace CTRails.Controls
             // trackView23
             // 
             this.trackView23.AutoSize = true;
-            this.trackView23.LineColor = System.Drawing.Color.Maroon;
+            this.trackView23.LineColor = System.Drawing.Color.LightGreen;
             this.trackView23.Location = new System.Drawing.Point(112, 251);
             this.trackView23.Margin = new System.Windows.Forms.Padding(0);
             this.trackView23.Name = "trackView23";
@@ -482,7 +482,7 @@ namespace CTRails.Controls
             // trackView22
             // 
             this.trackView22.AutoSize = true;
-            this.trackView22.LineColor = System.Drawing.Color.Maroon;
+            this.trackView22.LineColor = System.Drawing.Color.Orchid;
             this.trackView22.Location = new System.Drawing.Point(59, 251);
             this.trackView22.Margin = new System.Windows.Forms.Padding(0);
             this.trackView22.Name = "trackView22";
@@ -498,7 +498,7 @@ namespace CTRails.Controls
             // trackView21
             // 
             this.trackView21.AutoSize = true;
-            this.trackView21.LineColor = System.Drawing.Color.Maroon;
+            this.trackView21.LineColor = System.Drawing.Color.DarkGray;
             this.trackView21.Location = new System.Drawing.Point(6, 251);
             this.trackView21.Margin = new System.Windows.Forms.Padding(0);
             this.trackView21.Name = "trackView21";
@@ -514,7 +514,7 @@ namespace CTRails.Controls
             // trackView20
             // 
             this.trackView20.AutoSize = true;
-            this.trackView20.LineColor = System.Drawing.Color.Maroon;
+            this.trackView20.LineColor = System.Drawing.Color.IndianRed;
             this.trackView20.Location = new System.Drawing.Point(958, 12);
             this.trackView20.Margin = new System.Windows.Forms.Padding(0);
             this.trackView20.Name = "trackView20";
@@ -530,7 +530,7 @@ namespace CTRails.Controls
             // trackView19
             // 
             this.trackView19.AutoSize = true;
-            this.trackView19.LineColor = System.Drawing.Color.Maroon;
+            this.trackView19.LineColor = System.Drawing.Color.Salmon;
             this.trackView19.Location = new System.Drawing.Point(1014, 12);
             this.trackView19.Margin = new System.Windows.Forms.Padding(0);
             this.trackView19.Name = "trackView19";
@@ -546,7 +546,7 @@ namespace CTRails.Controls
             // trackView18
             // 
             this.trackView18.AutoSize = true;
-            this.trackView18.LineColor = System.Drawing.Color.Maroon;
+            this.trackView18.LineColor = System.Drawing.Color.PaleGoldenrod;
             this.trackView18.Location = new System.Drawing.Point(1070, 12);
             this.trackView18.Margin = new System.Windows.Forms.Padding(0);
             this.trackView18.Name = "trackView18";
@@ -562,7 +562,7 @@ namespace CTRails.Controls
             // trackView17
             // 
             this.trackView17.AutoSize = true;
-            this.trackView17.LineColor = System.Drawing.Color.Maroon;
+            this.trackView17.LineColor = System.Drawing.Color.HotPink;
             this.trackView17.Location = new System.Drawing.Point(1126, 12);
             this.trackView17.Margin = new System.Windows.Forms.Padding(0);
             this.trackView17.Name = "trackView17";
@@ -578,7 +578,7 @@ namespace CTRails.Controls
             // trackView16
             // 
             this.trackView16.AutoSize = true;
-            this.trackView16.LineColor = System.Drawing.Color.Maroon;
+            this.trackView16.LineColor = System.Drawing.Color.Khaki;
             this.trackView16.Location = new System.Drawing.Point(790, 12);
             this.trackView16.Margin = new System.Windows.Forms.Padding(0);
             this.trackView16.Name = "trackView16";
@@ -594,7 +594,7 @@ namespace CTRails.Controls
             // trackView15
             // 
             this.trackView15.AutoSize = true;
-            this.trackView15.LineColor = System.Drawing.Color.Maroon;
+            this.trackView15.LineColor = System.Drawing.Color.Orchid;
             this.trackView15.Location = new System.Drawing.Point(846, 12);
             this.trackView15.Margin = new System.Windows.Forms.Padding(0);
             this.trackView15.Name = "trackView15";
@@ -626,7 +626,7 @@ namespace CTRails.Controls
             // trackView13
             // 
             this.trackView13.AutoSize = true;
-            this.trackView13.LineColor = System.Drawing.Color.Maroon;
+            this.trackView13.LineColor = System.Drawing.Color.Violet;
             this.trackView13.Location = new System.Drawing.Point(734, 12);
             this.trackView13.Margin = new System.Windows.Forms.Padding(0);
             this.trackView13.Name = "trackView13";
@@ -642,7 +642,7 @@ namespace CTRails.Controls
             // trackView10
             // 
             this.trackView10.AutoSize = true;
-            this.trackView10.LineColor = System.Drawing.Color.Maroon;
+            this.trackView10.LineColor = System.Drawing.Color.Black;
             this.trackView10.Location = new System.Drawing.Point(566, 12);
             this.trackView10.Margin = new System.Windows.Forms.Padding(0);
             this.trackView10.Name = "trackView10";
@@ -658,7 +658,7 @@ namespace CTRails.Controls
             // trackView11
             // 
             this.trackView11.AutoSize = true;
-            this.trackView11.LineColor = System.Drawing.Color.Maroon;
+            this.trackView11.LineColor = System.Drawing.Color.Red;
             this.trackView11.Location = new System.Drawing.Point(622, 12);
             this.trackView11.Margin = new System.Windows.Forms.Padding(0);
             this.trackView11.Name = "trackView11";
@@ -674,7 +674,7 @@ namespace CTRails.Controls
             // trackView12
             // 
             this.trackView12.AutoSize = true;
-            this.trackView12.LineColor = System.Drawing.Color.Maroon;
+            this.trackView12.LineColor = System.Drawing.Color.RoyalBlue;
             this.trackView12.Location = new System.Drawing.Point(678, 12);
             this.trackView12.Margin = new System.Windows.Forms.Padding(0);
             this.trackView12.Name = "trackView12";
@@ -690,7 +690,7 @@ namespace CTRails.Controls
             // trackView9
             // 
             this.trackView9.AutoSize = true;
-            this.trackView9.LineColor = System.Drawing.Color.Maroon;
+            this.trackView9.LineColor = System.Drawing.Color.Silver;
             this.trackView9.Location = new System.Drawing.Point(112, 12);
             this.trackView9.Margin = new System.Windows.Forms.Padding(0);
             this.trackView9.Name = "trackView9";
@@ -722,7 +722,7 @@ namespace CTRails.Controls
             // trackView7
             // 
             this.trackView7.AutoSize = true;
-            this.trackView7.LineColor = System.Drawing.Color.Maroon;
+            this.trackView7.LineColor = System.Drawing.Color.Khaki;
             this.trackView7.Location = new System.Drawing.Point(224, 12);
             this.trackView7.Margin = new System.Windows.Forms.Padding(0);
             this.trackView7.Name = "trackView7";
@@ -754,7 +754,7 @@ namespace CTRails.Controls
             // trackView5
             // 
             this.trackView5.AutoSize = true;
-            this.trackView5.LineColor = System.Drawing.Color.Maroon;
+            this.trackView5.LineColor = System.Drawing.Color.DarkSeaGreen;
             this.trackView5.Location = new System.Drawing.Point(336, 12);
             this.trackView5.Margin = new System.Windows.Forms.Padding(0);
             this.trackView5.Name = "trackView5";
@@ -770,7 +770,7 @@ namespace CTRails.Controls
             // trackView4
             // 
             this.trackView4.AutoSize = true;
-            this.trackView4.LineColor = System.Drawing.Color.Maroon;
+            this.trackView4.LineColor = System.Drawing.Color.Violet;
             this.trackView4.Location = new System.Drawing.Point(392, 12);
             this.trackView4.Margin = new System.Windows.Forms.Padding(0);
             this.trackView4.Name = "trackView4";
@@ -786,7 +786,7 @@ namespace CTRails.Controls
             // trackView3
             // 
             this.trackView3.AutoSize = true;
-            this.trackView3.LineColor = System.Drawing.Color.Maroon;
+            this.trackView3.LineColor = System.Drawing.Color.PaleGoldenrod;
             this.trackView3.Location = new System.Drawing.Point(448, 12);
             this.trackView3.Margin = new System.Windows.Forms.Padding(0);
             this.trackView3.Name = "trackView3";
@@ -802,7 +802,7 @@ namespace CTRails.Controls
             // trackView2
             // 
             this.trackView2.AutoSize = true;
-            this.trackView2.LineColor = System.Drawing.Color.Maroon;
+            this.trackView2.LineColor = System.Drawing.Color.HotPink;
             this.trackView2.Location = new System.Drawing.Point(59, 12);
             this.trackView2.Margin = new System.Windows.Forms.Padding(0);
             this.trackView2.Name = "trackView2";
