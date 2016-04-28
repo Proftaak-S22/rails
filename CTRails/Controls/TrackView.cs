@@ -83,6 +83,7 @@ namespace CTRails.Controls
 
 
         private PlaceTramForm tramPlacementForm;
+        private UnitOfWork unitOfWork;
         
         public TrackView()
         {
@@ -143,8 +144,9 @@ namespace CTRails.Controls
 
             if (tramPlacementForm.ShowDialog() == DialogResult.OK)
             {
-                if (tramPlacementForm.TramCode == "X")
+                if (tramPlacementForm.TramCode == "X" || tramPlacementForm.TramCode == "x")
                 {
+                    clicked.Text = "Blocked";
                     return;
                 }
                 if (tramPlacementForm.TramCode == string.Empty)

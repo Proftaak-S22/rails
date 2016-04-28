@@ -143,7 +143,7 @@
             this.cbStatusRemise.Text = "Remise";
             this.cbStatusRemise.UseVisualStyleBackColor = true;
             // 
-            // PopUp1
+            // PlaceTramForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
