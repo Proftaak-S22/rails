@@ -68,6 +68,18 @@
     <Compile Include="Controls\RemiseWindow.Designer.cs">
       <DependentUpon>RemiseWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Sector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Sector.Designer.cs">
+      <DependentUpon>Sector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TrackView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TrackView.Designer.cs">
+      <DependentUpon>TrackView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\UsersWindow.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -179,6 +191,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\ScheduleWindow.resx">
       <DependentUpon>ScheduleWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Sector.resx">
+      <DependentUpon>Sector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TrackView.resx">
+      <DependentUpon>TrackView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\UsersWindow.resx">
       <DependentUpon>UsersWindow.cs</DependentUpon>

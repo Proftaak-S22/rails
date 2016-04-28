@@ -15,6 +15,7 @@ namespace CTRails.Controls
     public partial class UsersWindow : UserControl
     {
         UnitOfWork worker = new UnitOfWork(false);
+
         private Employee target = null;
 
         public UsersWindow()
@@ -91,6 +92,16 @@ namespace CTRails.Controls
 
         private void OnUpdateUserClick(object sender, EventArgs e)
         {
+
+            target.FirstName = tbFirstname.Text;
+            target.Gender = (Gender) Enum.Parse(typeof (Gender), cbGender.Text);
+            target.Password = tbPassword.Text;
+            target.Address.Number = Convert.ToInt32(tbHouseNumber.Text);
+            target.Address.City = tbCountry.Text;
+            target.LastName = tbLastName.Text;
+            target.Address.Zipcode = tbZipcode.Text;
+            target.Username = tbUsername.Text;
+
             if (target != null)
                 worker.Employees.Update(target);
         }

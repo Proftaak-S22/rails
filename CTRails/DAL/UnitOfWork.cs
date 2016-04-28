@@ -7,7 +7,7 @@ namespace CTRails.DAL
     public class UnitOfWork
     {
 
-        public static bool Test { get; set; } = true;
+        public static bool Test { get; set; } = false;
 
         public UnitOfWork(bool test = false)
         {

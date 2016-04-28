@@ -134,14 +134,11 @@ namespace CTRails.Forms
             // 
             // remiseWindow1
             // 
-            this.remiseWindow1.CleanColor = System.Drawing.Color.Blue;
-            this.remiseWindow1.DefaultColor = System.Drawing.Color.Black;
-            this.remiseWindow1.DefaultFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.remiseWindow1.Location = new System.Drawing.Point(3, 3);
-            this.remiseWindow1.MaintenanceFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline);
             this.remiseWindow1.Name = "remiseWindow1";
             this.remiseWindow1.Size = new System.Drawing.Size(1264, 478);
             this.remiseWindow1.TabIndex = 0;
+            this.remiseWindow1.Load += new System.EventHandler(this.OnRemiseClick);
             // 
             // tpTrams
             // 
@@ -188,7 +185,7 @@ namespace CTRails.Forms
             this.materialLabel1.Location = new System.Drawing.Point(880, 45);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(134, 19);
+            this.materialLabel1.Size = new System.Drawing.Size(133, 19);
             this.materialLabel1.TabIndex = 5;
             this.materialLabel1.Text = "Bekijk rooster van:";
             // 

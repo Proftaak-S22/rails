@@ -58,6 +58,7 @@
             this.tbPassword.Size = new System.Drawing.Size(182, 20);
             this.tbPassword.TabIndex = 2;
             this.tbPassword.WordWrap = false;
+            this.tbPassword.KeyUp += new System.Windows.Forms.KeyEventHandler(this.OnKeyUp);
             // 
             // tbUsername
             // 
@@ -66,6 +67,7 @@
             this.tbUsername.Size = new System.Drawing.Size(182, 20);
             this.tbUsername.TabIndex = 1;
             this.tbUsername.WordWrap = false;
+            this.tbUsername.KeyUp += new System.Windows.Forms.KeyEventHandler(this.OnKeyUp);
             // 
             // lUsername
             // 
@@ -76,7 +78,7 @@
             this.lUsername.Location = new System.Drawing.Point(25, 36);
             this.lUsername.MouseState = MaterialSkin.MouseState.HOVER;
             this.lUsername.Name = "lUsername";
-            this.lUsername.Size = new System.Drawing.Size(118, 19);
+            this.lUsername.Size = new System.Drawing.Size(107, 20);
             this.lUsername.TabIndex = 8;
             this.lUsername.Text = "Gebruikersnaam";
             // 
@@ -89,7 +91,7 @@
             this.lPassword.Location = new System.Drawing.Point(25, 112);
             this.lPassword.MouseState = MaterialSkin.MouseState.HOVER;
             this.lPassword.Name = "lPassword";
-            this.lPassword.Size = new System.Drawing.Size(93, 19);
+            this.lPassword.Size = new System.Drawing.Size(85, 20);
             this.lPassword.TabIndex = 9;
             this.lPassword.Text = "Wachtwoord";
             // 

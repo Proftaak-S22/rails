@@ -4,10 +4,10 @@
     {
         //Fields
         public string StreetName { get; private set; }
-        public int Number { get; private set; }
-        public string City { get; private set; }
+        public int Number { get; set; }
+        public string City { get; set; }
         public string Country { get; private set; }
-        public string Zipcode { get; private set; }
+        public string Zipcode { get; set; }
         public string Addition { get; private set; }
 
         //Constructor

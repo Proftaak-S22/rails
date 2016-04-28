@@ -76,7 +76,7 @@ namespace CTRails.DAL.Contexts
             if (parameters != null)
                 foreach (OracleParameter p in parameters)
                     command.Parameters.Add(p);
-
+            
             command.ExecuteNonQuery();
         }
 

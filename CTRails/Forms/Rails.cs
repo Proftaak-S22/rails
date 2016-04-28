@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using CTRails.Controls;
 using CTRails.DAL;
 using CTRails.Entities;
 using CTRails.Entities.Employees;
@@ -115,6 +116,18 @@ namespace CTRails.Forms
         private void usersWindow1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void OnRemiseClick(object sender, EventArgs e)
+        {
+            List<Track> tracks = worker.Tracks.Get().ToList();
+            List<Entities.Sector> sectors = worker.Sectors.Get().ToList();
+
+            foreach (Control tv in remiseWindow1.Controls)
+            {
+                if (tv.GetType() == typeof(TrackView))
+                    ((TrackView)tv).CreateSectors(tracks, sectors);
+            }
         }
     }
 }

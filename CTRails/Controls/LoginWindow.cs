@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Windows.Forms;
 using CTRails.DAL;
 using CTRails.Entities.Employees;
@@ -54,6 +55,12 @@ namespace CTRails.Controls
 
                 MessageBox.Show("Gebruikersnaam of wachtwoord is verkeerd");
             }
+        }
+
+        private void OnKeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                LoginClick(sender, EventArgs.Empty);
         }
     }
 }
